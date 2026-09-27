@@ -1,0 +1,43 @@
+{
+  "random_state": 42,
+  "n_nfhs4": 195366,
+  "n_nfhs5": 200794,
+  "primary_confounder_set": [
+    "birth_order",
+    "wealth_index",
+    "education_years",
+    "residence",
+    "religion",
+    "social_group",
+    "twin_order",
+    "state"
+  ],
+  "reduced_sensitivity_confounder_set": [
+    "birth_order",
+    "wealth_index",
+    "education_years",
+    "residence",
+    "religion",
+    "twin_order"
+  ],
+  "crosswalk_unverified_confounders": [],
+  "missing_or_degenerate_confounders": [],
+  "nuisance_models": "identical to notebooks/v2/07, fit independently per round (no pooled nuisance model)",
+  "change_estimand": {
+    "method": "paired PSU-cluster bootstrap difference: change_b = RD5_reps[b] - RD4_reps[b], independent waves; nuisance fits held fixed; survey variance review pending",
+    "n_bootstrap": 500,
+    "change_in_rd_pct": 6.106496542182469,
+    "change_in_rd_ci_pct": [
+      5.132280319762239,
+      7.13860841185572
+    ]
+  },
+  "interpretation_rule": "A change in the adjusted sector gap between rounds is not causal evidence of a specific policy or programmatic effect; it describes how the cross-sectional adjusted association moved between two independent survey waves, each under its own round-specific measured-confounding assumption.",
+  "uncertainty_status": "provisional conditional intervals; singleton-PSU and survey design review pending",
+  "state_crosswalk": "state_crosswalk.py combines changed state/UT boundaries to 35 common units",
+  "known_unresolved_harmonization_issues": [
+    "State codes are mapped to 35 common geographic units; aggregation of split/merged territories requires explicit reporting.",
+    "Social group labels match in the two supplied Stata codebooks; sensitivity excludes it by pre-specified design.",
+    "wealth_index (v190) construction methodology has known cross-round revisions; treated as ordinal within-round only, not asserted as a continuously comparable scale across rounds."
+  ]
+}

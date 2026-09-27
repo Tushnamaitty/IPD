@@ -1,0 +1,37 @@
+{
+  "random_state": 42,
+  "cohort": {
+    "definition": "birth records from delivery_order == 1; multiple-birth adjustment uses twin_order",
+    "unit": "birth record, not unique delivery",
+    "n_first_delivery_birth_records": 83158,
+    "n_added_vs_birth_order_eq_1": 732,
+    "n_excluded_missing_age_at_first_birth": 0,
+    "n_modeling_birth_records": 83158
+  },
+  "confounder_set": [
+    "age_at_first_birth",
+    "wealth_index",
+    "education_years",
+    "residence",
+    "religion",
+    "social_group",
+    "twin_order",
+    "state"
+  ],
+  "birth_order_excluded_reason": "Raw child order is not prior-delivery order among twins at first delivery.",
+  "delivery_order_excluded_reason": "Constant at 1 in this cohort.",
+  "age_at_first_birth_included_reason": "Age at the analyzed first delivery, including multiple-birth records.",
+  "nuisance_models": "same architecture as Notebook 07, refit on the first-delivery subgroup",
+  "bootstrap_scope": "PSU resampling with fitted nuisance predictions held fixed; no refit per replicate",
+  "comparison_to_primary": {
+    "method": "side-by-side estimates and CIs; no formal joint difference CI",
+    "reason": "First-delivery birth records are a subset of the full cohort, so the estimates are correlated.",
+    "full_cohort_rd_pct": 28.469798451314183,
+    "first_delivery_birth_records_rd_pct": 28.963801024494764
+  },
+  "limitations": [
+    "Birth-record unit gives multiple deliveries multiple rows; unique-delivery results could differ.",
+    "Prior Cesarean history is excluded by first-delivery restriction, but other indications remain incompletely measured.",
+    "Sector contrast is associational, not a causal facility-choice effect."
+  ]
+}

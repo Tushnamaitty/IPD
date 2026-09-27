@@ -1,0 +1,11 @@
+confounder,scenario,p0_whole_cohort,delta_p_whole_cohort,rr_ud,rd_adjusted_pp_fixed_r0,rr_adjusted,rd_attenuation_pp,tipping_status,n_draws,rd_adjusted_median_pp,rd_adjusted_p2_5_pp,rd_adjusted_p97_5_pp,pct_draws_rd_still_positive,pct_draws_rd_still_above_10pp,caveat
+prior_cesarean_history,mild,0.06963718423979873,0.029015493433249474,2.0,27.282285524901056,2.6540129961907017,1.1875129264131274,,,,,,,,
+prior_cesarean_history,moderate,0.06963718423979873,0.06963718423979873,4.0,21.84444257309004,2.3243388966608,6.625355878224145,,,,,,,,
+prior_cesarean_history,strong,0.06963718423979873,0.1160619737329979,6.0,14.939416241175744,1.905715490582849,13.53038221013844,,,,,,,,
+prior_cesarean_history,tipping_point_at_max_delta_p_whole=0.1741,0.06963718423979873,0.17409296059949683,33.0236575591439,0.0,1.0,28.469798451314183,attainable,,,,,,,
+prior_cesarean_history,monte_carlo_summary,,,,,,,,20000.0,21.420253326742127,10.3452579186133,28.284127292870945,100.0,98.065,arbitrary uniform support over unsourced ranges; excludes AIPW sampling uncertainty; not a probability over reality
+obstetric_severity_unmeasured,mild,0.08,0.03,1.5,27.830494184223177,2.687248637182563,0.6393042670910063,,,,,,,,
+obstetric_severity_unmeasured,moderate,0.08,0.08,2.5,24.118404891436704,2.462199898956976,4.351393559877479,,,,,,,,
+obstetric_severity_unmeasured,strong,0.08,0.15,3.5,17.763988899234672,2.0769577378956803,10.705809552079511,,,,,,,,
+obstetric_severity_unmeasured,tipping_point_at_max_delta_p_whole=0.2000,0.08,0.2,28.875492188730473,0.0,1.0,28.469798451314183,attainable,,,,,,,
+obstetric_severity_unmeasured,monte_carlo_summary,,,,,,,,20000.0,23.360606230840958,13.504310693679058,28.345253464293386,100.0,100.0,arbitrary uniform support over unsourced ranges; excludes AIPW sampling uncertainty; not a probability over reality

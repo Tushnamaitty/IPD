@@ -1,0 +1,400 @@
+{
+  "rounds": {
+    "NFHS-4": {
+      "codebook": {
+        "m15": {
+          "present": true,
+          "variable_label": "place of delivery",
+          "value_labels": {
+            "10": "home",
+            "11": "respondent's home",
+            "12": "other home",
+            "13": "parents' home",
+            "20": "public sector",
+            "21": "public: govt./munic. hospital",
+            "22": "public: govt. dispensary",
+            "23": "public: uhc/uhp/ufwc",
+            "24": "public: chc/rural hospital/block phc",
+            "25": "public: phc/additional phc",
+            "26": "public: sub-centre",
+            "27": "other public sector health facility",
+            "30": "private sector",
+            "31": "private: hospital/maternity home/clinic",
+            "32": "other private sector health facility",
+            "33": "ngo or trust hospital/clinic",
+            "96": "other"
+          }
+        },
+        "m17": {
+          "present": true,
+          "variable_label": "delivery by caesarean section",
+          "value_labels": {
+            "0": "no",
+            "1": "yes"
+          }
+        },
+        "s116": {
+          "present": true,
+          "variable_label": "belong to a scheduled caste, a scheduled tribe, other backward class",
+          "value_labels": {
+            "1": "schedule caste",
+            "2": "schedule tribe",
+            "3": "obc",
+            "4": "none of them",
+            "8": "don't know"
+          }
+        },
+        "v024": {
+          "present": true,
+          "variable_label": "state",
+          "value_labels": {
+            "1": "andaman and nicobar islands",
+            "2": "andhra pradesh",
+            "3": "arunachal pradesh",
+            "4": "assam",
+            "5": "bihar",
+            "6": "chandigarh",
+            "7": "chhattisgarh",
+            "8": "dadra and nagar haveli",
+            "9": "daman and diu",
+            "10": "goa",
+            "11": "gujarat",
+            "12": "haryana",
+            "13": "himachal pradesh",
+            "14": "jammu and kashmir",
+            "15": "jharkhand",
+            "16": "karnataka",
+            "17": "kerala",
+            "18": "lakshadweep",
+            "19": "madhya pradesh",
+            "20": "maharashtra",
+            "21": "manipur",
+            "22": "meghalaya",
+            "23": "mizoram",
+            "24": "nagaland",
+            "25": "delhi",
+            "26": "odisha",
+            "27": "puducherry",
+            "28": "punjab",
+            "29": "rajasthan",
+            "30": "sikkim",
+            "31": "tamil nadu",
+            "32": "tripura",
+            "33": "uttar pradesh",
+            "34": "uttarakhand",
+            "35": "west bengal",
+            "36": "telangana"
+          }
+        },
+        "v025": {
+          "present": true,
+          "variable_label": "type of place of residence",
+          "value_labels": {
+            "1": "urban",
+            "2": "rural"
+          }
+        },
+        "v130": {
+          "present": true,
+          "variable_label": "religion",
+          "value_labels": {
+            "1": "hindu",
+            "2": "muslim",
+            "3": "christian",
+            "4": "sikh",
+            "5": "buddhist/neo-buddhist",
+            "6": "jain",
+            "7": "jewish",
+            "8": "parsi/zoroastrian",
+            "9": "no religion",
+            "96": "other"
+          }
+        },
+        "v133": {
+          "present": true,
+          "variable_label": "education in single years",
+          "value_labels": {
+            "97": "inconsistent"
+          }
+        },
+        "v190": {
+          "present": true,
+          "variable_label": "wealth index",
+          "value_labels": {
+            "1": "poorest",
+            "2": "poorer",
+            "3": "middle",
+            "4": "richer",
+            "5": "richest"
+          }
+        },
+        "bord": {
+          "present": true,
+          "variable_label": "birth order number",
+          "value_labels": {}
+        },
+        "b0": {
+          "present": true,
+          "variable_label": "child is twin",
+          "value_labels": {
+            "0": "single birth",
+            "1": "1st of multiple",
+            "2": "2nd of multiple",
+            "3": "3rd of multiple",
+            "4": "4th of multiple",
+            "5": "5th of multiple"
+          }
+        },
+        "v001": {
+          "present": true,
+          "variable_label": "cluster number",
+          "value_labels": {}
+        },
+        "v005": {
+          "present": true,
+          "variable_label": "national women's sample weight (6 decimals)",
+          "value_labels": {}
+        },
+        "v021": {
+          "present": true,
+          "variable_label": "primary sampling unit",
+          "value_labels": {}
+        },
+        "v022": {
+          "present": true,
+          "variable_label": "sample strata for sampling errors",
+          "value_labels": {}
+        },
+        "v023": {
+          "present": true,
+          "variable_label": "stratification used in sample design",
+          "value_labels": {}
+        }
+      },
+      "design": {
+        "analytic_strata": 2514,
+        "singleton_analytic_strata": 11,
+        "stratum_psu_pairs": 27934,
+        "missing_stratum_rows": 0,
+        "missing_psu_rows": 0
+      },
+      "overlap": {
+        "propensity_percentiles_0_1_5_50_95_99_100": [
+          0.007352250729358459,
+          0.023642618002930074,
+          0.04060716772112145,
+          0.22589434421517904,
+          0.6906231802789866,
+          0.8179991968329268,
+          0.9559710282982172
+        ],
+        "propensity_below_0_01": 53,
+        "propensity_above_0_99": 0,
+        "stabilized_ipw_above_10": 129,
+        "max_stabilized_ipw": 46.09229017803658,
+        "survey_weight_effective_n": 89819.99781117875,
+        "combined_weight_effective_n": 61417.4071822303,
+        "combined_weight_effective_n_public": 41213.27910079796,
+        "combined_weight_effective_n_private": 20239.687453797404
+      }
+    },
+    "NFHS-5": {
+      "codebook": {
+        "m15": {
+          "present": true,
+          "variable_label": "place of delivery",
+          "value_labels": {
+            "10": "home",
+            "11": "respondent's home",
+            "12": "other home",
+            "13": "parents' home",
+            "20": "public sector",
+            "21": "public: govt./munic. hospital",
+            "22": "public: govt. dispensary",
+            "23": "public: uhc/uhp/ufwc",
+            "24": "public: chc/rural hospital/block phc",
+            "25": "public: phc/additional phc",
+            "26": "public: sub-centre",
+            "27": "other public sector health facility",
+            "30": "private sector",
+            "31": "private: hospital/maternity home/clinic",
+            "32": "other private sector health facility",
+            "33": "ngo or trust hospital/clinic",
+            "96": "other"
+          }
+        },
+        "m17": {
+          "present": true,
+          "variable_label": "delivery by caesarean section",
+          "value_labels": {
+            "0": "no",
+            "1": "yes"
+          }
+        },
+        "s116": {
+          "present": true,
+          "variable_label": "belong to a scheduled caste, a scheduled tribe, other backward class",
+          "value_labels": {
+            "1": "schedule caste",
+            "2": "schedule tribe",
+            "3": "obc",
+            "4": "none of them",
+            "8": "don't know"
+          }
+        },
+        "v024": {
+          "present": true,
+          "variable_label": "state",
+          "value_labels": {
+            "1": "jammu & kashmir",
+            "2": "himachal pradesh",
+            "3": "punjab",
+            "4": "chandigarh",
+            "5": "uttarakhand",
+            "6": "haryana",
+            "7": "nct of delhi",
+            "8": "rajasthan",
+            "9": "uttar pradesh",
+            "10": "bihar",
+            "11": "sikkim",
+            "12": "arunachal pradesh",
+            "13": "nagaland",
+            "14": "manipur",
+            "15": "mizoram",
+            "16": "tripura",
+            "17": "meghalaya",
+            "18": "assam",
+            "19": "west bengal",
+            "20": "jharkhand",
+            "21": "odisha",
+            "22": "chhattisgarh",
+            "23": "madhya pradesh",
+            "24": "gujarat",
+            "25": "dadra & nagar haveli and daman & diu",
+            "27": "maharashtra",
+            "28": "andhra pradesh",
+            "29": "karnataka",
+            "30": "goa",
+            "31": "lakshadweep",
+            "32": "kerala",
+            "33": "tamil nadu",
+            "34": "puducherry",
+            "35": "andaman & nicobar islands",
+            "36": "telangana",
+            "37": "ladakh"
+          }
+        },
+        "v025": {
+          "present": true,
+          "variable_label": "type of place of residence",
+          "value_labels": {
+            "1": "urban",
+            "2": "rural"
+          }
+        },
+        "v130": {
+          "present": true,
+          "variable_label": "religion",
+          "value_labels": {
+            "1": "hindu",
+            "2": "muslim",
+            "3": "christian",
+            "4": "sikh",
+            "5": "buddhist / neo-buddhist",
+            "6": "jain",
+            "7": "jewish",
+            "8": "parsi / zoroastrian",
+            "9": "no religion",
+            "96": "other"
+          }
+        },
+        "v133": {
+          "present": true,
+          "variable_label": "education in single years",
+          "value_labels": {
+            "97": "inconsistent"
+          }
+        },
+        "v190": {
+          "present": true,
+          "variable_label": "wealth index combined",
+          "value_labels": {
+            "1": "poorest",
+            "2": "poorer",
+            "3": "middle",
+            "4": "richer",
+            "5": "richest"
+          }
+        },
+        "bord": {
+          "present": true,
+          "variable_label": "birth order number",
+          "value_labels": {}
+        },
+        "b0": {
+          "present": true,
+          "variable_label": "child is twin",
+          "value_labels": {
+            "0": "single birth",
+            "1": "1st of multiple",
+            "2": "2nd of multiple",
+            "3": "3rd of multiple",
+            "4": "4th of multiple",
+            "5": "5th of multiple"
+          }
+        },
+        "v001": {
+          "present": true,
+          "variable_label": "cluster number",
+          "value_labels": {}
+        },
+        "v005": {
+          "present": true,
+          "variable_label": "women's individual sample weight (6 decimals)",
+          "value_labels": {}
+        },
+        "v021": {
+          "present": true,
+          "variable_label": "primary sampling unit",
+          "value_labels": {}
+        },
+        "v022": {
+          "present": true,
+          "variable_label": "sample strata for sampling errors",
+          "value_labels": {}
+        },
+        "v023": {
+          "present": true,
+          "variable_label": "stratification used in sample design",
+          "value_labels": {}
+        }
+      },
+      "design": {
+        "analytic_strata": 2709,
+        "singleton_analytic_strata": 16,
+        "stratum_psu_pairs": 29570,
+        "missing_stratum_rows": 0,
+        "missing_psu_rows": 0
+      },
+      "overlap": {
+        "propensity_percentiles_0_1_5_50_95_99_100": [
+          0.004613535659840831,
+          0.019703224743000385,
+          0.03663882361942247,
+          0.20416126115103875,
+          0.6461698907308717,
+          0.7755449118498965,
+          0.9714403078037437
+        ],
+        "propensity_below_0_01": 437,
+        "propensity_above_0_99": 0,
+        "stabilized_ipw_above_10": 92,
+        "max_stabilized_ipw": 53.52951458711449,
+        "survey_weight_effective_n": 104035.62662474005,
+        "combined_weight_effective_n": 79432.7747092075,
+        "combined_weight_effective_n_public": 60345.836019861854,
+        "combined_weight_effective_n_private": 20211.27913123608
+      }
+    }
+  }
+}

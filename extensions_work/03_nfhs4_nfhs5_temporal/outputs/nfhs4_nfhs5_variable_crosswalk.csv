@@ -1,0 +1,16 @@
+harmonized_name,role,nfhs5_source,nfhs4_source,verified,harmonization_note
+facility_type,exposure,"m15 (recoded: 10-13 home, 20-27 public, 30-33 private, else other)",m15 (same recode function),True,Both local value-label tables show the same sector codes; 96 remains other.
+csection,outcome,m17,m17,True,Direct match.
+respondent_id,design,caseid,caseid,True,Round-specific identifier; never pooled as if the same respondent.
+cluster_number,design,v001,v001,True,Round-specific PSU; bootstrap resampling stays within round.
+sample_stratum_v022,design,v022,v022,True,Round-specific sampling stratum.
+sample_weight_normalized,design,v005 / 1e6,v005 / 1e6,True,Each round uses its own round-specific weight; never mixed across rounds.
+birth_order,confounder,bord,bord,True,Same DHS mnemonic; remaining covariate metadata audit before manuscript submission.
+twin_order,confounder,b0,b0,True,Direct match.
+wealth_index,confounder,v190,v190,True,"Direct match, but DHS wealth-index construction methodology has known cross-round revisions -- treat cross-round wealth_index comparisons as ordinal within-round, not as a continuously comparable scale across rounds."
+education_years,confounder,v133 (97 -> missing),v133 (97 -> missing),True,Direct match.
+residence,confounder,v025,v025,True,Direct match.
+religion,confounder,v130,v130,True,Direct match.
+social_group,confounder,s116 (8 -> missing),s116 (8 -> missing),True,"Verified against value labels from IABR74FL and IABR7EFL: categories 1-4, with 8 as don't know."
+state,confounder,v024 (state_crosswalk.py),v024 (state_crosswalk.py),True,Explicit round-specific v024 code-to-name maps combine J&K with Ladakh and the two Dadra/Daman territories to shared units; source codes are retained.
+survey_round,design (derived),n/a,n/a,True,"New column: 'NFHS-4' / 'NFHS-5', the time indicator for the pooled comparison."

@@ -1,0 +1,72 @@
+{
+  "random_state": 42,
+  "design": "single respondent-grouped development/test split (60/40), replacing the prior two-independently-folded-stage design",
+  "n_development": 120553,
+  "n_test": 80241,
+  "reused_notebook07_nuisances": false,
+  "confounder_set_stage1": [
+    "birth_order",
+    "wealth_index",
+    "education_years",
+    "residence",
+    "religion",
+    "social_group",
+    "twin_order",
+    "state"
+  ],
+  "moderator_set_primary": [
+    "wealth_index",
+    "education_years",
+    "residence",
+    "social_group",
+    "state",
+    "twin_order"
+  ],
+  "stage2_cate_model": {
+    "learner": "RandomForestRegressor(n_estimators=500, max_depth=6, min_samples_leaf=200)",
+    "target": "AIPW pseudo-outcome tau_hat = psi1 - psi0 (Kennedy 2023 DR-learner)",
+    "fit_on": "development split only; test never used in fitting, preprocessing, or bin-threshold choice"
+  },
+  "predicted_contrast_groups": {
+    "n_groups": 4,
+    "labels": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "note": "Duplicate development quantile thresholds were dropped; ties were kept together. Four unequal groups resulted."
+  },
+  "importance_method": "whole-variable permutation before development-fitted one-hot encoding; weighted R2 drop on a reproducible test subset",
+  "importance_test_n": 10000,
+  "importance_repeats": 5,
+  "importance_base_r2": 0.006090757912707856,
+  "headline_contrasts": {
+    "method": "joint/paired PSU-cluster bootstrap: one resample per replicate, both groups' RD and their difference computed from the same draw",
+    "rural_vs_urban": {
+      "contrast": "rural_minus_urban",
+      "rd_a_pp": 30.28338844211808,
+      "rd_b_pp": 23.086791766305428,
+      "diff_pp": 7.1965966758126525,
+      "diff_ci_low_pp": 4.461953474287552,
+      "diff_ci_high_pp": 10.097395542161607,
+      "ci_excludes_zero": true
+    },
+    "q4_vs_q1": {
+      "contrast": "Q4_minus_Q1",
+      "rd_a_pp": 40.462282510218266,
+      "rd_b_pp": 17.584205057940558,
+      "diff_pp": 22.878077452277708,
+      "diff_ci_low_pp": 19.276492695639433,
+      "diff_ci_high_pp": 26.194440715698462,
+      "ci_excludes_zero": true
+    }
+  },
+  "limitations": [
+    "Test-set-only evaluation trades effective sample size and rare-category stability for an auditable holdout. A single split is not independent replication.",
+    "The joint bootstrap is conditional on the already-fitted Stage-1 and Stage-2 models; it does not refit the full pipeline inside each replicate.",
+    "Permutation importance uses a held-out subsample and five repetitions. The low pseudo-outcome predictive R2 limits interpretation of the ranking.",
+    "The four predicted-contrast groups are unequal because of tied predictions. Realized effects are not strictly monotonic; Q3 has only 2,334 records."
+  ],
+  "interpretation_rule": "Exploratory heterogeneity in an adjusted associational sector contrast. Not personalized causal truth. Validated on one held-out test split, not independently replicated."
+}
