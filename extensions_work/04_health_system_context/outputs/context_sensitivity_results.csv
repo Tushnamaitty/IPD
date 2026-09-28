@@ -1,0 +1,4 @@
+context_group,sensitivity,retained_n,excluded_n,adjusted_private_risk_pct,adjusted_public_risk_pct,risk_difference_pct,risk_ratio
+low,"trim propensity outside [0.05,0.95]",54346.0,12279.0,49.27898867120437,14.056972415448726,35.22201625575564,3.505661618646015
+high,"trim propensity outside [0.05,0.95]",82686.0,7272.0,41.67042718149462,13.389197634653518,28.281229546841104,3.112242295508767
+high_minus_low,"trim propensity outside [0.05,0.95]",,,,,-6.940786708914537,

@@ -1,0 +1,74 @@
+{
+  "input_path": "C:\\Users\\Tushna\\IPD\\data\\processed\\df_model_v2.parquet",
+  "input_sha256": "fe56e677aefd0a9f9d6b1489fdc8856591d4616f865202a242ef0f14d30069bc",
+  "source_path": "C:\\Users\\Tushna\\IPD\\extensions_work\\04_health_system_context\\local_source\\rhs20-21_table23_transcribed.csv",
+  "source_sha256": "19187771df83400eefb8715a901800c76f5abd8b7c97d989a206f393e32fba1b",
+  "versions": {
+    "python": "3.13.15",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.4.1"
+  },
+  "cohort": {
+    "v2_total": 201311,
+    "public_private": 200794,
+    "rural_public_private": 156717,
+    "missing_z": 134,
+    "retained": 156583,
+    "states": 34
+  },
+  "indicator": {
+    "name": "rural CHC specialist availability",
+    "threshold_pct": 18.31488545410447,
+    "split": "unweighted median across valid states; high >= median"
+  },
+  "models": {
+    "propensity": "survey-weighted logistic",
+    "outcome": "xgboost",
+    "crossfit": "5-fold respondent-grouped within each context group",
+    "seed": 42,
+    "clipping_epsilon": 1e-06
+  },
+  "bootstrap": {
+    "replicates": 500,
+    "seed": 42,
+    "psu_key": [
+      "sample_stratum_v022",
+      "cluster_number"
+    ],
+    "n_psu_pairs": 21999,
+    "n_strata": 2061,
+    "one_joint_draw": true,
+    "nuisance_models_refit": false,
+    "interval": "percentile 2.5/97.5; conditional on fitted nuisances and observed states"
+  },
+  "results": {
+    "low_rd_pct": 35.1697465981244,
+    "high_rd_pct": 28.167796208255414,
+    "delta_high_minus_low_pct": -7.001950389868984,
+    "delta_ci_pct": [
+      -8.634147422623204,
+      -5.266778598925387
+    ]
+  },
+  "state_influence": {
+    "n_omitted_states": 34,
+    "min_delta_pct": -9.335384186151071,
+    "max_delta_pct": -2.1010895517239874
+  },
+  "interpretation": "Contextual association in rural residential institutional births; no staffing or facility causal effect.",
+  "output_files": [
+    "context_sources.csv",
+    "context_merge_audit.csv",
+    "context_descriptives.csv",
+    "context_overlap_diagnostics.csv",
+    "context_balance_diagnostics.csv",
+    "context_modifier_results.csv",
+    "context_bootstrap_results.csv",
+    "context_sensitivity_results.csv",
+    "context_leave_one_state_out.csv",
+    "context_effect_plot.png",
+    "context_metadata.json"
+  ]
+}
