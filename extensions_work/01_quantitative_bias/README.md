@@ -1,60 +1,78 @@
-# Extension 1 — Quantitative Bias Analysis (QBA)
+# Extension 1 - Residual confounding sensitivity benchmark
 
-**Status: illustrative scenario analysis, not evidence-calibrated.** The primary AIPW estimate is held fixed. The prevalence and risk-ratio inputs for unmeasured confounders remain hypothetical and unsourced. These calculations do not establish that the sector contrast is robust to realistic unmeasured confounding, nor do they identify a corrected AIPW estimate.
+**Status:** Repaired notebook run on the frozen primary table on the project
+laptop; generated outputs independently checked on 28 September 2026.
+The earlier prevalence-based outputs must not be presented as results of
+this version.
 
-## Question and inputs
+## Why the method changed
 
-How would the 28.47 percentage-point, survey-weighted, covariate-standardized private–public Cesarean risk difference move under specified hypothetical unmeasured-confounding scenarios?
+The earlier notebook applied separate observed public and private
+later-delivery shares to a hypothetical prior-Cesarean prevalence. Birth order
+is already included among the measured adjustment variables of the primary
+AIPW analysis. The procedure changed the sensitivity result even when the
+hypothetical prevalence was identical within later deliveries, so it mixed
+measured parity composition into a calculation described as *residual*
+confounding. A pooled share is not a general fix: a prevalence-based
+correction to a standardized estimate would need covariate-stratum-specific
+assumptions and adequate risk information. The earlier formula and
+fixed-public-risk "corrected risk difference" were removed.
 
-The notebook reads:
+## Current analysis
 
-- `outputs/final_tables/final_aipw_overall_table.csv` for the frozen primary estimate (no AIPW refitting).
-- `data/processed/df_model_v2.parquet` for `facility_type`, `birth_order`, `twin_order` and `sample_weight_normalized`. These respondent-level columns yield the common analytic population's weighted later-delivery share.
+`notebook.ipynb` reads the original, frozen AIPW risk ratio and its lower
+confidence limit from `outputs/final_tables/final_aipw_overall_table.csv`.
+It makes a deterministic grid of two hypothetical residual-confounding
+strengths, both defined conditional on the measured variables:
 
-Run `notebook.ipynb` from `extensions_work/01_quantitative_bias` so its relative import of `../shared/config.py` resolves correctly.
+- `RR_AU`: maximum sector–unmeasured-factor association.
+- `RR_UY`: maximum unmeasured-factor–Cesarean association.
 
-## Method and assumptions
+It calculates the Ding–VanderWeele bounding factor
+`RR_AU * RR_UY / (RR_AU + RR_UY - 1)` and the corresponding E-values.
+The grid's risk ratios are *hypothetical lower bounds under a causal
+interpretation*, not corrected estimates or new confidence intervals.
+The two strength parameters are unsourced and cannot be attributed to prior
+Cesarean history or an obstetric-severity composite. A causal effect of
+changing a woman's facility sector has not been established.
 
-For an assumed binary unmeasured factor, the illustrative bias factor is
+Methods: Ding and VanderWeele, *Epidemiology* 2016,
+DOI [10.1097/EDE.0000000000000457](https://doi.org/10.1097/EDE.0000000000000457);
+VanderWeele and Ding, *Annals of Internal Medicine* 2017,
+DOI [10.7326/M16-2607](https://doi.org/10.7326/M16-2607).
 
-`BF = [1 + p1 × (RR_UY − 1)] / [1 + p0 × (RR_UY − 1)]`,
+## Verified run
 
-where `p0` and `p1` are assumed public and private scenario prevalences and `RR_UY` is the assumed factor–outcome risk ratio. The notebook divides the primary risk ratio by `BF`. It then holds the primary public risk fixed to translate that ratio to a risk difference. The displayed difference is a **fixed-public-risk translation**, not a separately estimated corrected risk difference. The simple bias model assumes a binary factor and a constant outcome risk ratio across sectors; it does not account for the full AIPW estimation procedure or its sampling uncertainty.
+The output metadata reports 200,794 analytic births, reference RD 28.469798
+percentage points, and reference RR 2.726007 (lower confidence limit
+2.656604). The point-estimate E-value is 4.895133 and the lower-limit
+E-value is 4.754446. All 841 distinct grid rows and seven selected summary
+rows passed independent arithmetic checks; the plot is legible. The results
+are still hypothetical sensitivity benchmarks, not evidence-calibrated
+corrections or causal claims.
 
-For **prior Cesarean history**, the prevalence assumptions apply among women with a prior *delivery*. `birth_order` and `twin_order` distinguish a second child at a first multiple delivery from a later delivery. The notebook scales the hypothetical within-parity prevalences by the **common survey-weighted later-delivery share, 0.58030987 (58.031%)**, calculated from 200,794 analytic births. Separately observed weighted later-delivery shares are 51.241% for private and 60.957% for public births. The common-share scaling illustrates a standardized contrast; it is an additional simplifying assumption, not an identified bias correction.
+## Reproduce
 
-The second factor, **unmeasured obstetric severity**, is an illustrative composite. It is not one validated diagnosis with a measured prevalence or association.
+1. Back up the existing `extensions_work/01_quantitative_bias` folder.
+2. Put this folder at `extensions_work/01_quantitative_bias` and open the
+   notebook with that folder as the working directory.
+3. Confirm `extensions_work/shared/config.py` and the frozen
+   `outputs/final_tables/final_aipw_overall_table.csv` exist. The notebook
+   does not read raw NFHS data or refit the primary model.
+4. Restart the kernel, run all cells, then save the notebook. The run writes
+   `qba_scenario_results.csv`, `qba_summary.csv`, `qba_heatmap.png`,
+   `assumptions_sources.csv`, and `qba_metadata.json` to `outputs/`.
+5. Confirm the printed reference matches the frozen analysis
+   (n=200,794, RD approximately 28.47 pp, RR approximately 2.726), that
+   the point E-value is about 4.90, and that the grid has 841 rows. At
+   `RR_AU=RR_UY=1`, the bound must equal the reference RR. Inspect the
+   heatmap for legible labels and a white null-bound contour.
 
-## Regenerated results (27 September 2026)
+## Manuscript decision
 
-The frozen reference is a private risk of 44.9644%, public risk of 16.4946%, risk difference of **28.4698 percentage points**, and risk ratio of **2.7260** among **200,794** births. The risk-ratio confidence-bound input closest to the null is 2.6566. These are the notebook's existing reference values; the QBA does not refit their models.
-
-The deterministic grid has **550 rows**; the summary has **10 rows**. All scenario prevalence gaps and risk ratios below are hypothetical.
-
-| Factor | Scenario | Assumed prevalence gap in whole cohort | Assumed RR_UY | Illustrative RD, fixed public risk (pp) |
-|---|---|---:|---:|---:|
-| Prior Cesarean history | Mild | 2.902 pp | 2.0 | 27.2823 |
-| Prior Cesarean history | Moderate | 6.964 pp | 4.0 | 21.8444 |
-| Prior Cesarean history | Strong | 11.606 pp | 6.0 | 14.9394 |
-| Obstetric severity composite | Mild | 3.000 pp | 1.5 | 27.8305 |
-| Obstetric severity composite | Moderate | 8.000 pp | 2.5 | 24.1184 |
-| Obstetric severity composite | Strong | 15.000 pp | 3.5 | 17.7640 |
-
-At the maximum tested prevalence gaps (17.409 pp for prior Cesarean history and 20.000 pp for the severity composite), the analytic tipping risk ratios are approximately **33.02** and **28.88**, respectively. Both lie beyond their plotted risk-ratio grids; they are mathematical scenario boundaries, not claims about clinical plausibility.
-
-The 20,000 uniform Monte Carlo draws per factor explore only arbitrarily selected, unsourced parameter ranges. Prior Cesarean history yielded a median illustrative RD of **21.4203 pp** (2.5th–97.5th percentiles **10.3453–28.2841**); the severity composite yielded **23.3606 pp** (**13.5043–28.3453**). All draws within those chosen ranges remained positive. These percentages and percentiles are **not confidence intervals or probabilities about the true effect**; primary-estimate sampling uncertainty is excluded.
-
-The point-estimate E-value recomputes to **4.8951** (rounded to 4.90), an arithmetic cross-check against the previously reported value. It does not validate the hypothetical prevalence or risk-ratio inputs.
-
-## Output files
-
-- `outputs/qba_scenario_results.csv` — 550 deterministic scenarios with within-target and whole-cohort inputs.
-- `outputs/qba_summary.csv` — representative scenarios, analytic tipping points and Monte Carlo summaries.
-- `outputs/qba_heatmap.png` — illustrative fixed-public-risk translations over the tested grids. It labels a zero-difference tipping point as outside the plotted domain when appropriate.
-- `outputs/assumptions_sources.csv` — source-status table; hypothetical values remain explicitly unsourced.
-
-## Checks and limitations
-
-The notebook checks parameter bounds, reproduces the frozen reference when the assumed prevalence gap is zero or `RR_UY = 1`, and verifies the E-value arithmetic. The corrected later-delivery share and all four output files were regenerated on 27 September 2026.
-
-Before publication use, replace hypothetical inputs with defensible, documented parameters for clearly defined factors, considering population, facility sector, parity, time period and the reported association scale. Reassess the simplifying bias model and the translation to a risk difference. The composite severity scenario should be separated into named conditions if evidence permits. The current results support an **illustrative sensitivity exercise only**.
+Ask the supervisor whether a well-defined causal estimand exists for the
+broad sector contrast before using this benchmark as a robustness claim.
+If specific prior-Cesarean or obstetric-severity scenarios are desired,
+first define the factor and obtain independently verified, relevant
+conditional association estimates. Do not revive the old unsourced
+prevalence grid or report its output as a calibrated analysis.

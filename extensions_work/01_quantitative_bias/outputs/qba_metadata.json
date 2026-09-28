@@ -1,0 +1,11 @@
+{
+  "analysis": "conditional residual-confounding bounding-factor benchmark",
+  "n_analytic": 200794,
+  "reference_risk_ratio": 2.7260070309880806,
+  "reference_risk_ratio_ci_low": 2.656603904179091,
+  "reference_risk_difference_pp": 28.469798451314183,
+  "e_value_point": 4.8951329614053005,
+  "e_value_ci_limit": 4.754445747483896,
+  "grid_rows": 841,
+  "caveat": "No causal sector intervention is established; strengths unsourced; no corrected RR/RD or probability of residual confounding is estimated."
+}
