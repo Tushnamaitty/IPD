@@ -1,0 +1,79 @@
+{
+  "status": "completed_approximate_intervals_require_output_review",
+  "raw_data_run_review_required": true,
+  "method": "Joint Taylor linearization; with-replacement ultimate-PSU approximation",
+  "primary_singleton_treatment": "Grand-mean centering of PSU influence totals in active strata (adjust)",
+  "limitations": [
+    "Household recode roster completeness is not established; national count differs from published fieldwork count",
+    "Not exact full PPS/systematic multistage variance; no FPC or lower-stage identifiers used",
+    "Conditional on fitted preprocessing, median imputation, selected 11 states and time bins",
+    "Conditional on observed zero-reference separated-cell profiling; this is not unconditional uncertainty for the original full-coefficient model",
+    "Marginal support sensitivity does not establish joint overlap",
+    "Exploratory marginal intervals; no multiplicity adjustment; no causal policy effects"
+  ],
+  "target_n": 42370,
+  "common_states": [
+    "Chhattisgarh",
+    "Delhi",
+    "Haryana",
+    "Jharkhand",
+    "Madhya Pradesh",
+    "Odisha",
+    "Punjab",
+    "Rajasthan",
+    "Tamil Nadu",
+    "Uttar Pradesh",
+    "Uttarakhand"
+  ],
+  "household_national_psus": 30170,
+  "difference_from_reported_30198": 28,
+  "frame_comparison": {
+    "birth_file_psus_in_active_strata": 14612,
+    "household_file_psus_in_active_strata": 14623,
+    "additional_household_psus_in_active_strata": 11,
+    "birth_psu_pairs_absent_from_household_frame": 0,
+    "birth_file_singleton_active_strata": 8,
+    "household_file_singleton_active_strata": 8,
+    "birth_file_singletons_resolved_by_household_frame": 0,
+    "active_state_strata": 1332,
+    "active_stratum_codes_shared_across_states": 18,
+    "legacy_frame_psus": 14990,
+    "legacy_strata": 1314,
+    "legacy_design_equivalent_for_this_cohort": false,
+    "uncertainty_rerun_required_for_state_key_correction": true,
+    "design_key": "raw v024/hv024 state, v022/hv022 stratum, v021/hv021 PSU"
+  },
+  "national_stratum_codes_shared_across_states": 60,
+  "state_design_keys_verified": true,
+  "script_sha256": "e5539137d5b24f0c4ec39be1bdd3abbf926791217110a900b9470838a6b61f70",
+  "singleton_target_birth_n": 56,
+  "singleton_target_weight_pct": 0.09546782353402133,
+  "reference_excluded_religion_codes": [
+    6
+  ],
+  "supported_reference_n_before_additional_restriction": 42101,
+  "additional_excluded_weight_pct_of_supported_reference": 0.14718787717151408,
+  "reference_n": 42047,
+  "excluded_reference_weight_pct": 0.6709977693932844,
+  "reference": "Identical support-restricted pooled reference; training unchanged; additionally excludes the declared religion codes identically across all periods",
+  "training_rule": "Original period training data; pure separated categorical cells absent from reference are profiled and recorded",
+  "point_difference_review_bound_pp": 0.4443757543430281,
+  "singleton_active_strata": 8,
+  "design_df": 13291,
+  "maximum_point_estimate_difference_pp": 0.10874163272889348,
+  "total_profiled_separated_training_n": 23,
+  "maximum_derivative_check_error_pp": 6.437068100773047e-08,
+  "input_sha256": {
+    "policy_period_state_roster_uncertainty.py": "e5539137d5b24f0c4ec39be1bdd3abbf926791217110a900b9470838a6b61f70",
+    "common_state_standardized_gaps.csv": "c114138cb50c420f9fde981a4e682c1be7a35ccd0f01c4cbb53bf645d4031b2e"
+  },
+  "previous_bootstrap_outputs_changed": false,
+  "household_interview_result_label": "result of household interview",
+  "household_interview_result_counts": {
+    "1": 636699
+  },
+  "last_period": "E_2020_Mar_onward",
+  "last_stage": "verified",
+  "separation_detected": false,
+  "elapsed_seconds": 188.1
+}

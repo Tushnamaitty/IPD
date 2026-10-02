@@ -1,0 +1,732 @@
+{
+  "status": "completed_exploratory_sensitivity_outputs_require_review",
+  "analysis_label": "training_population_sensitivity_first_delivery_reference",
+  "inference_label": "EXPLORATORY training-population sensitivity on a first-delivery reference: approximate 95% Taylor t interval and unadjusted two-sided p-value; no multiplicity adjustment; association only; conditional on fixed ridge, model, support rule and geography mapping",
+  "question": "Does the training population (all narrow births vs first-delivery births only) change the private-minus-public gap evaluated on the same first-delivery reference?",
+  "models": {
+    "A": "trained on all narrow births in the wave",
+    "B": "trained on first-delivery narrow births in the wave",
+    "matching": "identical predictors, interactions (private x residence, private x wealth 2-5), vocabulary, scales, missing coding and fixed ridge; birth order omitted from BOTH; B design verified identical to the existing first-delivery design"
+  },
+  "reference_rule": "First-delivery births only, identical rows and weights for A and B; 50 percent weighted NFHS-4 plus 50 percent weighted NFHS-5 in supported state x residence x wealth cells classified on the first-delivery cohort (>=1 or >=30 births per sector per wave)",
+  "facility_codes": {
+    "public": 21,
+    "private": 31
+  },
+  "fixed_ridge": 1e-05,
+  "support_minima_each_sector_each_wave": [
+    1,
+    30
+  ],
+  "primary_singleton_treatment": "adjust",
+  "singleton_sensitivity": [
+    "average",
+    "zero_sensitivity_only"
+  ],
+  "uncertainty": "Stacked joint fitted-coefficient and shared-empirical-reference influence for A and B in both waves over the same rows; one survey covariance per wave on the all-narrow design (state/stratum/PSU, roster zero-domain PSUs, singleton rules); waves independent; minimum wave design df; B - A uses L V L-transpose so overlapping training samples are not treated as independent",
+  "max_relative_se_change_if_fits_treated_independent_primary_B_minus_A": 0.8872131766757255,
+  "reproduction_of_existing_first_delivery_rows": {
+    "rows_compared": 12,
+    "max_abs_estimate_difference_pp": 3.552713678800501e-15,
+    "max_abs_se_difference_pp_by_rule": {
+      "adjust": 0.0,
+      "average": 0.00025193492061259537,
+      "zero_sensitivity_only": 0.0
+    },
+    "se_rules_enforced": [
+      "zero_sensitivity_only"
+    ],
+    "tolerance_pp": 1e-06,
+    "note": "adjust/average SEs can differ slightly in real data because the joint design domain is all narrow births (more state-strata/zero-domain PSUs than the first-delivery-only design); the zero rule is invariant."
+  },
+  "primary_results": [
+    {
+      "analysis_label": "training_population_sensitivity_first_delivery_reference",
+      "reference_population": "first_delivery_births_equal_wave_pooled_supported_cells",
+      "reference_minimum_each_sector_each_wave": 1,
+      "wave": "NFHS-4",
+      "quantity": "model_A_all_narrow_trained_gap",
+      "estimate_pp": 19.61239437997592,
+      "se_pp": 0.5133011259074468,
+      "ci_lower_pp": 18.606294236754675,
+      "ci_upper_pp": 20.618494523197167,
+      "t_statistic": 38.20836033683711,
+      "p_value_exploratory_unadjusted": 1.5247753601552e-310,
+      "singleton_treatment": "adjust",
+      "primary_rule": true,
+      "conservative_design_df": 25148,
+      "se_if_fits_treated_independent_pp": 0.5133011259074468,
+      "inference_status": "EXPLORATORY training-population sensitivity on a first-delivery reference: approximate 95% Taylor t interval and unadjusted two-sided p-value; no multiplicity adjustment; association only; conditional on fixed ridge, model, support rule and geography mapping"
+    },
+    {
+      "analysis_label": "training_population_sensitivity_first_delivery_reference",
+      "reference_population": "first_delivery_births_equal_wave_pooled_supported_cells",
+      "reference_minimum_each_sector_each_wave": 1,
+      "wave": "NFHS-4",
+      "quantity": "model_B_first_delivery_trained_gap",
+      "estimate_pp": 21.00928654805213,
+      "se_pp": 0.7079213483289681,
+      "ci_lower_pp": 19.621719418359966,
+      "ci_upper_pp": 22.396853677744296,
+      "t_statistic": 29.67743040613772,
+      "p_value_exploratory_unadjusted": 2.8640032579162543e-190,
+      "singleton_treatment": "adjust",
+      "primary_rule": true,
+      "conservative_design_df": 25148,
+      "se_if_fits_treated_independent_pp": 0.7079213483289681,
+      "inference_status": "EXPLORATORY training-population sensitivity on a first-delivery reference: approximate 95% Taylor t interval and unadjusted two-sided p-value; no multiplicity adjustment; association only; conditional on fixed ridge, model, support rule and geography mapping"
+    },
+    {
+      "analysis_label": "training_population_sensitivity_first_delivery_reference",
+      "reference_population": "first_delivery_births_equal_wave_pooled_supported_cells",
+      "reference_minimum_each_sector_each_wave": 1,
+      "wave": "NFHS-4",
+      "quantity": "B_minus_A_gap_difference",
+      "estimate_pp": 1.396892168076208,
+      "se_pp": 0.4734976955489668,
+      "ci_lower_pp": 0.4688090697495493,
+      "ci_upper_pp": 2.324975266402867,
+      "t_statistic": 2.950156212390158,
+      "p_value_exploratory_unadjusted": 0.0031790593274109154,
+      "singleton_treatment": "adjust",
+      "primary_rule": true,
+      "conservative_design_df": 25148,
+      "se_if_fits_treated_independent_pp": 0.8744316332783008,
+      "inference_status": "EXPLORATORY training-population sensitivity on a first-delivery reference: approximate 95% Taylor t interval and unadjusted two-sided p-value; no multiplicity adjustment; association only; conditional on fixed ridge, model, support rule and geography mapping"
+    },
+    {
+      "analysis_label": "training_population_sensitivity_first_delivery_reference",
+      "reference_population": "first_delivery_births_equal_wave_pooled_supported_cells",
+      "reference_minimum_each_sector_each_wave": 1,
+      "wave": "NFHS-5",
+      "quantity": "model_A_all_narrow_trained_gap",
+      "estimate_pp": 24.022334156820378,
+      "se_pp": 0.4904585231367239,
+      "ci_lower_pp": 23.061006847242428,
+      "ci_upper_pp": 24.983661466398328,
+      "t_statistic": 48.97933876892528,
+      "p_value_exploratory_unadjusted": 0.0,
+      "singleton_treatment": "adjust",
+      "primary_rule": true,
+      "conservative_design_df": 25148,
+      "se_if_fits_treated_independent_pp": 0.4904585231367239,
+      "inference_status": "EXPLORATORY training-population sensitivity on a first-delivery reference: approximate 95% Taylor t interval and unadjusted two-sided p-value; no multiplicity adjustment; association only; conditional on fixed ridge, model, support rule and geography mapping"
+    },
+    {
+      "analysis_label": "training_population_sensitivity_first_delivery_reference",
+      "reference_population": "first_delivery_births_equal_wave_pooled_supported_cells",
+      "reference_minimum_each_sector_each_wave": 1,
+      "wave": "NFHS-5",
+      "quantity": "model_B_first_delivery_trained_gap",
+      "estimate_pp": 25.006547595706735,
+      "se_pp": 0.679386166669214,
+      "ci_lower_pp": 23.674911086279565,
+      "ci_upper_pp": 26.338184105133905,
+      "t_statistic": 36.80756074016762,
+      "p_value_exploratory_unadjusted": 6.421096223795125e-289,
+      "singleton_treatment": "adjust",
+      "primary_rule": true,
+      "conservative_design_df": 25148,
+      "se_if_fits_treated_independent_pp": 0.679386166669214,
+      "inference_status": "EXPLORATORY training-population sensitivity on a first-delivery reference: approximate 95% Taylor t interval and unadjusted two-sided p-value; no multiplicity adjustment; association only; conditional on fixed ridge, model, support rule and geography mapping"
+    },
+    {
+      "analysis_label": "training_population_sensitivity_first_delivery_reference",
+      "reference_population": "first_delivery_births_equal_wave_pooled_supported_cells",
+      "reference_minimum_each_sector_each_wave": 1,
+      "wave": "NFHS-5",
+      "quantity": "B_minus_A_gap_difference",
+      "estimate_pp": 0.9842134388863555,
+      "se_pp": 0.4457457347561316,
+      "ci_lower_pp": 0.11052580224698783,
+      "ci_upper_pp": 1.857901075525723,
+      "t_statistic": 2.2080153821882798,
+      "p_value_exploratory_unadjusted": 0.02725219101483418,
+      "singleton_treatment": "adjust",
+      "primary_rule": true,
+      "conservative_design_df": 25148,
+      "se_if_fits_treated_independent_pp": 0.8379231029032113,
+      "inference_status": "EXPLORATORY training-population sensitivity on a first-delivery reference: approximate 95% Taylor t interval and unadjusted two-sided p-value; no multiplicity adjustment; association only; conditional on fixed ridge, model, support rule and geography mapping"
+    },
+    {
+      "analysis_label": "training_population_sensitivity_first_delivery_reference",
+      "reference_population": "first_delivery_births_equal_wave_pooled_supported_cells",
+      "reference_minimum_each_sector_each_wave": 30,
+      "wave": "NFHS-4",
+      "quantity": "model_A_all_narrow_trained_gap",
+      "estimate_pp": 19.32233632028002,
+      "se_pp": 0.4968854569968641,
+      "ci_lower_pp": 18.348411845508384,
+      "ci_upper_pp": 20.296260795051655,
+      "t_statistic": 38.88690250075474,
+      "p_value_exploratory_unadjusted": 0.0,
+      "singleton_treatment": "adjust",
+      "primary_rule": true,
+      "conservative_design_df": 25148,
+      "se_if_fits_treated_independent_pp": 0.4968854569968641,
+      "inference_status": "EXPLORATORY training-population sensitivity on a first-delivery reference: approximate 95% Taylor t interval and unadjusted two-sided p-value; no multiplicity adjustment; association only; conditional on fixed ridge, model, support rule and geography mapping"
+    },
+    {
+      "analysis_label": "training_population_sensitivity_first_delivery_reference",
+      "reference_population": "first_delivery_births_equal_wave_pooled_supported_cells",
+      "reference_minimum_each_sector_each_wave": 30,
+      "wave": "NFHS-4",
+      "quantity": "model_B_first_delivery_trained_gap",
+      "estimate_pp": 20.77089973788931,
+      "se_pp": 0.6841658225555245,
+      "ci_lower_pp": 19.429894824168723,
+      "ci_upper_pp": 22.111904651609894,
+      "t_statistic": 30.359452420913083,
+      "p_value_exploratory_unadjusted": 7.305813754652508e-199,
+      "singleton_treatment": "adjust",
+      "primary_rule": true,
+      "conservative_design_df": 25148,
+      "se_if_fits_treated_independent_pp": 0.6841658225555245,
+      "inference_status": "EXPLORATORY training-population sensitivity on a first-delivery reference: approximate 95% Taylor t interval and unadjusted two-sided p-value; no multiplicity adjustment; association only; conditional on fixed ridge, model, support rule and geography mapping"
+    },
+    {
+      "analysis_label": "training_population_sensitivity_first_delivery_reference",
+      "reference_population": "first_delivery_births_equal_wave_pooled_supported_cells",
+      "reference_minimum_each_sector_each_wave": 30,
+      "wave": "NFHS-4",
+      "quantity": "B_minus_A_gap_difference",
+      "estimate_pp": 1.4485634176092888,
+      "se_pp": 0.4527286374040666,
+      "ci_lower_pp": 0.5611888845272778,
+      "ci_upper_pp": 2.3359379506913,
+      "t_statistic": 3.1996284262363233,
+      "p_value_exploratory_unadjusted": 0.0013777556640002578,
+      "singleton_treatment": "adjust",
+      "primary_rule": true,
+      "conservative_design_df": 25148,
+      "se_if_fits_treated_independent_pp": 0.8455637351069757,
+      "inference_status": "EXPLORATORY training-population sensitivity on a first-delivery reference: approximate 95% Taylor t interval and unadjusted two-sided p-value; no multiplicity adjustment; association only; conditional on fixed ridge, model, support rule and geography mapping"
+    },
+    {
+      "analysis_label": "training_population_sensitivity_first_delivery_reference",
+      "reference_population": "first_delivery_births_equal_wave_pooled_supported_cells",
+      "reference_minimum_each_sector_each_wave": 30,
+      "wave": "NFHS-5",
+      "quantity": "model_A_all_narrow_trained_gap",
+      "estimate_pp": 23.914714155551323,
+      "se_pp": 0.4781542538004437,
+      "ci_lower_pp": 22.97750393147475,
+      "ci_upper_pp": 24.851924379627896,
+      "t_statistic": 50.01464269213019,
+      "p_value_exploratory_unadjusted": 0.0,
+      "singleton_treatment": "adjust",
+      "primary_rule": true,
+      "conservative_design_df": 25148,
+      "se_if_fits_treated_independent_pp": 0.4781542538004437,
+      "inference_status": "EXPLORATORY training-population sensitivity on a first-delivery reference: approximate 95% Taylor t interval and unadjusted two-sided p-value; no multiplicity adjustment; association only; conditional on fixed ridge, model, support rule and geography mapping"
+    },
+    {
+      "analysis_label": "training_population_sensitivity_first_delivery_reference",
+      "reference_population": "first_delivery_births_equal_wave_pooled_supported_cells",
+      "reference_minimum_each_sector_each_wave": 30,
+      "wave": "NFHS-5",
+      "quantity": "model_B_first_delivery_trained_gap",
+      "estimate_pp": 24.955936299742586,
+      "se_pp": 0.6572636255239019,
+      "ci_lower_pp": 23.667661261177898,
+      "ci_upper_pp": 26.244211338307274,
+      "t_statistic": 37.96944685604702,
+      "p_value_exploratory_unadjusted": 8.361411214373503e-307,
+      "singleton_treatment": "adjust",
+      "primary_rule": true,
+      "conservative_design_df": 25148,
+      "se_if_fits_treated_independent_pp": 0.6572636255239019,
+      "inference_status": "EXPLORATORY training-population sensitivity on a first-delivery reference: approximate 95% Taylor t interval and unadjusted two-sided p-value; no multiplicity adjustment; association only; conditional on fixed ridge, model, support rule and geography mapping"
+    },
+    {
+      "analysis_label": "training_population_sensitivity_first_delivery_reference",
+      "reference_population": "first_delivery_births_equal_wave_pooled_supported_cells",
+      "reference_minimum_each_sector_each_wave": 30,
+      "wave": "NFHS-5",
+      "quantity": "B_minus_A_gap_difference",
+      "estimate_pp": 1.0412221441912646,
+      "se_pp": 0.43068246263746535,
+      "ci_lower_pp": 0.19705939941567074,
+      "ci_upper_pp": 1.8853848889668585,
+      "t_statistic": 2.417609804250915,
+      "p_value_exploratory_unadjusted": 0.015629882282031788,
+      "singleton_treatment": "adjust",
+      "primary_rule": true,
+      "conservative_design_df": 25148,
+      "se_if_fits_treated_independent_pp": 0.8127896184525755,
+      "inference_status": "EXPLORATORY training-population sensitivity on a first-delivery reference: approximate 95% Taylor t interval and unadjusted two-sided p-value; no multiplicity adjustment; association only; conditional on fixed ridge, model, support rule and geography mapping"
+    }
+  ],
+  "diagnostics": {
+    "first_delivery_reference_min_1": {
+      "reference_n": 99802,
+      "model_terms": 73,
+      "design": {
+        "0": {
+          "df": 25148,
+          "roster_psus": 27563,
+          "zero_domain_psus": 3584,
+          "singleton_strata": 9
+        },
+        "1": {
+          "df": 26446,
+          "roster_psus": 29119,
+          "zero_domain_psus": 3686,
+          "singleton_strata": 15
+        }
+      },
+      "fit_diagnostics": {
+        "A": [
+          {
+            "newton_evaluations": 6,
+            "gradient_inf_norm": 8.585544588094428e-14,
+            "independent_optimizer_passed": true,
+            "maximum_optimizer_target_difference_pp": 1.2084461681327596e-05,
+            "independent_optimizer_gradient_inf_norm": 4.805167670329956e-09
+          },
+          {
+            "newton_evaluations": 6,
+            "gradient_inf_norm": 2.4978907593872172e-14,
+            "independent_optimizer_passed": true,
+            "maximum_optimizer_target_difference_pp": 7.946382474255387e-06,
+            "independent_optimizer_gradient_inf_norm": 3.469028941329021e-09
+          }
+        ],
+        "B": [
+          {
+            "newton_evaluations": 6,
+            "gradient_inf_norm": 3.347287860300599e-16,
+            "independent_optimizer_passed": true,
+            "maximum_optimizer_target_difference_pp": 2.5171919326716363e-06,
+            "independent_optimizer_gradient_inf_norm": 3.155695970932411e-09
+          },
+          {
+            "newton_evaluations": 6,
+            "gradient_inf_norm": 2.3550057032511312e-17,
+            "independent_optimizer_passed": true,
+            "maximum_optimizer_target_difference_pp": 4.783042695244433e-06,
+            "independent_optimizer_gradient_inf_norm": 2.438120882559597e-09
+          }
+        ]
+      },
+      "design_domain": "all narrow births (state/stratum/PSU, roster zero-domain PSUs)",
+      "waves": {
+        "NFHS-4": {
+          "training_n_model_A_all_narrow": 109006,
+          "training_n_model_B_first_delivery": 50527,
+          "reference_n": 50331,
+          "excluded_first_delivery_reference_weight_pct": 0.1156118151021292
+        },
+        "NFHS-5": {
+          "training_n_model_A_all_narrow": 110595,
+          "training_n_model_B_first_delivery": 49799,
+          "reference_n": 49471,
+          "excluded_first_delivery_reference_weight_pct": 0.21492679403309584
+        }
+      }
+    },
+    "first_delivery_reference_min_30": {
+      "reference_n": 78014,
+      "model_terms": 73,
+      "design": {
+        "0": {
+          "df": 25148,
+          "roster_psus": 27563,
+          "zero_domain_psus": 3584,
+          "singleton_strata": 9
+        },
+        "1": {
+          "df": 26446,
+          "roster_psus": 29119,
+          "zero_domain_psus": 3686,
+          "singleton_strata": 15
+        }
+      },
+      "fit_diagnostics": {
+        "A": [
+          {
+            "newton_evaluations": 6,
+            "gradient_inf_norm": 8.585544588094428e-14,
+            "independent_optimizer_passed": true,
+            "maximum_optimizer_target_difference_pp": 1.2084461681327596e-05,
+            "independent_optimizer_gradient_inf_norm": 4.805167670329956e-09
+          },
+          {
+            "newton_evaluations": 6,
+            "gradient_inf_norm": 2.4978907593872172e-14,
+            "independent_optimizer_passed": true,
+            "maximum_optimizer_target_difference_pp": 7.946382474255387e-06,
+            "independent_optimizer_gradient_inf_norm": 3.469028941329021e-09
+          }
+        ],
+        "B": [
+          {
+            "newton_evaluations": 6,
+            "gradient_inf_norm": 3.347287860300599e-16,
+            "independent_optimizer_passed": true,
+            "maximum_optimizer_target_difference_pp": 2.5171919326716363e-06,
+            "independent_optimizer_gradient_inf_norm": 3.155695970932411e-09
+          },
+          {
+            "newton_evaluations": 6,
+            "gradient_inf_norm": 2.3550057032511312e-17,
+            "independent_optimizer_passed": true,
+            "maximum_optimizer_target_difference_pp": 4.783042695244433e-06,
+            "independent_optimizer_gradient_inf_norm": 2.438120882559597e-09
+          }
+        ]
+      },
+      "design_domain": "all narrow births (state/stratum/PSU, roster zero-domain PSUs)",
+      "waves": {
+        "NFHS-4": {
+          "training_n_model_A_all_narrow": 109006,
+          "training_n_model_B_first_delivery": 50527,
+          "reference_n": 39611,
+          "excluded_first_delivery_reference_weight_pct": 16.534565896471655
+        },
+        "NFHS-5": {
+          "training_n_model_A_all_narrow": 110595,
+          "training_n_model_B_first_delivery": 49799,
+          "reference_n": 38403,
+          "excluded_first_delivery_reference_weight_pct": 15.316864182076435
+        }
+      }
+    }
+  },
+  "cohort_audit": {
+    "NFHS-4": {
+      "wave": "NFHS-4",
+      "broad_sector_n": 195366,
+      "narrow_before_date_rule_n": 114263,
+      "invalid_date_n": 0,
+      "valid_date_outside_recall_n": 0,
+      "date_or_recall_excluded_n": 0,
+      "date_or_recall_excluded_weight_pct": 0.0,
+      "narrow_before_date_public_n": 62351,
+      "narrow_before_date_private_n": 51912,
+      "recall_rule": "0 <= v008-b3 < 60 months; integer finite CMCs in [1,2400]",
+      "b10_rule": "No additional b10 date-imputation exclusions.",
+      "analytic_n": 114263,
+      "public_n": 62351,
+      "private_n": 51912,
+      "n_states": 36,
+      "education_97_as_missing_n": 0,
+      "model_adjustment_variables": [
+        "birth_order",
+        "education_years",
+        "state",
+        "wealth_index",
+        "residence",
+        "religion",
+        "social_group",
+        "twin_order"
+      ],
+      "birth_sha256": "6fcfebbc37879be3ddf7b8555df9be6df87a9de69480612235adf53eb59fc9b8",
+      "raw_variable_labels": {
+        "m15": "place of delivery",
+        "m17": "delivery by caesarean section",
+        "b3": "date of birth (cmc)",
+        "v008": "date of interview (cmc)",
+        "v005": "national women's sample weight (6 decimals)",
+        "v021": "primary sampling unit",
+        "v022": "sample strata for sampling errors",
+        "v024": "state",
+        "v025": "type of place of residence",
+        "v130": "religion",
+        "v133": "education in single years",
+        "v190": "wealth index",
+        "bord": "birth order number",
+        "b0": "child is twin",
+        "s116": "belong to a scheduled caste, a scheduled tribe, other backward class"
+      },
+      "named_value_label_tables": {
+        "V024": {
+          "1": "andaman and nicobar islands",
+          "2": "andhra pradesh",
+          "3": "arunachal pradesh",
+          "4": "assam",
+          "5": "bihar",
+          "6": "chandigarh",
+          "7": "chhattisgarh",
+          "8": "dadra and nagar haveli",
+          "9": "daman and diu",
+          "10": "goa",
+          "11": "gujarat",
+          "12": "haryana",
+          "13": "himachal pradesh",
+          "14": "jammu and kashmir",
+          "15": "jharkhand",
+          "16": "karnataka",
+          "17": "kerala",
+          "18": "lakshadweep",
+          "19": "madhya pradesh",
+          "20": "maharashtra",
+          "21": "manipur",
+          "22": "meghalaya",
+          "23": "mizoram",
+          "24": "nagaland",
+          "25": "delhi",
+          "26": "odisha",
+          "27": "puducherry",
+          "28": "punjab",
+          "29": "rajasthan",
+          "30": "sikkim",
+          "31": "tamil nadu",
+          "32": "tripura",
+          "33": "uttar pradesh",
+          "34": "uttarakhand",
+          "35": "west bengal",
+          "36": "telangana"
+        },
+        "V025": {
+          "1": "urban",
+          "2": "rural"
+        },
+        "V130": {
+          "1": "hindu",
+          "2": "muslim",
+          "3": "christian",
+          "4": "sikh",
+          "5": "buddhist/neo-buddhist",
+          "6": "jain",
+          "7": "jewish",
+          "8": "parsi/zoroastrian",
+          "9": "no religion",
+          "96": "other"
+        },
+        "V133": {
+          "97": "inconsistent"
+        },
+        "V190": {
+          "1": "poorest",
+          "2": "poorer",
+          "3": "middle",
+          "4": "richer",
+          "5": "richest"
+        },
+        "B0": {
+          "0": "single birth",
+          "1": "1st of multiple",
+          "2": "2nd of multiple",
+          "3": "3rd of multiple",
+          "4": "4th of multiple",
+          "5": "5th of multiple"
+        },
+        "M15": {
+          "10": "home",
+          "11": "respondent's home",
+          "12": "other home",
+          "13": "parents' home",
+          "20": "public sector",
+          "21": "public: govt./munic. hospital",
+          "22": "public: govt. dispensary",
+          "23": "public: uhc/uhp/ufwc",
+          "24": "public: chc/rural hospital/block phc",
+          "25": "public: phc/additional phc",
+          "26": "public: sub-centre",
+          "27": "other public sector health facility",
+          "30": "private sector",
+          "31": "private: hospital/maternity home/clinic",
+          "32": "other private sector health facility",
+          "33": "ngo or trust hospital/clinic",
+          "96": "other"
+        },
+        "S116": {
+          "1": "schedule caste",
+          "2": "schedule tribe",
+          "3": "obc",
+          "4": "none of them",
+          "8": "don't know"
+        }
+      },
+      "value_label_note": "Literal table-name matches only; variable-label metadata is complete for requested variables. No table binding was guessed.",
+      "roster_source": "Full Birth Recode roster; household recode not found; incomplete-frame limitation applies.",
+      "national_roster_psus": 28518,
+      "active_birth_roster_psus": 28514,
+      "household_roster_available": false,
+      "state_design_keys_verified": true,
+      "geography_excluded_n": 5257,
+      "geography_excluded_weight_pct": 1.1573007823298835
+    },
+    "NFHS-5": {
+      "wave": "NFHS-5",
+      "broad_sector_n": 200794,
+      "narrow_before_date_rule_n": 116176,
+      "invalid_date_n": 0,
+      "valid_date_outside_recall_n": 979,
+      "date_or_recall_excluded_n": 979,
+      "date_or_recall_excluded_weight_pct": 0.8676278407340317,
+      "narrow_before_date_public_n": 67883,
+      "narrow_before_date_private_n": 48293,
+      "recall_rule": "0 <= v008-b3 < 60 months; integer finite CMCs in [1,2400]",
+      "b10_rule": "No additional b10 date-imputation exclusions.",
+      "analytic_n": 115197,
+      "public_n": 67336,
+      "private_n": 47861,
+      "n_states": 36,
+      "education_97_as_missing_n": 0,
+      "model_adjustment_variables": [
+        "birth_order",
+        "education_years",
+        "state",
+        "wealth_index",
+        "residence",
+        "religion",
+        "social_group",
+        "twin_order"
+      ],
+      "birth_sha256": "93267b17596929371dc3190d17af114271851f14d1f566678ffceda2db4cae6e",
+      "raw_variable_labels": {
+        "m15": "place of delivery",
+        "m17": "delivery by caesarean section",
+        "b3": "date of birth (cmc)",
+        "v008": "date of interview (cmc)",
+        "v005": "women's individual sample weight (6 decimals)",
+        "v021": "primary sampling unit",
+        "v022": "sample strata for sampling errors",
+        "v024": "state",
+        "v025": "type of place of residence",
+        "v130": "religion",
+        "v133": "education in single years",
+        "v190": "wealth index combined",
+        "bord": "birth order number",
+        "b0": "child is twin",
+        "s116": "belong to a scheduled caste, a scheduled tribe, other backward class"
+      },
+      "named_value_label_tables": {
+        "V024": {
+          "1": "jammu & kashmir",
+          "2": "himachal pradesh",
+          "3": "punjab",
+          "4": "chandigarh",
+          "5": "uttarakhand",
+          "6": "haryana",
+          "7": "nct of delhi",
+          "8": "rajasthan",
+          "9": "uttar pradesh",
+          "10": "bihar",
+          "11": "sikkim",
+          "12": "arunachal pradesh",
+          "13": "nagaland",
+          "14": "manipur",
+          "15": "mizoram",
+          "16": "tripura",
+          "17": "meghalaya",
+          "18": "assam",
+          "19": "west bengal",
+          "20": "jharkhand",
+          "21": "odisha",
+          "22": "chhattisgarh",
+          "23": "madhya pradesh",
+          "24": "gujarat",
+          "25": "dadra & nagar haveli and daman & diu",
+          "27": "maharashtra",
+          "28": "andhra pradesh",
+          "29": "karnataka",
+          "30": "goa",
+          "31": "lakshadweep",
+          "32": "kerala",
+          "33": "tamil nadu",
+          "34": "puducherry",
+          "35": "andaman & nicobar islands",
+          "36": "telangana",
+          "37": "ladakh"
+        },
+        "V025": {
+          "1": "urban",
+          "2": "rural"
+        },
+        "V130": {
+          "1": "hindu",
+          "2": "muslim",
+          "3": "christian",
+          "4": "sikh",
+          "5": "buddhist / neo-buddhist",
+          "6": "jain",
+          "7": "jewish",
+          "8": "parsi / zoroastrian",
+          "9": "no religion",
+          "96": "other"
+        },
+        "V133": {
+          "97": "inconsistent"
+        },
+        "V190": {
+          "1": "poorest",
+          "2": "poorer",
+          "3": "middle",
+          "4": "richer",
+          "5": "richest"
+        },
+        "B0": {
+          "0": "single birth",
+          "1": "1st of multiple",
+          "2": "2nd of multiple",
+          "3": "3rd of multiple",
+          "4": "4th of multiple",
+          "5": "5th of multiple"
+        },
+        "M15": {
+          "10": "home",
+          "11": "respondent's home",
+          "12": "other home",
+          "13": "parents' home",
+          "20": "public sector",
+          "21": "public: govt./munic. hospital",
+          "22": "public: govt. dispensary",
+          "23": "public: uhc/uhp/ufwc",
+          "24": "public: chc/rural hospital/block phc",
+          "25": "public: phc/additional phc",
+          "26": "public: sub-centre",
+          "27": "other public sector health facility",
+          "30": "private sector",
+          "31": "private: hospital/maternity home/clinic",
+          "32": "other private sector health facility",
+          "33": "ngo or trust hospital/clinic",
+          "96": "other"
+        },
+        "S116": {
+          "1": "schedule caste",
+          "2": "schedule tribe",
+          "3": "obc",
+          "4": "none of them",
+          "8": "don't know"
+        }
+      },
+      "value_label_note": "Literal table-name matches only; variable-label metadata is complete for requested variables. No table binding was guessed.",
+      "roster_source": "Observed Household Recode",
+      "household_sha256": "24d2e2696da618b434c7e7b5187ad5bac40e0eaaedafe3a6cbe8c2ab04274cec",
+      "national_roster_psus": 30170,
+      "active_birth_roster_psus": 30156,
+      "household_roster_available": true,
+      "state_design_keys_verified": true,
+      "difference_from_previously_cited_30198_national_psus": 28,
+      "geography_excluded_n": 4602,
+      "geography_excluded_weight_pct": 0.9785602625495952
+    }
+  },
+  "script_sha256": "e922d2b2cced0f779012566ab90a0f4904b76f63053bf65e0c369d380b552595",
+  "heterogeneity_change_script_sha256": "db344a721ca8951d40ed43ab2e80780ebbba8933922fa1d637234a6e1f30809a",
+  "comment15_script_sha256": "130345d064992ca9328431255863126035b149bfb1fded3e34ee6f79acc20b5e",
+  "base_script_sha256": "6ee895abac082b9c6a8173764606f64167bf7700f69f578a0d91c5058b71e836",
+  "baseline_sha256": "849eb897f4e5dff258e82c9f0a6dfb6021c1b911bd6fde98a759d974cd54e2cf",
+  "existing_intervals_sha256": "74da9821e53c4941410a8c0d8649d3a106681926b2dcb424cfa90aeeb9df83a5",
+  "limitations": [
+    "Associations only; no causal facility effects, avoidable-cesarean estimate or individual facility-choice recommendation.",
+    "With-replacement ultimate-PSU Taylor approximation, not exact multistage/PPS/systematic variance; no FPC/lower-stage identifiers.",
+    "Household or birth-recode roster is observed rather than a verified complete sampling frame.",
+    "Model uncertainty is conditional on fixed ridge, observed category vocabulary, scales, missing coding and subgroup definition; no tuning/schema-selection uncertainty.",
+    "Full-reference model predictions can extrapolate in sparse covariate/sector combinations; coarse support checks do not prove joint overlap.",
+    "Covariates such as wealth, schooling and residence are measured at interview; birth-time values are not certified.",
+    "First delivery is a birth-record subgroup (including all first-delivery twins), not a sensitivity analysis or a woman-level estimand.",
+    "Both wave models use the same equal-wave pooled reference within each declared subgroup and support threshold. References differ across subgroups and thresholds; wealth quintiles represent within-wave relative ranks. Comparisons remain associational, not causal temporal or policy effects.",
+    "Exploratory marginal 95% intervals without multiplicity adjustment; original broad-sector predictive results have a separate scope.",
+    "Training-population sensitivity only: model A is evaluated on a first-delivery reference that differs from its all-narrow training population, so A predictions on this reference may extrapolate; B - A is not a causal or policy effect.",
+    "Birth order is omitted from both models to isolate the training population; model A therefore differs from the earlier all-narrow specification that included birth order.",
+    "Joint variance uses the all-narrow design domain; B marginal SEs under adjust/average singleton rules can differ slightly from the earlier first-delivery-only design, while the zero rule reproduces exactly.",
+    "Exploratory intervals and p-values without multiplicity adjustment; waves treated as independent with no cross-wave PSU dependence; minimum design df used.",
+    "Reference support classification and geography mapping are fixed; coarse cells do not prove joint overlap."
+  ],
+  "elapsed_seconds": 271.1,
+  "existing_outputs_changed": false
+}

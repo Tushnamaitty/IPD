@@ -1,0 +1,89 @@
+{
+  "status": "scope_audit_completed_manual_source_review_required",
+  "script_sha256": "5825a09ef7d7294496365312a848abe0be03fcdb5fe5d2fa30c761511bdd60f6",
+  "model_refits_run": false,
+  "source_files_changed": false,
+  "raw_data_read": false,
+  "record_level_data_exported": false,
+  "inventory_note": "Source flags are text-search hints, not verified cohort definitions or design-key correctness.",
+  "cohorts": {
+    "data/processed/df_model_v2.parquet": {
+      "status": "metadata_read",
+      "n_file_rows": 201311,
+      "sha256": "fe56e677aefd0a9f9d6b1489fdc8856591d4616f865202a242ef0f14d30069bc",
+      "available_audit_columns": [
+        "delivery_place_code",
+        "facility_type",
+        "csection",
+        "sample_weight_normalized",
+        "sample_weight",
+        "state",
+        "sample_stratum_v022",
+        "primary_sampling_unit",
+        "cluster_number"
+      ],
+      "raw_facility_code_column": "delivery_place_code",
+      "cohort": {
+        "n_code_21": 67883,
+        "n_code_31": 48293,
+        "n_other_or_missing_codes": 85135,
+        "n_narrow_before_outcome_or_weight_filter": 116176,
+        "n_invalid_or_missing_outcome_in_narrow": 0,
+        "weight_column": "sample_weight_normalized",
+        "n_invalid_or_missing_weight_in_narrow": 0,
+        "n_narrow_valid_outcome_and_weight": 116176,
+        "facility_observed_summary": {
+          "21": {
+            "n": 67883,
+            "observed_cesarean_pct": 22.3294871379792
+          },
+          "31": {
+            "n": 48293,
+            "observed_cesarean_pct": 47.46270237480324
+          }
+        },
+        "observed_private_minus_public_gap_pp": 25.133215236824043,
+        "n_raw_code_sector_label_mismatches": 0,
+        "design_columns": {
+          "state": "state",
+          "stratum": "sample_stratum_v022",
+          "psu": "primary_sampling_unit"
+        },
+        "n_rows_missing_design_identifier": 0,
+        "n_active_states": 36,
+        "n_active_state_strata": 2769,
+        "n_active_state_stratum_psus": 26388,
+        "n_stratum_codes_shared_across_states": 60,
+        "n_design_keys_lost_by_omitting_state": 0,
+        "n_analytic_singleton_state_strata": 29,
+        "design_note": "Analytic-file counts only; no household frame or variance certification.",
+        "status": "aggregate_scope_check_completed_not_model_validation"
+      }
+    },
+    "data/processed/df_model_nfhs4.parquet": {
+      "status": "raw_facility_code_not_retained",
+      "n_file_rows": 195997,
+      "sha256": "a1bf3f39a93d2b10b6b2c031d30fc91b295548ffbdbe6918115f9c8b750284f9",
+      "available_audit_columns": [
+        "facility_type",
+        "csection",
+        "sample_weight_normalized",
+        "sample_weight",
+        "state",
+        "sample_stratum_v022",
+        "cluster_number"
+      ],
+      "action": "Reconstruct narrow cohort from verified raw m15; public/private labels cannot identify codes 21 and 31."
+    },
+    "data/processed/df_model_nfhs5.parquet": {
+      "status": "file_not_present"
+    }
+  },
+  "n_code_files_inventoried": 71,
+  "limitations": [
+    "Processed cohorts may omit raw births or lack exact raw facility codes.",
+    "No confidence intervals, models, full survey frame, overlap or codebook validation in this audit.",
+    "Original predictive study and adjusted-association study must be assigned scopes explicitly."
+  ],
+  "elapsed_seconds": 0.4
+}

@@ -1,0 +1,113 @@
+{
+  "status": "aggregate_diagnostic_completed_requires_review",
+  "household_file": "IAHR7EFL.DTA",
+  "household_file_sha256": "24d2e2696da618b434c7e7b5187ad5bac40e0eaaedafe3a6cbe8c2ab04274cec",
+  "variable_labels": {
+    "hv021": "primary sampling unit",
+    "hv022": "sample strata for sampling errors",
+    "hv024": "state",
+    "hv001": "cluster number",
+    "hv015": "result of household interview",
+    "hv023": "stratification used in sample design",
+    "hv025": "type of place of residence"
+  },
+  "household_rows": 636699,
+  "official_reference_values": {
+    "psus_selected": 30456,
+    "psus_fieldwork_completed": 30198,
+    "households_interviewed": 636699,
+    "urban_selected": 7910,
+    "rural_selected": 22546
+  },
+  "official_sources": "IIPS & ICF NFHS-5 India Report Vol. I section 1.2 (30,456 selected; 30,198 completed); Vol. II sampling error appendix (30,456 clusters; urban 7,910, rural 22,546)",
+  "hv015_counts": {
+    "1": 636699
+  },
+  "household_rows_match_official_636699": true,
+  "distinct_counts": {
+    "state_stratum_psu_hv024_hv022_hv021_EXISTING_ROSTER_KEY": 30170,
+    "psu_only_hv021": 30170,
+    "stratum_psu_hv022_hv021": 30170,
+    "state_psu_hv024_hv021": 30170,
+    "cluster_only_hv001": 30170,
+    "state_cluster_hv024_hv001": 30170,
+    "state_stratum_cluster_hv024_hv022_hv001": 30170,
+    "state_stratum_cluster_psu_pairs": 30170,
+    "state_hv023_psu_hv024_hv023_hv021": 30170
+  },
+  "difference_from_published": {
+    "state_stratum_psu_hv024_hv022_hv021_EXISTING_ROSTER_KEY": {
+      "minus_30198": -28,
+      "minus_30456": -286
+    },
+    "psu_only_hv021": {
+      "minus_30198": -28,
+      "minus_30456": -286
+    },
+    "stratum_psu_hv022_hv021": {
+      "minus_30198": -28,
+      "minus_30456": -286
+    },
+    "state_psu_hv024_hv021": {
+      "minus_30198": -28,
+      "minus_30456": -286
+    },
+    "cluster_only_hv001": {
+      "minus_30198": -28,
+      "minus_30456": -286
+    },
+    "state_cluster_hv024_hv001": {
+      "minus_30198": -28,
+      "minus_30456": -286
+    },
+    "state_stratum_cluster_hv024_hv022_hv001": {
+      "minus_30198": -28,
+      "minus_30456": -286
+    },
+    "state_stratum_cluster_psu_pairs": {
+      "minus_30198": -28,
+      "minus_30456": -286
+    },
+    "state_hv023_psu_hv024_hv023_hv021": {
+      "minus_30198": -28,
+      "minus_30456": -286
+    }
+  },
+  "matches_existing_30170": true,
+  "stratum_codes_shared_across_states": 60,
+  "hv001_hv021_relationship_within_state_stratum": {
+    "hv001_values_with_more_than_one_hv021": 0,
+    "hv021_values_with_more_than_one_hv001": 0,
+    "hv001_values_used_in_more_than_one_state": 0
+  },
+  "hv001_numbering": {
+    "distinct": 30170,
+    "minimum": 101,
+    "maximum": 93242,
+    "unused_integers_between_min_and_max": 62972,
+    "note": "Counts only; gap identifiers are deliberately not listed and nothing is imputed."
+  },
+  "households_per_existing_roster_unit": {
+    "minimum": 1,
+    "median": 22.0,
+    "maximum": 27,
+    "units_with_at_most_2_households": 4,
+    "histogram": {
+      "1-2": 4,
+      "3-9": 36,
+      "10-14": 211,
+      "15-19": 2803,
+      "20-21": 10446,
+      "22": 16397,
+      "23+": 273
+    }
+  },
+  "residence_of_existing_roster_units": {
+    "units_with_more_than_one_residence_code": 0,
+    "by_hv025": {
+      "1": 7780,
+      "2": 22390
+    },
+    "note": "Published 7,910 urban / 22,546 rural are for the 30,456 SELECTED PSUs, not the 30,198 completed."
+  }
+}

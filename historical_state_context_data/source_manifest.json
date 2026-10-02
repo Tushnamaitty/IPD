@@ -1,0 +1,192 @@
+{
+  "review_date": "2026-10-02",
+  "finance": [
+    {
+      "id": "rbi_13236",
+      "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=13236",
+      "html_sha256": "2128287a7d51120f5288b5a48602c82c4cc20b253f25cf2889d6d9136ece82f0",
+      "excel_sha256": "54d44e09fcf30da53ddcce8cd9047176fc7a0f81df9ddb70ae0bec63324431a7",
+      "excel_filename": "rbi_13236.xls",
+      "excel_html_cells_agree_at_published_one_decimal_precision": 30,
+      "definition": "Medical and Public Health and Family Welfare; revenue expenditure and capital outlay, as percent of aggregate expenditure.",
+      "footnotes": " Revised Estimates. BE: Budget Estimates. \u2018\u2013\u2019 : Not applicable/Not available. * : Revenue Expenditure and Capital Outlay. Note: Figures for Jammu and Kashmir and Jharkhand for the year 2008-09 (Accounts) relate to Revised Estimates. Source: Budget Documents of the State Governments. "
+    },
+    {
+      "id": "rbi_14114",
+      "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=14114",
+      "html_sha256": "3909ca7c0b9b97df18e4193ae6187a35636e218e5426c69dc5b582a624b8f73c",
+      "excel_sha256": "4767ec403f7536ddeedcf8c30ed7a7e4bbf60f8772316f0b6bd9986e2feca961",
+      "excel_filename": "rbi_14114.xls",
+      "excel_html_cells_agree_at_published_one_decimal_precision": 2,
+      "definition": "Medical and Public Health and Family Welfare; revenue expenditure and capital outlay, as percent of aggregate expenditure.",
+      "footnotes": " Revised Estimates.BE: Budget Estimates. '-': Not applicable/Not available. * : Revenue Expenditure and Capital Outlay. Note : Figures for Jammu and Kashmir and Jharkhand for the year 2009-10 (Accounts) relate to Revised Estimates. Source : Budget Documents of the State Governments. "
+    },
+    {
+      "id": "rbi_14835",
+      "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=14835",
+      "html_sha256": "690502baaec16513436a475c8e34d7f71537e404f15d27da0147565e46f05426",
+      "excel_sha256": "86b4451de2925149f178119df9a8d4699955eea8c91364e5c25d519a025a9fb5",
+      "excel_filename": "rbi_14835.xls",
+      "excel_html_cells_agree_at_published_one_decimal_precision": 30,
+      "definition": "Medical and Public Health and Family Welfare; revenue expenditure and capital outlay, as percent of aggregate expenditure.",
+      "footnotes": " Revised Estimates. BE: Budget Estimates. \u2018\u2013\u2019: Not applicable/Not available. *: Revenue Expenditure and Capital Outlay. Note: Figures for Jharkhand for the year 2010-11 (Accounts) relate to Revised Estimates. Source: Budget Documents of the State Governments, State Finance Accounts, CAG for 2010-11 in respect of Jammu and Kashmir. "
+    },
+    {
+      "id": "rbi_16880",
+      "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=16880",
+      "html_sha256": "46a597a85114474caa36f849645c4d6eb2c5fa67e530113bc703f658b03f9406",
+      "excel_sha256": "706ee873cbb1fec00aa4fd8e7413e89748f8899df098aa5776a815a39ce99a37",
+      "excel_filename": "rbi_16880.xls",
+      "excel_html_cells_agree_at_published_one_decimal_precision": 31,
+      "definition": "Medical and Public Health and Family Welfare; revenue expenditure and capital outlay, as percent of aggregate expenditure.",
+      "footnotes": " Revised Estimates. BE: Budget Estimates. \u2018\u2013\u2019: Not applicable/Not available. *: It includes revenue expenditure and capital outlay. Source: Budget documents of the state governemnts, CAG for 2013-14 in respect of Jammu & Kashmir. "
+    },
+    {
+      "id": "rbi_17516",
+      "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=17516",
+      "html_sha256": "10fe1a973528c804793aca8e2d2a18d2f7215a87e307b1972a8790e917373e7f",
+      "excel_sha256": "461734c5e9716b5d132c9f0b980219d365c41dd3ba06904365c39b2fa262d434",
+      "excel_filename": "rbi_17516.xlsx",
+      "excel_html_cells_agree_at_published_one_decimal_precision": 31,
+      "definition": "Medical and Public Health and Family Welfare; revenue expenditure and capital outlay, as percent of aggregate expenditure.",
+      "footnotes": " Revised Estimates. BE: Budget Estimates. \u2018\u2013\u2019: Not applicable/Not available. *: It includes revenue expenditure and capital outlay. Source: Budget documents of the state governments, CAG for 2014-15 in respect of Andhra Pradesh, Arunachal Pradesh, Jammu & Kashmir and Uttarakhand. "
+    },
+    {
+      "id": "rbi_18321",
+      "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=18321",
+      "html_sha256": "1b158cfaf16f0686d47e7444e2081076498ca8759dff38af38723a6e0e8d3cbc",
+      "excel_sha256": "38a02df754cb45a02bf653a1b8f118e506f7b122f2128e0a1621d91ed05f4e43",
+      "excel_filename": "rbi_18321.xlsx",
+      "excel_html_cells_agree_at_published_one_decimal_precision": 31,
+      "definition": "Medical and Public Health and Family Welfare; revenue expenditure and capital outlay, as percent of aggregate expenditure.",
+      "footnotes": " Revised Estimates. BE: Budget Estimates. \u2018\u2013\u2019: Not applicable/Not available. *: It includes revenue expenditure and capital outlay. Source: Budget documents of the state governments, CAG for 2015-16 in respect of Jammu & Kashmir. "
+    },
+    {
+      "id": "rbi_19283",
+      "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=19283",
+      "html_sha256": "0de362ffb80fe8c10eb42a25d7add255560208a0ad5c20f7bf8bcc048ca7657b",
+      "excel_sha256": "4ef4819b5faf7419f82981b99ac58d15e38896b596e958ae7a737ecaa8678a69",
+      "excel_filename": "rbi_19283.xlsx",
+      "excel_html_cells_agree_at_published_one_decimal_precision": 31,
+      "definition": "Medical and Public Health and Family Welfare; revenue expenditure and capital outlay, as percent of aggregate expenditure.",
+      "footnotes": " Revised Estimates. BE: Budget Estimates. \u2018-\u2019: Not applicable/Not available. *: It includes revenue expenditure and capital outlay. Note: Data from 2017-18 onwards include Delhi and Puducherry also. Source: Budget documents of the state governments. Details in methodology. "
+    },
+    {
+      "id": "rbi_20195",
+      "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=20195",
+      "html_sha256": "feb40a754214dfbf3162e2a9540f57283d7f45a6c26271a7f3ec82648b0ddda6",
+      "excel_sha256": "fa5560f3070ad150bf1c306c1fe54d60874b750fa6eeba9b3a80cc71c1ff1bb7",
+      "excel_filename": "rbi_20195.xlsx",
+      "excel_html_cells_agree_at_published_one_decimal_precision": 31,
+      "definition": "Medical and Public Health and Family Welfare; revenue expenditure and capital outlay, as percent of aggregate expenditure.",
+      "footnotes": " Revised Estimates. BE: Budget Estimates. '-': Not applicable/Not available. *: It includes revenue expenditure and capital outlay. Note: Data from 2017-18 onwards include Delhi and Puducherry also Source: Budget documents of the state governments. Details in methodology. "
+    },
+    {
+      "id": "rbi_latest",
+      "url": "https://rbi.org.in/Scripts/PublicationsView.aspx?id=23736",
+      "html_sha256": "2a3b4ceb66ba1a85fdc3ac420872b242c789e01edf4d1842e276f1a3683c29a7",
+      "excel_sha256": "17eb881c0aaae5fc33d64d78fd7c058b846d69fd47c90d8329cf641186090361",
+      "excel_filename": "rbi_latest.xlsx",
+      "excel_html_cells_agree_at_published_one_decimal_precision": 403,
+      "definition": "Medical and Public Health and Family Welfare; revenue expenditure and capital outlay, as percent of aggregate expenditure.",
+      "footnotes": " Revised Estimates. BE: Budget Estimates. \u2018\u2013\u2019: Not applicable/Not available. *: It includes revenue expenditure and capital outlay. Note: Data from 2017-18 onwards include Delhi and Puducherry also. Source: Budget documents of the State governments. Details in methodology. "
+    }
+  ],
+  "facility": [
+    {
+      "id": "NHP_2018_mirror",
+      "url": "https://cdn.downtoearth.org.in/pdf/NHP-2018.pdf",
+      "publisher": "CBHI, MoHFW; Rural Health Statistics",
+      "pdf_sha256": "3ee40e4972a97ba102e1c8faf84e6790ee43682950fc018f248f7ece17b18e71",
+      "snapshot": "2017-03-31",
+      "specialists_table": "5.6",
+      "chc_table": "6.2.1",
+      "specialists_total": 4156,
+      "chc_sum": 5624,
+      "published_chc_total": 5624
+    },
+    {
+      "id": "NHP_2019",
+      "url": "https://cbhidghs.mohfw.gov.in/sites/default/files/NHP/National-health-2019.pdf",
+      "publisher": "CBHI, MoHFW; Rural Health Statistics",
+      "pdf_sha256": "a02cf37542f7e451b4441733ba946983d4e6860f9fc8b2d5119bd7e38e0a25da",
+      "snapshot": "2018-03-31",
+      "specialists_table": "5.6",
+      "chc_table": "6.2.1",
+      "specialists_total": 4074,
+      "chc_sum": 5624,
+      "published_chc_total": 5624
+    }
+  ],
+  "excluded_budget_vintages": {
+    "2013-14": "HTML title says aggregate disbursements; inconsistent sports/art/culture footnote. Not harmonized.",
+    "2014-15": "Sports/art/culture footnote inconsistent with health title. Not harmonized.",
+    "2018-19": "Sports/art/culture footnote inconsistent with health title. Not harmonized."
+  },
+  "facility_2019_not_used": "NHP2020 CHC workforce table places Uttar Pradesh/Uttarakhand figures under apparently conflicting names. No unverified correction is used.",
+  "facility_validation": {
+    "parliament_url": "https://sansad.in/getFile/loksabhaquestions/annex/171/AU4557.pdf?source=pqals",
+    "parliament_sha256": "d18d72064b7220804113092bd5e79d78690ded699c5bac5d5517ec120e8bf893",
+    "all_36_2018_specialist_and_required_counts_agree": true,
+    "norm": "Four specialists per CHC; ratio used here is number of specialists per CHC, not joint functional capacity."
+  },
+  "extraction_validation": {
+    "finance_rows": 613,
+    "facility_rows": 72,
+    "finance_html_excel_agreement": true,
+    "specialist_national_totals_verified": true,
+    "facility_2017_chc_row_sum_not_equal_reported_total": false
+  },
+  "policy_register": [
+    {
+      "id": "wb_fpms_history",
+      "publisher": "Government of West Bengal, Finance Department",
+      "title": "Budget Speech 2024-25",
+      "url": "https://finance.wb.gov.in/writereaddata/Budget_Speech/2024_English.pdf",
+      "location": "PDF page 55 (printed page 54), Health & Family Welfare",
+      "historical_fact": "The speech dates Fair Price Medicine Shops in PPP mode to December 2012.",
+      "date": "2012-12",
+      "date_precision": "month",
+      "geographic_scope": "West Bengal",
+      "use": "Rationale for an exploratory state exclusion; not evidence of individual coverage or an effect on cesareans.",
+      "restriction": "Current shop counts and diagnostic-centre counts in the 2024 speech cannot be assigned to NFHS birth years. No diagnostic-centre launch date is established here."
+    },
+    {
+      "id": "national_jssk_launch",
+      "publisher": "National Health Mission",
+      "title": "Janani Shishu Suraksha Karyakram (JSSK)",
+      "url": "https://www.nhm.gov.in/index4.php?lang=1&level=0&lid=171&linkid=150",
+      "historical_fact": "The national initiative was launched on 1 June 2011.",
+      "date": "2011-06-01",
+      "date_precision": "day",
+      "geographic_scope": "National launch",
+      "restriction": "A national announcement is not a verified date of implementation at each state or facility."
+    },
+    {
+      "id": "maharashtra_jssk_launch",
+      "publisher": "National Health Mission, Maharashtra",
+      "title": "RCH - Janani Shishu Suraksha Karyakram (JSSK)",
+      "url": "https://nhm.maharashtra.gov.in/en/scheme/rch-janani-shishu-suraksha-karyakram-jssk/",
+      "historical_fact": "The state page reports a Maharashtra launch on 7 October 2011, following a Government Resolution dated 26 September 2011.",
+      "date": "2011-10-07",
+      "date_precision": "day",
+      "geographic_scope": "Maharashtra",
+      "restriction": "A later retrospective page establishes a reported launch date, not delivery-specific uptake or facility readiness."
+    },
+    {
+      "id": "national_laqshya_launch",
+      "publisher": "National Health Mission",
+      "title": "LaQshya: Labour Room Quality Improvement Initiative",
+      "url": "https://nhm.gov.in/nhm/index1.php?lang=1&level=3&lid=690&sublinkid=1307",
+      "historical_fact": "The national initiative was launched on 11 December 2017.",
+      "date": "2017-12-11",
+      "date_precision": "day",
+      "geographic_scope": "National launch",
+      "restriction": "State or hospital implementation dates require additional evidence."
+    }
+  ],
+  "data_sha256": {
+    "state_finance_panel.csv": "6814c663389f9483a3f4d6b3fce3439c96db693f8151f21081a5e62a3dcc832b",
+    "state_facility_snapshots.csv": "33f818627c3ae0783db8bf4e3376d02dedae2e38052abca324e403114f1ab6be"
+  }
+}

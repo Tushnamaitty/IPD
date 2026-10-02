@@ -1,0 +1,104 @@
+{
+  "status": "completed_exploratory_multiplicity_sensitivity",
+  "description": "Added EXPLORATORY multiplicity sensitivity (Holm step-down, alpha 0.05, within the declared family); not prospectively specified; not a confirmatory analysis; association only, no causal interpretation",
+  "ci_note": "UNADJUSTED marginal 95% CI from the original analysis; NOT simultaneous and NOT Holm-adjusted",
+  "family_note": "Holm controls the familywise error rate only within each declared 10-test family, under arbitrary dependence but conservatively. The threshold-30 family re-tests the same estimand on a restricted reference, so it is a sensitivity analysis, not independent evidence; the two analyses share births. No adjustment is made across families, singleton rules, or earlier Comment 15 analyses.",
+  "selection": {
+    "singleton_treatment": "adjust",
+    "wave_or_contrast": "NFHS-5_minus_NFHS-4",
+    "quantity": "change_in_heterogeneity_gap",
+    "contrasts": [
+      "rural_minus_urban",
+      "quintile_2_minus_quintile_1",
+      "quintile_3_minus_quintile_1",
+      "quintile_4_minus_quintile_1",
+      "quintile_5_minus_quintile_1"
+    ],
+    "analyses": [
+      "all_narrow",
+      "first_delivery"
+    ],
+    "alpha": 0.05
+  },
+  "families": {
+    "primary_threshold_1": {
+      "role": "primary",
+      "support_threshold_each_sector_each_wave": 1,
+      "size": 10,
+      "members": [
+        "all_narrow:quintile_2_minus_quintile_1",
+        "all_narrow:quintile_3_minus_quintile_1",
+        "all_narrow:quintile_4_minus_quintile_1",
+        "all_narrow:quintile_5_minus_quintile_1",
+        "all_narrow:rural_minus_urban",
+        "first_delivery:quintile_2_minus_quintile_1",
+        "first_delivery:quintile_3_minus_quintile_1",
+        "first_delivery:quintile_4_minus_quintile_1",
+        "first_delivery:quintile_5_minus_quintile_1",
+        "first_delivery:rural_minus_urban"
+      ],
+      "definition": "2 analyses x 5 contrasts, NFHS-5 minus NFHS-4 change in heterogeneity gap, singleton rule adjust",
+      "method": "Holm step-down on the existing unadjusted two-sided p-values; reject if Holm-adjusted p <= 0.05",
+      "n_unadjusted_p_at_most_0_05": 4,
+      "n_reject_holm_at_0_05": 1,
+      "rejected_by_holm": [
+        "all_narrow:quintile_4_minus_quintile_1"
+      ],
+      "unadjusted_significant_but_not_holm": [
+        "all_narrow:quintile_5_minus_quintile_1",
+        "all_narrow:rural_minus_urban",
+        "first_delivery:quintile_4_minus_quintile_1"
+      ]
+    },
+    "supplementary_threshold_30": {
+      "role": "supplementary_sensitivity",
+      "support_threshold_each_sector_each_wave": 30,
+      "size": 10,
+      "members": [
+        "all_narrow:quintile_2_minus_quintile_1",
+        "all_narrow:quintile_3_minus_quintile_1",
+        "all_narrow:quintile_4_minus_quintile_1",
+        "all_narrow:quintile_5_minus_quintile_1",
+        "all_narrow:rural_minus_urban",
+        "first_delivery:quintile_2_minus_quintile_1",
+        "first_delivery:quintile_3_minus_quintile_1",
+        "first_delivery:quintile_4_minus_quintile_1",
+        "first_delivery:quintile_5_minus_quintile_1",
+        "first_delivery:rural_minus_urban"
+      ],
+      "definition": "2 analyses x 5 contrasts, NFHS-5 minus NFHS-4 change in heterogeneity gap, singleton rule adjust",
+      "method": "Holm step-down on the existing unadjusted two-sided p-values; reject if Holm-adjusted p <= 0.05",
+      "n_unadjusted_p_at_most_0_05": 4,
+      "n_reject_holm_at_0_05": 1,
+      "rejected_by_holm": [
+        "all_narrow:quintile_4_minus_quintile_1"
+      ],
+      "unadjusted_significant_but_not_holm": [
+        "all_narrow:rural_minus_urban",
+        "all_narrow:quintile_5_minus_quintile_1",
+        "first_delivery:quintile_4_minus_quintile_1"
+      ]
+    }
+  },
+  "inputs": {
+    "intervals_csv": "C:\\Users\\Tushna\\IPD\\extensions_work\\12_narrow_scope\\outputs\\comment15_heterogeneity_change\\comment15_heterogeneity_change_intervals.csv",
+    "intervals_csv_sha256": "6ddabcd4de73023eae42a4c5e5ac5fe7e7d5acb0695f1ed17a297a249bbd228f",
+    "summary_json": "C:\\Users\\Tushna\\IPD\\extensions_work\\12_narrow_scope\\outputs\\comment15_heterogeneity_change\\comment15_heterogeneity_change_summary.json",
+    "summary_json_sha256": "49a813a42e98127b74101faf57ea94758bbfc21858664250a6c0ceea4f320f19",
+    "input_summary_script_sha256": "9336ad8bca026f915403f90ae6dc14bdc1348171c835df524ee756d426d6f4f7",
+    "input_summary_existing_intervals_sha256": "74da9821e53c4941410a8c0d8649d3a106681926b2dcb424cfa90aeeb9df83a5"
+  },
+  "self_checks": {
+    "holm_reference_cases": "passed",
+    "exact_family_membership": "passed",
+    "finite_p_values_in_0_1": "passed",
+    "t_statistic_equals_estimate_over_se": "passed",
+    "summary_json_matches_csv_rows": "passed",
+    "holm_bounds_and_monotonicity": "passed"
+  },
+  "script_sha256": "b8efb0c51e87514a03d571760bd8c829afa69e8b886475e3a323a065c8e0d218",
+  "p_values_recomputed": false,
+  "models_refit": false,
+  "raw_data_accessed": false,
+  "existing_outputs_changed": false
+}

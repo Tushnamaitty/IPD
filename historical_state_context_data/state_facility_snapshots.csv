@@ -1,0 +1,73 @@
+state_name,snapshot_year,snapshot_month,chcs,specialists,specialists_per_chc,eligible,exclusion_note,source_id
+andhra pradesh,2017,3,193,348,1.8031088082901554,True,,NHP_2018_mirror
+arunachal pradesh,2017,3,63,4,0.06349206349206349,True,,NHP_2018_mirror
+assam,2017,3,158,139,0.879746835443038,True,,NHP_2018_mirror
+bihar,2017,3,150,82,0.5466666666666666,True,,NHP_2018_mirror
+chhattisgarh,2017,3,169,59,0.34911242603550297,True,,NHP_2018_mirror
+goa,2017,3,4,4,1.0,True,,NHP_2018_mirror
+gujarat,2017,3,363,92,0.2534435261707989,True,,NHP_2018_mirror
+haryana,2017,3,112,16,0.14285714285714285,True,,NHP_2018_mirror
+himachal pradesh,2017,3,89,12,0.1348314606741573,True,,NHP_2018_mirror
+jammu and kashmir,2017,3,84,191,2.2738095238095237,True,,NHP_2018_mirror
+jharkhand,2017,3,188,75,0.39893617021276595,True,,NHP_2018_mirror
+karnataka,2017,3,206,498,2.4174757281553396,True,,NHP_2018_mirror
+kerala,2017,3,232,40,0.1724137931034483,True,,NHP_2018_mirror
+madhya pradesh,2017,3,309,180,0.5825242718446602,True,,NHP_2018_mirror
+maharashtra,2017,3,360,508,1.4111111111111112,True,,NHP_2018_mirror
+manipur,2017,3,17,3,0.17647058823529413,False,Unexplained marker in CHC infrastructure table; excluded.,NHP_2018_mirror
+meghalaya,2017,3,27,13,0.48148148148148145,True,,NHP_2018_mirror
+mizoram,2017,3,9,0,0.0,True,,NHP_2018_mirror
+nagaland,2017,3,21,8,0.38095238095238093,True,,NHP_2018_mirror
+odisha,2017,3,370,318,0.8594594594594595,False,Unexplained marker in CHC infrastructure table; excluded.,NHP_2018_mirror
+punjab,2017,3,151,203,1.3443708609271523,True,,NHP_2018_mirror
+rajasthan,2017,3,579,497,0.8583765112262521,True,,NHP_2018_mirror
+sikkim,2017,3,2,1,0.5,True,,NHP_2018_mirror
+tamil nadu,2017,3,385,78,0.2025974025974026,True,,NHP_2018_mirror
+telangana,2017,3,114,125,1.0964912280701755,True,,NHP_2018_mirror
+tripura,2017,3,21,0,0.0,True,,NHP_2018_mirror
+uttar pradesh,2017,3,822,484,0.5888077858880778,True,,NHP_2018_mirror
+uttarakhand,2017,3,60,41,0.6833333333333333,True,,NHP_2018_mirror
+west bengal,2017,3,349,117,0.335243553008596,True,,NHP_2018_mirror
+andaman and nicobar islands,2017,3,4,0,0.0,True,,NHP_2018_mirror
+chandigarh,2017,3,2,15,7.5,True,,NHP_2018_mirror
+dadra and nagar haveli,2017,3,2,0,0.0,True,,NHP_2018_mirror
+daman and diu,2017,3,2,0,0.0,True,,NHP_2018_mirror
+delhi,2017,3,0,0,,False,Zero CHCs: ratio undefined.,NHP_2018_mirror
+lakshadweep,2017,3,3,0,0.0,True,,NHP_2018_mirror
+puducherry,2017,3,4,5,1.25,True,,NHP_2018_mirror
+andhra pradesh,2018,3,193,384,1.9896373056994818,True,,NHP_2019
+arunachal pradesh,2018,3,63,4,0.06349206349206349,True,,NHP_2019
+assam,2018,3,172,158,0.9186046511627907,False,Workforce footnote says 2015 in-position data reused; excluded.,NHP_2019
+bihar,2018,3,150,82,0.5466666666666666,True,,NHP_2019
+chhattisgarh,2018,3,169,57,0.33727810650887574,True,,NHP_2019
+goa,2018,3,4,10,2.5,True,,NHP_2019
+gujarat,2018,3,363,118,0.325068870523416,True,,NHP_2019
+haryana,2018,3,113,17,0.1504424778761062,True,,NHP_2019
+himachal pradesh,2018,3,91,4,0.04395604395604396,True,,NHP_2019
+jammu and kashmir,2018,3,84,256,3.0476190476190474,True,,NHP_2019
+jharkhand,2018,3,171,92,0.5380116959064327,True,,NHP_2019
+karnataka,2018,3,206,498,2.4174757281553396,True,,NHP_2019
+kerala,2018,3,227,40,0.1762114537444934,True,,NHP_2019
+madhya pradesh,2018,3,309,248,0.8025889967637541,True,,NHP_2019
+maharashtra,2018,3,361,485,1.3434903047091413,True,,NHP_2019
+manipur,2018,3,23,3,0.13043478260869565,True,,NHP_2019
+meghalaya,2018,3,28,9,0.32142857142857145,True,,NHP_2019
+mizoram,2018,3,9,0,0.0,True,,NHP_2019
+nagaland,2018,3,21,8,0.38095238095238093,True,,NHP_2019
+odisha,2018,3,377,253,0.6710875331564987,True,,NHP_2019
+punjab,2018,3,151,105,0.695364238410596,True,,NHP_2019
+rajasthan,2018,3,588,565,0.9608843537414966,True,,NHP_2019
+sikkim,2018,3,2,0,0.0,True,,NHP_2019
+tamil nadu,2018,3,385,210,0.5454545454545454,True,,NHP_2019
+telangana,2018,3,91,112,1.2307692307692308,True,,NHP_2019
+tripura,2018,3,22,2,0.09090909090909091,True,,NHP_2019
+uttar pradesh,2018,3,822,192,0.23357664233576642,True,,NHP_2019
+uttarakhand,2018,3,67,29,0.43283582089552236,True,,NHP_2019
+west bengal,2018,3,348,125,0.35919540229885055,True,,NHP_2019
+andaman and nicobar islands,2018,3,4,0,0.0,True,,NHP_2019
+chandigarh,2018,3,0,0,,False,Zero CHCs: ratio undefined.,NHP_2019
+dadra and nagar haveli,2018,3,2,0,0.0,True,,NHP_2019
+daman and diu,2018,3,2,3,1.5,True,,NHP_2019
+delhi,2018,3,0,0,,False,Zero CHCs: ratio undefined.,NHP_2019
+lakshadweep,2018,3,3,0,0.0,True,,NHP_2019
+puducherry,2018,3,3,5,1.6666666666666667,True,,NHP_2019

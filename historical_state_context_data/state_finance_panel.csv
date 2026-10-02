@@ -1,0 +1,614 @@
+state_name,fy_start,measure,value,source_id,unit,estimate_type,source_vintage
+andhra pradesh,2010,budget_be_share_pct,3.8,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+bihar,2010,budget_be_share_pct,3.9,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+chhattisgarh,2010,budget_be_share_pct,4.3,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+goa,2010,budget_be_share_pct,5.7,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+gujarat,2010,budget_be_share_pct,4.3,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+haryana,2010,budget_be_share_pct,3.2,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jharkhand,2010,budget_be_share_pct,4.6,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+karnataka,2010,budget_be_share_pct,4.0,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+kerala,2010,budget_be_share_pct,5.0,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+madhya pradesh,2010,budget_be_share_pct,3.5,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+maharashtra,2010,budget_be_share_pct,3.5,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+odisha,2010,budget_be_share_pct,4.1,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+punjab,2010,budget_be_share_pct,3.5,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+rajasthan,2010,budget_be_share_pct,5.4,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+tamil nadu,2010,budget_be_share_pct,4.8,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttar pradesh,2010,budget_be_share_pct,4.8,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+west bengal,2010,budget_be_share_pct,4.5,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+arunachal pradesh,2010,budget_be_share_pct,2.3,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+assam,2010,budget_be_share_pct,4.8,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+himachal pradesh,2010,budget_be_share_pct,4.8,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jammu and kashmir,2010,budget_be_share_pct,5.5,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+manipur,2010,budget_be_share_pct,4.8,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+meghalaya,2010,budget_be_share_pct,4.7,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+mizoram,2010,budget_be_share_pct,4.5,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+nagaland,2010,budget_be_share_pct,4.0,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+sikkim,2010,budget_be_share_pct,3.9,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+tripura,2010,budget_be_share_pct,4.2,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttarakhand,2010,budget_be_share_pct,5.6,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+delhi,2010,budget_be_share_pct,8.1,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+puducherry,2010,budget_be_share_pct,6.2,rbi_13236,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+delhi,2011,budget_be_share_pct,10.3,rbi_14114,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+puducherry,2011,budget_be_share_pct,8.6,rbi_14114,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+andhra pradesh,2012,budget_be_share_pct,4.1,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+bihar,2012,budget_be_share_pct,3.9,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+chhattisgarh,2012,budget_be_share_pct,3.9,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+goa,2012,budget_be_share_pct,4.8,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+gujarat,2012,budget_be_share_pct,4.6,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+haryana,2012,budget_be_share_pct,3.5,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jharkhand,2012,budget_be_share_pct,4.0,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+karnataka,2012,budget_be_share_pct,4.3,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+kerala,2012,budget_be_share_pct,5.3,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+madhya pradesh,2012,budget_be_share_pct,4.3,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+maharashtra,2012,budget_be_share_pct,3.9,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+odisha,2012,budget_be_share_pct,3.5,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+punjab,2012,budget_be_share_pct,4.9,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+rajasthan,2012,budget_be_share_pct,5.0,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttar pradesh,2012,budget_be_share_pct,5.1,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+west bengal,2012,budget_be_share_pct,4.7,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+arunachal pradesh,2012,budget_be_share_pct,3.3,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+assam,2012,budget_be_share_pct,4.1,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+himachal pradesh,2012,budget_be_share_pct,5.2,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jammu and kashmir,2012,budget_be_share_pct,5.4,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+manipur,2012,budget_be_share_pct,4.3,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+meghalaya,2012,budget_be_share_pct,5.2,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+mizoram,2012,budget_be_share_pct,3.6,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+nagaland,2012,budget_be_share_pct,3.8,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+sikkim,2012,budget_be_share_pct,5.0,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+tripura,2012,budget_be_share_pct,3.9,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttarakhand,2012,budget_be_share_pct,5.2,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+delhi,2012,budget_be_share_pct,9.9,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+puducherry,2012,budget_be_share_pct,8.0,rbi_14835,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+andhra pradesh,2015,budget_be_share_pct,5.2,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+bihar,2015,budget_be_share_pct,4.1,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+chhattisgarh,2015,budget_be_share_pct,4.9,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+goa,2015,budget_be_share_pct,5.6,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+gujarat,2015,budget_be_share_pct,5.7,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+haryana,2015,budget_be_share_pct,4.2,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jharkhand,2015,budget_be_share_pct,5.3,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+karnataka,2015,budget_be_share_pct,4.4,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+kerala,2015,budget_be_share_pct,5.6,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+madhya pradesh,2015,budget_be_share_pct,4.4,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+maharashtra,2015,budget_be_share_pct,4.2,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+odisha,2015,budget_be_share_pct,4.5,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+punjab,2015,budget_be_share_pct,4.9,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+rajasthan,2015,budget_be_share_pct,6.8,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+tamil nadu,2015,budget_be_share_pct,4.4,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+telangana,2015,budget_be_share_pct,4.5,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttar pradesh,2015,budget_be_share_pct,5.5,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+west bengal,2015,budget_be_share_pct,4.5,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+arunachal pradesh,2015,budget_be_share_pct,5.2,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+assam,2015,budget_be_share_pct,4.8,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+himachal pradesh,2015,budget_be_share_pct,6.0,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jammu and kashmir,2015,budget_be_share_pct,5.8,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+manipur,2015,budget_be_share_pct,5.1,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+meghalaya,2015,budget_be_share_pct,6.1,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+mizoram,2015,budget_be_share_pct,5.4,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+nagaland,2015,budget_be_share_pct,4.9,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+sikkim,2015,budget_be_share_pct,6.2,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+tripura,2015,budget_be_share_pct,5.4,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttarakhand,2015,budget_be_share_pct,5.5,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+delhi,2015,budget_be_share_pct,11.6,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+puducherry,2015,budget_be_share_pct,8.9,rbi_16880,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+andhra pradesh,2016,budget_be_share_pct,4.7,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+bihar,2016,budget_be_share_pct,5.3,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+chhattisgarh,2016,budget_be_share_pct,5.7,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+goa,2016,budget_be_share_pct,6.0,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+gujarat,2016,budget_be_share_pct,5.4,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+haryana,2016,budget_be_share_pct,4.3,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jharkhand,2016,budget_be_share_pct,4.8,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+karnataka,2016,budget_be_share_pct,4.1,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+kerala,2016,budget_be_share_pct,5.1,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+madhya pradesh,2016,budget_be_share_pct,4.4,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+maharashtra,2016,budget_be_share_pct,3.9,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+odisha,2016,budget_be_share_pct,5.0,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+punjab,2016,budget_be_share_pct,4.9,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+rajasthan,2016,budget_be_share_pct,5.6,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+tamil nadu,2016,budget_be_share_pct,4.5,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+telangana,2016,budget_be_share_pct,4.8,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttar pradesh,2016,budget_be_share_pct,5.6,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+west bengal,2016,budget_be_share_pct,4.5,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+arunachal pradesh,2016,budget_be_share_pct,6.3,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+assam,2016,budget_be_share_pct,5.3,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+himachal pradesh,2016,budget_be_share_pct,5.9,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jammu and kashmir,2016,budget_be_share_pct,4.7,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+manipur,2016,budget_be_share_pct,5.1,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+meghalaya,2016,budget_be_share_pct,6.9,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+mizoram,2016,budget_be_share_pct,5.2,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+nagaland,2016,budget_be_share_pct,5.1,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+sikkim,2016,budget_be_share_pct,4.9,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+tripura,2016,budget_be_share_pct,4.4,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttarakhand,2016,budget_be_share_pct,5.0,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+delhi,2016,budget_be_share_pct,11.3,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+puducherry,2016,budget_be_share_pct,8.1,rbi_17516,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+andhra pradesh,2017,budget_be_share_pct,4.6,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+bihar,2017,budget_be_share_pct,4.1,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+chhattisgarh,2017,budget_be_share_pct,5.7,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+goa,2017,budget_be_share_pct,6.1,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+gujarat,2017,budget_be_share_pct,5.1,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+haryana,2017,budget_be_share_pct,4.3,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jharkhand,2017,budget_be_share_pct,4.1,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+karnataka,2017,budget_be_share_pct,3.8,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+kerala,2017,budget_be_share_pct,5.4,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+madhya pradesh,2017,budget_be_share_pct,4.5,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+maharashtra,2017,budget_be_share_pct,4.1,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+odisha,2017,budget_be_share_pct,5.3,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+punjab,2017,budget_be_share_pct,3.9,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+rajasthan,2017,budget_be_share_pct,5.4,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+tamil nadu,2017,budget_be_share_pct,4.5,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+telangana,2017,budget_be_share_pct,4.1,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttar pradesh,2017,budget_be_share_pct,5.0,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+west bengal,2017,budget_be_share_pct,4.3,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+arunachal pradesh,2017,budget_be_share_pct,6.6,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+assam,2017,budget_be_share_pct,5.9,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+himachal pradesh,2017,budget_be_share_pct,5.5,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jammu and kashmir,2017,budget_be_share_pct,4.5,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+manipur,2017,budget_be_share_pct,5.2,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+meghalaya,2017,budget_be_share_pct,5.6,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+mizoram,2017,budget_be_share_pct,5.4,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+nagaland,2017,budget_be_share_pct,5.2,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+sikkim,2017,budget_be_share_pct,5.8,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+tripura,2017,budget_be_share_pct,4.6,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttarakhand,2017,budget_be_share_pct,5.1,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+delhi,2017,budget_be_share_pct,11.9,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+puducherry,2017,budget_be_share_pct,7.6,rbi_18321,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+andhra pradesh,2019,budget_be_share_pct,5.1,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+arunachal pradesh,2019,budget_be_share_pct,6.7,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+assam,2019,budget_be_share_pct,7.2,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+bihar,2019,budget_be_share_pct,4.6,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+chhattisgarh,2019,budget_be_share_pct,5.3,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+goa,2019,budget_be_share_pct,7.0,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+gujarat,2019,budget_be_share_pct,5.3,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+haryana,2019,budget_be_share_pct,4.2,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+himachal pradesh,2019,budget_be_share_pct,6.2,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jammu and kashmir,2019,budget_be_share_pct,5.1,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jharkhand,2019,budget_be_share_pct,4.9,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+karnataka,2019,budget_be_share_pct,4.1,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+kerala,2019,budget_be_share_pct,4.8,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+madhya pradesh,2019,budget_be_share_pct,4.7,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+maharashtra,2019,budget_be_share_pct,3.9,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+manipur,2019,budget_be_share_pct,4.7,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+meghalaya,2019,budget_be_share_pct,7.1,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+mizoram,2019,budget_be_share_pct,5.3,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+nagaland,2019,budget_be_share_pct,5.5,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+odisha,2019,budget_be_share_pct,4.9,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+punjab,2019,budget_be_share_pct,3.3,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+rajasthan,2019,budget_be_share_pct,5.6,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+sikkim,2019,budget_be_share_pct,4.8,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+tamil nadu,2019,budget_be_share_pct,4.7,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+telangana,2019,budget_be_share_pct,3.5,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+tripura,2019,budget_be_share_pct,5.5,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttar pradesh,2019,budget_be_share_pct,5.1,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttarakhand,2019,budget_be_share_pct,5.6,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+west bengal,2019,budget_be_share_pct,4.5,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+delhi,2019,budget_be_share_pct,12.5,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+puducherry,2019,budget_be_share_pct,8.3,rbi_19283,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+andhra pradesh,2020,budget_be_share_pct,5.2,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+arunachal pradesh,2020,budget_be_share_pct,4.6,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+assam,2020,budget_be_share_pct,6.3,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+bihar,2020,budget_be_share_pct,5.0,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+chhattisgarh,2020,budget_be_share_pct,5.7,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+goa,2020,budget_be_share_pct,7.2,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+gujarat,2020,budget_be_share_pct,5.2,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+haryana,2020,budget_be_share_pct,5.1,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+himachal pradesh,2020,budget_be_share_pct,6.1,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jharkhand,2020,budget_be_share_pct,5.3,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+karnataka,2020,budget_be_share_pct,4.3,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+kerala,2020,budget_be_share_pct,5.1,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+madhya pradesh,2020,budget_be_share_pct,5.2,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+maharashtra,2020,budget_be_share_pct,4.0,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+manipur,2020,budget_be_share_pct,4.3,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+meghalaya,2020,budget_be_share_pct,7.1,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+mizoram,2020,budget_be_share_pct,5.8,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+nagaland,2020,budget_be_share_pct,5.2,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+odisha,2020,budget_be_share_pct,5.2,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+punjab,2020,budget_be_share_pct,3.8,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+rajasthan,2020,budget_be_share_pct,6.5,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+sikkim,2020,budget_be_share_pct,6.1,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+tamil nadu,2020,budget_be_share_pct,5.3,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+telangana,2020,budget_be_share_pct,3.1,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+tripura,2020,budget_be_share_pct,5.1,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttar pradesh,2020,budget_be_share_pct,5.2,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+uttarakhand,2020,budget_be_share_pct,5.1,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+west bengal,2020,budget_be_share_pct,4.9,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+jammu and kashmir,2020,budget_be_share_pct,6.1,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+delhi,2020,budget_be_share_pct,11.9,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+puducherry,2020,budget_be_share_pct,8.1,rbi_20195,percent of aggregate state expenditure,BE,archived budget publication; see source URL
+andhra pradesh,2008,actual_share_pct,3.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+andhra pradesh,2009,actual_share_pct,3.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+andhra pradesh,2010,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+andhra pradesh,2011,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+andhra pradesh,2012,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+andhra pradesh,2013,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+andhra pradesh,2014,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+andhra pradesh,2015,actual_share_pct,4.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+andhra pradesh,2016,actual_share_pct,4.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+andhra pradesh,2017,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+andhra pradesh,2018,actual_share_pct,4.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+andhra pradesh,2019,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+andhra pradesh,2020,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+arunachal pradesh,2008,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+arunachal pradesh,2009,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+arunachal pradesh,2010,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+arunachal pradesh,2011,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+arunachal pradesh,2012,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+arunachal pradesh,2013,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+arunachal pradesh,2014,actual_share_pct,6.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+arunachal pradesh,2015,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+arunachal pradesh,2016,actual_share_pct,5.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+arunachal pradesh,2017,actual_share_pct,6.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+arunachal pradesh,2018,actual_share_pct,6.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+arunachal pradesh,2019,actual_share_pct,6.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+arunachal pradesh,2020,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+assam,2008,actual_share_pct,5.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+assam,2009,actual_share_pct,5.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+assam,2010,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+assam,2011,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+assam,2012,actual_share_pct,4.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+assam,2013,actual_share_pct,4.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+assam,2014,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+assam,2015,actual_share_pct,6.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+assam,2016,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+assam,2017,actual_share_pct,6.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+assam,2018,actual_share_pct,6.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+assam,2019,actual_share_pct,6.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+assam,2020,actual_share_pct,7.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+bihar,2008,actual_share_pct,3.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+bihar,2009,actual_share_pct,3.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+bihar,2010,actual_share_pct,3.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+bihar,2011,actual_share_pct,3.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+bihar,2012,actual_share_pct,3.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+bihar,2013,actual_share_pct,3.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+bihar,2014,actual_share_pct,3.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+bihar,2015,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+bihar,2016,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+bihar,2017,actual_share_pct,4.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+bihar,2018,actual_share_pct,4.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+bihar,2019,actual_share_pct,5.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+bihar,2020,actual_share_pct,5.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+chhattisgarh,2008,actual_share_pct,3.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+chhattisgarh,2009,actual_share_pct,3.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+chhattisgarh,2010,actual_share_pct,3.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+chhattisgarh,2011,actual_share_pct,3.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+chhattisgarh,2012,actual_share_pct,3.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+chhattisgarh,2013,actual_share_pct,3.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+chhattisgarh,2014,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+chhattisgarh,2015,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+chhattisgarh,2016,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+chhattisgarh,2017,actual_share_pct,5.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+chhattisgarh,2018,actual_share_pct,5.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+chhattisgarh,2019,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+chhattisgarh,2020,actual_share_pct,6.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+goa,2008,actual_share_pct,5.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+goa,2009,actual_share_pct,5.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+goa,2010,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+goa,2011,actual_share_pct,5.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+goa,2012,actual_share_pct,5.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+goa,2013,actual_share_pct,5.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+goa,2014,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+goa,2015,actual_share_pct,5.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+goa,2016,actual_share_pct,6.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+goa,2017,actual_share_pct,6.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+goa,2018,actual_share_pct,6.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+goa,2019,actual_share_pct,7.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+goa,2020,actual_share_pct,8.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+gujarat,2008,actual_share_pct,3.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+gujarat,2009,actual_share_pct,3.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+gujarat,2010,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+gujarat,2011,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+gujarat,2012,actual_share_pct,4.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+gujarat,2013,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+gujarat,2014,actual_share_pct,5.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+gujarat,2015,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+gujarat,2016,actual_share_pct,5.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+gujarat,2017,actual_share_pct,5.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+gujarat,2018,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+gujarat,2019,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+gujarat,2020,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+haryana,2008,actual_share_pct,2.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+haryana,2009,actual_share_pct,3.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+haryana,2010,actual_share_pct,3.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+haryana,2011,actual_share_pct,3.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+haryana,2012,actual_share_pct,3.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+haryana,2013,actual_share_pct,3.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+haryana,2014,actual_share_pct,4.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+haryana,2015,actual_share_pct,3.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+haryana,2016,actual_share_pct,3.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+haryana,2017,actual_share_pct,3.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+haryana,2018,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+haryana,2019,actual_share_pct,4.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+haryana,2020,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+himachal pradesh,2008,actual_share_pct,4.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+himachal pradesh,2009,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+himachal pradesh,2010,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+himachal pradesh,2011,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+himachal pradesh,2012,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+himachal pradesh,2013,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+himachal pradesh,2014,actual_share_pct,5.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+himachal pradesh,2015,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+himachal pradesh,2016,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+himachal pradesh,2017,actual_share_pct,5.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+himachal pradesh,2018,actual_share_pct,5.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+himachal pradesh,2019,actual_share_pct,5.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+himachal pradesh,2020,actual_share_pct,5.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jharkhand,2008,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jharkhand,2009,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jharkhand,2010,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jharkhand,2011,actual_share_pct,3.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jharkhand,2012,actual_share_pct,3.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jharkhand,2013,actual_share_pct,3.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jharkhand,2014,actual_share_pct,4.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jharkhand,2015,actual_share_pct,4.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jharkhand,2016,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jharkhand,2017,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jharkhand,2018,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jharkhand,2019,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jharkhand,2020,actual_share_pct,5.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+karnataka,2008,actual_share_pct,3.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+karnataka,2009,actual_share_pct,3.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+karnataka,2010,actual_share_pct,3.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+karnataka,2011,actual_share_pct,3.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+karnataka,2012,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+karnataka,2013,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+karnataka,2014,actual_share_pct,4.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+karnataka,2015,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+karnataka,2016,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+karnataka,2017,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+karnataka,2018,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+karnataka,2019,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+karnataka,2020,actual_share_pct,5.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+kerala,2008,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+kerala,2009,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+kerala,2010,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+kerala,2011,actual_share_pct,5.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+kerala,2012,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+kerala,2013,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+kerala,2014,actual_share_pct,5.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+kerala,2015,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+kerala,2016,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+kerala,2017,actual_share_pct,5.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+kerala,2018,actual_share_pct,5.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+kerala,2019,actual_share_pct,6.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+kerala,2020,actual_share_pct,5.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+madhya pradesh,2008,actual_share_pct,3.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+madhya pradesh,2009,actual_share_pct,3.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+madhya pradesh,2010,actual_share_pct,3.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+madhya pradesh,2011,actual_share_pct,3.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+madhya pradesh,2012,actual_share_pct,4.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+madhya pradesh,2013,actual_share_pct,3.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+madhya pradesh,2014,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+madhya pradesh,2015,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+madhya pradesh,2016,actual_share_pct,3.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+madhya pradesh,2017,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+madhya pradesh,2018,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+madhya pradesh,2019,actual_share_pct,5.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+madhya pradesh,2020,actual_share_pct,4.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+maharashtra,2008,actual_share_pct,3.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+maharashtra,2009,actual_share_pct,3.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+maharashtra,2010,actual_share_pct,3.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+maharashtra,2011,actual_share_pct,3.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+maharashtra,2012,actual_share_pct,3.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+maharashtra,2013,actual_share_pct,3.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+maharashtra,2014,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+maharashtra,2015,actual_share_pct,4.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+maharashtra,2016,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+maharashtra,2017,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+maharashtra,2018,actual_share_pct,4.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+maharashtra,2019,actual_share_pct,4.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+maharashtra,2020,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+manipur,2008,actual_share_pct,3.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+manipur,2009,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+manipur,2010,actual_share_pct,5.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+manipur,2011,actual_share_pct,5.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+manipur,2012,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+manipur,2013,actual_share_pct,5.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+manipur,2014,actual_share_pct,6.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+manipur,2015,actual_share_pct,5.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+manipur,2016,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+manipur,2017,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+manipur,2018,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+manipur,2019,actual_share_pct,5.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+manipur,2020,actual_share_pct,6.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+meghalaya,2008,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+meghalaya,2009,actual_share_pct,6.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+meghalaya,2010,actual_share_pct,6.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+meghalaya,2011,actual_share_pct,5.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+meghalaya,2012,actual_share_pct,6.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+meghalaya,2013,actual_share_pct,6.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+meghalaya,2014,actual_share_pct,7.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+meghalaya,2015,actual_share_pct,7.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+meghalaya,2016,actual_share_pct,6.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+meghalaya,2017,actual_share_pct,7.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+meghalaya,2018,actual_share_pct,8.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+meghalaya,2019,actual_share_pct,7.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+meghalaya,2020,actual_share_pct,8.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+mizoram,2008,actual_share_pct,6.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+mizoram,2009,actual_share_pct,7.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+mizoram,2010,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+mizoram,2011,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+mizoram,2012,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+mizoram,2013,actual_share_pct,4.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+mizoram,2014,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+mizoram,2015,actual_share_pct,5.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+mizoram,2016,actual_share_pct,5.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+mizoram,2017,actual_share_pct,6.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+mizoram,2018,actual_share_pct,6.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+mizoram,2019,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+mizoram,2020,actual_share_pct,5.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+nagaland,2008,actual_share_pct,3.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+nagaland,2009,actual_share_pct,3.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+nagaland,2010,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+nagaland,2011,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+nagaland,2012,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+nagaland,2013,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+nagaland,2014,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+nagaland,2015,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+nagaland,2016,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+nagaland,2017,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+nagaland,2018,actual_share_pct,4.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+nagaland,2019,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+nagaland,2020,actual_share_pct,5.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+odisha,2008,actual_share_pct,3.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+odisha,2009,actual_share_pct,3.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+odisha,2010,actual_share_pct,3.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+odisha,2011,actual_share_pct,3.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+odisha,2012,actual_share_pct,3.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+odisha,2013,actual_share_pct,3.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+odisha,2014,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+odisha,2015,actual_share_pct,4.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+odisha,2016,actual_share_pct,5.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+odisha,2017,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+odisha,2018,actual_share_pct,5.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+odisha,2019,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+odisha,2020,actual_share_pct,6.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+punjab,2008,actual_share_pct,3.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+punjab,2009,actual_share_pct,3.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+punjab,2010,actual_share_pct,3.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+punjab,2011,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+punjab,2012,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+punjab,2013,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+punjab,2014,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+punjab,2015,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+punjab,2016,actual_share_pct,2.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+punjab,2017,actual_share_pct,3.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+punjab,2018,actual_share_pct,3.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+punjab,2019,actual_share_pct,3.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+punjab,2020,actual_share_pct,3.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+rajasthan,2008,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+rajasthan,2009,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+rajasthan,2010,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+rajasthan,2011,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+rajasthan,2012,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+rajasthan,2013,actual_share_pct,5.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+rajasthan,2014,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+rajasthan,2015,actual_share_pct,4.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+rajasthan,2016,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+rajasthan,2017,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+rajasthan,2018,actual_share_pct,5.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+rajasthan,2019,actual_share_pct,5.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+rajasthan,2020,actual_share_pct,6.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+sikkim,2008,actual_share_pct,3.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+sikkim,2009,actual_share_pct,3.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+sikkim,2010,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+sikkim,2011,actual_share_pct,5.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+sikkim,2012,actual_share_pct,6.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+sikkim,2013,actual_share_pct,5.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+sikkim,2014,actual_share_pct,5.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+sikkim,2015,actual_share_pct,5.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+sikkim,2016,actual_share_pct,5.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+sikkim,2017,actual_share_pct,7.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+sikkim,2018,actual_share_pct,5.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+sikkim,2019,actual_share_pct,5.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+sikkim,2020,actual_share_pct,8.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tamil nadu,2008,actual_share_pct,3.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tamil nadu,2009,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tamil nadu,2010,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tamil nadu,2011,actual_share_pct,4.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tamil nadu,2012,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tamil nadu,2013,actual_share_pct,4.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tamil nadu,2014,actual_share_pct,4.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tamil nadu,2015,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tamil nadu,2016,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tamil nadu,2017,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tamil nadu,2018,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tamil nadu,2019,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tamil nadu,2020,actual_share_pct,6.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+telangana,2014,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+telangana,2015,actual_share_pct,3.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+telangana,2016,actual_share_pct,4.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+telangana,2017,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+telangana,2018,actual_share_pct,4.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+telangana,2019,actual_share_pct,4.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+telangana,2020,actual_share_pct,3.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tripura,2008,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tripura,2009,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tripura,2010,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tripura,2011,actual_share_pct,5.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tripura,2012,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tripura,2013,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tripura,2014,actual_share_pct,6.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tripura,2015,actual_share_pct,5.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tripura,2016,actual_share_pct,5.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tripura,2017,actual_share_pct,6.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tripura,2018,actual_share_pct,6.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tripura,2019,actual_share_pct,6.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+tripura,2020,actual_share_pct,5.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttar pradesh,2008,actual_share_pct,4.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttar pradesh,2009,actual_share_pct,5.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttar pradesh,2010,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttar pradesh,2011,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttar pradesh,2012,actual_share_pct,5.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttar pradesh,2013,actual_share_pct,4.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttar pradesh,2014,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttar pradesh,2015,actual_share_pct,4.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttar pradesh,2016,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttar pradesh,2017,actual_share_pct,5.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttar pradesh,2018,actual_share_pct,4.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttar pradesh,2019,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttar pradesh,2020,actual_share_pct,5.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttarakhand,2008,actual_share_pct,4.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttarakhand,2009,actual_share_pct,3.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttarakhand,2010,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttarakhand,2011,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttarakhand,2012,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttarakhand,2013,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttarakhand,2014,actual_share_pct,5.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttarakhand,2015,actual_share_pct,5.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttarakhand,2016,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttarakhand,2017,actual_share_pct,4.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttarakhand,2018,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttarakhand,2019,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+uttarakhand,2020,actual_share_pct,5.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+west bengal,2008,actual_share_pct,3.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+west bengal,2009,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+west bengal,2010,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+west bengal,2011,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+west bengal,2012,actual_share_pct,4.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+west bengal,2013,actual_share_pct,4.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+west bengal,2014,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+west bengal,2015,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+west bengal,2016,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+west bengal,2017,actual_share_pct,4.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+west bengal,2018,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+west bengal,2019,actual_share_pct,5.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+west bengal,2020,actual_share_pct,6.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jammu and kashmir,2008,actual_share_pct,4.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jammu and kashmir,2009,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jammu and kashmir,2010,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jammu and kashmir,2011,actual_share_pct,5.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jammu and kashmir,2012,actual_share_pct,5.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jammu and kashmir,2013,actual_share_pct,5.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jammu and kashmir,2014,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jammu and kashmir,2015,actual_share_pct,5.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jammu and kashmir,2016,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jammu and kashmir,2017,actual_share_pct,5.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jammu and kashmir,2018,actual_share_pct,6.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jammu and kashmir,2019,actual_share_pct,6.5,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+jammu and kashmir,2020,actual_share_pct,7.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+delhi,2008,actual_share_pct,8.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+delhi,2009,actual_share_pct,8.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+delhi,2010,actual_share_pct,9.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+delhi,2011,actual_share_pct,9.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+delhi,2012,actual_share_pct,9.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+delhi,2013,actual_share_pct,8.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+delhi,2014,actual_share_pct,11.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+delhi,2015,actual_share_pct,10.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+delhi,2016,actual_share_pct,10.8,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+delhi,2017,actual_share_pct,11.6,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+delhi,2018,actual_share_pct,11.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+delhi,2019,actual_share_pct,11.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+delhi,2020,actual_share_pct,12.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+puducherry,2008,actual_share_pct,6.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+puducherry,2009,actual_share_pct,7.7,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+puducherry,2010,actual_share_pct,7.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+puducherry,2011,actual_share_pct,8.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+puducherry,2012,actual_share_pct,8.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+puducherry,2013,actual_share_pct,7.1,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+puducherry,2014,actual_share_pct,7.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+puducherry,2015,actual_share_pct,8.3,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+puducherry,2016,actual_share_pct,8.0,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+puducherry,2017,actual_share_pct,7.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+puducherry,2018,actual_share_pct,7.9,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+puducherry,2019,actual_share_pct,9.2,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23
+puducherry,2020,actual_share_pct,7.4,rbi_latest,percent of aggregate state expenditure,historical accounts,2026-01-23

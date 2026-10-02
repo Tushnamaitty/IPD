@@ -67,3 +67,6 @@ outputs/tables/b4_risk_stratified_row_level_nuisance.csv
 *.tmp
 *.temp
 ~$*
+/IPD_uncertainty_private/
+data/raw/
+data/processed/

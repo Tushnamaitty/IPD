@@ -1,0 +1,16 @@
+﻿CORRECTION NOTE (wording only) - comment15_heterogeneity_change_summary.json
+
+In the "limitations" list, the inherited entry beginning "Wave-specific references,
+within-wave wealth rankings, raw state codes and survey periods differ; side-by-side
+gaps are not a common-population temporal or policy effect." does not describe this
+analysis and should be disregarded. Replace it with:
+
+"Both wave models use the same equal-wave pooled reference within each declared
+subgroup and support threshold. References differ across subgroups and thresholds;
+wealth quintiles represent within-wave relative ranks. Comparisons remain
+associational, not causal temporal or policy effects."
+
+Nothing else changed: all estimates, SEs, CIs, covariances, the reproduction check
+and the comment15/base/baseline/existing-intervals provenance hashes are as saved.
+The saved summary's script_sha256 is the hash of the script version that produced it,
+before this wording edit.

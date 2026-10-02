@@ -1,0 +1,73 @@
+wave,raw_state_code,raw_label,common_state,included
+NFHS-4,1,andaman and nicobar islands,Andaman and Nicobar Islands,True
+NFHS-4,2,andhra pradesh,Andhra Pradesh,True
+NFHS-4,3,arunachal pradesh,Arunachal Pradesh,True
+NFHS-4,4,assam,Assam,True
+NFHS-4,5,bihar,Bihar,True
+NFHS-4,6,chandigarh,Chandigarh,True
+NFHS-4,7,chhattisgarh,Chhattisgarh,True
+NFHS-4,8,dadra and nagar haveli,,False
+NFHS-4,9,daman and diu,,False
+NFHS-4,10,goa,Goa,True
+NFHS-4,11,gujarat,Gujarat,True
+NFHS-4,12,haryana,Haryana,True
+NFHS-4,13,himachal pradesh,Himachal Pradesh,True
+NFHS-4,14,jammu and kashmir,,False
+NFHS-4,15,jharkhand,Jharkhand,True
+NFHS-4,16,karnataka,Karnataka,True
+NFHS-4,17,kerala,Kerala,True
+NFHS-4,18,lakshadweep,Lakshadweep,True
+NFHS-4,19,madhya pradesh,Madhya Pradesh,True
+NFHS-4,20,maharashtra,Maharashtra,True
+NFHS-4,21,manipur,Manipur,True
+NFHS-4,22,meghalaya,Meghalaya,True
+NFHS-4,23,mizoram,Mizoram,True
+NFHS-4,24,nagaland,Nagaland,True
+NFHS-4,25,delhi,Delhi,True
+NFHS-4,26,odisha,Odisha,True
+NFHS-4,27,puducherry,Puducherry,True
+NFHS-4,28,punjab,Punjab,True
+NFHS-4,29,rajasthan,Rajasthan,True
+NFHS-4,30,sikkim,Sikkim,True
+NFHS-4,31,tamil nadu,Tamil Nadu,True
+NFHS-4,32,tripura,Tripura,True
+NFHS-4,33,uttar pradesh,Uttar Pradesh,True
+NFHS-4,34,uttarakhand,Uttarakhand,True
+NFHS-4,35,west bengal,West Bengal,True
+NFHS-4,36,telangana,Telangana,True
+NFHS-5,1,jammu & kashmir,,False
+NFHS-5,2,himachal pradesh,Himachal Pradesh,True
+NFHS-5,3,punjab,Punjab,True
+NFHS-5,4,chandigarh,Chandigarh,True
+NFHS-5,5,uttarakhand,Uttarakhand,True
+NFHS-5,6,haryana,Haryana,True
+NFHS-5,7,nct of delhi,Delhi,True
+NFHS-5,8,rajasthan,Rajasthan,True
+NFHS-5,9,uttar pradesh,Uttar Pradesh,True
+NFHS-5,10,bihar,Bihar,True
+NFHS-5,11,sikkim,Sikkim,True
+NFHS-5,12,arunachal pradesh,Arunachal Pradesh,True
+NFHS-5,13,nagaland,Nagaland,True
+NFHS-5,14,manipur,Manipur,True
+NFHS-5,15,mizoram,Mizoram,True
+NFHS-5,16,tripura,Tripura,True
+NFHS-5,17,meghalaya,Meghalaya,True
+NFHS-5,18,assam,Assam,True
+NFHS-5,19,west bengal,West Bengal,True
+NFHS-5,20,jharkhand,Jharkhand,True
+NFHS-5,21,odisha,Odisha,True
+NFHS-5,22,chhattisgarh,Chhattisgarh,True
+NFHS-5,23,madhya pradesh,Madhya Pradesh,True
+NFHS-5,24,gujarat,Gujarat,True
+NFHS-5,25,dadra & nagar haveli and daman & diu,,False
+NFHS-5,27,maharashtra,Maharashtra,True
+NFHS-5,28,andhra pradesh,Andhra Pradesh,True
+NFHS-5,29,karnataka,Karnataka,True
+NFHS-5,30,goa,Goa,True
+NFHS-5,31,lakshadweep,Lakshadweep,True
+NFHS-5,32,kerala,Kerala,True
+NFHS-5,33,tamil nadu,Tamil Nadu,True
+NFHS-5,34,puducherry,Puducherry,True
+NFHS-5,35,andaman & nicobar islands,Andaman and Nicobar Islands,True
+NFHS-5,36,telangana,Telangana,True
+NFHS-5,37,ladakh,,False

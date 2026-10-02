@@ -1,0 +1,114 @@
+{
+  "status": "aggregate_residual_diagnostic_completed_requires_review",
+  "purpose": "Residual variation in context terms after state/calendar projection; no outcome model refit.",
+  "existing_summary_sha256": "65913272fac8651e173a36cbadec8fa89014910e7631d3fc14f459b27cf87412",
+  "script_sha256": "031b8f0c85d64a472dbd20a7ce8b091a3158926ea3e3b92f29b8e572579c46ac",
+  "historical_script_sha256": "7d7e18175114732a55ed9bffb612bf54f2c38107afb8db9c2b1c3750be434327",
+  "self_checks": [
+    {
+      "case": "NFHS-4_all_narrow_actual_health_spending",
+      "status": "residual_norms_reproduced",
+      "linked_n": 104553
+    },
+    {
+      "case": "NFHS-4_all_narrow_actual_and_planned_budget",
+      "status": "residual_norms_reproduced",
+      "linked_n": 40534
+    },
+    {
+      "case": "NFHS-4_all_narrow_actual_and_facility_12m",
+      "status": "skipped_insufficient_linked_cohort",
+      "linked_n": 0
+    },
+    {
+      "case": "NFHS-4_all_narrow_actual_and_facility_24m",
+      "status": "skipped_insufficient_linked_cohort",
+      "linked_n": 0
+    },
+    {
+      "case": "NFHS-4_all_narrow_documented_state_policy_milestones",
+      "status": "residual_norms_reproduced",
+      "linked_n": 114098
+    },
+    {
+      "case": "NFHS-4_first_delivery_actual_health_spending",
+      "status": "residual_norms_reproduced",
+      "linked_n": 48385
+    },
+    {
+      "case": "NFHS-4_first_delivery_actual_and_planned_budget",
+      "status": "residual_norms_reproduced",
+      "linked_n": 18641
+    },
+    {
+      "case": "NFHS-4_first_delivery_actual_and_facility_12m",
+      "status": "skipped_insufficient_linked_cohort",
+      "linked_n": 0
+    },
+    {
+      "case": "NFHS-4_first_delivery_actual_and_facility_24m",
+      "status": "skipped_insufficient_linked_cohort",
+      "linked_n": 0
+    },
+    {
+      "case": "NFHS-4_first_delivery_documented_state_policy_milestones",
+      "status": "residual_norms_reproduced",
+      "linked_n": 52764
+    },
+    {
+      "case": "NFHS-5_all_narrow_actual_health_spending",
+      "status": "residual_norms_reproduced",
+      "linked_n": 107574
+    },
+    {
+      "case": "NFHS-5_all_narrow_actual_and_planned_budget",
+      "status": "residual_norms_reproduced",
+      "linked_n": 71801
+    },
+    {
+      "case": "NFHS-5_all_narrow_actual_and_facility_12m",
+      "status": "residual_norms_reproduced",
+      "linked_n": 41555
+    },
+    {
+      "case": "NFHS-5_all_narrow_actual_and_facility_24m",
+      "status": "residual_norms_reproduced",
+      "linked_n": 56887
+    },
+    {
+      "case": "NFHS-5_all_narrow_documented_state_policy_milestones",
+      "status": "residual_norms_reproduced",
+      "linked_n": 115197
+    },
+    {
+      "case": "NFHS-5_first_delivery_actual_health_spending",
+      "status": "residual_norms_reproduced",
+      "linked_n": 48413
+    },
+    {
+      "case": "NFHS-5_first_delivery_actual_and_planned_budget",
+      "status": "residual_norms_reproduced",
+      "linked_n": 32097
+    },
+    {
+      "case": "NFHS-5_first_delivery_actual_and_facility_12m",
+      "status": "residual_norms_reproduced",
+      "linked_n": 18441
+    },
+    {
+      "case": "NFHS-5_first_delivery_actual_and_facility_24m",
+      "status": "residual_norms_reproduced",
+      "linked_n": 25492
+    },
+    {
+      "case": "NFHS-5_first_delivery_documented_state_policy_milestones",
+      "status": "residual_norms_reproduced",
+      "linked_n": 51854
+    }
+  ],
+  "rows": 28,
+  "record_level_data_exported": false,
+  "existing_outputs_changed": false,
+  "note": "Descriptive; correlations and variances are unweighted/weighted summaries of residualized macro terms, not effect estimates.",
+  "elapsed_seconds": 201.7
+}

@@ -1,0 +1,317 @@
+{
+  "status": "completed_v4_requires_NFHS_review",
+  "version": "nfhs5-federated-extension-4.1",
+  "cohort_audit": {
+    "version": "nfhs5-federated-extension-4.1",
+    "raw_sha256": "93267b17596929371dc3190d17af114271851f14d1f566678ffceda2db4cae6e",
+    "broad_n": 200794,
+    "narrow_before_dates_n": 116176,
+    "date_or_recall_excluded_n": 979,
+    "analytic_n": 115197,
+    "public_n": 67336,
+    "private_n": 47861,
+    "n_sites": 36,
+    "facility_codes": [
+      21,
+      31
+    ],
+    "recall_rule": "0 <= v008-b3 < 60 months",
+    "design_variables": [
+      "v021",
+      "v022"
+    ],
+    "split_rule": "20% of whole PSUs per state",
+    "date_quality": "CMC validity/recall checked; no additional b10 imputation exclusion",
+    "raw_variable_labels": {
+      "m15": "place of delivery",
+      "m17": "delivery by caesarean section",
+      "v021": "primary sampling unit",
+      "v022": "sample strata for sampling errors",
+      "v133": "education in single years"
+    },
+    "source_version": "nfhs5-federated-extension-3",
+    "script_sha256": "94969e6ac13a9a00edb27e6bbac81063579358d286d45de2df4f8186d8baef8d",
+    "household_roster": {
+      "household_sha256": "24d2e2696da618b434c7e7b5187ad5bac40e0eaaedafe3a6cbe8c2ab04274cec",
+      "household_national_psus": 30170,
+      "matching_key": "hv024 state, hv022 stratum, hv021 PSU; exact analytic code match",
+      "stratum_codes_shared_across_states": 60,
+      "difference_from_reported_30198": 28,
+      "analytic_domain_psus": 26360,
+      "household_psus_in_active_strata": 30169,
+      "added_zero_domain_psus": 3809,
+      "analytic_singleton_strata": 29,
+      "household_singleton_strata": 16,
+      "singleton_strata_resolved": 13,
+      "all_analytic_psus_matched": true,
+      "completeness": "Observed household recode roster; not verified complete sampling frame"
+    }
+  },
+  "selected_ridge": 1e-05,
+  "support_sensitivity": {
+    "excluded_training_sites": [
+      37
+    ],
+    "reference": "Same all-birth reference in both full-refit models",
+    "same_reference_change_pp": -7.18208334902215e-05,
+    "screened_target": {
+      "weight_sum": 120450.21866400001,
+      "weighted_log_loss": 0.5602286979922856,
+      "weighted_brier": 0.19004854602965698,
+      "public_standardized_pct": 22.927192670322665,
+      "private_standardized_pct": 46.68390138249413,
+      "standardized_gap_pp": 23.75670871217146,
+      "observed_csection_pct": 34.569868312281564,
+      "predicted_csection_pct": 34.56949749963244
+    },
+    "limitation": "Excluded-site predictions may extrapolate; ridge shrinks unsupported state indicators to zero"
+  },
+  "repeated_validation": {
+    "seeds": [
+      719,
+      1729,
+      2719,
+      3719,
+      4719
+    ],
+    "repetitions": 5,
+    "selected_ridge": 1e-05,
+    "per_split_best_ridges": [
+      1e-05,
+      0.0001,
+      1e-06,
+      1e-06,
+      1e-07
+    ],
+    "selected_at_grid_boundary": false,
+    "scores": [
+      {
+        "ridge": 1e-07,
+        "validation_log_loss": 0.5667756728865427,
+        "split_mean_log_loss": 0.5667459003796338,
+        "split_sd_log_loss": 0.004516959298105715
+      },
+      {
+        "ridge": 1e-06,
+        "validation_log_loss": 0.5667625117986422,
+        "split_mean_log_loss": 0.5667327860824175,
+        "split_sd_log_loss": 0.004512733820363989
+      },
+      {
+        "ridge": 1e-05,
+        "validation_log_loss": 0.56673935653004,
+        "split_mean_log_loss": 0.5667099678154497,
+        "split_sd_log_loss": 0.004459710818571188
+      },
+      {
+        "ridge": 0.0001,
+        "validation_log_loss": 0.5670703709573216,
+        "split_mean_log_loss": 0.5670417647720865,
+        "split_sd_log_loss": 0.004277149144484878
+      },
+      {
+        "ridge": 0.001,
+        "validation_log_loss": 0.5685088739698728,
+        "split_mean_log_loss": 0.568480290869566,
+        "split_sd_log_loss": 0.003981846437932649
+      },
+      {
+        "ridge": 0.01,
+        "validation_log_loss": 0.5796084687431073,
+        "split_mean_log_loss": 0.5795815134226128,
+        "split_sd_log_loss": 0.003891424281954371
+      },
+      {
+        "ridge": 0.1,
+        "validation_log_loss": 0.6152718927229561,
+        "split_mean_log_loss": 0.6152488503818798,
+        "split_sd_log_loss": 0.004248611707945859
+      }
+    ],
+    "note": "Repeated validation splits overlap: SD describes split sensitivity, not an independent-sample SE"
+  },
+  "penalty_selection": "Minimum aggregate weighted log loss across five inner PSU validation splits within original outer training only",
+  "state_adjustment": "Shared state categorical indicators, ridge penalized with other nonintercept terms",
+  "outer_test": {
+    "weight_sum": 23767.893417999996,
+    "weighted_log_loss": 0.558137574412015,
+    "weighted_brier": 0.18923015803428314,
+    "public_standardized_pct": 23.22772611339738,
+    "private_standardized_pct": 47.066753950784054,
+    "standardized_gap_pp": 23.83902783738667,
+    "observed_csection_pct": 34.66084149788828,
+    "predicted_csection_pct": 35.14318260959243
+  },
+  "outer_pooled_check": {
+    "passed": true,
+    "independent_optimizer": "L-BFGS-B (federated uses damped Newton)",
+    "maximum_coefficient_difference": 3.818786333642521e-05,
+    "common_target_gap_difference_pp": 8.308256305156192e-07,
+    "same_coefficient_evaluation_max_error": 1.0658141036401503e-14,
+    "pooled_gradient_inf_norm": 2.781906436147013e-09,
+    "pooled_common_target": {
+      "weight_sum": 23767.893417999996,
+      "weighted_log_loss": 0.5581375768434038,
+      "weighted_brier": 0.18923015892771972,
+      "public_standardized_pct": 23.227726971363047,
+      "private_standardized_pct": 47.06675397792409,
+      "standardized_gap_pp": 23.83902700656104,
+      "observed_csection_pct": 34.66084149788828,
+      "predicted_csection_pct": 35.143183050979104
+    },
+    "pooled_own_target": {
+      "weight_sum": 23767.893417999996,
+      "weighted_log_loss": 0.5581375768434038,
+      "weighted_brier": 0.18923015892771972,
+      "public_standardized_pct": 23.227726971363047,
+      "private_standardized_pct": 47.06675397792409,
+      "standardized_gap_pp": 23.83902700656104,
+      "observed_csection_pct": 34.66084149788828,
+      "predicted_csection_pct": 35.143183050979104
+    }
+  },
+  "full_refit": {
+    "weight_sum": 120450.21866400001,
+    "weighted_log_loss": 0.5602283886879823,
+    "weighted_brier": 0.19004845879525814,
+    "public_standardized_pct": 22.927533340660744,
+    "private_standardized_pct": 46.684313873665694,
+    "standardized_gap_pp": 23.75678053300495,
+    "observed_csection_pct": 34.569868312281564,
+    "predicted_csection_pct": 34.569868312281685
+  },
+  "full_pooled_check": {
+    "passed": true,
+    "maximum_coefficient_difference": 4.944746262580679e-05,
+    "gap_difference_pp": 2.885558600951299e-07,
+    "gradient_inf_norm": 2.3280318278109103e-09
+  },
+  "uncertainty": {
+    "method": "Joint model/reference Taylor; with-replacement ultimate-PSU approximation",
+    "conditional_on": "Selected ridge, training vocabulary/scales, observed household roster in analytic-active strata",
+    "singleton_strata": 16,
+    "active_strata": 2769,
+    "active_psus": 30169,
+    "derivative_max_error": 1.1327348781176028e-11,
+    "intervals": [
+      {
+        "singleton_treatment": "adjust",
+        "gap_pp": 23.75678053300495,
+        "se_pp": 0.4637780133330859,
+        "ci_lower_pp": 22.84775217475808,
+        "ci_upper_pp": 24.665808891251817,
+        "design_df": 27400
+      },
+      {
+        "singleton_treatment": "average",
+        "gap_pp": 23.75678053300495,
+        "se_pp": 0.46484098450950495,
+        "ci_lower_pp": 22.84566869750046,
+        "ci_upper_pp": 24.66789236850944,
+        "design_df": 27400
+      },
+      {
+        "singleton_treatment": "zero",
+        "gap_pp": 23.75678053300495,
+        "se_pp": 0.4634960529832941,
+        "ci_lower_pp": 22.848304831301714,
+        "ci_upper_pp": 24.665256234708185,
+        "design_df": 27400
+      }
+    ]
+  },
+  "penalty_sensitivity": [
+    {
+      "ridge": 1e-07,
+      "weight_sum": 120450.21866400001,
+      "weighted_log_loss": 0.560190066380103,
+      "weighted_brier": 0.19003239238479308,
+      "public_standardized_pct": 22.899744388748783,
+      "private_standardized_pct": 46.706769836349345,
+      "standardized_gap_pp": 23.80702544760056,
+      "observed_csection_pct": 34.569868312281564,
+      "predicted_csection_pct": 34.569868313443195
+    },
+    {
+      "ridge": 1e-06,
+      "weight_sum": 120450.21866400001,
+      "weighted_log_loss": 0.5601917714646787,
+      "weighted_brier": 0.19003280567325906,
+      "public_standardized_pct": 22.90258264694628,
+      "private_standardized_pct": 46.704737034391165,
+      "standardized_gap_pp": 23.802154387444887,
+      "observed_csection_pct": 34.569868312281564,
+      "predicted_csection_pct": 34.56986831228171
+    },
+    {
+      "ridge": 1e-05,
+      "weight_sum": 120450.21866400001,
+      "weighted_log_loss": 0.5602283886879823,
+      "weighted_brier": 0.19004845879525814,
+      "public_standardized_pct": 22.927533340660744,
+      "private_standardized_pct": 46.684313873665694,
+      "standardized_gap_pp": 23.75678053300495,
+      "observed_csection_pct": 34.569868312281564,
+      "predicted_csection_pct": 34.569868312281685
+    },
+    {
+      "ridge": 0.0001,
+      "weight_sum": 120450.21866400001,
+      "weighted_log_loss": 0.5607633843799824,
+      "weighted_brier": 0.19027119041251564,
+      "public_standardized_pct": 23.03208714670214,
+      "private_standardized_pct": 46.58233120080968,
+      "standardized_gap_pp": 23.550244054107548,
+      "observed_csection_pct": 34.569868312281564,
+      "predicted_csection_pct": 34.569868312281606
+    },
+    {
+      "ridge": 0.001,
+      "weight_sum": 120450.21866400001,
+      "weighted_log_loss": 0.5625305643816413,
+      "weighted_brier": 0.1909058898621787,
+      "public_standardized_pct": 23.264929406045642,
+      "private_standardized_pct": 46.34911269014012,
+      "standardized_gap_pp": 23.084183284094472,
+      "observed_csection_pct": 34.569868312281564,
+      "predicted_csection_pct": 34.56986840384863
+    },
+    {
+      "ridge": 0.01,
+      "weight_sum": 120450.21866400001,
+      "weighted_log_loss": 0.5743677263395736,
+      "weighted_brier": 0.19545712421410355,
+      "public_standardized_pct": 24.826905721045904,
+      "private_standardized_pct": 44.73304619033479,
+      "standardized_gap_pp": 19.90614046928889,
+      "observed_csection_pct": 34.569868312281564,
+      "predicted_csection_pct": 34.5698683124256
+    },
+    {
+      "ridge": 0.1,
+      "weight_sum": 120450.21866400001,
+      "weighted_log_loss": 0.6109819830979712,
+      "weighted_brier": 0.21101703939230512,
+      "public_standardized_pct": 30.346742452382454,
+      "private_standardized_pct": 38.99844862625888,
+      "standardized_gap_pp": 8.651706173876427,
+      "observed_csection_pct": 34.569868312281564,
+      "predicted_csection_pct": 34.56986831228156
+    }
+  ],
+  "final_reference": "All eligible narrow-cohort births, full refit; differs from v1 held-out reference",
+  "privacy": "Trusted one-computer simulation; unencrypted aggregate IPC; no secure aggregation or differential privacy",
+  "limitations": [
+    "No remote deployment or validated privacy guarantee",
+    "Trusted preparation and independent pooled validator read private rows",
+    "Conditional approximate intervals; tuning and vocabulary uncertainty excluded",
+    "Outer test was used in earlier versions; reused diagnostic, not new independent validation",
+    "Household observed roster includes zero-domain PSUs in active strata; completeness remains unverified",
+    "No FPC or lower-stage sampling identifiers; not exact full NFHS variance",
+    "State indicators are penalized; no individual overlap guarantee",
+    "Adjusted associations, not causal effects or unnecessary procedures"
+  ],
+  "n_workers": 4,
+  "no_rows_in_fit_messages": true,
+  "elapsed_seconds": 59.10912619996816
+}
