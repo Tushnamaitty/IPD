@@ -1,0 +1,73 @@
+wave,raw_state_code,state_name,in_narrow_cohort,cross_wave_mapping_status
+NFHS-4,1,andaman and nicobar islands,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,2,andhra pradesh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,3,arunachal pradesh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,4,assam,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,5,bihar,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,6,chandigarh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,7,chhattisgarh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,8,dadra and nagar haveli,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,9,daman and diu,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,10,goa,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,11,gujarat,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,12,haryana,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,13,himachal pradesh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,14,jammu and kashmir,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,15,jharkhand,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,16,karnataka,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,17,kerala,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,18,lakshadweep,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,19,madhya pradesh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,20,maharashtra,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,21,manipur,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,22,meghalaya,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,23,mizoram,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,24,nagaland,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,25,delhi,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,26,odisha,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,27,puducherry,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,28,punjab,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,29,rajasthan,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,30,sikkim,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,31,tamil nadu,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,32,tripura,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,33,uttar pradesh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,34,uttarakhand,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,35,west bengal,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-4,36,telangana,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,1,jammu & kashmir,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,2,himachal pradesh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,3,punjab,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,4,chandigarh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,5,uttarakhand,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,6,haryana,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,7,nct of delhi,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,8,rajasthan,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,9,uttar pradesh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,10,bihar,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,11,sikkim,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,12,arunachal pradesh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,13,nagaland,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,14,manipur,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,15,mizoram,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,16,tripura,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,17,meghalaya,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,18,assam,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,19,west bengal,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,20,jharkhand,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,21,odisha,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,22,chhattisgarh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,23,madhya pradesh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,24,gujarat,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,25,dadra & nagar haveli and daman & diu,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,27,maharashtra,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,28,andhra pradesh,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,29,karnataka,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,30,goa,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,31,lakshadweep,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,32,kerala,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,33,tamil nadu,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,34,puducherry,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,35,andaman & nicobar islands,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,36,telangana,True,Wave-specific labels only; geographic harmonisation requires review
+NFHS-5,37,ladakh,True,Wave-specific labels only; geographic harmonisation requires review

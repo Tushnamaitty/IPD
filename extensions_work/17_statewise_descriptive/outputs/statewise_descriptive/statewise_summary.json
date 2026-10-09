@@ -1,0 +1,716 @@
+{
+  "status": "completed_descriptive_outputs_require_review",
+  "facility_codes": {
+    "public": 21,
+    "private": 31
+  },
+  "cohorts": [
+    "all_narrow",
+    "first_delivery"
+  ],
+  "method": "Survey-weighted domain ratio proportions and joint private-minus-public influence; existing state/stratum/PSU roster Taylor approximation.",
+  "primary_singleton_treatment": "adjust",
+  "sparse_flag_threshold": 30,
+  "threshold_note": "Diagnostic only, not a guarantee of precision; sparse estimates retained and flagged.",
+  "state_mapping": "Read from actual v024 categorical binding independently per wave; no code equivalence or geographic harmonisation inferred.",
+  "national_reproduction": [
+    {
+      "wave": "NFHS-4",
+      "analysis": "all_narrow",
+      "metric": "observed_public_pct",
+      "estimate_difference_pp": 3.552713678800501e-15,
+      "baseline_se_pp": 0.35204652415547893,
+      "full_domain_roster_se_pp": 0.3520465241554789,
+      "note": "Point reproduced. First-delivery variance retains all narrow-cohort active strata, so SE need not equal older subgroup-only variance."
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "all_narrow",
+      "metric": "observed_private_pct",
+      "estimate_difference_pp": 4.263256414560601e-14,
+      "baseline_se_pp": 0.38172006491960847,
+      "full_domain_roster_se_pp": 0.38172006491960847,
+      "note": "Point reproduced. First-delivery variance retains all narrow-cohort active strata, so SE need not equal older subgroup-only variance."
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "all_narrow",
+      "metric": "observed_gap_pp",
+      "estimate_difference_pp": 4.263256414560601e-14,
+      "baseline_se_pp": 0.5131039787322993,
+      "full_domain_roster_se_pp": 0.5131039787322993,
+      "note": "Point reproduced. First-delivery variance retains all narrow-cohort active strata, so SE need not equal older subgroup-only variance."
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "first_delivery",
+      "metric": "observed_public_pct",
+      "estimate_difference_pp": 7.105427357601002e-15,
+      "baseline_se_pp": 0.4947901737351931,
+      "full_domain_roster_se_pp": 0.4947901737351931,
+      "note": "Point reproduced. First-delivery variance retains all narrow-cohort active strata, so SE need not equal older subgroup-only variance."
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "first_delivery",
+      "metric": "observed_private_pct",
+      "estimate_difference_pp": 7.105427357601002e-15,
+      "baseline_se_pp": 0.48002499239269186,
+      "full_domain_roster_se_pp": 0.48002499239269186,
+      "note": "Point reproduced. First-delivery variance retains all narrow-cohort active strata, so SE need not equal older subgroup-only variance."
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "first_delivery",
+      "metric": "observed_gap_pp",
+      "estimate_difference_pp": 0.0,
+      "baseline_se_pp": 0.6999279171636671,
+      "full_domain_roster_se_pp": 0.699927917163667,
+      "note": "Point reproduced. First-delivery variance retains all narrow-cohort active strata, so SE need not equal older subgroup-only variance."
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "all_narrow",
+      "metric": "observed_public_pct",
+      "estimate_difference_pp": 0.0,
+      "baseline_se_pp": 0.28543778471961845,
+      "full_domain_roster_se_pp": 0.28543778471961845,
+      "note": "Point reproduced. First-delivery variance retains all narrow-cohort active strata, so SE need not equal older subgroup-only variance."
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "all_narrow",
+      "metric": "observed_private_pct",
+      "estimate_difference_pp": 3.552713678800501e-14,
+      "baseline_se_pp": 0.3639353072067156,
+      "full_domain_roster_se_pp": 0.36393530720671563,
+      "note": "Point reproduced. First-delivery variance retains all narrow-cohort active strata, so SE need not equal older subgroup-only variance."
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "all_narrow",
+      "metric": "observed_gap_pp",
+      "estimate_difference_pp": 3.197442310920451e-14,
+      "baseline_se_pp": 0.4515999952012892,
+      "full_domain_roster_se_pp": 0.4515999952012892,
+      "note": "Point reproduced. First-delivery variance retains all narrow-cohort active strata, so SE need not equal older subgroup-only variance."
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "first_delivery",
+      "metric": "observed_public_pct",
+      "estimate_difference_pp": 0.0,
+      "baseline_se_pp": 0.41778067618860537,
+      "full_domain_roster_se_pp": 0.41778067618860537,
+      "note": "Point reproduced. First-delivery variance retains all narrow-cohort active strata, so SE need not equal older subgroup-only variance."
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "first_delivery",
+      "metric": "observed_private_pct",
+      "estimate_difference_pp": 1.4210854715202004e-14,
+      "baseline_se_pp": 0.46357591058152675,
+      "full_domain_roster_se_pp": 0.46357591058152675,
+      "note": "Point reproduced. First-delivery variance retains all narrow-cohort active strata, so SE need not equal older subgroup-only variance."
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "first_delivery",
+      "metric": "observed_gap_pp",
+      "estimate_difference_pp": 1.0658141036401503e-14,
+      "baseline_se_pp": 0.6288687310494463,
+      "full_domain_roster_se_pp": 0.6288687310494462,
+      "note": "Point reproduced. First-delivery variance retains all narrow-cohort active strata, so SE need not equal older subgroup-only variance."
+    }
+  ],
+  "cohort_audit": {
+    "NFHS-4": {
+      "wave": "NFHS-4",
+      "broad_sector_n": 195366,
+      "narrow_before_date_rule_n": 114263,
+      "invalid_date_n": 0,
+      "valid_date_outside_recall_n": 0,
+      "date_or_recall_excluded_n": 0,
+      "date_or_recall_excluded_weight_pct": 0.0,
+      "narrow_before_date_public_n": 62351,
+      "narrow_before_date_private_n": 51912,
+      "recall_rule": "0 <= v008-b3 < 60 months; integer finite CMCs in [1,2400]",
+      "b10_rule": "No additional b10 date-imputation exclusions.",
+      "analytic_n": 114263,
+      "public_n": 62351,
+      "private_n": 51912,
+      "n_states": 36,
+      "education_97_as_missing_n": 0,
+      "model_adjustment_variables": [
+        "birth_order",
+        "education_years",
+        "state",
+        "wealth_index",
+        "residence",
+        "religion",
+        "social_group",
+        "twin_order"
+      ],
+      "birth_sha256": "6fcfebbc37879be3ddf7b8555df9be6df87a9de69480612235adf53eb59fc9b8",
+      "raw_variable_labels": {
+        "m15": "place of delivery",
+        "m17": "delivery by caesarean section",
+        "b3": "date of birth (cmc)",
+        "v008": "date of interview (cmc)",
+        "v005": "national women's sample weight (6 decimals)",
+        "v021": "primary sampling unit",
+        "v022": "sample strata for sampling errors",
+        "v024": "state",
+        "v025": "type of place of residence",
+        "v130": "religion",
+        "v133": "education in single years",
+        "v190": "wealth index",
+        "bord": "birth order number",
+        "b0": "child is twin",
+        "s116": "belong to a scheduled caste, a scheduled tribe, other backward class"
+      },
+      "named_value_label_tables": {
+        "V024": {
+          "1": "andaman and nicobar islands",
+          "2": "andhra pradesh",
+          "3": "arunachal pradesh",
+          "4": "assam",
+          "5": "bihar",
+          "6": "chandigarh",
+          "7": "chhattisgarh",
+          "8": "dadra and nagar haveli",
+          "9": "daman and diu",
+          "10": "goa",
+          "11": "gujarat",
+          "12": "haryana",
+          "13": "himachal pradesh",
+          "14": "jammu and kashmir",
+          "15": "jharkhand",
+          "16": "karnataka",
+          "17": "kerala",
+          "18": "lakshadweep",
+          "19": "madhya pradesh",
+          "20": "maharashtra",
+          "21": "manipur",
+          "22": "meghalaya",
+          "23": "mizoram",
+          "24": "nagaland",
+          "25": "delhi",
+          "26": "odisha",
+          "27": "puducherry",
+          "28": "punjab",
+          "29": "rajasthan",
+          "30": "sikkim",
+          "31": "tamil nadu",
+          "32": "tripura",
+          "33": "uttar pradesh",
+          "34": "uttarakhand",
+          "35": "west bengal",
+          "36": "telangana"
+        },
+        "V025": {
+          "1": "urban",
+          "2": "rural"
+        },
+        "V130": {
+          "1": "hindu",
+          "2": "muslim",
+          "3": "christian",
+          "4": "sikh",
+          "5": "buddhist/neo-buddhist",
+          "6": "jain",
+          "7": "jewish",
+          "8": "parsi/zoroastrian",
+          "9": "no religion",
+          "96": "other"
+        },
+        "V133": {
+          "97": "inconsistent"
+        },
+        "V190": {
+          "1": "poorest",
+          "2": "poorer",
+          "3": "middle",
+          "4": "richer",
+          "5": "richest"
+        },
+        "B0": {
+          "0": "single birth",
+          "1": "1st of multiple",
+          "2": "2nd of multiple",
+          "3": "3rd of multiple",
+          "4": "4th of multiple",
+          "5": "5th of multiple"
+        },
+        "M15": {
+          "10": "home",
+          "11": "respondent's home",
+          "12": "other home",
+          "13": "parents' home",
+          "20": "public sector",
+          "21": "public: govt./munic. hospital",
+          "22": "public: govt. dispensary",
+          "23": "public: uhc/uhp/ufwc",
+          "24": "public: chc/rural hospital/block phc",
+          "25": "public: phc/additional phc",
+          "26": "public: sub-centre",
+          "27": "other public sector health facility",
+          "30": "private sector",
+          "31": "private: hospital/maternity home/clinic",
+          "32": "other private sector health facility",
+          "33": "ngo or trust hospital/clinic",
+          "96": "other"
+        },
+        "S116": {
+          "1": "schedule caste",
+          "2": "schedule tribe",
+          "3": "obc",
+          "4": "none of them",
+          "8": "don't know"
+        }
+      },
+      "value_label_note": "Literal table-name matches only; variable-label metadata is complete for requested variables. No table binding was guessed.",
+      "roster_source": "Full Birth Recode roster; household recode not found; incomplete-frame limitation applies.",
+      "national_roster_psus": 28518,
+      "active_birth_roster_psus": 28514,
+      "household_roster_available": false,
+      "state_design_keys_verified": true
+    },
+    "NFHS-5": {
+      "wave": "NFHS-5",
+      "broad_sector_n": 200794,
+      "narrow_before_date_rule_n": 116176,
+      "invalid_date_n": 0,
+      "valid_date_outside_recall_n": 979,
+      "date_or_recall_excluded_n": 979,
+      "date_or_recall_excluded_weight_pct": 0.8676278407340317,
+      "narrow_before_date_public_n": 67883,
+      "narrow_before_date_private_n": 48293,
+      "recall_rule": "0 <= v008-b3 < 60 months; integer finite CMCs in [1,2400]",
+      "b10_rule": "No additional b10 date-imputation exclusions.",
+      "analytic_n": 115197,
+      "public_n": 67336,
+      "private_n": 47861,
+      "n_states": 36,
+      "education_97_as_missing_n": 0,
+      "model_adjustment_variables": [
+        "birth_order",
+        "education_years",
+        "state",
+        "wealth_index",
+        "residence",
+        "religion",
+        "social_group",
+        "twin_order"
+      ],
+      "birth_sha256": "93267b17596929371dc3190d17af114271851f14d1f566678ffceda2db4cae6e",
+      "raw_variable_labels": {
+        "m15": "place of delivery",
+        "m17": "delivery by caesarean section",
+        "b3": "date of birth (cmc)",
+        "v008": "date of interview (cmc)",
+        "v005": "women's individual sample weight (6 decimals)",
+        "v021": "primary sampling unit",
+        "v022": "sample strata for sampling errors",
+        "v024": "state",
+        "v025": "type of place of residence",
+        "v130": "religion",
+        "v133": "education in single years",
+        "v190": "wealth index combined",
+        "bord": "birth order number",
+        "b0": "child is twin",
+        "s116": "belong to a scheduled caste, a scheduled tribe, other backward class"
+      },
+      "named_value_label_tables": {
+        "V024": {
+          "1": "jammu & kashmir",
+          "2": "himachal pradesh",
+          "3": "punjab",
+          "4": "chandigarh",
+          "5": "uttarakhand",
+          "6": "haryana",
+          "7": "nct of delhi",
+          "8": "rajasthan",
+          "9": "uttar pradesh",
+          "10": "bihar",
+          "11": "sikkim",
+          "12": "arunachal pradesh",
+          "13": "nagaland",
+          "14": "manipur",
+          "15": "mizoram",
+          "16": "tripura",
+          "17": "meghalaya",
+          "18": "assam",
+          "19": "west bengal",
+          "20": "jharkhand",
+          "21": "odisha",
+          "22": "chhattisgarh",
+          "23": "madhya pradesh",
+          "24": "gujarat",
+          "25": "dadra & nagar haveli and daman & diu",
+          "27": "maharashtra",
+          "28": "andhra pradesh",
+          "29": "karnataka",
+          "30": "goa",
+          "31": "lakshadweep",
+          "32": "kerala",
+          "33": "tamil nadu",
+          "34": "puducherry",
+          "35": "andaman & nicobar islands",
+          "36": "telangana",
+          "37": "ladakh"
+        },
+        "V025": {
+          "1": "urban",
+          "2": "rural"
+        },
+        "V130": {
+          "1": "hindu",
+          "2": "muslim",
+          "3": "christian",
+          "4": "sikh",
+          "5": "buddhist / neo-buddhist",
+          "6": "jain",
+          "7": "jewish",
+          "8": "parsi / zoroastrian",
+          "9": "no religion",
+          "96": "other"
+        },
+        "V133": {
+          "97": "inconsistent"
+        },
+        "V190": {
+          "1": "poorest",
+          "2": "poorer",
+          "3": "middle",
+          "4": "richer",
+          "5": "richest"
+        },
+        "B0": {
+          "0": "single birth",
+          "1": "1st of multiple",
+          "2": "2nd of multiple",
+          "3": "3rd of multiple",
+          "4": "4th of multiple",
+          "5": "5th of multiple"
+        },
+        "M15": {
+          "10": "home",
+          "11": "respondent's home",
+          "12": "other home",
+          "13": "parents' home",
+          "20": "public sector",
+          "21": "public: govt./munic. hospital",
+          "22": "public: govt. dispensary",
+          "23": "public: uhc/uhp/ufwc",
+          "24": "public: chc/rural hospital/block phc",
+          "25": "public: phc/additional phc",
+          "26": "public: sub-centre",
+          "27": "other public sector health facility",
+          "30": "private sector",
+          "31": "private: hospital/maternity home/clinic",
+          "32": "other private sector health facility",
+          "33": "ngo or trust hospital/clinic",
+          "96": "other"
+        },
+        "S116": {
+          "1": "schedule caste",
+          "2": "schedule tribe",
+          "3": "obc",
+          "4": "none of them",
+          "8": "don't know"
+        }
+      },
+      "value_label_note": "Literal table-name matches only; variable-label metadata is complete for requested variables. No table binding was guessed.",
+      "roster_source": "Observed Household Recode",
+      "household_sha256": "24d2e2696da618b434c7e7b5187ad5bac40e0eaaedafe3a6cbe8c2ab04274cec",
+      "national_roster_psus": 30170,
+      "active_birth_roster_psus": 30156,
+      "household_roster_available": true,
+      "state_design_keys_verified": true,
+      "difference_from_previously_cited_30198_national_psus": 28
+    }
+  },
+  "original_baseline_script_sha256": "63671660768f5ed1e8add622e361f0559937769ae10727a1a65c911ac1f0e28e",
+  "source_compatibility_reproduction": [
+    {
+      "wave": "NFHS-4",
+      "analysis": "all_narrow",
+      "metric": "observed_public_pct",
+      "differences_pp": {
+        "estimate": 0.0,
+        "se": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      }
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "all_narrow",
+      "metric": "observed_private_pct",
+      "differences_pp": {
+        "estimate": 4.973799150320701e-14,
+        "se": 5.551115123125783e-17,
+        "ci_lower": 4.973799150320701e-14,
+        "ci_upper": 4.973799150320701e-14
+      }
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "all_narrow",
+      "metric": "observed_gap_pp",
+      "differences_pp": {
+        "estimate": 4.973799150320701e-14,
+        "se": 1.1102230246251565e-16,
+        "ci_lower": 4.973799150320701e-14,
+        "ci_upper": 4.973799150320701e-14
+      }
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "all_narrow",
+      "metric": "adjusted_public_pct",
+      "differences_pp": {
+        "estimate": 7.105427357601002e-15,
+        "se": 0.0,
+        "ci_lower": 7.105427357601002e-15,
+        "ci_upper": 7.105427357601002e-15
+      }
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "all_narrow",
+      "metric": "adjusted_private_pct",
+      "differences_pp": {
+        "estimate": 1.4210854715202004e-14,
+        "se": 1.1102230246251565e-16,
+        "ci_lower": 1.4210854715202004e-14,
+        "ci_upper": 1.4210854715202004e-14
+      }
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "all_narrow",
+      "metric": "adjusted_gap_pp",
+      "differences_pp": {
+        "estimate": 7.105427357601002e-15,
+        "se": 1.1102230246251565e-16,
+        "ci_lower": 7.105427357601002e-15,
+        "ci_upper": 7.105427357601002e-15
+      }
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "first_delivery",
+      "metric": "observed_public_pct",
+      "differences_pp": {
+        "estimate": 0.0,
+        "se": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      }
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "first_delivery",
+      "metric": "observed_private_pct",
+      "differences_pp": {
+        "estimate": 1.4210854715202004e-14,
+        "se": 1.1102230246251565e-16,
+        "ci_lower": 1.4210854715202004e-14,
+        "ci_upper": 1.4210854715202004e-14
+      }
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "first_delivery",
+      "metric": "observed_gap_pp",
+      "differences_pp": {
+        "estimate": 1.0658141036401503e-14,
+        "se": 0.0,
+        "ci_lower": 1.0658141036401503e-14,
+        "ci_upper": 1.0658141036401503e-14
+      }
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "first_delivery",
+      "metric": "adjusted_public_pct",
+      "differences_pp": {
+        "estimate": 3.552713678800501e-15,
+        "se": 1.1102230246251565e-16,
+        "ci_lower": 7.105427357601002e-15,
+        "ci_upper": 0.0
+      }
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "first_delivery",
+      "metric": "adjusted_private_pct",
+      "differences_pp": {
+        "estimate": 7.105427357601002e-15,
+        "se": 1.6653345369377348e-16,
+        "ci_lower": 7.105427357601002e-15,
+        "ci_upper": 7.105427357601002e-15
+      }
+    },
+    {
+      "wave": "NFHS-4",
+      "analysis": "first_delivery",
+      "metric": "adjusted_gap_pp",
+      "differences_pp": {
+        "estimate": 1.0658141036401503e-14,
+        "se": 1.1102230246251565e-16,
+        "ci_lower": 1.0658141036401503e-14,
+        "ci_upper": 1.0658141036401503e-14
+      }
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "all_narrow",
+      "metric": "observed_public_pct",
+      "differences_pp": {
+        "estimate": 0.0,
+        "se": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      }
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "all_narrow",
+      "metric": "observed_private_pct",
+      "differences_pp": {
+        "estimate": 3.552713678800501e-14,
+        "se": 1.1102230246251565e-16,
+        "ci_lower": 3.552713678800501e-14,
+        "ci_upper": 3.552713678800501e-14
+      }
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "all_narrow",
+      "metric": "observed_gap_pp",
+      "differences_pp": {
+        "estimate": 3.197442310920451e-14,
+        "se": 0.0,
+        "ci_lower": 3.197442310920451e-14,
+        "ci_upper": 3.197442310920451e-14
+      }
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "all_narrow",
+      "metric": "adjusted_public_pct",
+      "differences_pp": {
+        "estimate": 7.105427357601002e-15,
+        "se": 1.1102230246251565e-16,
+        "ci_lower": 7.105427357601002e-15,
+        "ci_upper": 7.105427357601002e-15
+      }
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "all_narrow",
+      "metric": "adjusted_private_pct",
+      "differences_pp": {
+        "estimate": 2.842170943040401e-14,
+        "se": 1.1102230246251565e-16,
+        "ci_lower": 2.842170943040401e-14,
+        "ci_upper": 2.842170943040401e-14
+      }
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "all_narrow",
+      "metric": "adjusted_gap_pp",
+      "differences_pp": {
+        "estimate": 2.1316282072803006e-14,
+        "se": 1.6653345369377348e-16,
+        "ci_lower": 2.1316282072803006e-14,
+        "ci_upper": 2.1316282072803006e-14
+      }
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "first_delivery",
+      "metric": "observed_public_pct",
+      "differences_pp": {
+        "estimate": 1.0658141036401503e-14,
+        "se": 5.551115123125783e-17,
+        "ci_lower": 7.105427357601002e-15,
+        "ci_upper": 1.4210854715202004e-14
+      }
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "first_delivery",
+      "metric": "observed_private_pct",
+      "differences_pp": {
+        "estimate": 1.4210854715202004e-14,
+        "se": 1.1102230246251565e-16,
+        "ci_lower": 1.4210854715202004e-14,
+        "ci_upper": 1.4210854715202004e-14
+      }
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "first_delivery",
+      "metric": "observed_gap_pp",
+      "differences_pp": {
+        "estimate": 0.0,
+        "se": 1.1102230246251565e-16,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      }
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "first_delivery",
+      "metric": "adjusted_public_pct",
+      "differences_pp": {
+        "estimate": 2.1316282072803006e-14,
+        "se": 0.0,
+        "ci_lower": 2.1316282072803006e-14,
+        "ci_upper": 2.1316282072803006e-14
+      }
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "first_delivery",
+      "metric": "adjusted_private_pct",
+      "differences_pp": {
+        "estimate": 2.1316282072803006e-14,
+        "se": 0.0,
+        "ci_lower": 2.1316282072803006e-14,
+        "ci_upper": 2.1316282072803006e-14
+      }
+    },
+    {
+      "wave": "NFHS-5",
+      "analysis": "first_delivery",
+      "metric": "adjusted_gap_pp",
+      "differences_pp": {
+        "estimate": 0.0,
+        "se": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0
+      }
+    }
+  ],
+  "source_compatibility_note": "Known reviewed current source allowed only with full national estimate/SE/CI reproduction when original recorded hash differs.",
+  "script_sha256": "5a660fbb0da834e13c7177444c41e92f77ffd1164d54e8c8ec22d893a58ab775",
+  "base_script_sha256": "6ee895abac082b9c6a8173764606f64167bf7700f69f578a0d91c5058b71e836",
+  "limitations": [
+    "Descriptive associations only; no clinical appropriateness or causal conclusions.",
+    "With-replacement ultimate-PSU approximation; observed roster, singleton and no-FPC/lower-stage limitations remain.",
+    "Marginal approximate t/Wald intervals; no simultaneous coverage, state rankings or multiplicity-adjusted significance claims.",
+    "Intervals at boundary outcomes withheld; zero-variance intervals withheld; sparse and weight-dominated samples flagged.",
+    "State/UT labels and boundary changes require manual review before cross-wave presentation; no temporal difference tests calculated.",
+    "Describes eligible narrow facility births, not all births or general hospital utilisation.",
+    "No social-group imputation needed for unadjusted descriptive ratios."
+  ],
+  "remaining_work": "Review mapping, sparse flags and interval precision; then prepare publication table/figure.",
+  "execution_note": "Author did not execute or test this script before delivery.",
+  "existing_outputs_changed": false
+}

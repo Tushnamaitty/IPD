@@ -1,0 +1,145 @@
+wave,analysis,raw_state_code,state_name,n_public,n_private,both_sectors_observed,below_30_either_sector,uncertainty_error,roster_active_psus,analytic_psus,zero_domain_psus_added,active_state_strata,singleton_active_state_strata,design_df,design_key,stratum_codes_shared_across_states
+NFHS-4,all_narrow,1,andaman and nicobar islands,194,16,True,True,,114,80,34,11,1,103,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,1,andaman and nicobar islands,108,11,True,True,,114,80,34,11,1,103,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,2,andhra pradesh,513,1598,True,False,,494,462,32,52,0,442,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,2,andhra pradesh,223,808,True,False,,494,462,32,52,0,442,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,3,arunachal pradesh,1390,309,True,False,,730,512,218,64,0,666,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,3,arunachal pradesh,594,143,True,False,,730,512,218,64,0,666,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,4,assam,1589,841,True,False,,1161,828,333,108,1,1053,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,4,assam,905,539,True,False,,1161,828,333,108,1,1053,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,5,bihar,3558,4026,True,False,,1677,1544,133,152,0,1525,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,5,bihar,1149,1756,True,False,,1677,1544,133,152,0,1525,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,6,chandigarh,116,34,True,False,,38,33,5,2,1,36,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,6,chandigarh,48,19,True,True,,38,33,5,2,1,36,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,7,chhattisgarh,1466,1139,True,False,,946,705,241,72,0,874,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,7,chhattisgarh,667,603,True,False,,946,705,241,72,0,874,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,8,dadra and nagar haveli,117,68,True,False,,38,37,1,4,0,34,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,8,dadra and nagar haveli,51,46,True,False,,38,37,1,4,0,34,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,9,daman and diu,38,202,True,False,,76,70,6,8,0,68,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,9,daman and diu,17,102,True,True,,76,70,6,8,0,68,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,25,delhi,862,435,True,False,,321,293,28,12,1,309,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,25,delhi,359,208,True,False,,321,293,28,12,1,309,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,10,goa,162,156,True,False,,76,76,0,8,0,68,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,10,goa,68,88,True,False,,76,76,0,8,0,68,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,11,gujarat,1070,3726,True,False,,988,941,47,104,0,884,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,11,gujarat,453,1747,True,False,,988,941,47,104,0,884,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,12,haryana,2701,2143,True,False,,798,776,22,84,0,714,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,12,haryana,1184,1129,True,False,,798,776,22,84,0,714,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,13,himachal pradesh,1348,410,True,False,,456,428,28,46,0,410,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,13,himachal pradesh,711,207,True,False,,456,428,28,46,0,410,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,14,jammu and kashmir,4355,477,True,False,,837,778,59,86,0,751,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,14,jammu and kashmir,1892,216,True,False,,837,778,59,86,0,751,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,15,jharkhand,1589,2127,True,False,,1247,999,248,96,0,1151,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,15,jharkhand,654,1048,True,False,,1247,999,248,96,0,1151,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,16,karnataka,3007,2253,True,False,,1140,1081,59,120,3,1020,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,16,karnataka,1299,1195,True,False,,1140,1081,59,120,3,1020,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,17,kerala,919,1486,True,False,,531,516,15,56,0,475,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,17,kerala,423,730,True,False,,531,516,15,56,0,475,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,18,lakshadweep,119,107,True,False,,35,35,0,4,2,31,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,18,lakshadweep,63,56,True,False,,35,35,0,4,2,31,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,19,madhya pradesh,6103,2440,True,False,,2410,1939,471,201,0,2209,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,19,madhya pradesh,2565,1291,True,False,,2410,1939,471,201,0,2209,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,20,maharashtra,2765,3564,True,False,,1338,1269,69,135,0,1203,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,20,maharashtra,1201,1753,True,False,,1338,1269,69,135,0,1203,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,21,manipur,2044,1142,True,False,,556,521,35,36,0,520,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,21,manipur,1037,533,True,False,,556,521,35,36,0,520,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,22,meghalaya,806,482,True,False,,340,251,89,27,0,313,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,22,meghalaya,278,193,True,False,,340,251,89,27,0,313,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,23,mizoram,2219,257,True,False,,545,494,51,32,0,513,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,23,mizoram,855,105,True,False,,545,494,51,32,0,513,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,24,nagaland,759,273,True,False,,540,346,194,44,0,496,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,24,nagaland,354,120,True,False,,540,346,194,44,0,496,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,26,odisha,2514,941,True,False,,1419,1050,369,120,0,1299,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,26,odisha,1260,574,True,False,,1419,1050,369,120,0,1299,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,27,puducherry,604,380,True,False,,152,151,1,10,0,142,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,27,puducherry,308,186,True,False,,152,151,1,10,0,142,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,28,punjab,2597,1904,True,False,,760,754,6,80,0,680,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,28,punjab,1213,1033,True,False,,760,754,6,80,0,680,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,29,rajasthan,3641,3261,True,False,,1634,1468,166,132,0,1502,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,29,rajasthan,1526,1561,True,False,,1634,1468,166,132,0,1502,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,30,sikkim,672,96,True,False,,215,204,11,16,0,199,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,30,sikkim,370,70,True,False,,215,204,11,16,0,199,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,31,tamil nadu,3843,2456,True,False,,1216,1188,28,126,0,1090,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,31,tamil nadu,1797,1355,True,False,,1216,1188,28,126,0,1090,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,36,telangana,409,1347,True,False,,380,357,23,38,0,342,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,36,telangana,151,655,True,False,,380,357,23,38,0,342,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,32,tripura,480,132,True,False,,215,177,38,16,0,199,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,32,tripura,311,92,True,False,,215,177,38,16,0,199,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,33,uttar pradesh,4711,9676,True,False,,3638,3224,414,285,0,3353,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,33,uttar pradesh,1718,4214,True,False,,3638,3224,414,285,0,3353,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,34,uttarakhand,1133,1145,True,False,,731,600,131,52,0,679,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,34,uttarakhand,488,553,True,False,,731,600,131,52,0,679,"raw state, stratum, PSU within each wave",0
+NFHS-4,all_narrow,35,west bengal,1938,863,True,False,,722,677,45,74,0,648,"raw state, stratum, PSU within each wave",0
+NFHS-4,first_delivery,35,west bengal,1057,555,True,False,,722,677,45,74,0,648,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,35,andaman & nicobar islands,239,33,True,False,,125,80,45,10,0,115,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,35,andaman & nicobar islands,115,19,True,True,,125,80,45,10,0,115,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,28,andhra pradesh,624,1225,True,False,,546,499,47,52,0,494,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,28,andhra pradesh,270,603,True,False,,546,499,47,52,0,494,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,12,arunachal pradesh,2604,213,True,False,,858,687,171,79,0,779,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,12,arunachal pradesh,1091,111,True,False,,858,687,171,79,0,779,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,18,assam,3193,894,True,False,,1386,1144,242,131,1,1255,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,18,assam,1598,513,True,False,,1386,1144,242,131,1,1255,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,10,bihar,3734,3719,True,False,,1710,1515,195,152,0,1558,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,10,bihar,1168,1613,True,False,,1710,1515,195,152,0,1558,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,4,chandigarh,130,25,True,True,,41,37,4,2,1,39,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,4,chandigarh,50,9,True,True,,41,37,4,2,1,39,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,22,chhattisgarh,2020,964,True,False,,1134,874,260,108,0,1026,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,22,chhattisgarh,847,513,True,False,,1134,874,260,108,0,1026,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,25,dadra & nagar haveli and daman & diu,259,221,True,False,,126,113,13,12,0,114,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,25,dadra & nagar haveli and daman & diu,109,117,True,False,,126,113,13,12,0,114,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,30,goa,193,151,True,False,,84,80,4,8,0,76,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,30,goa,99,93,True,False,,84,80,4,8,0,76,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,24,gujarat,1874,4385,True,False,,1386,1297,89,132,0,1254,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,24,gujarat,788,2070,True,False,,1386,1297,89,132,0,1254,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,6,haryana,2519,2413,True,False,,877,849,28,88,0,789,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,6,haryana,987,1164,True,False,,877,849,28,88,0,789,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,2,himachal pradesh,1223,365,True,False,,504,444,60,46,0,458,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,2,himachal pradesh,631,197,True,False,,504,444,60,46,0,458,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,1,jammu & kashmir,3554,268,True,False,,840,747,93,76,1,764,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,1,jammu & kashmir,1573,137,True,False,,840,747,93,76,1,764,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,20,jharkhand,2005,1575,True,False,,1080,870,210,96,0,984,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,20,jharkhand,828,751,True,False,,1080,870,210,96,0,984,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,29,karnataka,2512,2350,True,False,,1260,1114,146,120,2,1140,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,29,karnataka,1063,1219,True,False,,1260,1114,146,120,2,1140,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,32,kerala,835,1728,True,False,,588,568,20,56,0,532,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,32,kerala,347,765,True,False,,588,568,20,56,0,532,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,37,ladakh,299,1,True,True,,84,67,17,8,0,76,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,37,ladakh,119,0,False,True,,84,67,17,8,0,76,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,31,lakshadweep,69,95,True,False,,42,31,11,4,0,38,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,31,lakshadweep,38,41,True,False,,42,31,11,4,0,38,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,23,madhya pradesh,4275,1354,True,False,,2131,1601,530,202,0,1929,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,23,madhya pradesh,1849,715,True,False,,2131,1601,530,202,0,1929,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,27,maharashtra,3712,3001,True,False,,1510,1390,120,138,0,1372,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,27,maharashtra,1537,1557,True,False,,1510,1390,120,138,0,1372,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,14,manipur,1237,533,True,False,,378,342,36,36,0,342,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,14,manipur,530,236,True,False,,378,342,36,36,0,342,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,17,meghalaya,1341,409,True,False,,462,366,96,41,0,421,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,17,meghalaya,455,126,True,False,,462,366,96,41,0,421,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,15,mizoram,1169,167,True,False,,336,288,48,32,0,304,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,15,mizoram,411,62,True,False,,336,288,48,32,0,304,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,13,nagaland,599,179,True,False,,461,307,154,44,0,417,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,13,nagaland,299,91,True,False,,461,307,154,44,0,417,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,7,nct of delhi,1683,824,True,False,,462,445,17,23,9,439,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,7,nct of delhi,713,408,True,False,,462,445,17,23,9,439,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,21,odisha,2344,932,True,False,,1260,1017,243,120,0,1140,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,21,odisha,1167,540,True,False,,1260,1017,243,120,0,1140,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,34,puducherry,429,284,True,False,,168,163,5,10,0,158,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,34,puducherry,188,138,True,False,,168,163,5,10,0,158,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,3,punjab,2976,2160,True,False,,915,902,13,88,0,827,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,3,punjab,1282,1081,True,False,,915,902,13,88,0,827,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,8,rajasthan,3223,2257,True,False,,1485,1285,200,132,0,1353,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,8,rajasthan,1417,1093,True,False,,1485,1285,200,132,0,1353,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,11,sikkim,373,64,True,False,,168,146,22,16,0,152,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,11,sikkim,194,38,True,False,,168,146,22,16,0,152,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,33,tamil nadu,3053,2088,True,False,,1344,1269,75,125,0,1219,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,33,tamil nadu,1499,1095,True,False,,1344,1269,75,125,0,1219,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,36,telangana,2867,3287,True,False,,1302,1249,53,121,2,1181,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,36,telangana,1176,1549,True,False,,1302,1249,53,121,2,1181,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,16,tripura,1100,204,True,False,,336,313,23,32,0,304,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,16,tripura,624,122,True,False,,336,313,23,32,0,304,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,9,uttar pradesh,5844,7794,True,False,,3358,3000,358,300,0,3058,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,9,uttar pradesh,2018,3360,True,False,,3358,3000,358,300,0,3058,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,5,uttarakhand,1210,752,True,False,,582,500,82,52,0,530,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,5,uttarakhand,582,371,True,False,,582,500,82,52,0,530,"raw state, stratum, PSU within each wave",0
+NFHS-5,all_narrow,19,west bengal,2015,947,True,False,,840,761,79,77,0,763,"raw state, stratum, PSU within each wave",0
+NFHS-5,first_delivery,19,west bengal,1081,594,True,False,,840,761,79,77,0,763,"raw state, stratum, PSU within each wave",0
