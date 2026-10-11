@@ -1,3 +1,35 @@
+# IPD — Inequalities in Hospital Care Utilisation: Cesarean Delivery in India
+
+## Current manuscript analysis (updated 11 October 2026)
+
+**Current manuscript question:** Among births in selected government/municipal hospitals (NFHS delivery-place `m15=21`) and private hospitals/maternity homes/clinics (`m15=31`), how do survey-weighted cesarean (`m17`) proportions and covariate-standardized public–private differences vary between NFHS-4 and NFHS-5, across residence groups and states/UTs?
+
+**Interpretation:** Observational, descriptive and model-standardized *associations*. Neither delivery-sector assignment nor state policy effects are causally identified. SHAP pertains to prediction only.
+
+**Primary narrow-facility samples** after the recorded 60-month birth-recall/date criteria: NFHS-4 all births n=114,263 (first delivery n=52,851), NFHS-5 all births n=115,197 (first delivery n=51,854). Broad-sector NFHS-5 n=200,794 and original predictive NFHS-5 n=201,311 refer to **different analytic cohorts** and must not be substituted for current manuscript denominators. First deliveries include twins where recorded.
+
+| Study/wave | Observed private−public gap | Model-standardized private−public gap |
+|---|---:|---:|
+| NFHS-4 narrow, all births | 22.42 pp | 19.17 pp |
+| NFHS-4 narrow, first deliveries | 23.62 pp | 21.21 pp |
+| NFHS-5 narrow, all births | 25.16 pp | 23.76 pp |
+| NFHS-5 narrow, first deliveries | 25.62 pp | 25.24 pp |
+
+National models above standardize within their own wave/cohort. **Cross-wave comparisons instead use a shared, support-restricted reference** in 33 comparable states/UTs: all-birth change +4.66 pp and first-delivery change +4.00 pp. These must not be reconstructed by subtracting the rounded own-cohort national gaps.
+
+Main figure/supplement plan agreed with Professor Murthy: show an all-birth state-wise figure in the main manuscript, detailed state/UT estimates in supplements; consider a WHO-style state heat map optionally. State-wise estimates are **unadjusted** and are not interchangeable with standardized national estimates. Survey uncertainty is approximate and limitations are recorded.
+
+**Reproducibility and review:** Raw DHS NFHS data are not distributed in this repository; the review below uses committed aggregate outputs and supplied research-update PDFs, not independent microdata reruns. Review documents:
+- [Definitive results inventory](docs/manuscript_results_inventory_2026-10-11.md)
+- [Uncertainty and design review](docs/uncertainty_review_2026-10-11.md)
+- [Code, output and PDF consistency audit](docs/consistency_audit_2026-10-11.md)
+
+The older prediction/AIPW development work below is preserved as **historical project documentation**, not the current primary manuscript specification.
+
+---
+
+## Archived original ML-focused README (historical research phase)
+
 # Explainable Machine Learning Prediction of Cesarean Section Delivery in India
 
 ## Overview
