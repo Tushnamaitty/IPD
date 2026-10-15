@@ -1,0 +1,26 @@
+schema_version: '0.1-planning'
+status: inference_implementation_NOT_VALIDATED
+primary:
+  comparison: selected_v2_vs_matched_original_feature_xgboost
+  metric: roc_auc
+  paired_rows_required: true
+  confirmatory_only_if_untouched_test: true
+secondary_metrics: [average_precision, brier_score, calibration_intercept, calibration_slope, precision, recall, f1]
+report_outcome_prevalence: true
+survey:
+  weights: v005
+  psu_candidates: [v001, v021]
+  stratum_candidates: [v022, v023]
+  variable_selection: PENDING_DESIGN_AUDIT
+inference:
+  proposed: paired_stratified_psu_bootstrap
+  bootstrap_replicates_target: 2000
+  alpha: 0.05
+  replicate_weight_construction: PENDING_STATISTICAL_REVIEW
+  singleton_strata_handling: PENDING_STATISTICAL_REVIEW
+  conditional_on_fitted_models: true
+  row_bootstrap_not_design_valid: true
+multiplicity:
+  single_primary_confirmatory_comparison: true
+  other_comparisons: exploratory_unless_prespecified_and_adjusted
+public_outputs: aggregate_only
