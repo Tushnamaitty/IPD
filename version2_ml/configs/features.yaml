@@ -1,0 +1,17 @@
+schema_version: '0.1-planning'
+status: verify_code_and_wave_availability
+feature_tiers:
+  F0: {description: 'Historical Version 1 set, 36 predictors', source: 'notebooks/03_machine_learning_preprocessing.ipynb'}
+  F1: {description: 'Leakage-reviewed F0, exact changes pending audit', depends_on: F0}
+  F2: {description: 'F1 plus state/area context (A1)', depends_on: F1}
+  F3: {description: 'Matched baseline plus NFHS-4 historical context (A2)', depends_on: F1}
+  F4: {description: 'Matched baseline plus OOF state-sector target encoding (A3)', depends_on: F1}
+  F5: {description: 'F1 plus facility detail and observed previous-CS history (A4)', depends_on: F1}
+  F6: {description: 'Development-selected combined feature set', depends_on: F1, selection: development_only}
+  FT: {description: 'Harmonized NFHS-4/NFHS-5 predictors', approval: pending_codebook_audit}
+mandatory_ablation_rules:
+  A3: 'Compare against identical state/sector information without target encoding'
+  A4: 'Ablate detailed facility and previous-CS history separately'
+  N1: 'Compare individual-only, contextual-only, and combined sets on matched rows'
+restricted_columns_never_predictors: [csection, respondent_id, birth_key, sample_weight, primary_sampling_unit, sample_stratum_v022, sample_stratum_v023]
+feature_provenance_required: true
