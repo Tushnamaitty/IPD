@@ -79,8 +79,7 @@ def main():
             if not report["comparison_step4_kish_matches"]:
                 report["status"]="KISH_MISMATCH_INVESTIGATE"
     OUT.parent.mkdir(parents=True,exist_ok=True)
-    OUT.write_text(json.dumps(report,indent=2)+"
-",encoding="utf-8")
+    OUT.write_text(json.dumps(report,indent=2)+chr(10),encoding="utf-8")
     print("Saved:",OUT)
     print("Strata:",total,"singleton:",single,"PSU pairs:",len(cluster))
     print("Variance estimator approved: NO")
