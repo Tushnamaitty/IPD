@@ -32,7 +32,7 @@ def main():
     w=pd.to_numeric(sample["sample_weight"],errors="coerce")
     valid=(stratum.notna() & psu.notna() & w.notna() & np.isfinite(w) & (w>0))
     if not valid.all():raise ValueError("Invalid stratum/PSU/weight in held-out fold")
-    units=pd.DataFrame({"s":stratum.to_numpy(),"p":psu.to_numpy(),
+    weight_values=w.to_numpy(dtype=np.float64)\n    kish=float(weight_values.sum()**2/np.dot(weight_values,weight_values))\n    if not np.isfinite(kish) or not (0 < kish <= len(weight_values)):\n        raise ValueError("Invalid Kish effective sample size")\n    units=pd.DataFrame({"s":stratum.to_numpy(),"p":psu.to_numpy(),
                         "y":y.iloc[te].to_numpy(),"w":w.to_numpy()})
     cluster=units.groupby(["s","p"],dropna=False).agg(
         births=("y","size"),positives=("y","sum"),weight_sum=("w","sum")).reset_index()
@@ -50,7 +50,7 @@ def main():
       "distinct_psu_stratum_pairs":int(len(cluster)),
       "psu_pairs_no_positive_births":int(cluster["positives"].eq(0).sum()),
       "psu_pairs_all_positive_births":int(cluster["positives"].eq(cluster["births"]).sum()),
-      "weight_kish_effective_births":float(w.sum()**2/(w@w)),
+      "weight_kish_effective_births":kish,
       "max_births_in_psu":int(cluster["births"].max()),
       "max_psu_weight_share":float(cluster["weight_sum"].max()/cluster["weight_sum"].sum()),
       "variance_estimator_approved":False,
@@ -65,7 +65,7 @@ def main():
         "No row-level identifiers, PSU mapping, or small state subgroup counts are saved."
       ]
     }
-    OUT.parent.mkdir(parents=True,exist_ok=True)
+    previous=ROOT/"version2_ml/audits/phase4/outputs/step4_weighted_metrics_pilot.json"\n    if previous.is_file():\n        earlier=json.loads(previous.read_text(encoding="utf-8"))\n        reference=earlier.get("test_weight_effective_n_kish")\n        if reference is not None:\n            report["comparison_step4_kish_absolute_difference"]=float(abs(kish-float(reference)))\n            report["comparison_step4_kish_matches"]=bool(np.isclose(kish,float(reference),rtol=1e-10,atol=1e-7))\n            if not report["comparison_step4_kish_matches"]:\n                report["status"]="KISH_MISMATCH_INVESTIGATE"\n    OUT.parent.mkdir(parents=True,exist_ok=True)
     OUT.write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
     print("Saved:",OUT)
     print("Strata:",total,"singleton:",single,"PSU pairs:",len(cluster))
