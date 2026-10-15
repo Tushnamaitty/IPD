@@ -1,0 +1,25 @@
+schema_version: '0.1-planning'
+status: split_design_not_finalized
+random_seed: 42
+grouping: respondent_id
+primary_nfhs5:
+  strategy: mother_grouped_development_validation_final_test
+  proportions: null
+  untouched_final_test_required_for_confirmatory_label: true
+  previous_v1_test_already_examined: true
+  independent_holdout_claim: not_yet_justified
+development_cv:
+  method: StratifiedGroupKFold
+  n_splits: 3
+  shuffle: true
+wave_transfer:
+  source: NFHS-4
+  target: NFHS-5
+  target_labels_for_source_tuning: forbidden
+  adaptation_and_evaluation: disjoint
+geographic_transfer:
+  holdout_unit: state_or_region
+  unseen_state_encoding: source_only_fallback
+sector_transfer:
+  directions: [public_to_private, private_to_public]
+  source_only_preprocessing: true
