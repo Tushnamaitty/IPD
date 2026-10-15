@@ -1,0 +1,31 @@
+schema_version: '0.1-planning'
+status: pending_raw_data_audit
+outcome:
+  column: csection
+  source: m17
+  positive_class: 1
+  coding_verified: false
+prediction_unit: birth_record
+group_key: respondent_id
+cohorts:
+  C1:
+    label: primary_nfhs5_institutional
+    wave: NFHS-5
+    facility_scope: public_private_other_institutional
+    expected_n_historical_only: 201311
+    raw_reconciliation_required: true
+  C2:
+    label: harmonized_cross_wave
+    waves: [NFHS-4, NFHS-5]
+    eligibility: common_harmonized_institutional
+    birth_calendar_overlap_check: required
+  C3:
+    label: geographic_holdouts
+    parent: C1
+    unit: state_or_prespecified_region
+  C4:
+    label: sector_holdouts
+    parent: C1
+    sectors: [public, private]
+    exclude_other: true
+note: 'Cohort counts and exact filters are unverified. Never substitute Paper 1 narrow m15=21/31 cohort.'
