@@ -1,0 +1,25 @@
+schema_version: '0.1-planning'
+status: hyperparameter_grids_pending
+baseline:
+  algorithm: XGBoost
+  features: F0
+  provenance: historical_v1_retrain_on_matched_rows
+  old_reference_auc: 0.8033
+  old_reference_ap: 0.5330
+  reference_values_not_comparison_effect: true
+candidate_algorithms: [LogisticRegression, XGBoost, CatBoost]
+model_selection:
+  data: development_only
+  primary_metric: roc_auc
+  key_secondary_metric: average_precision
+  tie_breaker: simpler_well_calibrated_model
+  promotion_delta_roc_auc: 0.005
+  promotion_delta_average_precision: 0.010
+  promotion_thresholds_provisional: true
+preprocessing:
+  fit_scope: train_fold_only
+  target_encoding: grouped_out_of_fold
+  imputation: train_fold_only
+  calibration: distinct_authorized_partition
+  classification_threshold: validation_only
+training_budget: pending_pilot
