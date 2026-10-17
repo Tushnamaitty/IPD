@@ -1,0 +1,37 @@
+state_code,state,status,reasons,n_births,n_events
+1,jammu & kashmir,ESTIMABLE,,4500,1928
+2,himachal pradesh,ESTIMABLE,,1954,427
+3,punjab,ESTIMABLE,,4608,1820
+4,chandigarh,NOT_ESTIMABLE,n<200,SUPPRESSED,SUPPRESSED
+5,uttarakhand,ESTIMABLE,,2625,540
+6,haryana,ESTIMABLE,,5574,1087
+7,nct of delhi,ESTIMABLE,,2271,601
+8,rajasthan,ESTIMABLE,,11820,1188
+9,uttar pradesh,ESTIMABLE,,25407,3751
+10,bihar,ESTIMABLE,,13848,1720
+11,sikkim,ESTIMABLE,,513,165
+12,arunachal pradesh,ESTIMABLE,,3759,679
+13,nagaland,ESTIMABLE,,1048,98
+14,manipur,ESTIMABLE,,1843,495
+15,mizoram,ESTIMABLE,,1676,186
+16,tripura,ESTIMABLE,,1532,355
+17,meghalaya,ESTIMABLE,,3127,355
+18,assam,ESTIMABLE,,7619,1553
+19,west bengal,ESTIMABLE,,4332,1439
+20,jharkhand,ESTIMABLE,,6495,1014
+21,odisha,ESTIMABLE,,6599,1426
+22,chhattisgarh,ESTIMABLE,,6063,883
+23,madhya pradesh,ESTIMABLE,,12464,1550
+24,gujarat,ESTIMABLE,,7808,1528
+25,dadra & nagar haveli and daman & diu,ESTIMABLE,,656,181
+27,maharashtra,ESTIMABLE,,7623,1832
+28,andhra pradesh,ESTIMABLE,,2369,1014
+29,karnataka,ESTIMABLE,,6956,2266
+30,goa,ESTIMABLE,,302,116
+31,lakshadweep,ESTIMABLE,,237,70
+32,kerala,ESTIMABLE,,2323,908
+33,tamil nadu,ESTIMABLE,,5541,2547
+34,puducherry,ESTIMABLE,,652,295
+35,andaman & nicobar islands,ESTIMABLE,,382,96
+36,telangana,ESTIMABLE,,6035,3702
+37,ladakh,ESTIMABLE,,429,173

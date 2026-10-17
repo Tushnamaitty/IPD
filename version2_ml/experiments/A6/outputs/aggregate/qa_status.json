@@ -1,0 +1,86 @@
+{
+  "experiment": "A6",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "synthetic_tests",
+      "status": "PASS",
+      "detail": "10/10 passed"
+    },
+    {
+      "check": "shared_split_mother_exclusive",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "each_mother_single_state",
+      "status": "PASS",
+      "detail": "134,665 mothers"
+    },
+    {
+      "check": "geographic_reference_reproduces_A2_B0",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "check": "support_screen_applied",
+      "status": "PASS",
+      "detail": "35/36 states estimable"
+    },
+    {
+      "check": "runtime_geographic_G0_ft_state_free_target_state_labels_flipped_predictions_identical",
+      "status": "PASS",
+      "detail": "state 1"
+    },
+    {
+      "check": "runtime_geographic_te_target_state_labels_flipped_encodings_identical",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "runtime_geographic_G_te_source_fallback_target_state_labels_flipped_predictions_identical",
+      "status": "PASS",
+      "detail": "state 1"
+    },
+    {
+      "check": "sector_overlap_policy_applied",
+      "status": "PASS",
+      "detail": "3800 both-sector mothers excluded"
+    },
+    {
+      "check": "sector_public_to_private_zero_mother_overlap",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "runtime_sector_public_to_private_target_labels_flipped_predictions_identical",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "sector_private_to_public_zero_mother_overlap",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "runtime_sector_private_to_public_target_labels_flipped_predictions_identical",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "test_partition_untouched",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "hist_mapping_unchanged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "output_disclosure_scan",
+      "status": "PASS",
+      "detail": "cohort_flow.json, geographic_matrix.csv, geographic_summary.csv, metrics.csv, qa_status.json, run_manifest.json, sector_matrix.csv, support_screen.csv"
+    }
+  ]
+}

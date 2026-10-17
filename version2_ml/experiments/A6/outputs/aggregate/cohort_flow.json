@@ -1,0 +1,74 @@
+{
+  "experiment": "A6",
+  "NFHS-5": {
+    "raw_rows": 1274250,
+    "recall_eligible": 232976,
+    "institutional_and_recall": 201311,
+    "invalid_or_missing_outcome_excluded": 0,
+    "final_births": 201311,
+    "final_mothers": 158429,
+    "final_events": 44742,
+    "expected_institutional_births": 201311,
+    "matches_expected": true,
+    "cohort_rule": "institutional m15 in 20-27/30-33/96; b19 in 0..59",
+    "sector_births": {
+      "other": 517,
+      "private": 50495,
+      "public": 150299
+    },
+    "raw_file_basename": "IABR7EFL.DTA",
+    "raw_file_bytes": 2417715435
+  },
+  "shared_split": {
+    "train": {
+      "rows": 140920,
+      "mothers": 110900,
+      "positives": 31335,
+      "negatives": 109585
+    },
+    "validation": {
+      "rows": 30227,
+      "mothers": 23765,
+      "positives": 6701,
+      "negatives": 23526
+    },
+    "test": {
+      "rows": 30164,
+      "mothers": 23764,
+      "positives": 6706,
+      "negatives": 23458
+    }
+  },
+  "analysis_rows": {
+    "births": 171147,
+    "mothers": 134665,
+    "events": 38036,
+    "partitions": {
+      "train": 140920,
+      "validation": 30227
+    }
+  },
+  "mother_state_check": {
+    "mothers": 134665,
+    "mothers_in_multiple_states": 0
+  },
+  "support_screen": {
+    "min_n": 200,
+    "min_pos": 30,
+    "min_neg": 30
+  },
+  "states_estimable": 35,
+  "states_total": 36,
+  "sector_overlap": {
+    "policy": "exclude_overlap_mothers",
+    "births_other_sector_excluded": 444,
+    "mothers_with_public_and_private_births": 3800,
+    "births_excluded_for_overlap": 8117,
+    "births_kept": 162586
+  },
+  "notes": [
+    "Analysis uses shared non-test rows only unless --evaluate-test.",
+    "Mothers never cross source/target in any geographic fold or sector direction.",
+    "NOT_ESTIMABLE domains have counts suppressed; no regional pooling."
+  ]
+}
