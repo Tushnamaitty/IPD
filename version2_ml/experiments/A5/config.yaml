@@ -1,0 +1,32 @@
+experiment: A5
+title: NFHS-4 -> NFHS-5 source-only temporal transfer (eight common-core FT features)
+feature_tier: FT
+status: EXPLORATORY_DEVELOPMENT
+seed: 42
+source_wave: NFHS-4
+target_wave: NFHS-5
+source_split:          # NFHS-4 source development split (mother-grouped)
+  group: caseid
+  fractions: [0.70, 0.15, 0.15]   # train / validation (threshold, model choice) / source holdout
+  seed: 42
+target_split:          # shared NFHS-5 split, identical to A2/A3
+  group: caseid
+  fractions: [0.70, 0.15, 0.15]
+  seed: 42
+evaluate_test: false   # NFHS-5 test partition stays untouched unless --evaluate-test
+models: [logistic_regression, xgboost]     # fixed make_estimator defaults; no tuning
+primary_model_rule: highest NFHS-4 validation ROC-AUC; tie -> logistic_regression
+target_cohort_sensitivities: [nfhs5_cmc_0_59, exclude_other_facility, exclude_calendar_overlap]
+adaptation:            # (D) optional, target-supervised; reported separately from zero-shot
+  enabled: true
+  adaptation_partition: train        # NFHS-5 train mothers
+  evaluation_partition: validation   # NFHS-5 validation mothers (disjoint by shared split)
+  kinds: [intercept, intercept_slope]
+weighted_descriptive_metrics: true
+calibration_bins: 10
+artifact_dir: artifacts/A5           # gitignored; frozen source models (no row data)
+a2_consistency_check: ../A2/outputs/aggregate/metrics.csv
+crosswalk: ../A2/state_crosswalk_v1.csv
+disclosure:
+  min_n: 50
+  min_events: 10
