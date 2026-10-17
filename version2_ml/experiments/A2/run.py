@@ -257,12 +257,14 @@ def main(argv=None):
     # 8. Aggregate outputs.
     prim = mappings["primary"].aggregate_tables()
     cell_tab = suppress_small_cells(prim["cell"], n_col="n_births", event_col="n_events", min_n=disc["min_n"],
-                                    min_events=disc["min_events"], value_cols=("support", "rate", "prior"))
+                                    min_events=disc["min_events"], value_cols=("support", "rate", "prior", "supported"))
     state_tab = suppress_small_cells(prim["state"], n_col="n_births", event_col="n_events", min_n=disc["min_n"],
-                                     min_events=disc["min_events"], value_cols=("support", "rate"))
+                                     min_events=disc["min_events"], value_cols=("support", "rate", "supported"))
+    sector_tab = suppress_small_cells(prim["sector"], n_col="n_births", event_col="n_events", min_n=disc["min_n"],
+                                      min_events=disc["min_events"], value_cols=("support", "rate", "supported"))
     wst = mappings["weighted_v005"].aggregate_tables()["state"]
     wstate_tab = suppress_small_cells(wst, n_col="n_births", event_col="n_events", min_n=disc["min_n"],
-                                      min_events=disc["min_events"], value_cols=("support", "rate"))
+                                      min_events=disc["min_events"], value_cols=("support", "rate", "supported"))
     provenance = {
         "status": "EXPLORATORY", "source_wave": "NFHS-4", "fitted_before_target_loaded": True,
         "source_rows_digest_sha256": source_digest, "mapping_hash_sha256": hashes_before_target,
@@ -270,7 +272,7 @@ def main(argv=None):
         "fallback_order": {"state_feature": ["supported state", "global"],
                            "cell_feature": ["supported cell", "supported state", "supported sector", "global"]},
         "global": prim["global"].to_dict(orient="records")[0],
-        "sector": prim["sector"].to_dict(orient="records"),
+        "sector": sector_tab.to_dict(orient="records"),
         "state_unweighted": state_tab.to_dict(orient="records"),
         "state_weighted_v005_descriptive": wstate_tab.to_dict(orient="records"),
         "state_x_sector_unweighted": cell_tab.to_dict(orient="records"),
@@ -289,6 +291,7 @@ def main(argv=None):
 
     support = pd.concat([level_support(contexts[v], partition, v, disc["min_level_rows"])
                          for v in contexts], ignore_index=True)
+    support["n_births"] = support["n_births"].astype(object)
     if not evaluate_test:
         support.loc[support.split == "test", "n_births"] = "NOT_REPORTED_TEST_UNTOUCHED"
     lvl = contexts["primary"].groupby([tgt["nfhs5_state"], tgt["sector"]])["hist_cell_level"].first()
@@ -430,9 +433,31 @@ def write_notes(path, metrics, ablations, prov, flow4, flow5, split_audit, evalu
         d = g.set_index("arm")["delta_roc_auc"]
         lines.append(f"| {c} | {cv} | {mdl} | " + " | ".join(_fmt(d.get(x), 4, True) for x in CONTEXT_ARMS) + " |")
     best = sens["delta_roc_auc"]
+    r = v.set_index(["model", "arm"])["roc_auc"]
+    sx = sens[(sens.arm == "B0+SX") & (sens.context_variant == "primary")]
+    primary_sx = sx[sx.cohort == "primary"].set_index("model")["delta_roc_auc"]
+    overlap = sx[sx.cohort == "exclude_calendar_overlap"].set_index("model")["delta_roc_auc"]
+    n2 = v[v.arm == N2].iloc[0]
+    sx_vs_r1 = "; ".join(f"{mdl} {r[(mdl, 'B0+SX')] - r[(mdl, 'R1')]:+.4f}"
+                         for mdl in v.model.unique() if (mdl, "R1") in r.index)
     lines += ["", f"Across all {len(sens)} A2 sensitivity comparisons, ΔAUC ranged from {best.min():+.4f} to "
-              f"{best.max():+.4f}. These are point differences on one provisional split; with no approved "
-              "interval they are not evidence of a real improvement or harm.", "",
+              f"{best.max():+.4f}. The direction is consistent across cohorts and smoothing variants, but these "
+              "are point differences on one provisional split without approved intervals: exploratory only.", "",
+              "## Reading the results", "",
+              f"- **Versus ordinary state indicators (R1):** B0+SX minus R1 ROC-AUC = {sx_vs_r1}. Historical NFHS-4 "
+              "context carries state/sector information of similar discriminative value to NFHS-5-trained state "
+              "indicators on this split. This does not show signal beyond state identity.",
+              "- **Support features act as state identifiers:** log source support takes one value per NFHS-4 "
+              "source unit, so B0+SUP (especially for XGBoost) can learn state effects from NFHS-5 training labels. "
+              "Its gain should not be read as an effect of support itself.",
+              f"- **Wave shift (N2):** the NFHS-4 rate used directly as a probability has ROC-AUC "
+              f"{n2.roc_auc:.4f} but calibration intercept {_fmt(n2.calibration_intercept, 3, True)}: NFHS-4 global "
+              f"rate {prov['global']['rate']:.3f} vs NFHS-5 validation prevalence {n2.prevalence:.3f}. Historical "
+              "rates rank state/sector cells usefully but under-predict NFHS-5 cesarean levels.",
+              "- **Calendar overlap:** B0+SX ΔAUC with NFHS-5 births in or before the last NFHS-4 interview month "
+              "excluded vs primary cohort: " + "; ".join(
+                  f"{mdl} {overlap.get(mdl, float('nan')):+.4f} vs {primary_sx.get(mdl, float('nan')):+.4f}"
+                  for mdl in primary_sx.index) + ".", "",
               "## Supported claims", "",
               "- A2 features were built from NFHS-4 only; runtime and unit tests show NFHS-5 label permutation, "
               "replacement or removal leaves the mapping hash and every feature bitwise identical.",
