@@ -86,6 +86,8 @@ def main(argv=None):
     ap.add_argument("--evaluate-test", action="store_true")
     ap.add_argument("--no-cache", action="store_true")
     args = ap.parse_args(argv)
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # Windows cp1252 consoles
     t0 = time.time()
     cfg = yaml.safe_load(Path(args.config).read_text(encoding="utf-8"))
     out = Path(args.out)
