@@ -448,7 +448,27 @@ def write_notes(path, tests, qa, gs, screen_df, sec, overlap, flow5, D, part, n_
                  f"({f(r.paired_delta_min, 3, True)}, {f(r.paired_delta_max, 3, True)}) |")
     v += ["", "- Held-out-state AUC differences mix genuine transport loss with differences in each state's case mix "
           "and prevalence; per-state values are in `geographic_matrix.csv`. Small states have unstable estimates; "
-          "no intervals are attached."]
+          "no intervals are attached.", "", "### Interpretation: raw deltas vs paired deltas", ""]
+    for r in gs[gs.arm == "G0_ft_state_free"].itertuples(index=False):
+        v.append(f"- **Geographic, G0, {r.model}:** held-out-state AUC is a median {r.delta_vs_source_median:+.4f} "
+                 "below other-state validation, but on identical held-out-state validation rows a model that DID see "
+                 f"the state differs from the unseen-state model by a median {r.paired_delta_unseen_minus_seen_median:+.4f} "
+                 f"({r.paired_states} states). The raw gap therefore mainly reflects lower discrimination *within* a "
+                 "single state (a pooled multi-state validation set also ranks between-state differences), not a loss "
+                 "caused by the state being unseen.")
+    hist = gs[gs.arm != "G0_ft_state_free"]
+    if len(hist):
+        v.append(f"- **Context arms (G_hist, G_te):** median held-out AUC {hist.roc_auc_median.min():.3f}–"
+                 f"{hist.roc_auc_median.max():.3f} vs G0 {gs[gs.arm == 'G0_ft_state_free'].roc_auc_median.min():.3f}–"
+                 f"{gs[gs.arm == 'G0_ft_state_free'].roc_auc_median.max():.3f}: state-level context mostly helps rank "
+                 "births *between* states, so it adds little within one unseen state; its larger raw gap vs source "
+                 "reflects a stronger source-validation AUC, not worse target performance.")
+    for r in sec[sec.support_status == "ESTIMABLE"].itertuples(index=False):
+        v.append(f"- **Sector {r.direction}, {r.model}:** raw ΔAUC vs source validation "
+                 f"{r.delta_roc_auc_target_minus_source:+.4f}, but vs a target-sector-trained model on the same rows "
+                 f"{r.paired_delta_roc_auc_transfer_minus_target_reference:+.4f}. The paired value is the transport "
+                 "penalty attributable to training on the other sector; the remainder of the raw difference reflects "
+                 "how hard discrimination is within each sector.")
     verification = "\n".join(v)
     pc = pd.Series(part).value_counts()
     lines = ["# A6 — Geographic and public/private sector transport: Methods and Results note", "",
