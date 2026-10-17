@@ -1,0 +1,30 @@
+experiment: A3
+title: State x sector grouped out-of-fold target encoding (NFHS-5)
+feature_tier: F4
+status: EXPLORATORY_DEVELOPMENT
+seed: 42
+wave: NFHS-5
+split:
+  # Shared provisional mother-grouped development split, identical to A2
+  group: caseid
+  fractions: [0.70, 0.15, 0.15]
+  seed: 42
+evaluate_test: false   # test partition stays untouched unless --evaluate-test is passed
+inner_cv:
+  method: StratifiedGroupKFold
+  n_splits: 3
+  shuffle: true
+  random_state: 42
+encoding:
+  n_min: 30                                  # support threshold for every level
+  alpha_grid: [0, 1, 5, 20, 50, 100, 300]   # selected by OOF log-loss on outer-train only
+  alpha_tie_break: larger
+  exploratory_alphas: [5, 100]               # downstream sensitivity; NOT used for selection
+cohorts: [primary, exclude_other_facility, nfhs5_cmc_0_59]
+models: [logistic_regression, xgboost]       # fixed make_estimator defaults; identical across arms
+a2_consistency_check: ../A2/outputs/aggregate/metrics.csv
+promotion_reference:                          # provisional deltas from configs/models.yaml (descriptive only)
+  roc_auc: 0.005
+  average_precision: 0.010
+disclosure:
+  min_level_rows: 10

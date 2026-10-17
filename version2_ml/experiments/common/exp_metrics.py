@@ -71,3 +71,22 @@ def binary_metrics(y, p, *, threshold=None, sample_weight=None) -> dict:
     result = evaluate_binary(y, p, sample_weight=sample_weight, threshold=threshold)
     result.update(calibration_intercept_slope(y, p, sample_weight))
     return result
+
+
+def metric_row(base: dict, y, p, groups, threshold, provenance, weights=None) -> dict:
+    """One aggregate metrics.csv row in the shared experiment schema."""
+    import pandas as pd
+    m = binary_metrics(y, p, threshold=threshold, sample_weight=weights)
+    return {**base, "n_births": int(len(y)), "n_mothers": int(pd.Series(groups).nunique()),
+            "n_events": int(np.sum(y)), "prevalence": float(np.mean(y)),
+            "weighted_prevalence": m["weighted_outcome_prevalence"] if weights is not None else None,
+            "roc_auc": m["roc_auc"], "average_precision": m["average_precision"], "brier": m["brier_score"],
+            "calibration_intercept": m["calibration_intercept"], "calibration_slope": m["calibration_slope"],
+            "threshold": m.get("threshold"), "threshold_provenance": provenance,
+            "precision": m.get("precision"), "recall": m.get("recall"), "f1": m.get("f1"),
+            "confidence_interval_status": "NOT_APPROVED", "result_status": "EXPLORATORY"}
+
+
+def threshold_provenance(split: str) -> str:
+    return ("max_f1_selected_on_same_validation_rows_optimistic" if split == "validation"
+            else "max_f1_selected_on_validation_frozen")
