@@ -1,0 +1,22 @@
+experiment: A6
+title: Geographic (leave-one-state-out) and public <-> private sector transport (NFHS-5)
+status: EXPLORATORY_DEVELOPMENT
+seed: 42
+wave: NFHS-5
+split:                 # shared NFHS-5 split (identical to A2/A3/A5); only non-test rows are used
+  group: caseid
+  fractions: [0.70, 0.15, 0.15]
+  seed: 42
+evaluate_test: false
+support_screen: {min_n: 200, min_pos: 30, min_neg: 30}   # predeclared; no post hoc regional pooling
+models: [logistic_regression, xgboost]                    # fixed make_estimator defaults
+geographic:
+  arms: [G0_ft_state_free, G_hist_nfhs4_context, G_te_source_fallback]
+  hist_smoothing: {alpha: 20, n_min: 30, weighted: false}   # A2 primary NFHS-4 mapping
+  te: {alpha: 5, n_min: 30, n_splits: 3, random_state: 42}  # A3 primary-selected alpha
+  a2_crosswalk: ../A2/state_crosswalk_v1.csv
+sector:
+  directions: [[public, private], [private, public]]
+  overlap_policy: exclude_overlap_mothers
+  features: sector_free_seven   # eight-core minus facility_type
+a2_consistency_check: ../A2/outputs/aggregate/metrics.csv
