@@ -1,0 +1,477 @@
+{
+  "experiment": "A5",
+  "harmonization": {
+    "categorical": {
+      "wealth_index": {
+        "fixed_vocabulary": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "source_train_levels": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "target_levels": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "target_levels_unseen_in_source": [],
+        "target_rows_with_unseen_level": 0,
+        "target_unseen_rate": 0.0,
+        "unseen_handling": "all-zero one-hot (handle_unknown='ignore')"
+      },
+      "facility_type": {
+        "fixed_vocabulary": [
+          "other",
+          "private",
+          "public"
+        ],
+        "source_train_levels": [
+          "other",
+          "private",
+          "public"
+        ],
+        "target_levels": [
+          "other",
+          "private",
+          "public"
+        ],
+        "target_levels_unseen_in_source": [],
+        "target_rows_with_unseen_level": 0,
+        "target_unseen_rate": 0.0,
+        "unseen_handling": "all-zero one-hot (handle_unknown='ignore')"
+      },
+      "residence": {
+        "fixed_vocabulary": [
+          "rural",
+          "urban"
+        ],
+        "source_train_levels": [
+          "rural",
+          "urban"
+        ],
+        "target_levels": [
+          "rural",
+          "urban"
+        ],
+        "target_levels_unseen_in_source": [],
+        "target_rows_with_unseen_level": 0,
+        "target_unseen_rate": 0.0,
+        "unseen_handling": "all-zero one-hot (handle_unknown='ignore')"
+      },
+      "religion": {
+        "fixed_vocabulary": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "96"
+        ],
+        "source_train_levels": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "96"
+        ],
+        "target_levels": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "96"
+        ],
+        "target_levels_unseen_in_source": [],
+        "target_rows_with_unseen_level": 0,
+        "target_unseen_rate": 0.0,
+        "unseen_handling": "all-zero one-hot (handle_unknown='ignore')"
+      },
+      "twin_order": {
+        "fixed_vocabulary": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "source_train_levels": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "target_levels": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "target_levels_unseen_in_source": [],
+        "target_rows_with_unseen_level": 0,
+        "target_unseen_rate": 0.0,
+        "unseen_handling": "all-zero one-hot (handle_unknown='ignore')"
+      }
+    },
+    "numeric": {
+      "maternal_age_at_index_birth": {
+        "source_p01_p99": [
+          16.916666666666668,
+          39.0
+        ],
+        "target_share_outside_source_p01_p99": 0.01732642528227469
+      },
+      "education_years": {
+        "source_p01_p99": [
+          0.0,
+          17.0
+        ],
+        "target_share_outside_source_p01_p99": 0.007396515838677469
+      },
+      "birth_order": {
+        "source_p01_p99": [
+          1.0,
+          7.0
+        ],
+        "target_share_outside_source_p01_p99": 0.0037504160229694353
+      }
+    }
+  },
+  "waves": {
+    "NFHS-4": {
+      "births": 195997,
+      "mothers": 153489,
+      "events": 35671,
+      "prevalence": 0.18199768363801486,
+      "birth_year_counts": {
+        "2010": 11226,
+        "2011": 30499,
+        "2012": 39277,
+        "2013": 39737,
+        "2014": 41295,
+        "2015": 27289,
+        "2016": 6674
+      },
+      "numeric": {
+        "maternal_age_at_index_birth": {
+          "mean": 24.905587840630215,
+          "sd": 4.765111575166146,
+          "p10": 19.583333333333332,
+          "p50": 24.083333333333332,
+          "p90": 31.416666666666668
+        },
+        "education_years": {
+          "mean": 7.020780930320362,
+          "sd": 5.10522272219331,
+          "p10": 0.0,
+          "p50": 8.0,
+          "p90": 14.0
+        },
+        "birth_order": {
+          "mean": 2.0592304984259964,
+          "sd": 1.3043103542614152,
+          "p10": 1.0,
+          "p50": 2.0,
+          "p90": 4.0
+        }
+      },
+      "categorical_shares": {
+        "wealth_index": {
+          "1": 0.202166,
+          "2": 0.222136,
+          "3": 0.214799,
+          "4": 0.193559,
+          "5": 0.167339
+        },
+        "facility_type": {
+          "other": 0.003219,
+          "private": 0.277239,
+          "public": 0.719542
+        },
+        "residence": {
+          "rural": 0.728567,
+          "urban": 0.271433
+        },
+        "religion": {
+          "1": 0.756114,
+          "2": 0.14365,
+          "3": 0.060363,
+          "4": 0.019271,
+          "5": 0.009893,
+          "6": 0.001102,
+          "7": "SUPPRESSED",
+          "8": "SUPPRESSED",
+          "9": 0.000439,
+          "96": 0.009143
+        },
+        "twin_order": {
+          "0": 0.982097,
+          "1": 0.008888,
+          "2": 0.008919,
+          "3": "SUPPRESSED"
+        }
+      },
+      "sector": [
+        {
+          "sector": "other",
+          "n_births": "SUPPRESSED",
+          "n_events": "SUPPRESSED",
+          "share": "SUPPRESSED",
+          "prevalence": "SUPPRESSED",
+          "suppressed": true
+        },
+        {
+          "sector": "private",
+          "n_births": 54338,
+          "n_events": 20506,
+          "share": 0.27723893733067345,
+          "prevalence": 0.37737863005631417,
+          "suppressed": false
+        },
+        {
+          "sector": "public",
+          "n_births": 141028,
+          "n_events": 15165,
+          "share": 0.7195416256371271,
+          "prevalence": 0.10753183764926114,
+          "suppressed": false
+        }
+      ],
+      "state_unit_shares": {
+        "andaman_and_nicobar_islands": 0.003143,
+        "andhra_pradesh": 0.014556,
+        "arunachal_pradesh": 0.012801,
+        "assam": 0.03698,
+        "bihar": 0.086063,
+        "chandigarh": 0.000898,
+        "chhattisgarh": 0.033138,
+        "dadra_nagar_haveli_and_daman_diu": 0.003276,
+        "delhi": 0.00699,
+        "goa": 0.002066,
+        "gujarat": 0.034046,
+        "haryana": 0.032271,
+        "himachal_pradesh": 0.011306,
+        "jammu_and_kashmir_incl_ladakh": 0.034904,
+        "jharkhand": 0.038863,
+        "karnataka": 0.037276,
+        "kerala": 0.012536,
+        "lakshadweep": 0.001561,
+        "madhya_pradesh": 0.099951,
+        "maharashtra": 0.042797,
+        "manipur": 0.018551,
+        "meghalaya": 0.011954,
+        "mizoram": 0.018985,
+        "nagaland": 0.007475,
+        "odisha": 0.048072,
+        "puducherry": 0.0055,
+        "punjab": 0.024363,
+        "rajasthan": 0.072266,
+        "sikkim": 0.004862,
+        "tamil_nadu": 0.03999,
+        "telangana": 0.011199,
+        "tripura": 0.005291,
+        "uttar_pradesh": 0.145298,
+        "uttarakhand": 0.02022,
+        "west_bengal": 0.020551
+      }
+    },
+    "NFHS-5": {
+      "births": 201311,
+      "mothers": 158429,
+      "events": 44742,
+      "prevalence": 0.22225313072807745,
+      "birth_year_counts": {
+        "2014": 4928,
+        "2015": 26944,
+        "2016": 38638,
+        "2017": 39770,
+        "2018": 40003,
+        "2019": 35265,
+        "2020": 14340,
+        "2021": 1423
+      },
+      "numeric": {
+        "maternal_age_at_index_birth": {
+          "mean": 25.146029443663455,
+          "sd": 4.757796903794952,
+          "p10": 19.75,
+          "p50": 24.416666666666668,
+          "p90": 31.666666666666668
+        },
+        "education_years": {
+          "mean": 7.995395184565175,
+          "sd": 5.055247270721695,
+          "p10": 0.0,
+          "p50": 9.0,
+          "p90": 15.0
+        },
+        "birth_order": {
+          "mean": 2.0274351625097484,
+          "sd": 1.2244862299078383,
+          "p10": 1.0,
+          "p50": 2.0,
+          "p90": 4.0
+        }
+      },
+      "categorical_shares": {
+        "wealth_index": {
+          "1": 0.229441,
+          "2": 0.230559,
+          "3": 0.205359,
+          "4": 0.185042,
+          "5": 0.149599
+        },
+        "facility_type": {
+          "other": 0.002568,
+          "private": 0.250831,
+          "public": 0.746601
+        },
+        "residence": {
+          "rural": 0.780464,
+          "urban": 0.219536
+        },
+        "religion": {
+          "1": 0.757927,
+          "2": 0.140653,
+          "3": 0.060792,
+          "4": 0.019532,
+          "5": 0.009562,
+          "6": 0.000914,
+          "7": "SUPPRESSED",
+          "8": "SUPPRESSED",
+          "9": 0.000298,
+          "96": 0.010268
+        },
+        "twin_order": {
+          "0": 0.982842,
+          "1": 0.008534,
+          "2": 0.008529,
+          "3": "SUPPRESSED"
+        }
+      },
+      "sector": [
+        {
+          "sector": "other",
+          "n_births": "SUPPRESSED",
+          "n_events": "SUPPRESSED",
+          "share": "SUPPRESSED",
+          "prevalence": "SUPPRESSED",
+          "suppressed": true
+        },
+        {
+          "sector": "private",
+          "n_births": 50495,
+          "n_events": 23773,
+          "share": 0.25083080407926045,
+          "prevalence": 0.4707990890187147,
+          "suppressed": false
+        },
+        {
+          "sector": "public",
+          "n_births": 150299,
+          "n_events": 20969,
+          "share": 0.7466010302467326,
+          "prevalence": 0.13951523296894855,
+          "suppressed": false
+        }
+      ],
+      "state_unit_shares": {
+        "andaman_and_nicobar_islands": 0.002265,
+        "andhra_pradesh": 0.013616,
+        "arunachal_pradesh": 0.021946,
+        "assam": 0.044662,
+        "bihar": 0.080905,
+        "chandigarh": 0.000835,
+        "chhattisgarh": 0.035592,
+        "dadra_nagar_haveli_and_daman_diu": 0.003805,
+        "delhi": 0.013372,
+        "goa": 0.001828,
+        "gujarat": 0.045537,
+        "haryana": 0.032432,
+        "himachal_pradesh": 0.01147,
+        "jammu_and_kashmir_incl_ladakh": 0.028955,
+        "jharkhand": 0.037777,
+        "karnataka": 0.04038,
+        "kerala": 0.013556,
+        "lakshadweep": 0.001366,
+        "madhya_pradesh": 0.072952,
+        "maharashtra": 0.044578,
+        "manipur": 0.010908,
+        "meghalaya": 0.018315,
+        "mizoram": 0.009781,
+        "nagaland": 0.0061,
+        "odisha": 0.038751,
+        "puducherry": 0.003795,
+        "punjab": 0.026526,
+        "rajasthan": 0.069157,
+        "sikkim": 0.002961,
+        "tamil_nadu": 0.032149,
+        "telangana": 0.035323,
+        "tripura": 0.009031,
+        "uttar_pradesh": 0.148273,
+        "uttarakhand": 0.015518,
+        "west_bengal": 0.025582
+      }
+    }
+  },
+  "restricted_f0_predictors_excluded": [
+    "age_at_first_birth",
+    "anc_anganwadi_worker",
+    "anc_asha_worker",
+    "anc_community_worker",
+    "anc_doctor",
+    "anc_nurse_midwife",
+    "anc_other_provider",
+    "anc_traditional_attendant",
+    "anc_visits",
+    "blood_sample_during_pregnancy",
+    "bmi",
+    "bp_measured_during_pregnancy",
+    "convulsions_during_pregnancy",
+    "counselled_convulsions",
+    "counselled_high_blood_pressure",
+    "counselled_prolonged_labour",
+    "counselled_severe_abdominal_pain",
+    "counselled_vaginal_bleeding",
+    "first_anc_timing",
+    "health_insurance",
+    "maternal_age",
+    "no_anc_provider",
+    "preceding_birth_interval",
+    "social_group",
+    "swelling_during_pregnancy",
+    "told_about_pregnancy_complications",
+    "total_children_ever_born",
+    "urine_sample_during_pregnancy",
+    "weight_measured_during_pregnancy"
+  ],
+  "wealth_note": "v190 quintiles are wave-relative ranks; equal codes do not mean equal absolute wealth.",
+  "calendar_overlap": {
+    "last_nfhs4_interview": "2016-12",
+    "nfhs5_births_in_or_before": 70510
+  }
+}

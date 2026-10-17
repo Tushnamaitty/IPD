@@ -1,0 +1,91 @@
+{
+  "experiment": "A5",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "synthetic_tests",
+      "status": "PASS",
+      "detail": "13/13 passed"
+    },
+    {
+      "check": "feature_set_exactly_eight_ft",
+      "status": "PASS",
+      "detail": "maternal_age_at_index_birth, education_years, birth_order, wealth_index, facility_type, residence, religion, twin_order"
+    },
+    {
+      "check": "source_split_mother_exclusive",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "logistic_regression_encoder_categories_from_source_train_only",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "xgboost_encoder_categories_from_source_train_only",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "target_split_mother_exclusive",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "wave_direction_nfhs4_to_nfhs5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "source_rows_digest_reproduced",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "runtime_logistic_regression_target_labels_permuted_predictions_bitwise_identical",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "runtime_logistic_regression_target_labels_removed_predictions_bitwise_identical",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "runtime_xgboost_target_labels_permuted_predictions_bitwise_identical",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "runtime_xgboost_target_labels_removed_predictions_bitwise_identical",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "adaptation_evaluation_mothers_disjoint",
+      "status": "PASS",
+      "detail": "overlap=0"
+    },
+    {
+      "check": "C_reproduces_A2_B0",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "check": "nfhs5_test_partition_untouched",
+      "status": "PASS",
+      "detail": "no NFHS-5 test predictions evaluated"
+    },
+    {
+      "check": "frozen_models_unchanged_at_end",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "output_disclosure_scan",
+      "status": "PASS",
+      "detail": "calibration_bins.csv, cohort_flow.json, metrics.csv, qa_status.json, run_manifest.json, shift_diagnostics.json, transfer_penalties.csv"
+    }
+  ]
+}

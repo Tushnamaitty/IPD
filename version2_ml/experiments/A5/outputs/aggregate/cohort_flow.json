@@ -1,0 +1,100 @@
+{
+  "experiment": "A5",
+  "NFHS-4": {
+    "raw_rows": 1315617,
+    "recall_eligible": 259627,
+    "institutional_and_recall": 195997,
+    "invalid_or_missing_outcome_excluded": 0,
+    "final_births": 195997,
+    "final_mothers": 153489,
+    "final_events": 35671,
+    "expected_institutional_births": 195997,
+    "matches_expected": true,
+    "cohort_rule": "institutional m15 in 20-27/30-33/96; v008-b3 in 0..59 (b19 unavailable)",
+    "sector_births": {
+      "other": 631,
+      "private": 54338,
+      "public": 141028
+    },
+    "raw_file_basename": "IABR74FL.DTA",
+    "raw_file_bytes": 2006690398
+  },
+  "NFHS-5": {
+    "raw_rows": 1274250,
+    "recall_eligible": 232976,
+    "institutional_and_recall": 201311,
+    "invalid_or_missing_outcome_excluded": 0,
+    "final_births": 201311,
+    "final_mothers": 158429,
+    "final_events": 44742,
+    "expected_institutional_births": 201311,
+    "matches_expected": true,
+    "cohort_rule": "institutional m15 in 20-27/30-33/96; b19 in 0..59",
+    "sector_births": {
+      "other": 517,
+      "private": 50495,
+      "public": 150299
+    },
+    "raw_file_basename": "IABR7EFL.DTA",
+    "raw_file_bytes": 2417715435
+  },
+  "source_split": {
+    "train": {
+      "rows": 137214,
+      "mothers": 107442,
+      "positives": 24964,
+      "negatives": 112250
+    },
+    "validation": {
+      "rows": 29414,
+      "mothers": 23024,
+      "positives": 5357,
+      "negatives": 24057
+    },
+    "test": {
+      "rows": 29369,
+      "mothers": 23023,
+      "positives": 5350,
+      "negatives": 24019
+    }
+  },
+  "target_split": {
+    "train": {
+      "rows": 140920,
+      "mothers": 110900,
+      "positives": 31335,
+      "negatives": 109585
+    },
+    "validation": {
+      "rows": 30227,
+      "mothers": 23765,
+      "positives": 6701,
+      "negatives": 23526
+    },
+    "test": {
+      "rows": 30164,
+      "mothers": 23764,
+      "positives": 6706,
+      "negatives": 23458
+    }
+  },
+  "target_cohort_sensitivity_validation_births": {
+    "nfhs5_cmc_0_59": 29994,
+    "exclude_other_facility": 30139,
+    "exclude_calendar_overlap": 19653
+  },
+  "nfhs5_cmc_boundary": {
+    "b19_lt_60_but_v008_minus_b3_eq_60": 1634,
+    "cmc_0_59_cohort_births": 199677
+  },
+  "adaptation": {
+    "enabled": true,
+    "adaptation_births": 140920,
+    "adaptation_mothers": 110900,
+    "adaptation_events": 31335
+  },
+  "notes": [
+    "Source and target splits are mother-grouped; source and target mothers are different survey respondents (different waves).",
+    "B on target_non_test includes NFHS-5 train rows: the source model never saw them; they are used by C (training) and D (adaptation) only."
+  ]
+}

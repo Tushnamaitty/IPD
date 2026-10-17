@@ -1,0 +1,288 @@
+{
+  "experiment": "A5",
+  "status": "EXPLORATORY",
+  "run_utc": "2026-10-17T05:09:15.877263+00:00",
+  "runtime_seconds": 83.6,
+  "git": {
+    "commit": "cea9791bf00cd7f199059291cd73b6cbfe8c4901",
+    "branch": "rifa-v2-A2-A3-A5-A6",
+    "base_version2_ml_development": "318f1602c891c26571a170f874aeb95e9a3d9b37",
+    "tracked_files_dirty": false
+  },
+  "environment": {
+    "python": "3.13.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.4.1",
+      "pandas": "2.3.3",
+      "sklearn": "1.8.0",
+      "scipy": "1.17.0",
+      "xgboost": "3.4.0",
+      "pyreadstat": "1.3.6",
+      "yaml": "6.0.3"
+    }
+  },
+  "source_files": {
+    "NFHS-4": {
+      "basename": "IABR74FL.DTA",
+      "bytes": 2006690398
+    },
+    "NFHS-5": {
+      "basename": "IABR7EFL.DTA",
+      "bytes": 2417715435
+    }
+  },
+  "cohort_definitions": {
+    "NFHS-4": "institutional m15 in 20-27/30-33/96; v008-b3 in 0..59 (b19 unavailable)",
+    "NFHS-5": "institutional m15 in 20-27/30-33/96; b19 in 0..59"
+  },
+  "seed": 42,
+  "source_split": {
+    "group": "caseid",
+    "fractions": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "seed": 42
+  },
+  "target_split": {
+    "group": "caseid",
+    "fractions": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "seed": 42
+  },
+  "features": [
+    "maternal_age_at_index_birth",
+    "education_years",
+    "birth_order",
+    "wealth_index",
+    "facility_type",
+    "residence",
+    "religion",
+    "twin_order"
+  ],
+  "feature_tier": "FT",
+  "models": {
+    "logistic_regression": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 1500,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": 42,
+      "solver": "liblinear",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "xgboost": {
+      "objective": "binary:logistic",
+      "base_score": null,
+      "booster": null,
+      "callbacks": null,
+      "colsample_bylevel": null,
+      "colsample_bynode": null,
+      "colsample_bytree": null,
+      "device": null,
+      "early_stopping_rounds": null,
+      "enable_categorical": true,
+      "eval_metric": "logloss",
+      "feature_types": null,
+      "feature_weights": null,
+      "gamma": null,
+      "grow_policy": null,
+      "importance_type": null,
+      "interaction_constraints": null,
+      "learning_rate": 0.05,
+      "max_bin": null,
+      "max_cat_threshold": null,
+      "max_cat_to_onehot": null,
+      "max_delta_step": null,
+      "max_depth": 3,
+      "max_leaves": null,
+      "min_child_weight": null,
+      "missing": NaN,
+      "monotone_constraints": null,
+      "multi_strategy": null,
+      "n_estimators": 100,
+      "n_jobs": 1,
+      "num_parallel_tree": null,
+      "random_state": 42,
+      "reg_alpha": null,
+      "reg_lambda": null,
+      "sampling_method": null,
+      "scale_pos_weight": null,
+      "subsample": null,
+      "tree_method": null,
+      "validate_parameters": null,
+      "verbosity": null
+    }
+  },
+  "model_hyperparameters_tuned": false,
+  "primary_model": "xgboost",
+  "primary_model_rule": "highest NFHS-4 validation ROC-AUC; tie -> logistic_regression",
+  "source_rows_digest_sha256": "325869ee232fe94c3cefc659605d2baa5499d7097b7dc809f748956caf984bd3",
+  "frozen_source_models": {
+    "logistic_regression": {
+      "file": "artifacts/A5/source_model_logistic_regression.joblib",
+      "sha256": "48f367babd9153372ca27c03de3ed537356cafeaabfcb990b7b4bef8aa53b73d",
+      "frozen_model_digest": "cc63e5c572f3bbb48a6233f0e56d04dad822ee9ed4eddc50108303d4585db18d",
+      "source_threshold": 0.18822547356849792
+    },
+    "xgboost": {
+      "file": "artifacts/A5/source_model_xgboost.joblib",
+      "sha256": "bcf4bc53e5a6f4ca2a8cef84c5f9d93755141af17da662670e9b5d34ee09ce8a",
+      "frozen_model_digest": "b2452b74b0d0989b65f099a7c1018c1144e560cc39a7528545a5d9f53f43d59b",
+      "source_threshold": 0.2321137636899948
+    }
+  },
+  "frozen_before_target_loaded": true,
+  "test_partition_evaluated": false,
+  "adaptation": {
+    "enabled": true,
+    "adaptation_births": 140920,
+    "adaptation_mothers": 110900,
+    "adaptation_events": 31335,
+    "coefficients": {
+      "logistic_regression_intercept": {
+        "intercept": 0.3086209983793578,
+        "slope": 1.0
+      },
+      "logistic_regression_intercept_slope": {
+        "intercept": 0.31083968766189823,
+        "slope": 1.0016458373752013
+      },
+      "xgboost_intercept": {
+        "intercept": 0.30354403057655166,
+        "slope": 1.0
+      },
+      "xgboost_intercept_slope": {
+        "intercept": 0.42200413253350827,
+        "slope": 1.0893326781162438
+      }
+    }
+  },
+  "a2_consistency": {
+    "status": "PASS",
+    "max_abs_difference": 0.0
+  },
+  "synthetic_tests": [
+    {
+      "test": "test_overlapping_mothers_rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "test_recalibration_fixes_shift_and_preserves_ranking",
+      "status": "PASS"
+    },
+    {
+      "test": "test_exactly_eight_ft_features",
+      "status": "PASS"
+    },
+    {
+      "test": "test_extra_restricted_columns_are_ignored_not_used",
+      "status": "PASS"
+    },
+    {
+      "test": "test_harmonize_dtypes_and_vocabulary",
+      "status": "PASS"
+    },
+    {
+      "test": "test_unobserved_target_categories_handled",
+      "status": "PASS"
+    },
+    {
+      "test": "test_fit_called_only_with_source_rows_in_pipeline",
+      "status": "PASS"
+    },
+    {
+      "test": "test_fit_refuses_target_and_mixed_waves",
+      "status": "PASS"
+    },
+    {
+      "test": "test_frozen_model_cannot_refit_or_drift",
+      "status": "PASS"
+    },
+    {
+      "test": "test_preprocessor_categories_come_from_source_only",
+      "status": "PASS"
+    },
+    {
+      "test": "test_threshold_refuses_target_rows",
+      "status": "PASS"
+    },
+    {
+      "test": "test_repeated_scoring_does_not_change_model",
+      "status": "PASS"
+    },
+    {
+      "test": "test_target_label_mutation_bitwise_identical",
+      "status": "PASS"
+    }
+  ],
+  "config": {
+    "experiment": "A5",
+    "title": "NFHS-4 -> NFHS-5 source-only temporal transfer (eight common-core FT features)",
+    "feature_tier": "FT",
+    "status": "EXPLORATORY_DEVELOPMENT",
+    "seed": 42,
+    "source_wave": "NFHS-4",
+    "target_wave": "NFHS-5",
+    "source_split": {
+      "group": "caseid",
+      "fractions": [
+        0.7,
+        0.15,
+        0.15
+      ],
+      "seed": 42
+    },
+    "target_split": {
+      "group": "caseid",
+      "fractions": [
+        0.7,
+        0.15,
+        0.15
+      ],
+      "seed": 42
+    },
+    "evaluate_test": false,
+    "models": [
+      "logistic_regression",
+      "xgboost"
+    ],
+    "primary_model_rule": "highest NFHS-4 validation ROC-AUC; tie -> logistic_regression",
+    "target_cohort_sensitivities": [
+      "nfhs5_cmc_0_59",
+      "exclude_other_facility",
+      "exclude_calendar_overlap"
+    ],
+    "adaptation": {
+      "enabled": true,
+      "adaptation_partition": "train",
+      "evaluation_partition": "validation",
+      "kinds": [
+        "intercept",
+        "intercept_slope"
+      ]
+    },
+    "weighted_descriptive_metrics": true,
+    "calibration_bins": 10,
+    "artifact_dir": "artifacts/A5",
+    "a2_consistency_check": "../A2/outputs/aggregate/metrics.csv",
+    "crosswalk": "../A2/state_crosswalk_v1.csv",
+    "disclosure": {
+      "min_n": 50,
+      "min_events": 10
+    }
+  },
+  "confidence_interval_status": "NOT_APPROVED"
+}
