@@ -1,0 +1,158 @@
+{
+  "experiment": "A2",
+  "NFHS-4": {
+    "raw_rows": 1315617,
+    "recall_eligible": 259627,
+    "institutional_and_recall": 195997,
+    "invalid_or_missing_outcome_excluded": 0,
+    "final_births": 195997,
+    "final_mothers": 153489,
+    "final_events": 35671,
+    "expected_institutional_births": 195997,
+    "matches_expected": true,
+    "cohort_rule": "institutional m15 in 20-27/30-33/96; v008-b3 in 0..59 (b19 unavailable)",
+    "sector_births": {
+      "other": 631,
+      "private": 54338,
+      "public": 141028
+    },
+    "raw_file_basename": "IABR74FL.DTA",
+    "raw_file_bytes": 2006690398
+  },
+  "NFHS-5": {
+    "raw_rows": 1274250,
+    "recall_eligible": 232976,
+    "institutional_and_recall": 201311,
+    "invalid_or_missing_outcome_excluded": 0,
+    "final_births": 201311,
+    "final_mothers": 158429,
+    "final_events": 44742,
+    "expected_institutional_births": 201311,
+    "matches_expected": true,
+    "cohort_rule": "institutional m15 in 20-27/30-33/96; b19 in 0..59",
+    "sector_births": {
+      "other": 517,
+      "private": 50495,
+      "public": 150299
+    },
+    "raw_file_basename": "IABR7EFL.DTA",
+    "raw_file_bytes": 2417715435
+  },
+  "nfhs5_split_primary": {
+    "train": {
+      "rows": 140920,
+      "mothers": 110900,
+      "positives": 31335,
+      "negatives": 109585
+    },
+    "validation": {
+      "rows": 30227,
+      "mothers": 23765,
+      "positives": 6701,
+      "negatives": 23526
+    },
+    "test": {
+      "rows": 30164,
+      "mothers": 23764,
+      "positives": 6706,
+      "negatives": 23458
+    }
+  },
+  "nfhs5_cohort_sensitivity_splits": {
+    "primary": {
+      "train": {
+        "rows": 140920,
+        "mothers": 110900,
+        "positives": 31335,
+        "negatives": 109585
+      },
+      "validation": {
+        "rows": 30227,
+        "mothers": 23765,
+        "positives": 6701,
+        "negatives": 23526
+      },
+      "test": {
+        "rows": 30164,
+        "mothers": 23764,
+        "positives": 6706,
+        "negatives": 23458
+      }
+    },
+    "nfhs5_cmc_0_59": {
+      "train": {
+        "rows": 139750,
+        "mothers": 110276,
+        "positives": 31114,
+        "negatives": 108636
+      },
+      "validation": {
+        "rows": 29994,
+        "mothers": 23638,
+        "positives": 6650,
+        "negatives": 23344
+      },
+      "test": {
+        "rows": 29933,
+        "mothers": 23634,
+        "positives": 6668,
+        "negatives": 23265
+      }
+    },
+    "exclude_other_facility": {
+      "train": {
+        "rows": 140564,
+        "mothers": 110668,
+        "positives": 31335,
+        "negatives": 109229
+      },
+      "validation": {
+        "rows": 30139,
+        "mothers": 23702,
+        "positives": 6701,
+        "negatives": 23438
+      },
+      "test": {
+        "rows": 30091,
+        "mothers": 23722,
+        "positives": 6706,
+        "negatives": 23385
+      }
+    },
+    "exclude_calendar_overlap": {
+      "train": {
+        "rows": 91570,
+        "mothers": 80509,
+        "positives": 20784,
+        "negatives": 70786
+      },
+      "validation": {
+        "rows": 19653,
+        "mothers": 17289,
+        "positives": 4450,
+        "negatives": 15203
+      },
+      "test": {
+        "rows": 19578,
+        "mothers": 17211,
+        "positives": 4408,
+        "negatives": 15170
+      }
+    }
+  },
+  "cluster_overlap_with_train": {
+    "validation": {
+      "clusters": 16040,
+      "clusters_also_in_train": 15501
+    },
+    "test": {
+      "clusters": 16034,
+      "clusters_also_in_train": 15491
+    }
+  },
+  "notes": [
+    "Mothers never cross partitions (audit_partition).",
+    "Survey clusters DO cross partitions; mother grouping is the protocol unit, cluster overlap is a robustness caveat.",
+    "Test partition counts are design counts only; no test outcomes were scored unless evaluate_test is true."
+  ]
+}

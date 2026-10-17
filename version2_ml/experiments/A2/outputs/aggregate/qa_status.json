@@ -1,0 +1,56 @@
+{
+  "experiment": "A2",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "crosswalk_valid_against_dta_labels",
+      "status": "PASS",
+      "detail": "36 NFHS-5 codes"
+    },
+    {
+      "check": "source_rows_all_nfhs4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "runtime_target_label_permuted_bitwise_invariance",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "runtime_target_label_removed_bitwise_invariance",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "runtime_target_label_all_positive_bitwise_invariance",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "split_mother_exclusive",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "matched_rows_all_ablations",
+      "status": "PASS",
+      "detail": "90 paired comparisons"
+    },
+    {
+      "check": "mapping_hashes_unchanged_after_target_processing",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "test_partition_untouched",
+      "status": "PASS",
+      "detail": "no test predictions generated"
+    },
+    {
+      "check": "output_disclosure_scan",
+      "status": "PASS",
+      "detail": "ablations.csv, cohort_flow.json, metrics.csv, qa_status.json, run_manifest.json, source_context_provenance.json, unseen_cell_support.csv"
+    }
+  ]
+}

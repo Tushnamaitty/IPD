@@ -1,0 +1,1851 @@
+{
+  "status": "EXPLORATORY",
+  "source_wave": "NFHS-4",
+  "fitted_before_target_loaded": true,
+  "source_rows_digest_sha256": "65e224acae7bc3bae8d40eb976eeb2121ad6b0e71faf890ae61b02b79e60c9e4",
+  "mapping_hash_sha256": {
+    "primary": "03e6a255ae7e59a4df9266ced6a1e12fe5cf87a71ffd0914449f28bf41857e03",
+    "alpha_0": "64b5892608c166af552eafc50da152213e8434b3e37ea9eaadec317b3d0a2517",
+    "alpha_5": "15c4e161ae13fc4146eca20aafe28da3c3e8a29444df0b85652e7d55ed77d731",
+    "alpha_100": "3f4fb97f0d80089d730edac5901240630145314a24f4e679498714e1a148d306",
+    "weighted_v005": "24494dd78fe4e2ae78ee1eb5d6eda2984a7df25c07aadd70720565ea4e51ed38"
+  },
+  "smoothing_specs": {
+    "primary": {
+      "alpha": 20,
+      "n_min": 30,
+      "weighted": false
+    },
+    "alpha_0": {
+      "alpha": 0,
+      "n_min": 30,
+      "weighted": false
+    },
+    "alpha_5": {
+      "alpha": 5,
+      "n_min": 30,
+      "weighted": false
+    },
+    "alpha_100": {
+      "alpha": 100,
+      "n_min": 30,
+      "weighted": false
+    },
+    "weighted_v005": {
+      "alpha": 20,
+      "n_min": 30,
+      "weighted": true
+    }
+  },
+  "fallback_order": {
+    "state_feature": [
+      "supported state",
+      "global"
+    ],
+    "cell_feature": [
+      "supported cell",
+      "supported state",
+      "supported sector",
+      "global"
+    ]
+  },
+  "global": {
+    "n_births": 195997,
+    "n_events": 35671,
+    "rate": 0.18199768363801486
+  },
+  "sector": [
+    {
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "sector": "private",
+      "n_births": 54338,
+      "n_events": 20506,
+      "support": 54338.0,
+      "rate": 0.3773067433252283,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "sector": "public",
+      "n_births": 141028,
+      "n_events": 15165,
+      "support": 141028.0,
+      "rate": 0.10754239658607538,
+      "supported": true,
+      "suppressed": false
+    }
+  ],
+  "state_unweighted": [
+    {
+      "source_unit": "andaman_and_nicobar_islands",
+      "n_births": 616,
+      "n_events": 88,
+      "support": 616.0,
+      "rate": 0.14408797747289356,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "andhra_pradesh",
+      "n_births": 2853,
+      "n_events": 1226,
+      "support": 2853.0,
+      "rate": 0.4279985916020746,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "arunachal_pradesh",
+      "n_births": 2509,
+      "n_events": 376,
+      "support": 2509.0,
+      "rate": 0.15011465151156989,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "assam",
+      "n_births": 7248,
+      "n_events": 1336,
+      "support": 7248.0,
+      "rate": 0.18432030182619158,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "bihar",
+      "n_births": 16868,
+      "n_events": 1588,
+      "support": 16868.0,
+      "rate": 0.09424679972008292,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "chandigarh",
+      "n_births": 176,
+      "n_events": 42,
+      "support": 176.0,
+      "rate": 0.232856906493675,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "chhattisgarh",
+      "n_births": 6495,
+      "n_events": 888,
+      "support": 6495.0,
+      "rate": 0.13685954776251116,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "dadra_nagar_haveli_and_daman_diu",
+      "n_births": 642,
+      "n_events": 136,
+      "support": 642.0,
+      "rate": 0.21093648591051406,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "delhi",
+      "n_births": 1370,
+      "n_events": 373,
+      "support": 1370.0,
+      "rate": 0.27096399544802896,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "goa",
+      "n_births": 405,
+      "n_events": 130,
+      "support": 405.0,
+      "rate": 0.31444694981825955,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "gujarat",
+      "n_births": 6673,
+      "n_events": 1171,
+      "support": 6673.0,
+      "rate": 0.17550275716013153,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "haryana",
+      "n_births": 6325,
+      "n_events": 902,
+      "support": 6325.0,
+      "rate": 0.14273285321871715,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "himachal_pradesh",
+      "n_births": 2216,
+      "n_events": 472,
+      "support": 2216.0,
+      "rate": 0.21271912060499118,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "jammu_and_kashmir_incl_ladakh",
+      "n_births": 6841,
+      "n_events": 2366,
+      "support": 6841.0,
+      "rate": 0.3453782179963213,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "jharkhand",
+      "n_births": 7617,
+      "n_events": 1170,
+      "support": 7617.0,
+      "rate": 0.15367813980263983,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "karnataka",
+      "n_births": 7306,
+      "n_events": 1787,
+      "support": 7306.0,
+      "rate": 0.24442259809892988,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "kerala",
+      "n_births": 2457,
+      "n_events": 868,
+      "support": 2457.0,
+      "rate": 0.35189340075605985,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "lakshadweep",
+      "n_births": 306,
+      "n_events": 113,
+      "support": 306.0,
+      "rate": 0.35779126893484753,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "madhya_pradesh",
+      "n_births": 19590,
+      "n_events": 2051,
+      "support": 19590.0,
+      "rate": 0.10477511237494953,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "maharashtra",
+      "n_births": 8388,
+      "n_events": 1705,
+      "support": 8388.0,
+      "rate": 0.20321597926650337,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "manipur",
+      "n_births": 3636,
+      "n_events": 1019,
+      "support": 3636.0,
+      "rate": 0.27971552343346834,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "meghalaya",
+      "n_births": 2343,
+      "n_events": 322,
+      "support": 2343.0,
+      "rate": 0.13780785174471447,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "mizoram",
+      "n_births": 3721,
+      "n_events": 439,
+      "support": 3721.0,
+      "rate": 0.11832129208039568,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "nagaland",
+      "n_births": 1465,
+      "n_events": 234,
+      "support": 1465.0,
+      "rate": 0.16002690483014162,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "odisha",
+      "n_births": 9422,
+      "n_events": 1460,
+      "support": 9422.0,
+      "rate": 0.15501376336292738,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "puducherry",
+      "n_births": 1078,
+      "n_events": 443,
+      "support": 1078.0,
+      "rate": 0.4067759140917671,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "punjab",
+      "n_births": 4775,
+      "n_events": 1235,
+      "support": 4775.0,
+      "rate": 0.25831907271590415,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "rajasthan",
+      "n_births": 14164,
+      "n_events": 1418,
+      "support": 14164.0,
+      "rate": 0.10022842312977724,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "sikkim",
+      "n_births": 953,
+      "n_events": 202,
+      "support": 953.0,
+      "rate": 0.21134630387745149,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "tamil_nadu",
+      "n_births": 7838,
+      "n_events": 2748,
+      "support": 7838.0,
+      "rate": 0.3501705209560652,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "telangana",
+      "n_births": 2195,
+      "n_events": 1332,
+      "support": 2195.0,
+      "rate": 0.6029977217484246,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "tripura",
+      "n_births": 1037,
+      "n_events": 244,
+      "support": 1037.0,
+      "rate": 0.23428567045672688,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "uttar_pradesh",
+      "n_births": 28478,
+      "n_events": 3908,
+      "support": 28478.0,
+      "rate": 0.13726015698199032,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "uttarakhand",
+      "n_births": 3963,
+      "n_events": 738,
+      "support": 3963.0,
+      "rate": 0.18620134413074574,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "west_bengal",
+      "n_births": 4028,
+      "n_events": 1141,
+      "support": 4028.0,
+      "rate": 0.28276678697449614,
+      "supported": true,
+      "suppressed": false
+    }
+  ],
+  "state_weighted_v005_descriptive": [
+    {
+      "source_unit": "andaman_and_nicobar_islands",
+      "n_births": 616,
+      "n_events": 88,
+      "support": 322.3569745556562,
+      "rate": 0.20457165308328912,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "andhra_pradesh",
+      "n_births": 2853,
+      "n_events": 1226,
+      "support": 2585.741725274121,
+      "rate": 0.4371897435698821,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "arunachal_pradesh",
+      "n_births": 2509,
+      "n_events": 376,
+      "support": 1817.9228917978278,
+      "rate": 0.17696071196275645,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "assam",
+      "n_births": 7248,
+      "n_events": 1336,
+      "support": 5903.431249547759,
+      "rate": 0.18967728242550544,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "bihar",
+      "n_births": 16868,
+      "n_events": 1588,
+      "support": 13396.925432543301,
+      "rate": 0.09732919837954213,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "chandigarh",
+      "n_births": 176,
+      "n_events": 42,
+      "support": 172.13429703327895,
+      "rate": 0.24258547842715814,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "chhattisgarh",
+      "n_births": 6495,
+      "n_events": 888,
+      "support": 4372.3563687515225,
+      "rate": 0.14098272361476658,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "dadra_nagar_haveli_and_daman_diu",
+      "n_births": 642,
+      "n_events": 136,
+      "support": 455.1079247116512,
+      "rate": 0.1882261845807648,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "delhi",
+      "n_births": 1370,
+      "n_events": 373,
+      "support": 355.54133169669,
+      "rate": 0.3155774215484888,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "goa",
+      "n_births": 405,
+      "n_events": 130,
+      "support": 341.11167741188916,
+      "rate": 0.31468079549786065,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "gujarat",
+      "n_births": 6673,
+      "n_events": 1171,
+      "support": 4064.545635703002,
+      "rate": 0.20734694497388453,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "haryana",
+      "n_births": 6325,
+      "n_events": 902,
+      "support": 4762.300031405311,
+      "rate": 0.14516762058891555,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "himachal_pradesh",
+      "n_births": 2216,
+      "n_events": 472,
+      "support": 1519.153570376103,
+      "rate": 0.21677523902289328,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "jammu_and_kashmir_incl_ladakh",
+      "n_births": 6841,
+      "n_events": 2366,
+      "support": 4190.653438539963,
+      "rate": 0.38217784997254145,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "jharkhand",
+      "n_births": 7617,
+      "n_events": 1170,
+      "support": 6300.134539182332,
+      "rate": 0.15900447753090632,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "karnataka",
+      "n_births": 7306,
+      "n_events": 1787,
+      "support": 3619.8993056637714,
+      "rate": 0.25003479258060074,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "kerala",
+      "n_births": 2457,
+      "n_events": 868,
+      "support": 1954.9873531492078,
+      "rate": 0.3579569640782791,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "lakshadweep",
+      "n_births": 306,
+      "n_events": 113,
+      "support": 282.81650639834083,
+      "rate": 0.28042801623541946,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "madhya_pradesh",
+      "n_births": 19590,
+      "n_events": 2051,
+      "support": 15344.571494412145,
+      "rate": 0.10684597189320454,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "maharashtra",
+      "n_births": 8388,
+      "n_events": 1705,
+      "support": 3887.377323896171,
+      "rate": 0.2222267712154592,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "manipur",
+      "n_births": 3636,
+      "n_events": 1019,
+      "support": 2856.8446816989263,
+      "rate": 0.299389096745898,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "meghalaya",
+      "n_births": 2343,
+      "n_events": 322,
+      "support": 1958.193154414949,
+      "rate": 0.15019550457434075,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "mizoram",
+      "n_births": 3721,
+      "n_events": 439,
+      "support": 1180.8438218211493,
+      "rate": 0.16446551993132688,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "nagaland",
+      "n_births": 1465,
+      "n_events": 234,
+      "support": 1185.5185197527455,
+      "rate": 0.18203554350102114,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "odisha",
+      "n_births": 9422,
+      "n_events": 1460,
+      "support": 7008.026979214077,
+      "rate": 0.16109776485451377,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "puducherry",
+      "n_births": 1078,
+      "n_events": 443,
+      "support": 370.98273724909046,
+      "rate": 0.3254806255046824,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "punjab",
+      "n_births": 4775,
+      "n_events": 1235,
+      "support": 3206.5094952118475,
+      "rate": 0.271167911857327,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "rajasthan",
+      "n_births": 14164,
+      "n_events": 1418,
+      "support": 11929.038818676398,
+      "rate": 0.10231499916721126,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "sikkim",
+      "n_births": 953,
+      "n_events": 202,
+      "support": 757.3795383562988,
+      "rate": 0.21944426329089606,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "tamil_nadu",
+      "n_births": 7838,
+      "n_events": 2748,
+      "support": 5577.1757804787085,
+      "rate": 0.34405126194731905,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "telangana",
+      "n_births": 2195,
+      "n_events": 1332,
+      "support": 1405.0554953550745,
+      "rate": 0.62661348436185,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "tripura",
+      "n_births": 1037,
+      "n_events": 244,
+      "support": 900.5155359437506,
+      "rate": 0.25427482325983064,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "uttar_pradesh",
+      "n_births": 28478,
+      "n_events": 3908,
+      "support": 22521.905340631245,
+      "rate": 0.13765202983010552,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "uttarakhand",
+      "n_births": 3963,
+      "n_events": 738,
+      "support": 2736.6826010107998,
+      "rate": 0.1907812662989176,
+      "supported": true,
+      "suppressed": false
+    },
+    {
+      "source_unit": "west_bengal",
+      "n_births": 4028,
+      "n_events": 1141,
+      "support": 3101.3796694307302,
+      "rate": 0.31416147931791494,
+      "supported": true,
+      "suppressed": false
+    }
+  ],
+  "state_x_sector_unweighted": [
+    {
+      "source_unit": "andaman_and_nicobar_islands",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "andaman_and_nicobar_islands",
+      "sector": "private",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "andaman_and_nicobar_islands",
+      "sector": "public",
+      "n_births": 599,
+      "n_events": 74,
+      "support": 599.0,
+      "rate": 0.12420316566956037,
+      "supported": true,
+      "prior": 0.14408797747289356,
+      "suppressed": false
+    },
+    {
+      "source_unit": "andhra_pradesh",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "andhra_pradesh",
+      "sector": "private",
+      "n_births": 1670,
+      "n_events": 937,
+      "support": 1670.0,
+      "rate": 0.5595029419124505,
+      "supported": true,
+      "prior": 0.4279985916020746,
+      "suppressed": false
+    },
+    {
+      "source_unit": "andhra_pradesh",
+      "sector": "public",
+      "n_births": 1178,
+      "n_events": 289,
+      "support": 1178.0,
+      "rate": 0.24838061087816482,
+      "supported": true,
+      "prior": 0.4279985916020746,
+      "suppressed": false
+    },
+    {
+      "source_unit": "arunachal_pradesh",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "arunachal_pradesh",
+      "sector": "private",
+      "n_births": 375,
+      "n_events": 136,
+      "support": 375.0,
+      "rate": 0.35190453931704146,
+      "supported": true,
+      "prior": 0.15011465151156989,
+      "suppressed": false
+    },
+    {
+      "source_unit": "arunachal_pradesh",
+      "sector": "public",
+      "n_births": 2121,
+      "n_events": 240,
+      "support": 2121.0,
+      "rate": 0.11349943625886566,
+      "supported": true,
+      "prior": 0.15011465151156989,
+      "suppressed": false
+    },
+    {
+      "source_unit": "assam",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "assam",
+      "sector": "private",
+      "n_births": 979,
+      "n_events": 533,
+      "support": 979.0,
+      "rate": 0.5372236296661901,
+      "supported": true,
+      "prior": 0.18432030182619158,
+      "suppressed": false
+    },
+    {
+      "source_unit": "assam",
+      "sector": "public",
+      "n_births": 6253,
+      "n_events": 803,
+      "support": 6253.0,
+      "rate": 0.1285965895164234,
+      "supported": true,
+      "prior": 0.18432030182619158,
+      "suppressed": false
+    },
+    {
+      "source_unit": "bihar",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "bihar",
+      "sector": "private",
+      "n_births": 4200,
+      "n_events": 1283,
+      "support": 4200.0,
+      "rate": 0.304475103316209,
+      "supported": true,
+      "prior": 0.09424679972008292,
+      "suppressed": false
+    },
+    {
+      "source_unit": "bihar",
+      "sector": "public",
+      "n_births": 12612,
+      "n_events": 305,
+      "support": 12612.0,
+      "rate": 0.024294247624635976,
+      "supported": true,
+      "prior": 0.09424679972008292,
+      "suppressed": false
+    },
+    {
+      "source_unit": "chandigarh",
+      "sector": "private",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "chandigarh",
+      "sector": "public",
+      "n_births": 140,
+      "n_events": 27,
+      "support": 140.0,
+      "rate": 0.19785711331170938,
+      "supported": true,
+      "prior": 0.232856906493675,
+      "suppressed": false
+    },
+    {
+      "source_unit": "chhattisgarh",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "chhattisgarh",
+      "sector": "private",
+      "n_births": 1272,
+      "n_events": 600,
+      "support": 1272.0,
+      "rate": 0.4665148536805342,
+      "supported": true,
+      "prior": 0.13685954776251116,
+      "suppressed": false
+    },
+    {
+      "source_unit": "chhattisgarh",
+      "sector": "public",
+      "n_births": 5212,
+      "n_events": 288,
+      "support": 5212.0,
+      "rate": 0.05556903496851113,
+      "supported": true,
+      "prior": 0.13685954776251116,
+      "suppressed": false
+    },
+    {
+      "source_unit": "dadra_nagar_haveli_and_daman_diu",
+      "sector": "private",
+      "n_births": 276,
+      "n_events": 99,
+      "support": 276.0,
+      "rate": 0.3487119247236834,
+      "supported": true,
+      "prior": 0.21093648591051406,
+      "suppressed": false
+    },
+    {
+      "source_unit": "dadra_nagar_haveli_and_daman_diu",
+      "sector": "public",
+      "n_births": 366,
+      "n_events": 37,
+      "support": 366.0,
+      "rate": 0.10678427388137379,
+      "supported": true,
+      "prior": 0.21093648591051406,
+      "suppressed": false
+    },
+    {
+      "source_unit": "delhi",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "delhi",
+      "sector": "private",
+      "n_births": 440,
+      "n_events": 190,
+      "support": 440.0,
+      "rate": 0.4248245215412187,
+      "supported": true,
+      "prior": 0.27096399544802896,
+      "suppressed": false
+    },
+    {
+      "source_unit": "delhi",
+      "sector": "public",
+      "n_births": 929,
+      "n_events": 183,
+      "support": 929.0,
+      "rate": 0.19854507893462656,
+      "supported": true,
+      "prior": 0.27096399544802896,
+      "suppressed": false
+    },
+    {
+      "source_unit": "goa",
+      "sector": "private",
+      "n_births": 157,
+      "n_events": 79,
+      "support": 157.0,
+      "rate": 0.48185841240884286,
+      "supported": true,
+      "prior": 0.31444694981825955,
+      "suppressed": false
+    },
+    {
+      "source_unit": "goa",
+      "sector": "public",
+      "n_births": 248,
+      "n_events": 51,
+      "support": 248.0,
+      "rate": 0.2137646977476313,
+      "supported": true,
+      "prior": 0.31444694981825955,
+      "suppressed": false
+    },
+    {
+      "source_unit": "gujarat",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "gujarat",
+      "sector": "private",
+      "n_births": 3961,
+      "n_events": 941,
+      "support": 3961.0,
+      "rate": 0.23725447253031967,
+      "supported": true,
+      "prior": 0.17550275716013153,
+      "suppressed": false
+    },
+    {
+      "source_unit": "gujarat",
+      "sector": "public",
+      "n_births": 2695,
+      "n_events": 230,
+      "support": 2695.0,
+      "rate": 0.08600738679307647,
+      "supported": true,
+      "prior": 0.17550275716013153,
+      "suppressed": false
+    },
+    {
+      "source_unit": "haryana",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "haryana",
+      "sector": "private",
+      "n_births": 2191,
+      "n_events": 542,
+      "support": 2191.0,
+      "rate": 0.24642906244431223,
+      "supported": true,
+      "prior": 0.14273285321871715,
+      "suppressed": false
+    },
+    {
+      "source_unit": "haryana",
+      "sector": "public",
+      "n_births": 4128,
+      "n_events": 360,
+      "support": 4128.0,
+      "rate": 0.08747701472140172,
+      "supported": true,
+      "prior": 0.14273285321871715,
+      "suppressed": false
+    },
+    {
+      "source_unit": "himachal_pradesh",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "himachal_pradesh",
+      "sector": "private",
+      "n_births": 430,
+      "n_events": 196,
+      "support": 430.0,
+      "rate": 0.4450097386935552,
+      "supported": true,
+      "prior": 0.21271912060499118,
+      "suppressed": false
+    },
+    {
+      "source_unit": "himachal_pradesh",
+      "sector": "public",
+      "n_births": 1773,
+      "n_events": 276,
+      "support": 1773.0,
+      "rate": 0.15630473084891233,
+      "supported": true,
+      "prior": 0.21271912060499118,
+      "suppressed": false
+    },
+    {
+      "source_unit": "jammu_and_kashmir_incl_ladakh",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "jammu_and_kashmir_incl_ladakh",
+      "sector": "private",
+      "n_births": 491,
+      "n_events": 340,
+      "support": 491.0,
+      "rate": 0.6788797736984862,
+      "supported": true,
+      "prior": 0.3453782179963213,
+      "suppressed": false
+    },
+    {
+      "source_unit": "jammu_and_kashmir_incl_ladakh",
+      "sector": "public",
+      "n_births": 6320,
+      "n_events": 2026,
+      "support": 6320.0,
+      "rate": 0.3206478808138685,
+      "supported": true,
+      "prior": 0.3453782179963213,
+      "suppressed": false
+    },
+    {
+      "source_unit": "jharkhand",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "jharkhand",
+      "sector": "private",
+      "n_births": 2319,
+      "n_events": 925,
+      "support": 2319.0,
+      "rate": 0.396782198715713,
+      "supported": true,
+      "prior": 0.15367813980263983,
+      "suppressed": false
+    },
+    {
+      "source_unit": "jharkhand",
+      "sector": "public",
+      "n_births": 5263,
+      "n_events": 245,
+      "support": 5263.0,
+      "rate": 0.046956949232642965,
+      "supported": true,
+      "prior": 0.15367813980263983,
+      "suppressed": false
+    },
+    {
+      "source_unit": "karnataka",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "karnataka",
+      "sector": "private",
+      "n_births": 2343,
+      "n_events": 980,
+      "support": 2343.0,
+      "rate": 0.41679579008124357,
+      "supported": true,
+      "prior": 0.24442259809892988,
+      "suppressed": false
+    },
+    {
+      "source_unit": "karnataka",
+      "sector": "public",
+      "n_births": 4946,
+      "n_events": 807,
+      "support": 4946.0,
+      "rate": 0.16348941843777257,
+      "supported": true,
+      "prior": 0.24442259809892988,
+      "suppressed": false
+    },
+    {
+      "source_unit": "kerala",
+      "sector": "private",
+      "n_births": 1497,
+      "n_events": 566,
+      "support": 1497.0,
+      "rate": 0.37774414503303966,
+      "supported": true,
+      "prior": 0.35189340075605985,
+      "suppressed": false
+    },
+    {
+      "source_unit": "kerala",
+      "sector": "public",
+      "n_births": 960,
+      "n_events": 302,
+      "support": 960.0,
+      "rate": 0.3153447632807359,
+      "supported": true,
+      "prior": 0.35189340075605985,
+      "suppressed": false
+    },
+    {
+      "source_unit": "lakshadweep",
+      "sector": "private",
+      "n_births": 107,
+      "n_events": 62,
+      "support": 107.0,
+      "rate": 0.5445340580999759,
+      "supported": true,
+      "prior": 0.35779126893484753,
+      "suppressed": false
+    },
+    {
+      "source_unit": "lakshadweep",
+      "sector": "public",
+      "n_births": 199,
+      "n_events": 51,
+      "support": 199.0,
+      "rate": 0.26555171405797695,
+      "supported": true,
+      "prior": 0.35779126893484753,
+      "suppressed": false
+    },
+    {
+      "source_unit": "madhya_pradesh",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "madhya_pradesh",
+      "sector": "private",
+      "n_births": 2612,
+      "n_events": 1099,
+      "support": 2612.0,
+      "rate": 0.4183493549572565,
+      "supported": true,
+      "prior": 0.10477511237494953,
+      "suppressed": false
+    },
+    {
+      "source_unit": "madhya_pradesh",
+      "sector": "public",
+      "n_births": 16929,
+      "n_events": 952,
+      "support": 16929.0,
+      "rate": 0.0562921412618738,
+      "supported": true,
+      "prior": 0.10477511237494953,
+      "suppressed": false
+    },
+    {
+      "source_unit": "maharashtra",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "maharashtra",
+      "sector": "private",
+      "n_births": 3627,
+      "n_events": 1111,
+      "support": 3627.0,
+      "rate": 0.3057483738923307,
+      "supported": true,
+      "prior": 0.20321597926650337,
+      "suppressed": false
+    },
+    {
+      "source_unit": "maharashtra",
+      "sector": "public",
+      "n_births": 4752,
+      "n_events": 594,
+      "support": 4752.0,
+      "rate": 0.12532781215115885,
+      "supported": true,
+      "prior": 0.20321597926650337,
+      "suppressed": false
+    },
+    {
+      "source_unit": "manipur",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "manipur",
+      "sector": "private",
+      "n_births": 1169,
+      "n_events": 529,
+      "support": 1169.0,
+      "rate": 0.44961674555817444,
+      "supported": true,
+      "prior": 0.27971552343346834,
+      "suppressed": false
+    },
+    {
+      "source_unit": "manipur",
+      "sector": "public",
+      "n_births": 2450,
+      "n_events": 490,
+      "support": 2450.0,
+      "rate": 0.20064546982537224,
+      "supported": true,
+      "prior": 0.27971552343346834,
+      "suppressed": false
+    },
+    {
+      "source_unit": "meghalaya",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "meghalaya",
+      "sector": "private",
+      "n_births": 499,
+      "n_events": 154,
+      "support": 499.0,
+      "rate": 0.3020349846529755,
+      "supported": true,
+      "prior": 0.13780785174471447,
+      "suppressed": false
+    },
+    {
+      "source_unit": "meghalaya",
+      "sector": "public",
+      "n_births": 1827,
+      "n_events": 168,
+      "support": 1827.0,
+      "rate": 0.09245054522733855,
+      "supported": true,
+      "prior": 0.13780785174471447,
+      "suppressed": false
+    },
+    {
+      "source_unit": "mizoram",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "mizoram",
+      "sector": "private",
+      "n_births": 424,
+      "n_events": 136,
+      "support": 424.0,
+      "rate": 0.31163609423785565,
+      "supported": true,
+      "prior": 0.11832129208039568,
+      "suppressed": false
+    },
+    {
+      "source_unit": "mizoram",
+      "sector": "public",
+      "n_births": 3283,
+      "n_events": 303,
+      "support": 3283.0,
+      "rate": 0.092451233981716,
+      "supported": true,
+      "prior": 0.11832129208039568,
+      "suppressed": false
+    },
+    {
+      "source_unit": "nagaland",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "nagaland",
+      "sector": "private",
+      "n_births": 284,
+      "n_events": 90,
+      "support": 284.0,
+      "rate": 0.3065807174230356,
+      "supported": true,
+      "prior": 0.16002690483014162,
+      "suppressed": false
+    },
+    {
+      "source_unit": "nagaland",
+      "sector": "public",
+      "n_births": 1174,
+      "n_events": 144,
+      "support": 1174.0,
+      "rate": 0.12328353274422348,
+      "supported": true,
+      "prior": 0.16002690483014162,
+      "suppressed": false
+    },
+    {
+      "source_unit": "odisha",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "odisha",
+      "sector": "private",
+      "n_births": 986,
+      "n_events": 547,
+      "support": 986.0,
+      "rate": 0.5468193591125831,
+      "supported": true,
+      "prior": 0.15501376336292738,
+      "suppressed": false
+    },
+    {
+      "source_unit": "odisha",
+      "sector": "public",
+      "n_births": 8389,
+      "n_events": 913,
+      "support": 8389.0,
+      "rate": 0.10894283211645363,
+      "supported": true,
+      "prior": 0.15501376336292738,
+      "suppressed": false
+    },
+    {
+      "source_unit": "puducherry",
+      "sector": "private",
+      "n_births": 387,
+      "n_events": 216,
+      "support": 387.0,
+      "rate": 0.5507015191199885,
+      "supported": true,
+      "prior": 0.4067759140917671,
+      "suppressed": false
+    },
+    {
+      "source_unit": "puducherry",
+      "sector": "public",
+      "n_births": 691,
+      "n_events": 227,
+      "support": 691.0,
+      "rate": 0.33071099617698363,
+      "supported": true,
+      "prior": 0.4067759140917671,
+      "suppressed": false
+    },
+    {
+      "source_unit": "punjab",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "punjab",
+      "sector": "private",
+      "n_births": 1929,
+      "n_events": 735,
+      "support": 1929.0,
+      "rate": 0.3797672557487522,
+      "supported": true,
+      "prior": 0.25831907271590415,
+      "suppressed": false
+    },
+    {
+      "source_unit": "punjab",
+      "sector": "public",
+      "n_births": 2845,
+      "n_events": 500,
+      "support": 2845.0,
+      "rate": 0.1763233443121529,
+      "supported": true,
+      "prior": 0.25831907271590415,
+      "suppressed": false
+    },
+    {
+      "source_unit": "rajasthan",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "rajasthan",
+      "sector": "private",
+      "n_births": 3289,
+      "n_events": 775,
+      "support": 3289.0,
+      "rate": 0.2348155238629784,
+      "supported": true,
+      "prior": 0.10022842312977724,
+      "suppressed": false
+    },
+    {
+      "source_unit": "rajasthan",
+      "sector": "public",
+      "n_births": 10843,
+      "n_events": 643,
+      "support": 10843.0,
+      "rate": 0.05937628357383739,
+      "supported": true,
+      "prior": 0.10022842312977724,
+      "suppressed": false
+    },
+    {
+      "source_unit": "sikkim",
+      "sector": "private",
+      "n_births": 100,
+      "n_events": 52,
+      "support": 100.0,
+      "rate": 0.4685577173129086,
+      "supported": true,
+      "prior": 0.21134630387745149,
+      "suppressed": false
+    },
+    {
+      "source_unit": "sikkim",
+      "sector": "public",
+      "n_births": 853,
+      "n_events": 150,
+      "support": 853.0,
+      "rate": 0.1766631455642028,
+      "supported": true,
+      "prior": 0.21134630387745149,
+      "suppressed": false
+    },
+    {
+      "source_unit": "tamil_nadu",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "tamil_nadu",
+      "sector": "private",
+      "n_births": 2515,
+      "n_events": 1335,
+      "support": 2515.0,
+      "rate": 0.5293899054907777,
+      "supported": true,
+      "prior": 0.3501705209560652,
+      "suppressed": false
+    },
+    {
+      "source_unit": "tamil_nadu",
+      "sector": "public",
+      "n_births": 5318,
+      "n_events": 1413,
+      "support": 5318.0,
+      "rate": 0.266017873813998,
+      "supported": true,
+      "prior": 0.3501705209560652,
+      "suppressed": false
+    },
+    {
+      "source_unit": "telangana",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "telangana",
+      "sector": "private",
+      "n_births": 1387,
+      "n_events": 1022,
+      "support": 1387.0,
+      "rate": 0.7349395553908802,
+      "supported": true,
+      "prior": 0.6029977217484246,
+      "suppressed": false
+    },
+    {
+      "source_unit": "telangana",
+      "sector": "public",
+      "n_births": 794,
+      "n_events": 310,
+      "support": 794.0,
+      "rate": 0.3956510496744085,
+      "supported": true,
+      "prior": 0.6029977217484246,
+      "suppressed": false
+    },
+    {
+      "source_unit": "tripura",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "tripura",
+      "sector": "private",
+      "n_births": 136,
+      "n_events": 97,
+      "support": 136.0,
+      "rate": 0.6518314962124009,
+      "supported": true,
+      "prior": 0.23428567045672688,
+      "suppressed": false
+    },
+    {
+      "source_unit": "tripura",
+      "sector": "public",
+      "n_births": 900,
+      "n_events": 147,
+      "support": 900.0,
+      "rate": 0.16487577544471146,
+      "supported": true,
+      "prior": 0.23428567045672688,
+      "suppressed": false
+    },
+    {
+      "source_unit": "uttar_pradesh",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "uttar_pradesh",
+      "sector": "private",
+      "n_births": 10113,
+      "n_events": 3071,
+      "support": 10113.0,
+      "rate": 0.30334009702355075,
+      "supported": true,
+      "prior": 0.13726015698199032,
+      "suppressed": false
+    },
+    {
+      "source_unit": "uttar_pradesh",
+      "sector": "public",
+      "n_births": 18215,
+      "n_events": 837,
+      "support": 18215.0,
+      "rate": 0.04605128616066026,
+      "supported": true,
+      "prior": 0.13726015698199032,
+      "suppressed": false
+    },
+    {
+      "source_unit": "uttarakhand",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "uttarakhand",
+      "sector": "private",
+      "n_births": 1229,
+      "n_events": 482,
+      "support": 1229.0,
+      "rate": 0.38889033377311044,
+      "supported": true,
+      "prior": 0.18620134413074574,
+      "suppressed": false
+    },
+    {
+      "source_unit": "uttarakhand",
+      "sector": "public",
+      "n_births": 2714,
+      "n_events": 256,
+      "support": 2714.0,
+      "rate": 0.09499781524601862,
+      "supported": true,
+      "prior": 0.18620134413074574,
+      "suppressed": false
+    },
+    {
+      "source_unit": "west_bengal",
+      "sector": "other",
+      "n_births": "SUPPRESSED",
+      "n_events": "SUPPRESSED",
+      "support": "SUPPRESSED",
+      "rate": "SUPPRESSED",
+      "supported": "SUPPRESSED",
+      "prior": "SUPPRESSED",
+      "suppressed": true
+    },
+    {
+      "source_unit": "west_bengal",
+      "sector": "private",
+      "n_births": 892,
+      "n_events": 617,
+      "support": 892.0,
+      "rate": 0.6827361137494408,
+      "supported": true,
+      "prior": 0.28276678697449614,
+      "suppressed": false
+    },
+    {
+      "source_unit": "west_bengal",
+      "sector": "public",
+      "n_births": 3109,
+      "n_events": 524,
+      "support": 3109.0,
+      "rate": 0.16927303794806325,
+      "supported": true,
+      "prior": 0.28276678697449614,
+      "suppressed": false
+    }
+  ],
+  "supported_counts": {
+    "primary": {
+      "states": 35,
+      "cells": 76,
+      "cells_total": 98
+    },
+    "alpha_0": {
+      "states": 35,
+      "cells": 76,
+      "cells_total": 98
+    },
+    "alpha_5": {
+      "states": 35,
+      "cells": 76,
+      "cells_total": 98
+    },
+    "alpha_100": {
+      "states": 35,
+      "cells": 76,
+      "cells_total": 98
+    },
+    "weighted_v005": {
+      "states": 35,
+      "cells": 73,
+      "cells_total": 98
+    }
+  },
+  "timing": {
+    "nfhs4_interview_first": "2015-01",
+    "nfhs4_interview_last": "2016-12",
+    "nfhs4_birth_first": "2010-02",
+    "nfhs4_birth_last": "2016-11",
+    "nfhs5_birth_first": "2014-07",
+    "nfhs5_birth_last": "2021-04",
+    "calendar_overlap_rule": "exclude_calendar_overlap keeps NFHS-5 births after the last NFHS-4 interview month",
+    "nfhs5_births_in_or_before_last_nfhs4_interview_month": 70510
+  },
+  "suppression_rule": "n<50 or events<10 or non-events<10",
+  "crosswalk": {
+    "status": "CROSSWALK_VALID",
+    "nfhs5_codes": 36,
+    "nfhs4_codes": 36,
+    "source_units": 35,
+    "boundary_status_counts": {
+      "boundary_changed": 1,
+      "merged": 1,
+      "split_child": 1,
+      "unchanged": 33
+    },
+    "numeric_codes_joined_directly": false
+  }
+}
