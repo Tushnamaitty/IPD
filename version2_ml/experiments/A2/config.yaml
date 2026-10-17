@@ -1,0 +1,29 @@
+experiment: A2
+title: Historical NFHS-4 state / facility-sector context for NFHS-5 classification
+feature_tier: F3
+status: EXPLORATORY_DEVELOPMENT
+seed: 42
+crosswalk: state_crosswalk_v1.csv
+source_wave: NFHS-4
+target_wave: NFHS-5
+split:
+  # Shared provisional mother-grouped development split (split_contracts.grouped_partition)
+  group: caseid
+  fractions: [0.70, 0.15, 0.15]
+  seed: 42
+evaluate_test: false   # test partition stays untouched unless --evaluate-test is passed
+smoothing:
+  primary: {alpha: 20, n_min: 30, weighted: false}
+  context_sensitivities:
+    alpha_0: {alpha: 0, n_min: 30, weighted: false}
+    alpha_5: {alpha: 5, n_min: 30, weighted: false}
+    alpha_100: {alpha: 100, n_min: 30, weighted: false}
+    weighted_v005: {alpha: 20, n_min: 30, weighted: true}
+  ladakh_unseen_nfhs5_codes: [37]
+cohort_sensitivities: [nfhs5_cmc_0_59, exclude_other_facility, exclude_calendar_overlap]
+models: [logistic_regression, xgboost]   # fixed make_estimator defaults; no tuning
+weighted_descriptive_metrics: true        # v005 point metrics, primary run only
+disclosure:
+  min_n: 50
+  min_events: 10
+  min_level_rows: 10

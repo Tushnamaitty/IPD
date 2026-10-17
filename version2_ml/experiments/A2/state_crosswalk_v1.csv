@@ -1,0 +1,37 @@
+nfhs5_code,nfhs5_label,source_unit,nfhs4_codes,nfhs4_labels,boundary_status,note
+1,jammu & kashmir,jammu_and_kashmir_incl_ladakh,14,jammu and kashmir,boundary_changed,NFHS-4 unit includes Ladakh region; UT reorganisation Oct 2019
+2,himachal pradesh,himachal_pradesh,13,himachal pradesh,unchanged,
+3,punjab,punjab,28,punjab,unchanged,
+4,chandigarh,chandigarh,6,chandigarh,unchanged,
+5,uttarakhand,uttarakhand,34,uttarakhand,unchanged,
+6,haryana,haryana,12,haryana,unchanged,
+7,nct of delhi,delhi,25,delhi,unchanged,label alias only
+8,rajasthan,rajasthan,29,rajasthan,unchanged,
+9,uttar pradesh,uttar_pradesh,33,uttar pradesh,unchanged,
+10,bihar,bihar,5,bihar,unchanged,
+11,sikkim,sikkim,30,sikkim,unchanged,
+12,arunachal pradesh,arunachal_pradesh,3,arunachal pradesh,unchanged,
+13,nagaland,nagaland,24,nagaland,unchanged,
+14,manipur,manipur,21,manipur,unchanged,
+15,mizoram,mizoram,23,mizoram,unchanged,
+16,tripura,tripura,32,tripura,unchanged,
+17,meghalaya,meghalaya,22,meghalaya,unchanged,
+18,assam,assam,4,assam,unchanged,
+19,west bengal,west_bengal,35,west bengal,unchanged,
+20,jharkhand,jharkhand,15,jharkhand,unchanged,
+21,odisha,odisha,26,odisha,unchanged,
+22,chhattisgarh,chhattisgarh,7,chhattisgarh,unchanged,
+23,madhya pradesh,madhya_pradesh,19,madhya pradesh,unchanged,
+24,gujarat,gujarat,11,gujarat,unchanged,
+25,dadra & nagar haveli and daman & diu,dadra_nagar_haveli_and_daman_diu,8;9,dadra and nagar haveli;daman and diu,merged,UTs merged Jan 2020; NFHS-4 counts pooled (union of territories)
+27,maharashtra,maharashtra,20,maharashtra,unchanged,
+28,andhra pradesh,andhra_pradesh,2,andhra pradesh,unchanged,Post-2014 bifurcation units in both waves
+29,karnataka,karnataka,16,karnataka,unchanged,
+30,goa,goa,10,goa,unchanged,
+31,lakshadweep,lakshadweep,18,lakshadweep,unchanged,
+32,kerala,kerala,17,kerala,unchanged,
+33,tamil nadu,tamil_nadu,31,tamil nadu,unchanged,
+34,puducherry,puducherry,27,puducherry,unchanged,
+35,andaman & nicobar islands,andaman_and_nicobar_islands,1,andaman and nicobar islands,unchanged,
+36,telangana,telangana,36,telangana,unchanged,Post-2014 bifurcation units in both waves
+37,ladakh,jammu_and_kashmir_incl_ladakh,14,jammu and kashmir,split_child,Primary: parent NFHS-4 J&K rates; sensitivity treats as no_source_unit
