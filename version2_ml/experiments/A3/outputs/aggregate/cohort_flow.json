@@ -1,0 +1,216 @@
+{
+  "experiment": "A3",
+  "NFHS-5": {
+    "raw_rows": 1274250,
+    "recall_eligible": 232976,
+    "institutional_and_recall": 201311,
+    "invalid_or_missing_outcome_excluded": 0,
+    "final_births": 201311,
+    "final_mothers": 158429,
+    "final_events": 44742,
+    "expected_institutional_births": 201311,
+    "matches_expected": true,
+    "cohort_rule": "institutional m15 in 20-27/30-33/96; b19 in 0..59",
+    "sector_births": {
+      "other": 517,
+      "private": 50495,
+      "public": 150299
+    },
+    "raw_file_basename": "IABR7EFL.DTA",
+    "raw_file_bytes": 2417715435
+  },
+  "outer_split_primary": {
+    "train": {
+      "rows": 140920,
+      "mothers": 110900,
+      "positives": 31335,
+      "negatives": 109585
+    },
+    "validation": {
+      "rows": 30227,
+      "mothers": 23765,
+      "positives": 6701,
+      "negatives": 23526
+    },
+    "test": {
+      "rows": 30164,
+      "mothers": 23764,
+      "positives": 6706,
+      "negatives": 23458
+    }
+  },
+  "cohort_splits": {
+    "primary": {
+      "train": {
+        "rows": 140920,
+        "mothers": 110900,
+        "positives": 31335,
+        "negatives": 109585
+      },
+      "validation": {
+        "rows": 30227,
+        "mothers": 23765,
+        "positives": 6701,
+        "negatives": 23526
+      },
+      "test": {
+        "rows": 30164,
+        "mothers": 23764,
+        "positives": 6706,
+        "negatives": 23458
+      }
+    },
+    "exclude_other_facility": {
+      "train": {
+        "rows": 140564,
+        "mothers": 110668,
+        "positives": 31335,
+        "negatives": 109229
+      },
+      "validation": {
+        "rows": 30139,
+        "mothers": 23702,
+        "positives": 6701,
+        "negatives": 23438
+      },
+      "test": {
+        "rows": 30091,
+        "mothers": 23722,
+        "positives": 6706,
+        "negatives": 23385
+      }
+    },
+    "nfhs5_cmc_0_59": {
+      "train": {
+        "rows": 139750,
+        "mothers": 110276,
+        "positives": 31114,
+        "negatives": 108636
+      },
+      "validation": {
+        "rows": 29994,
+        "mothers": 23638,
+        "positives": 6650,
+        "negatives": 23344
+      },
+      "test": {
+        "rows": 29933,
+        "mothers": 23634,
+        "positives": 6668,
+        "negatives": 23265
+      }
+    }
+  },
+  "inner_fold_manifest": {
+    "primary": {
+      "selected_alpha": 5.0,
+      "inner_folds": [
+        {
+          "inner_fold": 0,
+          "fit_births": 93947,
+          "encoded_births": 46973,
+          "fit_mothers": 73949,
+          "encoded_mothers": 36951,
+          "encoded_events": 10445,
+          "mother_overlap": 0,
+          "encoded_cell_fallback_births": 149
+        },
+        {
+          "inner_fold": 1,
+          "fit_births": 93947,
+          "encoded_births": 46973,
+          "fit_mothers": 73917,
+          "encoded_mothers": 36983,
+          "encoded_events": 10445,
+          "mother_overlap": 0,
+          "encoded_cell_fallback_births": 131
+        },
+        {
+          "inner_fold": 2,
+          "fit_births": 93946,
+          "encoded_births": 46974,
+          "fit_mothers": 73934,
+          "encoded_mothers": 36966,
+          "encoded_events": 10445,
+          "mother_overlap": 0,
+          "encoded_cell_fallback_births": 127
+        }
+      ]
+    },
+    "exclude_other_facility": {
+      "selected_alpha": 5.0,
+      "inner_folds": [
+        {
+          "inner_fold": 0,
+          "fit_births": 93709,
+          "encoded_births": 46855,
+          "fit_mothers": 73801,
+          "encoded_mothers": 36867,
+          "encoded_events": 10445,
+          "mother_overlap": 0,
+          "encoded_cell_fallback_births": 20
+        },
+        {
+          "inner_fold": 1,
+          "fit_births": 93709,
+          "encoded_births": 46855,
+          "fit_mothers": 73763,
+          "encoded_mothers": 36905,
+          "encoded_events": 10445,
+          "mother_overlap": 0,
+          "encoded_cell_fallback_births": 18
+        },
+        {
+          "inner_fold": 2,
+          "fit_births": 93710,
+          "encoded_births": 46854,
+          "fit_mothers": 73772,
+          "encoded_mothers": 36896,
+          "encoded_events": 10445,
+          "mother_overlap": 0,
+          "encoded_cell_fallback_births": 19
+        }
+      ]
+    },
+    "nfhs5_cmc_0_59": {
+      "selected_alpha": 5.0,
+      "inner_folds": [
+        {
+          "inner_fold": 0,
+          "fit_births": 93167,
+          "encoded_births": 46583,
+          "fit_mothers": 73522,
+          "encoded_mothers": 36754,
+          "encoded_events": 10371,
+          "mother_overlap": 0,
+          "encoded_cell_fallback_births": 136
+        },
+        {
+          "inner_fold": 1,
+          "fit_births": 93166,
+          "encoded_births": 46584,
+          "fit_mothers": 73513,
+          "encoded_mothers": 36763,
+          "encoded_events": 10372,
+          "mother_overlap": 0,
+          "encoded_cell_fallback_births": 137
+        },
+        {
+          "inner_fold": 2,
+          "fit_births": 93167,
+          "encoded_births": 46583,
+          "fit_mothers": 73517,
+          "encoded_mothers": 36759,
+          "encoded_events": 10371,
+          "mother_overlap": 0,
+          "encoded_cell_fallback_births": 138
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Outer split identical to A2 (split_contracts.grouped_partition, seed 42).",
+    "Inner folds: StratifiedGroupKFold(3, shuffle, 42) on outer-train mothers; mother_overlap is asserted zero for every fold.",
+    "Aggregate counts only; no assignments or identifiers."
+  ]
+}

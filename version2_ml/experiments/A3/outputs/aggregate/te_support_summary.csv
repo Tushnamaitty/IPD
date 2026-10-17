@@ -1,0 +1,15 @@
+cohort,alpha,split,encoding,te_level,n_births,n_cells
+primary,5.0,train,oof_inner_folds,cell,140513.0,
+primary,5.0,train,oof_inner_folds,state,407.0,
+primary,5.0,train,oof_inner_folds,sector,0.0,
+primary,5.0,train,oof_inner_folds,global,0.0,
+primary,5.0,validation,full_outer_train_table,cell,30158.0,
+primary,5.0,validation,full_outer_train_table,state,69.0,
+primary,5.0,validation,full_outer_train_table,sector,0.0,
+primary,5.0,validation,full_outer_train_table,global,0.0,
+primary,5.0,train,support_histogram_full_table_cells,1-9,,17.0
+primary,5.0,train,support_histogram_full_table_cells,10-29,,12.0
+primary,5.0,train,support_histogram_full_table_cells,30-99,,5.0
+primary,5.0,train,support_histogram_full_table_cells,100-499,,19.0
+primary,5.0,train,support_histogram_full_table_cells,500-1999,,24.0
+primary,5.0,train,support_histogram_full_table_cells,2000+,,24.0

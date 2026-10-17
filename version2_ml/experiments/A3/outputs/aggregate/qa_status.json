@@ -1,0 +1,81 @@
+{
+  "experiment": "A3",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "synthetic_adversarial_tests",
+      "status": "PASS",
+      "detail": "15/15 passed"
+    },
+    {
+      "check": "outer_split_mother_exclusive",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "primary_inner_folds_mother_exclusive",
+      "status": "PASS",
+      "detail": "3 StratifiedGroupKFold folds"
+    },
+    {
+      "check": "primary_alpha5_full_table_fit_on_outer_train_only",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "runtime_validation_test_labels_flipped_encodings_bitwise_identical",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "runtime_validation_test_labels_permuted_encodings_bitwise_identical",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "primary_alpha100_full_table_fit_on_outer_train_only",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exclude_other_facility_inner_folds_mother_exclusive",
+      "status": "PASS",
+      "detail": "3 StratifiedGroupKFold folds"
+    },
+    {
+      "check": "exclude_other_facility_alpha5_full_table_fit_on_outer_train_only",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "nfhs5_cmc_0_59_inner_folds_mother_exclusive",
+      "status": "PASS",
+      "detail": "3 StratifiedGroupKFold folds"
+    },
+    {
+      "check": "nfhs5_cmc_0_59_alpha5_full_table_fit_on_outer_train_only",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "matched_rows_all_ablations",
+      "status": "PASS",
+      "detail": "46 paired comparisons"
+    },
+    {
+      "check": "a2_baseline_reproduced_on_same_split",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "check": "test_partition_untouched",
+      "status": "PASS",
+      "detail": "no test predictions generated"
+    },
+    {
+      "check": "output_disclosure_scan",
+      "status": "PASS",
+      "detail": "ablations.csv, alpha_selection.csv, cohort_flow.json, metrics.csv, qa_status.json, run_manifest.json, te_support_summary.csv"
+    }
+  ]
+}

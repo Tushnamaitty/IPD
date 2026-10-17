@@ -1,0 +1,367 @@
+{
+  "experiment": "A3",
+  "status": "EXPLORATORY",
+  "run_utc": "2026-10-17T04:58:30.725606+00:00",
+  "runtime_seconds": 314.6,
+  "git": {
+    "commit": "5b347d7d7fc9ed68d1d38713f88ac76ff306df7c",
+    "branch": "rifa-v2-A2-A3-A5-A6",
+    "base_version2_ml_development": "318f1602c891c26571a170f874aeb95e9a3d9b37",
+    "tracked_files_dirty": false
+  },
+  "environment": {
+    "python": "3.13.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.4.1",
+      "pandas": "2.3.3",
+      "sklearn": "1.8.0",
+      "scipy": "1.17.0",
+      "xgboost": "3.4.0",
+      "pyreadstat": "1.3.6",
+      "yaml": "6.0.3"
+    }
+  },
+  "source_files": {
+    "NFHS-5": {
+      "basename": "IABR7EFL.DTA",
+      "bytes": 2417715435
+    }
+  },
+  "cohort_definition": "institutional m15 in 20-27/30-33/96; b19 in 0..59",
+  "seed": 42,
+  "split_policy": {
+    "group": "caseid",
+    "fractions": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "seed": 42,
+    "function": "split_contracts.grouped_partition",
+    "status": "provisional development split; not an untouched confirmatory test"
+  },
+  "inner_cv": {
+    "method": "StratifiedGroupKFold",
+    "n_splits": 3,
+    "shuffle": true,
+    "random_state": 42
+  },
+  "encoding": {
+    "n_min": 30,
+    "alpha_grid": [
+      0,
+      1,
+      5,
+      20,
+      50,
+      100,
+      300
+    ],
+    "alpha_tie_break": "larger",
+    "exploratory_alphas": [
+      5,
+      100
+    ]
+  },
+  "selected_alpha": {
+    "primary": 5.0,
+    "exclude_other_facility": 5.0,
+    "nfhs5_cmc_0_59": 5.0
+  },
+  "alpha_selection_rule": "min OOF log-loss of te_state_sector on outer-train rows; ties -> larger alpha",
+  "fallback_order": {
+    "te_state_sector": [
+      "cell",
+      "state",
+      "sector",
+      "global mu"
+    ],
+    "te_state": [
+      "state",
+      "global mu"
+    ],
+    "te_sector": [
+      "sector",
+      "global mu"
+    ]
+  },
+  "test_partition_evaluated": false,
+  "evaluated_splits": [
+    "validation"
+  ],
+  "arms": {
+    "i_core": {
+      "numerical": [
+        "maternal_age_at_index_birth",
+        "education_years",
+        "birth_order"
+      ],
+      "categorical": [
+        "wealth_index",
+        "facility_type",
+        "residence",
+        "religion",
+        "twin_order"
+      ],
+      "role": "required_i_common_core"
+    },
+    "ii_state_sector_indicators": {
+      "numerical": [
+        "maternal_age_at_index_birth",
+        "education_years",
+        "birth_order"
+      ],
+      "categorical": [
+        "wealth_index",
+        "facility_type",
+        "residence",
+        "religion",
+        "twin_order",
+        "nfhs5_state"
+      ],
+      "role": "required_ii_core_plus_state_and_sector_indicators"
+    },
+    "iii_indicators_plus_oof_te": {
+      "numerical": [
+        "maternal_age_at_index_birth",
+        "education_years",
+        "birth_order",
+        "te_state_sector"
+      ],
+      "categorical": [
+        "wealth_index",
+        "facility_type",
+        "residence",
+        "religion",
+        "twin_order",
+        "nfhs5_state"
+      ],
+      "role": "required_iii_ii_plus_oof_te_state_x_sector"
+    },
+    "x_indicators_plus_all_te": {
+      "numerical": [
+        "maternal_age_at_index_birth",
+        "education_years",
+        "birth_order",
+        "te_state_sector",
+        "te_state",
+        "te_sector",
+        "te_cell_fallback"
+      ],
+      "categorical": [
+        "wealth_index",
+        "facility_type",
+        "residence",
+        "religion",
+        "twin_order",
+        "nfhs5_state"
+      ],
+      "role": "exploratory_ii_plus_all_te_and_fallback_flag"
+    },
+    "x_core_plus_oof_te_only": {
+      "numerical": [
+        "maternal_age_at_index_birth",
+        "education_years",
+        "birth_order",
+        "te_state_sector"
+      ],
+      "categorical": [
+        "wealth_index",
+        "facility_type",
+        "residence",
+        "religion",
+        "twin_order"
+      ],
+      "role": "exploratory_core_plus_te_without_state_indicators"
+    }
+  },
+  "sector_indicator_note": "facility_type (public/private/other) in the common core is the ordinary sector indicator; arm ii adds NFHS-5 state indicators.",
+  "models": {
+    "logistic_regression": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 1500,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": 42,
+      "solver": "liblinear",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "xgboost": {
+      "objective": "binary:logistic",
+      "base_score": null,
+      "booster": null,
+      "callbacks": null,
+      "colsample_bylevel": null,
+      "colsample_bynode": null,
+      "colsample_bytree": null,
+      "device": null,
+      "early_stopping_rounds": null,
+      "enable_categorical": true,
+      "eval_metric": "logloss",
+      "feature_types": null,
+      "feature_weights": null,
+      "gamma": null,
+      "grow_policy": null,
+      "importance_type": null,
+      "interaction_constraints": null,
+      "learning_rate": 0.05,
+      "max_bin": null,
+      "max_cat_threshold": null,
+      "max_cat_to_onehot": null,
+      "max_delta_step": null,
+      "max_depth": 3,
+      "max_leaves": null,
+      "min_child_weight": null,
+      "missing": NaN,
+      "monotone_constraints": null,
+      "multi_strategy": null,
+      "n_estimators": 100,
+      "n_jobs": 1,
+      "num_parallel_tree": null,
+      "random_state": 42,
+      "reg_alpha": null,
+      "reg_lambda": null,
+      "sampling_method": null,
+      "scale_pos_weight": null,
+      "subsample": null,
+      "tree_method": null,
+      "validate_parameters": null,
+      "verbosity": null
+    }
+  },
+  "model_hyperparameters_tuned": false,
+  "a2_consistency": {
+    "status": "PASS",
+    "max_abs_difference": 0.0,
+    "compared": "A3 i_core/ii vs A2 B0/R1, primary validation, both models"
+  },
+  "synthetic_tests": [
+    {
+      "test": "test_fit_refuses_non_train_partition",
+      "status": "PASS"
+    },
+    {
+      "test": "test_full_table_uses_exactly_outer_train",
+      "status": "PASS"
+    },
+    {
+      "test": "test_invalid_inputs_rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "test_mother_group_isolation_inner_folds",
+      "status": "PASS"
+    },
+    {
+      "test": "test_not_estimable_rather_than_violating_grouping",
+      "status": "PASS"
+    },
+    {
+      "test": "test_own_label_not_used_for_training_row",
+      "status": "PASS"
+    },
+    {
+      "test": "test_singleton_state_sector_does_not_output_own_label",
+      "status": "PASS"
+    },
+    {
+      "test": "test_smoothing_formula_and_fallback_hand_computed",
+      "status": "PASS"
+    },
+    {
+      "test": "test_supplied_folds_validated_and_equivalent",
+      "status": "PASS"
+    },
+    {
+      "test": "test_training_row_order_reconstruction",
+      "status": "PASS"
+    },
+    {
+      "test": "test_unseen_category_fallback",
+      "status": "PASS"
+    },
+    {
+      "test": "test_validation_test_label_mutation_bitwise_identical",
+      "status": "PASS"
+    },
+    {
+      "test": "test_no_te_in_reference_arms",
+      "status": "PASS"
+    },
+    {
+      "test": "test_required_arms_registered",
+      "status": "PASS"
+    },
+    {
+      "test": "test_three_required_arms_nested",
+      "status": "PASS"
+    }
+  ],
+  "config": {
+    "experiment": "A3",
+    "title": "State x sector grouped out-of-fold target encoding (NFHS-5)",
+    "feature_tier": "F4",
+    "status": "EXPLORATORY_DEVELOPMENT",
+    "seed": 42,
+    "wave": "NFHS-5",
+    "split": {
+      "group": "caseid",
+      "fractions": [
+        0.7,
+        0.15,
+        0.15
+      ],
+      "seed": 42
+    },
+    "evaluate_test": false,
+    "inner_cv": {
+      "method": "StratifiedGroupKFold",
+      "n_splits": 3,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "encoding": {
+      "n_min": 30,
+      "alpha_grid": [
+        0,
+        1,
+        5,
+        20,
+        50,
+        100,
+        300
+      ],
+      "alpha_tie_break": "larger",
+      "exploratory_alphas": [
+        5,
+        100
+      ]
+    },
+    "cohorts": [
+      "primary",
+      "exclude_other_facility",
+      "nfhs5_cmc_0_59"
+    ],
+    "models": [
+      "logistic_regression",
+      "xgboost"
+    ],
+    "a2_consistency_check": "../A2/outputs/aggregate/metrics.csv",
+    "promotion_reference": {
+      "roc_auc": 0.005,
+      "average_precision": 0.01
+    },
+    "disclosure": {
+      "min_level_rows": 10
+    }
+  },
+  "confidence_interval_status": "NOT_APPROVED"
+}
