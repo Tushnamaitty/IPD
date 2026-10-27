@@ -1,0 +1,120 @@
+{
+  "original": {
+    "file": "C:\\Users\\Tushna\\IPD\\extensions_work\\17_statewise_descriptive\\figures\\geo_heatmap\\india_states.geojson",
+    "features": 271,
+    "crs": "EPSG:4326",
+    "empty_or_null_before": 6,
+    "invalid_nonempty_before": 2,
+    "unique_names_after_aliasing": 36
+  },
+  "official_reference": {
+    "file": "C:\\Users\\Tushna\\Downloads\\NWIC_Boundaries\\state_NWIC.GeoJSON",
+    "features": 36,
+    "crs": "EPSG:7755",
+    "empty_or_null_before": 0,
+    "invalid_nonempty_before": 1,
+    "unique_names_after_aliasing": 36
+  },
+  "original_only_names": [],
+  "reference_only_names": [],
+  "matched_states": 36,
+  "comparison_crs": "EPSG:6933 (equal-area)",
+  "worst_10": [
+    {
+      "state": "puducherry",
+      "original_area_km2": 492.1944,
+      "reference_area_km2": 512.3473,
+      "intersection_over_union_pct": 79.7854,
+      "reference_area_missing_from_original_pct": 12.9893,
+      "original_area_outside_reference_pct": 9.4266,
+      "area_difference_vs_reference_pct": -3.9335
+    },
+    {
+      "state": "dadra and nagar haveli and daman and diu",
+      "original_area_km2": 601.3252,
+      "reference_area_km2": 590.9698,
+      "intersection_over_union_pct": 87.4195,
+      "reference_area_missing_from_original_pct": 5.8952,
+      "original_area_outside_reference_pct": 7.5158,
+      "area_difference_vs_reference_pct": 1.7523
+    },
+    {
+      "state": "chandigarh",
+      "original_area_km2": 117.5255,
+      "reference_area_km2": 114.6133,
+      "intersection_over_union_pct": 91.637,
+      "reference_area_missing_from_original_pct": 3.149,
+      "original_area_outside_reference_pct": 5.5489,
+      "area_difference_vs_reference_pct": 2.5408
+    },
+    {
+      "state": "lakshadweep",
+      "original_area_km2": 638.5943,
+      "reference_area_km2": 662.8905,
+      "intersection_over_union_pct": 94.7497,
+      "reference_area_missing_from_original_pct": 4.4791,
+      "original_area_outside_reference_pct": 0.8449,
+      "area_difference_vs_reference_pct": -3.6652
+    },
+    {
+      "state": "jammu and kashmir",
+      "original_area_km2": 55854.2897,
+      "reference_area_km2": 53303.9105,
+      "intersection_over_union_pct": 94.7996,
+      "reference_area_missing_from_original_pct": 0.3412,
+      "original_area_outside_reference_pct": 4.8917,
+      "area_difference_vs_reference_pct": 4.7846
+    },
+    {
+      "state": "andaman and nicobar islands",
+      "original_area_km2": 7420.7538,
+      "reference_area_km2": 7497.8252,
+      "intersection_over_union_pct": 95.0609,
+      "reference_area_missing_from_original_pct": 3.033,
+      "original_area_outside_reference_pct": 2.0259,
+      "area_difference_vs_reference_pct": -1.0279
+    },
+    {
+      "state": "delhi",
+      "original_area_km2": 1503.0524,
+      "reference_area_km2": 1484.7929,
+      "intersection_over_union_pct": 95.9535,
+      "reference_area_missing_from_original_pct": 1.4628,
+      "original_area_outside_reference_pct": 2.6599,
+      "area_difference_vs_reference_pct": 1.2298
+    },
+    {
+      "state": "goa",
+      "original_area_km2": 3629.2342,
+      "reference_area_km2": 3691.1698,
+      "intersection_over_union_pct": 96.6119,
+      "reference_area_missing_from_original_pct": 2.5478,
+      "original_area_outside_reference_pct": 0.8847,
+      "area_difference_vs_reference_pct": -1.6779
+    },
+    {
+      "state": "telangana",
+      "original_area_km2": 114689.8345,
+      "reference_area_km2": 112055.7415,
+      "intersection_over_union_pct": 96.7487,
+      "reference_area_missing_from_original_pct": 0.4966,
+      "original_area_outside_reference_pct": 2.7819,
+      "area_difference_vs_reference_pct": 2.3507
+    },
+    {
+      "state": "andhra pradesh",
+      "original_area_km2": 160176.7278,
+      "reference_area_km2": 163226.6667,
+      "intersection_over_union_pct": 97.098,
+      "reference_area_missing_from_original_pct": 2.3929,
+      "original_area_outside_reference_pct": 0.5343,
+      "area_difference_vs_reference_pct": -1.8685
+    }
+  ],
+  "notes": [
+    "This checks geometric similarity, not legal validity of disputed borders or reference vintage.",
+    "A 2019-era input and a 2025 government dataset may legitimately differ in administrative vintage.",
+    "Difference metrics include coastline/generalization effects; inspect notable mismatches before publication.",
+    "No tolerance threshold automatically certifies boundaries as publication-ready."
+  ]
+}
