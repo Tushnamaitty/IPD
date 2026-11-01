@@ -1,0 +1,11 @@
+model,tier,params,fold_average_precision,mean_average_precision,selected
+catboost,F1,"{""depth"": 6, ""iterations"": 300, ""l2_leaf_reg"": 3.0, ""learning_rate"": 0.05, ""nan_mode"": ""Min""}",0.500266;0.495249;0.483671,0.493062,True
+catboost,F1,"{""depth"": 4, ""iterations"": 300, ""l2_leaf_reg"": 3.0, ""learning_rate"": 0.05, ""nan_mode"": ""Min""}",0.500446;0.494061;0.484193,0.4929,False
+catboost,F1,"{""depth"": 6, ""iterations"": 300, ""l2_leaf_reg"": 3.0, ""learning_rate"": 0.1, ""nan_mode"": ""Min""}",0.497276;0.494342;0.481034,0.490884,False
+logistic_regression,F1,"{""C"": 0.1, ""class_weight"": ""balanced"", ""max_iter"": 1000, ""solver"": ""liblinear""}",0.489481;0.478201;0.473511,0.480398,False
+logistic_regression,F1,"{""C"": 1.0, ""class_weight"": ""balanced"", ""max_iter"": 1000, ""solver"": ""liblinear""}",0.489461;0.478408;0.473608,0.480492,True
+logistic_regression,F1,"{""C"": 10.0, ""class_weight"": ""balanced"", ""max_iter"": 1000, ""solver"": ""liblinear""}",0.489339;0.478433;0.47361,0.480461,False
+xgboost,F1,"{""colsample_bytree"": 0.8, ""eval_metric"": ""logloss"", ""learning_rate"": 0.05, ""max_depth"": 6, ""n_estimators"": 200, ""subsample"": 0.8, ""tree_method"": ""hist""}",0.496453;0.49329;0.479684,0.489809,False
+xgboost,F1,"{""colsample_bytree"": 0.8, ""eval_metric"": ""logloss"", ""learning_rate"": 0.05, ""max_depth"": 6, ""n_estimators"": 300, ""subsample"": 0.8, ""tree_method"": ""hist""}",0.493972;0.491275;0.477548,0.487598,False
+xgboost,F1,"{""colsample_bytree"": 0.8, ""eval_metric"": ""logloss"", ""learning_rate"": 0.05, ""max_depth"": 4, ""n_estimators"": 200, ""subsample"": 0.8, ""tree_method"": ""hist""}",0.499626;0.493314;0.482377,0.491772,True
+xgboost,F1,"{""colsample_bytree"": 0.8, ""eval_metric"": ""logloss"", ""learning_rate"": 0.1, ""max_depth"": 6, ""n_estimators"": 200, ""subsample"": 0.8, ""tree_method"": ""hist""}",0.489816;0.488533;0.47381,0.484053,False
