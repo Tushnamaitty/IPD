@@ -77,3 +77,14 @@ version2_ml/audits/*/outputs/
 # Per-birth predictions and private row-level experiment files (never commit)
 version2_ml/experiments/**/predictions/
 version2_ml/experiments/**/private/
+
+# V2 implementation: DHS data, row-level predictions, serving artifacts (never commit)
+*.DTA
+*.dta
+*.parquet
+*predictions*.csv
+version2_ml/serving/models/*.joblib
+version2_ml/serving/models/*.json
+version2_ml/serving/models/*.png
+version2_ml/serving/models/*.csv
+.venv/
