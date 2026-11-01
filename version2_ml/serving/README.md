@@ -94,6 +94,21 @@ Open http://localhost:8501. Set `$env:API_URL` if the API is not at
 `http://localhost:8000`. The repo-root `.streamlit\config.toml` binds the UI
 to localhost and disables Streamlit usage statistics. The UI stores nothing.
 
+### Demo screenshots
+
+`demo\demo_low.png`, `demo_medium.png` and `demo_high.png` show three invented
+profiles (0.7% Low, 16.5% Medium, 95.2% High). To regenerate them with the API
+and the UI running (Playwright is a dev-only tool, not in `requirements.txt`):
+
+```powershell
+.venv\Scripts\python.exe -m pip install playwright
+.venv\Scripts\python.exe -m playwright install chromium
+.venv\Scripts\python.exe version2_ml\serving\demo\capture_demo.py
+```
+
+The script checks that each probability shown in the UI matches a direct
+`POST /predict` call.
+
 ## 5. Run the tests
 
 ```powershell
