@@ -1,0 +1,1041 @@
+{
+  "branch": "gaurav-v2-A1-A4-A7-r3",
+  "cohort": {
+    "duplicate_birth_keys": 0,
+    "m15_96_rows": 517,
+    "missing_bidx": 0,
+    "missing_caseid": 0,
+    "missing_state": 0,
+    "n_births": 201311,
+    "n_controls": 156569,
+    "n_events": 44742,
+    "n_mothers": 158429,
+    "states_observed": 36
+  },
+  "cohort_rule": "c1_m15_institutional_b19_0_59_m17_0_1",
+  "evaluation": {
+    "partition": "validation",
+    "test_partition": "not_run_deferred_to_A7_single_frozen_evaluation",
+    "threshold": 0.5,
+    "threshold_basis": "predeclared_conventional_not_optimized"
+  },
+  "experiment_id": "A1",
+  "feature_missingness": {
+    "F1": {
+      "birth_order": 0,
+      "education_years": 0,
+      "facility_type": 0,
+      "maternal_age_at_index_birth": 0,
+      "religion": 0,
+      "residence": 0,
+      "twin_order": 0,
+      "wealth_index": 0
+    },
+    "F2": {
+      "birth_order": 0,
+      "education_years": 0,
+      "facility_type": 0,
+      "maternal_age_at_index_birth": 0,
+      "religion": 0,
+      "residence": 0,
+      "state_ut": 0,
+      "twin_order": 0,
+      "wealth_index": 0
+    }
+  },
+  "features": {
+    "F1": {
+      "manifest_hash": "8d9178b4cc5df3afc56d71270ebce5ecb21bd650424d50eda6dec5b708ec4f51",
+      "names": [
+        "maternal_age_at_index_birth",
+        "education_years",
+        "wealth_index",
+        "birth_order",
+        "facility_type",
+        "residence",
+        "religion",
+        "twin_order"
+      ]
+    },
+    "F2": {
+      "manifest_hash": "d4b14e1513ffc63d7b527b7038f8a7e5735389ba1e0ef7d871ef58511df5e4cc",
+      "names": [
+        "maternal_age_at_index_birth",
+        "education_years",
+        "wealth_index",
+        "birth_order",
+        "facility_type",
+        "residence",
+        "religion",
+        "twin_order",
+        "state_ut"
+      ]
+    },
+    "F2_interaction": {
+      "gate": {
+        "cells": [
+          {
+            "cell": "andaman & nicobar islands | rural",
+            "n_negative": 195,
+            "n_positive": 44,
+            "n_rows": 239,
+            "passes": true
+          },
+          {
+            "cell": "andaman & nicobar islands | urban",
+            "n_negative": 46,
+            "n_positive": 43,
+            "n_rows": 89,
+            "passes": false
+          },
+          {
+            "cell": "andhra pradesh | rural",
+            "n_negative": 865,
+            "n_positive": 600,
+            "n_rows": 1465,
+            "passes": true
+          },
+          {
+            "cell": "andhra pradesh | urban",
+            "n_negative": 257,
+            "n_positive": 256,
+            "n_rows": 513,
+            "passes": true
+          },
+          {
+            "cell": "arunachal pradesh | rural",
+            "n_negative": 2021,
+            "n_positive": 432,
+            "n_rows": 2453,
+            "passes": true
+          },
+          {
+            "cell": "arunachal pradesh | urban",
+            "n_negative": 534,
+            "n_positive": 124,
+            "n_rows": 658,
+            "passes": true
+          },
+          {
+            "cell": "assam | rural",
+            "n_negative": 4620,
+            "n_positive": 1022,
+            "n_rows": 5642,
+            "passes": true
+          },
+          {
+            "cell": "assam | urban",
+            "n_negative": 393,
+            "n_positive": 258,
+            "n_rows": 651,
+            "passes": true
+          },
+          {
+            "cell": "bihar | rural",
+            "n_negative": 9015,
+            "n_positive": 1230,
+            "n_rows": 10245,
+            "passes": true
+          },
+          {
+            "cell": "bihar | urban",
+            "n_negative": 904,
+            "n_positive": 191,
+            "n_rows": 1095,
+            "passes": true
+          },
+          {
+            "cell": "chandigarh | rural",
+            "n_negative": "<10 (suppressed)",
+            "n_positive": 0,
+            "n_rows": "<10 (suppressed)",
+            "passes": false
+          },
+          {
+            "cell": "chandigarh | urban",
+            "n_negative": 84,
+            "n_positive": 44,
+            "n_rows": 128,
+            "passes": false
+          },
+          {
+            "cell": "chhattisgarh | rural",
+            "n_negative": 3687,
+            "n_positive": 479,
+            "n_rows": 4166,
+            "passes": true
+          },
+          {
+            "cell": "chhattisgarh | urban",
+            "n_negative": 599,
+            "n_positive": 254,
+            "n_rows": 853,
+            "passes": true
+          },
+          {
+            "cell": "dadra & nagar haveli and daman & diu | rural",
+            "n_negative": 191,
+            "n_positive": 47,
+            "n_rows": 238,
+            "passes": true
+          },
+          {
+            "cell": "dadra & nagar haveli and daman & diu | urban",
+            "n_negative": 195,
+            "n_positive": 98,
+            "n_rows": 293,
+            "passes": true
+          },
+          {
+            "cell": "goa | rural",
+            "n_negative": 54,
+            "n_positive": 31,
+            "n_rows": 85,
+            "passes": false
+          },
+          {
+            "cell": "goa | urban",
+            "n_negative": 94,
+            "n_positive": 62,
+            "n_rows": 156,
+            "passes": false
+          },
+          {
+            "cell": "gujarat | rural",
+            "n_negative": 3854,
+            "n_positive": 701,
+            "n_rows": 4555,
+            "passes": true
+          },
+          {
+            "cell": "gujarat | urban",
+            "n_negative": 1255,
+            "n_positive": 542,
+            "n_rows": 1797,
+            "passes": true
+          },
+          {
+            "cell": "haryana | rural",
+            "n_negative": 2765,
+            "n_positive": 582,
+            "n_rows": 3347,
+            "passes": true
+          },
+          {
+            "cell": "haryana | urban",
+            "n_negative": 928,
+            "n_positive": 289,
+            "n_rows": 1217,
+            "passes": true
+          },
+          {
+            "cell": "himachal pradesh | rural",
+            "n_negative": 1196,
+            "n_positive": 299,
+            "n_rows": 1495,
+            "passes": true
+          },
+          {
+            "cell": "himachal pradesh | urban",
+            "n_negative": 81,
+            "n_positive": 35,
+            "n_rows": 116,
+            "passes": false
+          },
+          {
+            "cell": "jammu & kashmir | rural",
+            "n_negative": 1822,
+            "n_positive": 1215,
+            "n_rows": 3037,
+            "passes": true
+          },
+          {
+            "cell": "jammu & kashmir | urban",
+            "n_negative": 309,
+            "n_positive": 365,
+            "n_rows": 674,
+            "passes": true
+          },
+          {
+            "cell": "jharkhand | rural",
+            "n_negative": 3908,
+            "n_positive": 581,
+            "n_rows": 4489,
+            "passes": true
+          },
+          {
+            "cell": "jharkhand | urban",
+            "n_negative": 629,
+            "n_positive": 247,
+            "n_rows": 876,
+            "passes": true
+          },
+          {
+            "cell": "karnataka | rural",
+            "n_negative": 2834,
+            "n_positive": 1240,
+            "n_rows": 4074,
+            "passes": true
+          },
+          {
+            "cell": "karnataka | urban",
+            "n_negative": 1027,
+            "n_positive": 628,
+            "n_rows": 1655,
+            "passes": true
+          },
+          {
+            "cell": "kerala | rural",
+            "n_negative": 673,
+            "n_positive": 420,
+            "n_rows": 1093,
+            "passes": true
+          },
+          {
+            "cell": "kerala | urban",
+            "n_negative": 486,
+            "n_positive": 316,
+            "n_rows": 802,
+            "passes": true
+          },
+          {
+            "cell": "ladakh | rural",
+            "n_negative": 173,
+            "n_positive": 91,
+            "n_rows": 264,
+            "passes": true
+          },
+          {
+            "cell": "ladakh | urban",
+            "n_negative": 42,
+            "n_positive": 45,
+            "n_rows": 87,
+            "passes": false
+          },
+          {
+            "cell": "lakshadweep | rural",
+            "n_negative": 34,
+            "n_positive": 14,
+            "n_rows": 48,
+            "passes": false
+          },
+          {
+            "cell": "lakshadweep | urban",
+            "n_negative": 103,
+            "n_positive": 41,
+            "n_rows": 144,
+            "passes": false
+          },
+          {
+            "cell": "madhya pradesh | rural",
+            "n_negative": 7614,
+            "n_positive": 808,
+            "n_rows": 8422,
+            "passes": true
+          },
+          {
+            "cell": "madhya pradesh | urban",
+            "n_negative": 1416,
+            "n_positive": 457,
+            "n_rows": 1873,
+            "passes": true
+          },
+          {
+            "cell": "maharashtra | rural",
+            "n_negative": 3423,
+            "n_positive": 931,
+            "n_rows": 4354,
+            "passes": true
+          },
+          {
+            "cell": "maharashtra | urban",
+            "n_negative": 1333,
+            "n_positive": 586,
+            "n_rows": 1919,
+            "passes": true
+          },
+          {
+            "cell": "manipur | rural",
+            "n_negative": 830,
+            "n_positive": 232,
+            "n_rows": 1062,
+            "passes": true
+          },
+          {
+            "cell": "manipur | urban",
+            "n_negative": 276,
+            "n_positive": 166,
+            "n_rows": 442,
+            "passes": true
+          },
+          {
+            "cell": "meghalaya | rural",
+            "n_negative": 2050,
+            "n_positive": 227,
+            "n_rows": 2277,
+            "passes": true
+          },
+          {
+            "cell": "meghalaya | urban",
+            "n_negative": 201,
+            "n_positive": 62,
+            "n_rows": 263,
+            "passes": true
+          },
+          {
+            "cell": "mizoram | rural",
+            "n_negative": 693,
+            "n_positive": 47,
+            "n_rows": 740,
+            "passes": true
+          },
+          {
+            "cell": "mizoram | urban",
+            "n_negative": 558,
+            "n_positive": 97,
+            "n_rows": 655,
+            "passes": true
+          },
+          {
+            "cell": "nagaland | rural",
+            "n_negative": 584,
+            "n_positive": 49,
+            "n_rows": 633,
+            "passes": true
+          },
+          {
+            "cell": "nagaland | urban",
+            "n_negative": 188,
+            "n_positive": 34,
+            "n_rows": 222,
+            "passes": true
+          },
+          {
+            "cell": "nct of delhi | rural",
+            "n_negative": 68,
+            "n_positive": 27,
+            "n_rows": 95,
+            "passes": false
+          },
+          {
+            "cell": "nct of delhi | urban",
+            "n_negative": 1310,
+            "n_positive": 469,
+            "n_rows": 1779,
+            "passes": true
+          },
+          {
+            "cell": "odisha | rural",
+            "n_negative": 3840,
+            "n_positive": 941,
+            "n_rows": 4781,
+            "passes": true
+          },
+          {
+            "cell": "odisha | urban",
+            "n_negative": 435,
+            "n_positive": 218,
+            "n_rows": 653,
+            "passes": true
+          },
+          {
+            "cell": "puducherry | rural",
+            "n_negative": 61,
+            "n_positive": 46,
+            "n_rows": 107,
+            "passes": false
+          },
+          {
+            "cell": "puducherry | urban",
+            "n_negative": 248,
+            "n_positive": 197,
+            "n_rows": 445,
+            "passes": true
+          },
+          {
+            "cell": "punjab | rural",
+            "n_negative": 1607,
+            "n_positive": 1072,
+            "n_rows": 2679,
+            "passes": true
+          },
+          {
+            "cell": "punjab | urban",
+            "n_negative": 672,
+            "n_positive": 463,
+            "n_rows": 1135,
+            "passes": true
+          },
+          {
+            "cell": "rajasthan | rural",
+            "n_negative": 7375,
+            "n_positive": 656,
+            "n_rows": 8031,
+            "passes": true
+          },
+          {
+            "cell": "rajasthan | urban",
+            "n_negative": 1412,
+            "n_positive": 324,
+            "n_rows": 1736,
+            "passes": true
+          },
+          {
+            "cell": "sikkim | rural",
+            "n_negative": 251,
+            "n_positive": 114,
+            "n_rows": 365,
+            "passes": true
+          },
+          {
+            "cell": "sikkim | urban",
+            "n_negative": 28,
+            "n_positive": 24,
+            "n_rows": 52,
+            "passes": false
+          },
+          {
+            "cell": "tamil nadu | rural",
+            "n_negative": 1524,
+            "n_positive": 1223,
+            "n_rows": 2747,
+            "passes": true
+          },
+          {
+            "cell": "tamil nadu | urban",
+            "n_negative": 908,
+            "n_positive": 889,
+            "n_rows": 1797,
+            "passes": true
+          },
+          {
+            "cell": "telangana | rural",
+            "n_negative": 1402,
+            "n_positive": 2111,
+            "n_rows": 3513,
+            "passes": true
+          },
+          {
+            "cell": "telangana | urban",
+            "n_negative": 501,
+            "n_positive": 947,
+            "n_rows": 1448,
+            "passes": true
+          },
+          {
+            "cell": "tripura | rural",
+            "n_negative": 884,
+            "n_positive": 224,
+            "n_rows": 1108,
+            "passes": true
+          },
+          {
+            "cell": "tripura | urban",
+            "n_negative": 114,
+            "n_positive": 75,
+            "n_rows": 189,
+            "passes": false
+          },
+          {
+            "cell": "uttar pradesh | rural",
+            "n_negative": 15320,
+            "n_positive": 2244,
+            "n_rows": 17564,
+            "passes": true
+          },
+          {
+            "cell": "uttar pradesh | urban",
+            "n_negative": 2480,
+            "n_positive": 881,
+            "n_rows": 3361,
+            "passes": true
+          },
+          {
+            "cell": "uttarakhand | rural",
+            "n_negative": 1423,
+            "n_positive": 302,
+            "n_rows": 1725,
+            "passes": true
+          },
+          {
+            "cell": "uttarakhand | urban",
+            "n_negative": 268,
+            "n_positive": 141,
+            "n_rows": 409,
+            "passes": true
+          },
+          {
+            "cell": "west bengal | rural",
+            "n_negative": 1935,
+            "n_positive": 799,
+            "n_rows": 2734,
+            "passes": true
+          },
+          {
+            "cell": "west bengal | urban",
+            "n_negative": 474,
+            "n_positive": 386,
+            "n_rows": 860,
+            "passes": true
+          }
+        ],
+        "gate_passed": false,
+        "min_class": 30,
+        "min_rows": 200,
+        "n_cells": 72,
+        "reason": "insufficient_support: andaman & nicobar islands | urban; chandigarh | rural; chandigarh | urban; goa | rural; goa | urban; ..."
+      },
+      "manifest_hash": "96335fb8de00ed74f8ebfb165dad14706f8a99cfd04c6786b816d4ff6cf2f1fe",
+      "names": [
+        "maternal_age_at_index_birth",
+        "education_years",
+        "wealth_index",
+        "birth_order",
+        "facility_type",
+        "residence",
+        "religion",
+        "twin_order",
+        "state_ut",
+        "state_ut_x_residence"
+      ],
+      "ran": false
+    },
+    "external_context": {
+      "n_specs": 0,
+      "status": "NO_EXTERNAL_CONTEXT_DECLARED"
+    }
+  },
+  "input_file": {
+    "bytes": 2417715435,
+    "name": "IABR7EFL.DTA",
+    "sha256": "93267b17596929371dc3190d17af114271851f14d1f566678ffceda2db4cae6e"
+  },
+  "limitations": [
+    "Point estimates only; no design-valid intervals; no significance claims.",
+    "Within-state generalization only; unseen-state validation is A6 scope.",
+    "State identity may encode local response prevalence; not ecological-causal.",
+    "Split fractions provisional until the A7 freeze.",
+    "No external area descriptor validated; categorical state + residence fallback.",
+    "V1 exposure: the original held-out test was already examined historically."
+  ],
+  "membership_digests": {
+    "train_mothers": 110900,
+    "train_rows": "b96807778dbdfddc17d1446db1a9b918ba49a8eac9b09a9f710799d0cfeec37f",
+    "validation_rows": "800e7130876165e2f2e72ba40555b742295baa411d03f04197ee4920234e8499"
+  },
+  "metrics": {
+    "logistic_regression": {
+      "F1": {
+        "average_precision": 0.48527484153604356,
+        "brier_score": 0.19406763005258296,
+        "calibration_intercept": "not_applicable",
+        "calibration_slope": "not_applicable",
+        "f1": 0.5214474845542806,
+        "inference_validated": false,
+        "n": 30227,
+        "positive_n": 6701,
+        "precision": 0.4304449193705071,
+        "recall": 0.6612445903596478,
+        "roc_auc": 0.7721608873698564,
+        "threshold": 0.5,
+        "warning": "Point estimates only; no design-valid intervals; confirmatory final-test independence unverified.",
+        "weighted_outcome_prevalence": 0.2216892182485857
+      },
+      "F2": {
+        "average_precision": 0.549527936564534,
+        "brier_score": 0.17859342404264308,
+        "calibration_intercept": "not_applicable",
+        "calibration_slope": "not_applicable",
+        "f1": 0.5534540883378093,
+        "inference_validated": false,
+        "n": 30227,
+        "positive_n": 6701,
+        "precision": 0.44842592592592595,
+        "recall": 0.7227279510520818,
+        "roc_auc": 0.8067924937908715,
+        "threshold": 0.5,
+        "warning": "Point estimates only; no design-valid intervals; confirmatory final-test independence unverified.",
+        "weighted_outcome_prevalence": 0.2216892182485857
+      }
+    },
+    "xgboost": {
+      "F1": {
+        "average_precision": 0.4938990003871133,
+        "brier_score": 0.19298230035476094,
+        "calibration_intercept": "not_applicable",
+        "calibration_slope": "not_applicable",
+        "f1": 0.5198985778855694,
+        "inference_validated": false,
+        "n": 30227,
+        "positive_n": 6701,
+        "precision": 0.41220173061795295,
+        "recall": 0.703775555887181,
+        "roc_auc": 0.7763686232936845,
+        "threshold": 0.5,
+        "warning": "Point estimates only; no design-valid intervals; confirmatory final-test independence unverified.",
+        "weighted_outcome_prevalence": 0.2216892182485857
+      },
+      "F2": {
+        "average_precision": 0.5689915937664922,
+        "brier_score": 0.17613966076950882,
+        "calibration_intercept": "not_applicable",
+        "calibration_slope": "not_applicable",
+        "f1": 0.5534405426102177,
+        "inference_validated": false,
+        "n": 30227,
+        "positive_n": 6701,
+        "precision": 0.4368361972195838,
+        "recall": 0.7549619459782122,
+        "roc_auc": 0.8127321703327328,
+        "threshold": 0.5,
+        "warning": "Point estimates only; no design-valid intervals; confirmatory final-test independence unverified.",
+        "weighted_outcome_prevalence": 0.2216892182485857
+      }
+    }
+  },
+  "models": {
+    "logistic_regression": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "max_iter": 1000,
+      "penalty": "l2 (library default; deprecated explicit argument omitted)",
+      "random_state": 42,
+      "solver": "liblinear"
+    },
+    "xgboost": {
+      "colsample_bytree": 0.8,
+      "eval_metric": "logloss",
+      "learning_rate": 0.05,
+      "max_depth": 6,
+      "n_estimators": 200,
+      "n_jobs": 1,
+      "random_state": 42,
+      "scale_pos_weight": 3.497207595340673,
+      "subsample": 0.8,
+      "tree_method": "hist",
+      "verbosity": 0
+    }
+  },
+  "outputs": [
+    "a1_matched_ablation.csv",
+    "a1_support_table.csv",
+    "a1_interaction_gate.csv",
+    "fig_a1_roc_pr.png",
+    "fig_a1_calibration.png"
+  ],
+  "repo_commit": "e6f9c79e841b691c72648e9fa8f59f6bce0b15a5",
+  "software_versions": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "python": "3.13.11",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.4.0"
+  },
+  "split": {
+    "audit": {
+      "independent_final_test_certified": false,
+      "notes": [
+        "V1 test exposure prevents automatic independent-test claims.",
+        "Split ratios are provisional until protocol freeze.",
+        "Never commit row-level assignments or mother IDs."
+      ],
+      "status": "GROUP_EXCLUSIVE_VALID",
+      "summary": {
+        "test": {
+          "mothers": 23764,
+          "negatives": 23458,
+          "positives": 6706,
+          "rows": 30164
+        },
+        "train": {
+          "mothers": 110900,
+          "negatives": 109585,
+          "positives": 31335,
+          "rows": 140920
+        },
+        "validation": {
+          "mothers": 23765,
+          "negatives": 23526,
+          "positives": 6701,
+          "rows": 30227
+        }
+      }
+    },
+    "fractions": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "seed": 42,
+    "split_id": "mother_grouped_70_15_15_seed42_provisional",
+    "split_manifest_hash": "6ff45fcb76af00a6de5a33a225c482b1c9b3153f35544d887d8e3b2c3467904b",
+    "status": "provisional_until_A7_freeze"
+  },
+  "status": "COMPLETED_LOCAL_AGGREGATE_ONLY",
+  "support": {
+    "cells": [
+      {
+        "cell": "andaman & nicobar islands",
+        "n_negative": 241,
+        "n_positive": 87,
+        "n_rows": 328,
+        "passes": true
+      },
+      {
+        "cell": "andhra pradesh",
+        "n_negative": 1122,
+        "n_positive": 856,
+        "n_rows": 1978,
+        "passes": true
+      },
+      {
+        "cell": "arunachal pradesh",
+        "n_negative": 2555,
+        "n_positive": 556,
+        "n_rows": 3111,
+        "passes": true
+      },
+      {
+        "cell": "assam",
+        "n_negative": 5013,
+        "n_positive": 1280,
+        "n_rows": 6293,
+        "passes": true
+      },
+      {
+        "cell": "bihar",
+        "n_negative": 9919,
+        "n_positive": 1421,
+        "n_rows": 11340,
+        "passes": true
+      },
+      {
+        "cell": "chandigarh",
+        "n_negative": 90,
+        "n_positive": 44,
+        "n_rows": 134,
+        "passes": false
+      },
+      {
+        "cell": "chhattisgarh",
+        "n_negative": 4286,
+        "n_positive": 733,
+        "n_rows": 5019,
+        "passes": true
+      },
+      {
+        "cell": "dadra & nagar haveli and daman & diu",
+        "n_negative": 386,
+        "n_positive": 145,
+        "n_rows": 531,
+        "passes": true
+      },
+      {
+        "cell": "goa",
+        "n_negative": 148,
+        "n_positive": 93,
+        "n_rows": 241,
+        "passes": true
+      },
+      {
+        "cell": "gujarat",
+        "n_negative": 5109,
+        "n_positive": 1243,
+        "n_rows": 6352,
+        "passes": true
+      },
+      {
+        "cell": "haryana",
+        "n_negative": 3693,
+        "n_positive": 871,
+        "n_rows": 4564,
+        "passes": true
+      },
+      {
+        "cell": "himachal pradesh",
+        "n_negative": 1277,
+        "n_positive": 334,
+        "n_rows": 1611,
+        "passes": true
+      },
+      {
+        "cell": "jammu & kashmir",
+        "n_negative": 2131,
+        "n_positive": 1580,
+        "n_rows": 3711,
+        "passes": true
+      },
+      {
+        "cell": "jharkhand",
+        "n_negative": 4537,
+        "n_positive": 828,
+        "n_rows": 5365,
+        "passes": true
+      },
+      {
+        "cell": "karnataka",
+        "n_negative": 3861,
+        "n_positive": 1868,
+        "n_rows": 5729,
+        "passes": true
+      },
+      {
+        "cell": "kerala",
+        "n_negative": 1159,
+        "n_positive": 736,
+        "n_rows": 1895,
+        "passes": true
+      },
+      {
+        "cell": "ladakh",
+        "n_negative": 215,
+        "n_positive": 136,
+        "n_rows": 351,
+        "passes": true
+      },
+      {
+        "cell": "lakshadweep",
+        "n_negative": 137,
+        "n_positive": 55,
+        "n_rows": 192,
+        "passes": false
+      },
+      {
+        "cell": "madhya pradesh",
+        "n_negative": 9030,
+        "n_positive": 1265,
+        "n_rows": 10295,
+        "passes": true
+      },
+      {
+        "cell": "maharashtra",
+        "n_negative": 4756,
+        "n_positive": 1517,
+        "n_rows": 6273,
+        "passes": true
+      },
+      {
+        "cell": "manipur",
+        "n_negative": 1106,
+        "n_positive": 398,
+        "n_rows": 1504,
+        "passes": true
+      },
+      {
+        "cell": "meghalaya",
+        "n_negative": 2251,
+        "n_positive": 289,
+        "n_rows": 2540,
+        "passes": true
+      },
+      {
+        "cell": "mizoram",
+        "n_negative": 1251,
+        "n_positive": 144,
+        "n_rows": 1395,
+        "passes": true
+      },
+      {
+        "cell": "nagaland",
+        "n_negative": 772,
+        "n_positive": 83,
+        "n_rows": 855,
+        "passes": true
+      },
+      {
+        "cell": "nct of delhi",
+        "n_negative": 1378,
+        "n_positive": 496,
+        "n_rows": 1874,
+        "passes": true
+      },
+      {
+        "cell": "odisha",
+        "n_negative": 4275,
+        "n_positive": 1159,
+        "n_rows": 5434,
+        "passes": true
+      },
+      {
+        "cell": "puducherry",
+        "n_negative": 309,
+        "n_positive": 243,
+        "n_rows": 552,
+        "passes": true
+      },
+      {
+        "cell": "punjab",
+        "n_negative": 2279,
+        "n_positive": 1535,
+        "n_rows": 3814,
+        "passes": true
+      },
+      {
+        "cell": "rajasthan",
+        "n_negative": 8787,
+        "n_positive": 980,
+        "n_rows": 9767,
+        "passes": true
+      },
+      {
+        "cell": "sikkim",
+        "n_negative": 279,
+        "n_positive": 138,
+        "n_rows": 417,
+        "passes": true
+      },
+      {
+        "cell": "tamil nadu",
+        "n_negative": 2432,
+        "n_positive": 2112,
+        "n_rows": 4544,
+        "passes": true
+      },
+      {
+        "cell": "telangana",
+        "n_negative": 1903,
+        "n_positive": 3058,
+        "n_rows": 4961,
+        "passes": true
+      },
+      {
+        "cell": "tripura",
+        "n_negative": 998,
+        "n_positive": 299,
+        "n_rows": 1297,
+        "passes": true
+      },
+      {
+        "cell": "uttar pradesh",
+        "n_negative": 17800,
+        "n_positive": 3125,
+        "n_rows": 20925,
+        "passes": true
+      },
+      {
+        "cell": "uttarakhand",
+        "n_negative": 1691,
+        "n_positive": 443,
+        "n_rows": 2134,
+        "passes": true
+      },
+      {
+        "cell": "west bengal",
+        "n_negative": 2409,
+        "n_positive": 1185,
+        "n_rows": 3594,
+        "passes": true
+      }
+    ],
+    "min_class": 30,
+    "min_rows": 200,
+    "n_cells": 36,
+    "n_failing_cells": 2
+  },
+  "timestamp_utc": "2026-10-19T04:59:43+00:00",
+  "warnings": [
+    "2 state cells fail the >= 200-row training support screen."
+  ],
+  "wave": "NFHS-5"
+}

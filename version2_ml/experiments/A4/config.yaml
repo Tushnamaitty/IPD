@@ -1,0 +1,81 @@
+schema_version: '0.1'
+experiment_id: A4
+status: approved_phase2_rework
+question: >-
+  Does observed delivery history, detailed facility type, or both add reliable
+  incremental predictive value over the F1 core baseline on matched NFHS-5
+  births under strictly earlier observed-history definitions?
+wave: NFHS-5
+cohort_rule: >-
+  m15 in {20-27, 30-33, 96} and b19 in 0-59 and m17 in {0, 1};
+  unique (caseid, bidx) asserted with hard errors (frozen C1; D2 includes m15=96)
+expected_cohort:
+  n_births: 201311
+  n_mothers: 158429
+  n_events: 44742
+arms: [F1, F1_detail, F1_detail_replace, F1_history, F1_detail_history]
+history:
+  inclusion_rule: include_m15_96_consistently_in_index_and_history
+  ordering: strictly_earlier_calendar_month_by_b3_only
+  same_month_twins: never_counted_as_previous_deliveries
+  missing_records: explicit_unknown_plus_quality_flag_never_negative
+  levels:
+    - first_recorded_live_birth
+    - observed_previous_institutional_cs
+    - higher_order_no_observed_previous_institutional_cs
+    - higher_order_earlier_institutional_history_unobserved
+    - unknown_history
+  timeline_scope: all_survey_window_roster_births_b19_0_59_never_exported
+sensitivity:
+  rule: m15_96_excluded_from_index_and_history
+  partition: inherited_from_main_mother_assignment
+feasibility:
+  first_recorded_live_birth: 82607
+  observed_previous_institutional_cs: 6276
+split:
+  split_id: mother_grouped_70_15_15_seed42_provisional
+  group_col: caseid
+  target_col: m17
+  fractions: [0.7, 0.15, 0.15]
+  seed: 42
+  status: provisional_until_A7_freeze
+evaluation:
+  partition: validation
+  threshold: 0.50
+  threshold_basis: predeclared_conventional_not_optimized
+  test_partition: not_run_deferred_to_A7_single_frozen_evaluation
+disclosure:
+  suppression_threshold: 10
+models:
+  xgboost:
+    n_estimators: 200
+    max_depth: 6
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    eval_metric: logloss
+    tree_method: hist
+    scale_pos_weight: train_negatives_over_train_positives
+  logistic_regression:
+    C: 1.0
+    solver: liblinear
+    max_iter: 1000
+    class_weight: balanced
+notes:
+  - >-
+    Facility labels are verbatim NFHS-5 m15 value metadata read locally on
+    2026-10-17; NFHS-4 harmonization is pending local IABR74FL.DTA verification.
+  - >-
+    The split hash and membership digests are asserted against the frozen A1
+    values so every arm runs on identical rows in identical order.
+  - >-
+    m15=96 is institutional (unknown sector) for both index births and the
+    observed-history timeline under the main rule; the sensitivity removes it
+    from both consistently.
+  - >-
+    Logistic regression uses the library-default L2 penalty; the deprecated
+    explicit penalty argument is omitted under scikit-learn 1.9.1.
+  - >-
+    Feasibility expectations reproduce the Phase-0 audit: 82,607 first
+    recorded live births and 6,276 index births with an observed previous
+    institutional cesarean; mismatches abort the run.

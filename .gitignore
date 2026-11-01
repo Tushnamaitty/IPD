@@ -70,3 +70,10 @@ outputs/tables/b4_risk_stratified_row_level_nuisance.csv
 /IPD_uncertainty_private/
 data/raw/
 data/processed/
+
+# Generated audit outputs (regenerable; never commit)
+version2_ml/audits/*/outputs/
+
+# Per-birth predictions and private row-level experiment files (never commit)
+version2_ml/experiments/**/predictions/
+version2_ml/experiments/**/private/
