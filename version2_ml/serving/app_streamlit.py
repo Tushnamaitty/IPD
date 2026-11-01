@@ -23,6 +23,8 @@ DEMO_NOTE = "Research demo built on NFHS-5 survey data (2019-21). Not for clinic
 RAISES_COLOR = "#d03b3b"
 LOWERS_COLOR = "#0ca30c"
 BAND_STYLE = {"Low": "green", "Medium": "orange", "High": "red"}
+FACTOR_ROW_PX = 44
+FACTOR_CHART_CHROME_PX = 90  # legend + x axis
 WEALTH_HINTS = {
     1: "bottom fifth of households in India by assets and housing",
     2: "second-lowest fifth of households",
@@ -112,10 +114,11 @@ def _factor_chart(factors: list[dict]) -> alt.Chart:
     frame["effect"] = frame["direction"].str.capitalize()
     return (
         alt.Chart(frame)
-        .mark_bar(cornerRadiusEnd=4, height=18)
+        .mark_bar(cornerRadiusEnd=4)
         .encode(
             x=alt.X("contribution:Q", title="Contribution to the score (log-odds)"),
-            y=alt.Y("label:N", sort=None, title=None, axis=alt.Axis(labelLimit=420)),
+            y=alt.Y("label:N", sort=None, title=None, axis=alt.Axis(labelLimit=420),
+                    scale=alt.Scale(paddingInner=0.45)),
             color=alt.Color(
                 "effect:N",
                 scale=alt.Scale(domain=["Raises risk", "Lowers risk"], range=[RAISES_COLOR, LOWERS_COLOR]),
@@ -126,7 +129,7 @@ def _factor_chart(factors: list[dict]) -> alt.Chart:
                 alt.Tooltip("contribution:Q", title="Contribution", format="+.3f"),
             ],
         )
-        .properties(height=40 * len(frame))
+        .properties(height=FACTOR_ROW_PX * len(frame))
     )
 
 
@@ -225,7 +228,11 @@ def _result(result: dict) -> None:
         col_label.markdown(f"{result['predicted_label']}  \n"
                            f"<small>at threshold {result['threshold_used']:.2f}</small>", unsafe_allow_html=True)
         st.markdown("**What moved this estimate**")
-        st.altair_chart(_factor_chart(result["top_factors"]), width="stretch")
+        # Explicit element height: the default "content" sizing squeezed the rows.
+        st.altair_chart(
+            _factor_chart(result["top_factors"]), width="stretch",
+            height=FACTOR_ROW_PX * len(result["top_factors"]) + FACTOR_CHART_CHROME_PX,
+        )
         st.caption(DEMO_NOTE)
 
 
