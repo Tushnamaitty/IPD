@@ -1,0 +1,16 @@
+# Allow-list: only the serving code and the research modules it imports enter the
+# Docker build context. NFHS/DHS data, outputs and environments never do.
+*
+!version2_ml/feature_builder.py
+!version2_ml/model_framework.py
+!version2_ml/preprocessing.py
+!version2_ml/experiments/A4/src/
+!version2_ml/experiments/A7/src/
+!version2_ml/serving/
+version2_ml/serving/tests/
+**/__pycache__/
+**/*.DTA
+**/*.dta
+**/*.parquet
+**/*.pkl
+**/*predictions*.csv

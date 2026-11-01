@@ -1,0 +1,2 @@
+# start.sh runs under /bin/sh in the container; CRLF would break it.
+*.sh text eol=lf
