@@ -1,0 +1,114 @@
+{
+  "base_branch": "gaurav-v2-A1-A4-A7-r3",
+  "base_repo_commit": "dcb7754d24bfafbce909b494157ffa611623967c",
+  "created_utc": "2026-10-19T04:57:01+00:00",
+  "excluded": [
+    "private/ (a7_tuning.json, a7_test_scored.json): never published; git-ignored"
+  ],
+  "experiment_id": "A7",
+  "feature_manifest_hashes": {
+    "F0_historical_36": "5bb337a0b1d7a6cb58e9ab028323ed90ab9463f0f514f39af5882a323a79b5da",
+    "F1": "8d9178b4cc5df3afc56d71270ebce5ecb21bd650424d50eda6dec5b708ec4f51",
+    "F1_detail_history": "bc70fdf89bbc766bdd41a1763e0888d03e9fcc3c963ff9d1d8f171bbcb1fc017"
+  },
+  "files": [
+    {
+      "bytes": 10378,
+      "file": "a7_methods_results.md",
+      "sha256": "776d493cdadf092d87e91b02fc3f3ab92a3df84a12c5a54e9fa591cc0d2ad1c0"
+    },
+    {
+      "bytes": 544,
+      "file": "a7_reconciliation.csv",
+      "sha256": "07dbb39edb8711a51590918c586466bdf11049e4f0c13a4740cc6a8e3757029d"
+    },
+    {
+      "bytes": 2182,
+      "file": "a7_robustness.csv",
+      "sha256": "8f4a062c47690fa1e1ffb015ac9d22de9a187a5184cfcccf6ac1f733326c1241"
+    },
+    {
+      "bytes": 11516,
+      "file": "a7_run_summary.json",
+      "sha256": "ddbd8560a3f966877b976b63b0ea62da6c10264fe614d16f1405eaf8808cc351"
+    },
+    {
+      "bytes": 249,
+      "file": "a7_shap_stability.csv",
+      "sha256": "8d5dcfd980bb1a80e684b2897f571821410edcfc0ee62df3aa80f3422528188f"
+    },
+    {
+      "bytes": 1931,
+      "file": "a7_tuning_summary.csv",
+      "sha256": "1906ada60b06fcdd16826dfd751c2912708b8bd14757a5138351b93c92ab4857"
+    },
+    {
+      "bytes": 21430,
+      "file": "aggregate_model_comparison.csv",
+      "sha256": "ba468f62e35816d51d227fe97f401852a70373c26a526c37e1dc015ae9e9aebe"
+    },
+    {
+      "bytes": 3198,
+      "file": "calibration_summary.csv",
+      "sha256": "11de5958433a6e95346fa442ba58a72e6a1602c721261575e0109c0635b554a4"
+    },
+    {
+      "bytes": 103321,
+      "file": "fig_a7_calibration.png",
+      "sha256": "8bec9056a27e4aaa3d202454a9af57d07b17a24f04e05877275e640bc384c751"
+    },
+    {
+      "bytes": 142700,
+      "file": "fig_a7_roc_pr.png",
+      "sha256": "c7691a2b84fd0b9ca5b49806ae538728adf5fbac6473cee9a43a7c287217b01a"
+    },
+    {
+      "bytes": 92868,
+      "file": "fig_a7_shap_stability.png",
+      "sha256": "2e7a89a291263a333e25a44d5e84586c5a879df0295d9ad414be81d2b7d56182"
+    },
+    {
+      "bytes": 4060,
+      "file": "shap_feature_family_summary.csv",
+      "sha256": "1e4a5990596cf7c309c0049a55bd0c33571773deae994e0d00a72bc88afa13a4"
+    }
+  ],
+  "files_note": "SHA-256 and size are computed over the committed git blob for each file: text files are hashed in repository-normalized LF form; PNG files are hashed as raw bytes. MANIFEST.json itself is not listed.",
+  "generation_environment": {
+    "PyYAML": "6.0.3",
+    "catboost": "1.2.10",
+    "implementation": "CPython",
+    "matplotlib": "3.11.1",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "pyarrow": "25.0.0",
+    "pyreadstat": "1.3.5",
+    "python": "3.13.11",
+    "scikit-learn": "1.9.0",
+    "shap": "0.52.0",
+    "xgboost": "3.4.0"
+  },
+  "hash_rule": "SHA-256 and size are computed over the committed git blob for each file: text files are hashed in repository-normalized LF form; PNG files are hashed as raw bytes. MANIFEST.json itself is not listed.",
+  "manifest_version": 1,
+  "recorded_run": {
+    "branch": "gaurav-v2-A1-A4-A7-r3",
+    "repo_commit": "d6685492ee898e42c8dc614686fe677da82583eb",
+    "software_versions": {
+      "catboost": "1.2.10",
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "python": "3.13.11",
+      "scikit-learn": "1.9.1",
+      "xgboost": "3.4.1"
+    },
+    "timestamp_utc": "2026-10-17T06:19:52+00:00"
+  },
+  "split_manifest_hash": "6ff45fcb76af00a6de5a33a225c482b1c9b3153f35544d887d8e3b2c3467904b",
+  "verification_disclosure": {
+    "confirmatory_status": "Results remain non-confirmatory because the same NFHS-5 outcomes were inspected during V1 work (development-test exposure).",
+    "global_environment_verification": "A global-environment verification rerun reproduced all tables and figures and the CatBoost validation metrics with zero value differences.",
+    "recorded_outputs": "The committed outputs are the original 2026-10-17 recording and were not re-recorded.",
+    "test_partition": "The development test partition was scored twice on this machine (the original recording and one sandbox verification run). The values were identical and no decision depended on the second scoring."
+  }
+}

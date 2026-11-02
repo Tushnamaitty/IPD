@@ -1,0 +1,11 @@
+group,value,n_births,n_positive,n_negative,n_validation
+history_four_level,first_recorded_live_birth,82607,22211,60396,12366
+history_four_level,higher_order_earlier_institutional_history_unobserved,77219,15212,62007,11623
+history_four_level,higher_order_no_observed_previous_institutional_cs,35195,1755,33440,5330
+history_four_level,observed_previous_institutional_cs,6276,5561,715,908
+history_four_level,unknown_history,14,<10 (suppressed),11,0
+has_any_observed_earlier_institutional_birth,false,159826,37423,122403,23989
+has_any_observed_earlier_institutional_birth,true,41472,7316,34156,6238
+has_any_observed_earlier_institutional_birth,unknown,13,<10 (suppressed),10,0
+history_quality_flag,ambiguous_prior_institutional_outcome,14,<10 (suppressed),11,0
+history_quality_flag,ok,201297,44739,156558,30227

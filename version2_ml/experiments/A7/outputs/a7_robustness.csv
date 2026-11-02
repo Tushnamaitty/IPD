@@ -1,0 +1,16 @@
+check,detail,model,tier,n_births,n_events,roc_auc,average_precision,brier_score,note
+repeated_grouped_split,seed=7,xgboost,F1,30135,6699,0.777639,0.496176,0.192276,train_digest=ac7bc58c633bbc3c
+repeated_grouped_split,seed=7,xgboost,F1_detail_history,30135,6699,0.828957,0.606284,0.168986,train_digest=ac7bc58c633bbc3c
+repeated_grouped_split,seed=2026,xgboost,F1,30371,6690,0.775875,0.487325,0.193175,train_digest=9a9d10373b7fc5f7
+repeated_grouped_split,seed=2026,xgboost,F1_detail_history,30371,6690,0.82986,0.603236,0.169249,train_digest=9a9d10373b7fc5f7
+repeated_grouped_split,seed=99,xgboost,F1,30280,6725,0.783394,0.494076,0.189646,train_digest=2162f49b3b83cf44
+repeated_grouped_split,seed=99,xgboost,F1_detail_history,30280,6725,0.837063,0.616015,0.165361,train_digest=2162f49b3b83cf44
+m15_96_excluded_partition_inherited,consistent exclusion from index and history,xgboost,F1,30139,6701,0.775514,0.494491,0.193089,excluded_rows=517
+most_recent_birth_per_mother,latest b3/bidx by calendar order,xgboost,F1,23765,5688,0.772714,0.5091,0.194433,subset_births=158429
+subgroup,facility_type_public,xgboost,F1_detail_history,22496,3130,0.798785,0.454307,0.096786,calibration_slope=0.9939
+subgroup,facility_type_private,xgboost,F1_detail_history,7643,3571,0.713025,0.698886,0.212088,calibration_slope=1.0289
+subgroup,facility_type_other,xgboost,F1_detail_history,88,0,not_run_support_below_threshold,not_run_support_below_threshold,not_run_support_below_threshold,minimum 200 rows and 30 rows per class required
+subgroup,residence_urban,xgboost,F1_detail_history,6671,2182,0.785822,0.655486,0.169289,calibration_slope=1.009
+subgroup,residence_rural,xgboost,F1_detail_history,23556,4519,0.83426,0.586777,0.113303,calibration_slope=0.9887
+subgroup_states_pooled,27 supported states,xgboost,F1_detail_history,29452,6483,0.831743,0.613165,0.124475,"calibration_slope=0.9946 state_auc_range=(0.6937,0.888561)"
+psu_overlap,v021 sampled PSU codes (never exported),not_applicable,not_applicable,15501,not_applicable,not_applicable,not_applicable,not_applicable,"{""n_shared_psus"": 15501, ""n_train_psus"": 28724, ""n_valid_psus"": 16040, ""share_validation_rows_in_shared_psus"": 0.968315}"

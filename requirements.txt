@@ -5,6 +5,7 @@ pyarrow
 scipy
 scikit-learn
 xgboost
+catboost
 shap
 joblib
 matplotlib

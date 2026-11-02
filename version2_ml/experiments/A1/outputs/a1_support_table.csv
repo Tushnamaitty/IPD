@@ -1,0 +1,37 @@
+state_ut,n_train,n_train_positive,n_train_negative,n_validation,training_support_gate_passed
+andaman & nicobar islands,328,87,241,54,True
+andhra pradesh,1978,856,1122,391,True
+arunachal pradesh,3111,556,2555,648,True
+assam,6293,1280,5013,1326,True
+bihar,11340,1421,9919,2508,True
+chandigarh,134,44,90,23,False
+chhattisgarh,5019,733,4286,1044,True
+dadra & nagar haveli and daman & diu,531,145,386,125,True
+goa,241,93,148,61,True
+gujarat,6352,1243,5109,1456,True
+haryana,4564,871,3693,1010,True
+himachal pradesh,1611,334,1277,343,True
+jammu & kashmir,3711,1580,2131,789,True
+jharkhand,5365,828,4537,1130,True
+karnataka,5729,1868,3861,1227,True
+kerala,1895,736,1159,428,True
+ladakh,351,136,215,78,True
+lakshadweep,192,55,137,45,False
+madhya pradesh,10295,1265,9030,2169,True
+maharashtra,6273,1517,4756,1350,True
+manipur,1504,398,1106,339,True
+meghalaya,2540,289,2251,587,True
+mizoram,1395,144,1251,281,True
+nagaland,855,83,772,193,True
+nct of delhi,1874,496,1378,397,True
+odisha,5434,1159,4275,1165,True
+puducherry,552,243,309,100,True
+punjab,3814,1535,2279,794,True
+rajasthan,9767,980,8787,2053,True
+sikkim,417,138,279,96,True
+tamil nadu,4544,2112,2432,997,True
+telangana,4961,3058,1903,1074,True
+tripura,1297,299,998,235,True
+uttar pradesh,20925,3125,17800,4482,True
+uttarakhand,2134,443,1691,491,True
+west bengal,3594,1185,2409,738,True
