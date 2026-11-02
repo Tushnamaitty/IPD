@@ -1,0 +1,67 @@
+schema_version: '0.1'
+experiment_id: A9
+status: predeclared_protocol   # mirrors PROTOCOL.md; committed with it before any scoring
+protocol_file: PROTOCOL.md
+wave: NFHS-5
+expected_cohort: {n_births: 201311, n_mothers: 158429, n_events: 44742}
+
+final_tier:
+  name: F1_detail_history_state
+  a8_arm: H1
+  a8_commit: f03ba25
+
+split:
+  group_col: v021
+  mother_col: caseid
+  target_col: m17
+  fractions: [0.7, 0.15, 0.15]
+  strata_edges: [0.0, 0.2, 0.4, 0.6]   # strata: ==0, (0,.2], (.2,.4], (.4,.6], (.6,1]
+  seeds: [11, 22, 33, 44, 55]
+  split_id_template: psu_grouped_70_15_15_seed{seed}
+
+calibration:
+  method: platt
+  carve: {subset_fraction: 0.2, seed: 4208, group_col: v021}
+
+models:
+  V2: {algorithm: xgboost, features: FINAL_TIER, params: a7_selected_xgboost}
+  V2_LR: {algorithm: logistic_regression, features: FINAL_TIER, params: a7_selected_logistic_regression}
+  F1_core: {algorithm: xgboost, features: F1, params: a7_selected_xgboost}
+  V1_spec: {algorithm: xgboost, features: F0_historical_36, params: a7_reference_xgboost}
+model_params:
+  a7_selected_xgboost: {n_estimators: 200, max_depth: 4, learning_rate: 0.05, subsample: 0.8,
+                        colsample_bytree: 0.8, eval_metric: logloss, tree_method: hist}
+  a7_selected_logistic_regression: {C: 1.0, solver: liblinear, max_iter: 1000, class_weight: balanced}
+  a7_reference_xgboost: {n_estimators: 200, max_depth: 6, learning_rate: 0.05, subsample: 0.8,
+                         colsample_bytree: 0.8, eval_metric: logloss, tree_method: hist}
+  xgboost_scale_pos_weight: fit_pool_negatives_over_positives
+  estimator_seed: split_seed
+
+v1_spec:
+  parquet: data/processed/df_model_v1.parquet
+  merge_keys: [respondent_id, birth_index]
+  reconciliation: run_a7._f0_stage (rows, keys, duplicates, csection==m17, delivery_place_code==m15)
+  recorded_v1: {roc_auc: 0.8037, average_precision: 0.5334, brier_score: 0.1358,
+                label: "original V1 report, different split, not paired"}
+
+thresholds:
+  f1_optimal: a7_calibration.threshold_f1_optimal (validation)
+  recall_80: a7_calibration.threshold_for_recall 0.8 (validation)
+
+bootstrap:
+  unit: v021 within test partition
+  replicates: 1000
+  seed: 2027            # numpy default_rng(2027), fresh per split seed
+  interval: percentile_2.5_97.5
+  paired_comparisons: [[V2, V1_spec], [V2, F1_core], [V2, V2_LR]]
+  pooled: mean across seeds; pooled CI from across-seed mean of replicate b
+
+statements:
+  superiority: {comparison: [V2, V1_spec], metric: roc_auc, lower_bound_gt: 0.0, min_seeds: 4}
+  calibration: {model: V2, slope_range: [0.9, 1.1], max_abs_intercept: 0.05, basis: pooled}
+  equivalence: {comparison: [V2, V2_LR], metric: roc_auc, margin: 0.01, basis: pooled_ci}
+
+weighted_sensitivity: {weight: v005, scale: 1000000, role: descriptive_only}
+calibration_bins: {n_bins: 10, strategy: quantile}
+disclosure: {min_cell: 10}
+guard: {dir: outputs/private, pattern: test_scored_{seed}.json}
