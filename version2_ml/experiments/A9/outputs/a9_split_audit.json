@@ -1,0 +1,278 @@
+{
+  "cluster_nesting": {
+    "mothers_in_multiple_psus": 0,
+    "n_mothers": 158429,
+    "n_psus": 29575
+  },
+  "protocol_commit": "0ce1d4884239ea35f75d37afc338550bf5dde52b",
+  "seeds": [
+    {
+      "calibration_carve": {
+        "calibration_births": 28344,
+        "fit_births": 112419,
+        "group": "v021",
+        "psu_overlap": 0
+      },
+      "membership_digests": {
+        "test": "6c8bad9546c1f2ebbbb83d28887ba3e4f082666258766c9efa20983bfb1a3d00",
+        "train": "21a9e471760edee03776f7204941a02bd3e414030ddb439a0ec86ca9466ccedc",
+        "validation": "1785c93adb19c42af60ac327c9382ab2e04dacf2176361b7d5368dcea53b98da"
+      },
+      "overlap_counts": {
+        "between_partitions_by_cluster": {
+          "train_test": 0,
+          "train_validation": 0,
+          "validation_test": 0
+        },
+        "between_partitions_by_mother": {
+          "train_test": 0,
+          "train_validation": 0,
+          "validation_test": 0
+        }
+      },
+      "partitions": {
+        "test": {
+          "n_births": 30065,
+          "n_events": 6794,
+          "n_mothers": 23741,
+          "n_psus": 4437,
+          "prevalence": 0.22597704972559454
+        },
+        "train": {
+          "n_births": 140763,
+          "n_events": 31249,
+          "n_mothers": 110697,
+          "n_psus": 20702,
+          "prevalence": 0.2219972578021213
+        },
+        "validation": {
+          "n_births": 30483,
+          "n_events": 6699,
+          "n_mothers": 23991,
+          "n_psus": 4436,
+          "prevalence": 0.2197618344651117
+        }
+      },
+      "seed": 11,
+      "split_id": "psu_grouped_70_15_15_seed11",
+      "split_manifest_hash": "16fd32556aac4f941177c87f6d04cd779d9ef7d42b2799c5c0392b4b0497dcf8"
+    },
+    {
+      "calibration_carve": {
+        "calibration_births": 28369,
+        "fit_births": 112662,
+        "group": "v021",
+        "psu_overlap": 0
+      },
+      "membership_digests": {
+        "test": "f058e41d9ec6c9fb5dc8f476fb4e7093c7e2797377f2bd293c6fa36f3f6ea748",
+        "train": "904532e1671c0a9982bb175dc622b28795ef00a0ada4caf83a3f3e33be24e636",
+        "validation": "cfbfa09b169f95d6416806748856623fcad401533e28ff4a03272f7049d43bc2"
+      },
+      "overlap_counts": {
+        "between_partitions_by_cluster": {
+          "train_test": 0,
+          "train_validation": 0,
+          "validation_test": 0
+        },
+        "between_partitions_by_mother": {
+          "train_test": 0,
+          "train_validation": 0,
+          "validation_test": 0
+        }
+      },
+      "partitions": {
+        "test": {
+          "n_births": 30069,
+          "n_events": 6628,
+          "n_mothers": 23581,
+          "n_psus": 4437,
+          "prevalence": 0.22042635272207256
+        },
+        "train": {
+          "n_births": 141031,
+          "n_events": 31382,
+          "n_mothers": 111028,
+          "n_psus": 20702,
+          "prevalence": 0.2225184533896803
+        },
+        "validation": {
+          "n_births": 30211,
+          "n_events": 6732,
+          "n_mothers": 23820,
+          "n_psus": 4436,
+          "prevalence": 0.22283274304061435
+        }
+      },
+      "seed": 22,
+      "split_id": "psu_grouped_70_15_15_seed22",
+      "split_manifest_hash": "d76c239246951af9c06f8939ad421283ffdb89849b1392bdd7d07c024ecb94d4"
+    },
+    {
+      "calibration_carve": {
+        "calibration_births": 28559,
+        "fit_births": 112305,
+        "group": "v021",
+        "psu_overlap": 0
+      },
+      "membership_digests": {
+        "test": "f81c7b88d1077526c2c8c2e62309615f3e0a9d386742e643a862d442f928e18b",
+        "train": "6f82e2fdacdfaaf726cd1040f82f0431cccc76a460a9e3ebc31e3f11770c516a",
+        "validation": "700ef9d245350896a492579ceba209c3c74cdc0760a184d8952c87c14f5f1063"
+      },
+      "overlap_counts": {
+        "between_partitions_by_cluster": {
+          "train_test": 0,
+          "train_validation": 0,
+          "validation_test": 0
+        },
+        "between_partitions_by_mother": {
+          "train_test": 0,
+          "train_validation": 0,
+          "validation_test": 0
+        }
+      },
+      "partitions": {
+        "test": {
+          "n_births": 29946,
+          "n_events": 6633,
+          "n_mothers": 23553,
+          "n_psus": 4437,
+          "prevalence": 0.2214986976557804
+        },
+        "train": {
+          "n_births": 140864,
+          "n_events": 31348,
+          "n_mothers": 110863,
+          "n_psus": 20702,
+          "prevalence": 0.22254089050431622
+        },
+        "validation": {
+          "n_births": 30501,
+          "n_events": 6761,
+          "n_mothers": 24013,
+          "n_psus": 4436,
+          "prevalence": 0.2216648634471001
+        }
+      },
+      "seed": 33,
+      "split_id": "psu_grouped_70_15_15_seed33",
+      "split_manifest_hash": "7556eb3d3ba31ea2d4051b59bd2a131662258b50a83745b9d4624d62ab2d9d2d"
+    },
+    {
+      "calibration_carve": {
+        "calibration_births": 28470,
+        "fit_births": 112526,
+        "group": "v021",
+        "psu_overlap": 0
+      },
+      "membership_digests": {
+        "test": "538e58c6dc600d13946802a00ae628e3d2b9fa66e39ad070760bd8ebd7ff2612",
+        "train": "43092c20cf685c5d01977ab92960b7895707eedd95557466621d3e7ccbd79b04",
+        "validation": "96806e338036ff45527507d74553c18b0c3c77d0845ec0e1bac349f4e93c246d"
+      },
+      "overlap_counts": {
+        "between_partitions_by_cluster": {
+          "train_test": 0,
+          "train_validation": 0,
+          "validation_test": 0
+        },
+        "between_partitions_by_mother": {
+          "train_test": 0,
+          "train_validation": 0,
+          "validation_test": 0
+        }
+      },
+      "partitions": {
+        "test": {
+          "n_births": 30225,
+          "n_events": 6635,
+          "n_mothers": 23839,
+          "n_psus": 4437,
+          "prevalence": 0.219520264681555
+        },
+        "train": {
+          "n_births": 140996,
+          "n_events": 31351,
+          "n_mothers": 110843,
+          "n_psus": 20702,
+          "prevalence": 0.2223538256404437
+        },
+        "validation": {
+          "n_births": 30090,
+          "n_events": 6756,
+          "n_mothers": 23747,
+          "n_psus": 4436,
+          "prevalence": 0.22452642073778664
+        }
+      },
+      "seed": 44,
+      "split_id": "psu_grouped_70_15_15_seed44",
+      "split_manifest_hash": "c342f21cf007a52f6279b49a005732f8e2acac59ed85076f2c17944734fce0cd"
+    },
+    {
+      "calibration_carve": {
+        "calibration_births": 27989,
+        "fit_births": 112746,
+        "group": "v021",
+        "psu_overlap": 0
+      },
+      "membership_digests": {
+        "test": "cc0eda73d0df4277482a8dd157dec4c7a48c2182ad48ad0ca3df7a30722506bd",
+        "train": "a72bdedce6b8449fd56e24ecd1f14d6f4a1dbe9d7bbc5a6cd26e50c8c1b782d9",
+        "validation": "28ecbebc1438be3b700dcec931999c3b43b01a2abc8bc4e36c7e62b2dafdce4d"
+      },
+      "overlap_counts": {
+        "between_partitions_by_cluster": {
+          "train_test": 0,
+          "train_validation": 0,
+          "validation_test": 0
+        },
+        "between_partitions_by_mother": {
+          "train_test": 0,
+          "train_validation": 0,
+          "validation_test": 0
+        }
+      },
+      "partitions": {
+        "test": {
+          "n_births": 30505,
+          "n_events": 6770,
+          "n_mothers": 24006,
+          "n_psus": 4437,
+          "prevalence": 0.22193083101130961
+        },
+        "train": {
+          "n_births": 140735,
+          "n_events": 31279,
+          "n_mothers": 110769,
+          "n_psus": 20702,
+          "prevalence": 0.22225459196361957
+        },
+        "validation": {
+          "n_births": 30071,
+          "n_events": 6693,
+          "n_mothers": 23654,
+          "n_psus": 4436,
+          "prevalence": 0.2225732433241329
+        }
+      },
+      "seed": 55,
+      "split_id": "psu_grouped_70_15_15_seed55",
+      "split_manifest_hash": "7c52601668b81383010f593896f2accc9a5d8e9fc5fecc4667a9bea8188b7c84"
+    }
+  ],
+  "v1_spec": {
+    "reconciliation": {
+      "cohort_only_keys": 0,
+      "cohort_rows": 201311,
+      "duplicate_parquet_keys": 0,
+      "facility_mismatch": 0,
+      "matched_keys": 201311,
+      "outcome_mismatch": 0,
+      "parquet_only_keys": 0,
+      "parquet_rows": 201311
+    },
+    "status": "reconciled"
+  }
+}

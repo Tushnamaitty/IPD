@@ -1,0 +1,214 @@
+{
+  "bootstrap": {
+    "interval": "percentile_2.5_97.5",
+    "paired_comparisons": [
+      [
+        "V2",
+        "V1_spec"
+      ],
+      [
+        "V2",
+        "F1_core"
+      ],
+      [
+        "V2",
+        "V2_LR"
+      ]
+    ],
+    "pooled": "mean across seeds; pooled CI from across-seed mean of replicate b",
+    "replicates": 1000,
+    "seed": 2027,
+    "unit": "v021 within test partition"
+  },
+  "calibration_carve_seed": 4208,
+  "config_file": "config.yaml",
+  "config_hash": "20239811a9ca3aa4b8bffd5b5c3248908f386c0d8c73b6cb3909c3546331ec49",
+  "config_sha256": "5d6b621fd0873c223e751e0b75157d05174362ab540ff61cb51dcfdf3746b921",
+  "created_utc": "2026-11-02T07:02:37+00:00",
+  "disclosure_scan": {
+    "files_checked": [
+      "a9_calibration_bins.csv",
+      "a9_paired_deltas.csv",
+      "a9_pooled_summary.csv",
+      "a9_split_audit.json",
+      "a9_statements.json",
+      "a9_test_metrics.csv",
+      "a9_weighted_sensitivity.csv"
+    ],
+    "status": "PASS"
+  },
+  "estimator_seed_rule": "split seed",
+  "excluded": "outputs/private/ (score-once guard files): git-ignored, aggregates only",
+  "experiment_id": "A9",
+  "files": [
+    {
+      "bytes": 21502,
+      "file": "a9_calibration_bins.csv",
+      "sha256": "74f07e7da4a7f838d2d73afee8ea927ebe4d8a4384fe2fc286d1ee86b4093636"
+    },
+    {
+      "bytes": 8242,
+      "file": "a9_methods_results.md",
+      "sha256": "b4c2cb639946c7cb9a83595e96091fa173f68bac95c54a96ae36e368c8ad8854"
+    },
+    {
+      "bytes": 27504,
+      "file": "a9_paired_deltas.csv",
+      "sha256": "639e0a04d86f1eeddeac345edde106d1926bc39b86acbe449a91d3864e38e854"
+    },
+    {
+      "bytes": 8835,
+      "file": "a9_pooled_summary.csv",
+      "sha256": "43a673b070ec1f596984a43cc2fb840ec1d40bb0967871493d5685bb1f401ae2"
+    },
+    {
+      "bytes": 8253,
+      "file": "a9_split_audit.json",
+      "sha256": "13adbce1d1cd759a64be25669ea4920d9d924d99e4de7501453b6a78d404de1f"
+    },
+    {
+      "bytes": 998,
+      "file": "a9_statements.json",
+      "sha256": "a93bd3be49f0221d5ce99d96e4d90be11efa05cb0b26ba4f00b7a7a852a93a0a"
+    },
+    {
+      "bytes": 16368,
+      "file": "a9_test_metrics.csv",
+      "sha256": "192499183fc9066f2cf3e16b109dc5804cabdd50a9d5553d5694418565c3a41f"
+    },
+    {
+      "bytes": 3214,
+      "file": "a9_weighted_sensitivity.csv",
+      "sha256": "a6754bcda020f40170f87cc3dbfa211611ddc2db8423c36b5a4f19da9e441c34"
+    },
+    {
+      "bytes": 108362,
+      "file": "fig_a9_calibration.png",
+      "sha256": "ddf14d177d34375c026d9ba6b6565a499a7160b71ba66d5a0b298a2b5d9960e6"
+    },
+    {
+      "bytes": 128664,
+      "file": "fig_a9_forest.png",
+      "sha256": "bf362aa8cebbcb3ef5dfd88e589f164012342f83fce8fc11cc09d8bb36fd03a3"
+    },
+    {
+      "bytes": 197352,
+      "file": "fig_a9_roc_pr.png",
+      "sha256": "432cccbaa2de7e62bb8a7e6ac3980e163d7d7e12d312dd08c55b399861b6c009"
+    }
+  ],
+  "git": {
+    "base_version2_ml_development": "318f1602c891c26571a170f874aeb95e9a3d9b37",
+    "branch": "v2-final-eval",
+    "commit": "0ce1d4884239ea35f75d37afc338550bf5dde52b",
+    "tracked_files_dirty": false
+  },
+  "hash_rule": "SHA-256 over the file bytes as written; text files use LF line endings. MANIFEST.json itself is not listed.",
+  "input_sha256": "93267b17596929371dc3190d17af114271851f14d1f566678ffceda2db4cae6e",
+  "manifest_version": 1,
+  "protocol_commit": "0ce1d4884239ea35f75d37afc338550bf5dde52b",
+  "qa": [
+    {
+      "check": "protocol_files_unchanged_since_protocol_commit",
+      "detail": "0ce1d48",
+      "status": "PASS"
+    },
+    {
+      "check": "synthetic_a9_tests",
+      "detail": "24 synthetic tests OK",
+      "status": "PASS"
+    },
+    {
+      "check": "input_sha256_matches_a7",
+      "detail": "93267b1759692937",
+      "status": "PASS"
+    },
+    {
+      "check": "cohort_and_history_frozen",
+      "detail": "201311/158429/44742; 6276",
+      "status": "PASS"
+    },
+    {
+      "check": "every_mother_in_exactly_one_psu",
+      "detail": "29575 PSUs",
+      "status": "PASS"
+    },
+    {
+      "check": "v1_spec_parquet_reconciled",
+      "detail": "reconciled",
+      "status": "PASS"
+    },
+    {
+      "check": "zero_psu_and_mother_overlap_all_seeds",
+      "detail": "asserted per seed before fitting",
+      "status": "PASS"
+    },
+    {
+      "check": "guard_files_completed",
+      "detail": "test_scored_11.json, test_scored_22.json, test_scored_33.json, test_scored_44.json, test_scored_55.json",
+      "status": "PASS"
+    }
+  ],
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "software": {
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "pyreadstat": "1.3.7",
+      "scipy": "1.18.1",
+      "sklearn": "1.9.1",
+      "xgboost": "3.4.1",
+      "yaml": "6.0.3"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.7"
+  },
+  "software_versions_runtime": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "python": "3.13.7",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1"
+  },
+  "split_manifest_hashes": {
+    "11": "16fd32556aac4f941177c87f6d04cd779d9ef7d42b2799c5c0392b4b0497dcf8",
+    "22": "d76c239246951af9c06f8939ad421283ffdb89849b1392bdd7d07c024ecb94d4",
+    "33": "7556eb3d3ba31ea2d4051b59bd2a131662258b50a83745b9d4624d62ab2d9d2d",
+    "44": "c342f21cf007a52f6279b49a005732f8e2acac59ed85076f2c17944734fce0cd",
+    "55": "7c52601668b81383010f593896f2accc9a5d8e9fc5fecc4667a9bea8188b7c84"
+  },
+  "test_scoring": [
+    {
+      "completed_utc": "2026-11-02T06:35:40+00:00",
+      "seed": 11,
+      "source": "cache_no_rescore"
+    },
+    {
+      "completed_utc": "2026-11-02T06:41:45+00:00",
+      "seed": 22,
+      "source": "cache_no_rescore"
+    },
+    {
+      "completed_utc": "2026-11-02T06:46:52+00:00",
+      "seed": 33,
+      "source": "cache_no_rescore"
+    },
+    {
+      "completed_utc": "2026-11-02T06:53:13+00:00",
+      "seed": 44,
+      "source": "cache_no_rescore"
+    },
+    {
+      "completed_utc": "2026-11-02T06:59:59+00:00",
+      "seed": 55,
+      "source": "cache_no_rescore"
+    }
+  ]
+}

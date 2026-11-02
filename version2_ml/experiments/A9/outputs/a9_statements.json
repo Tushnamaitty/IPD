@@ -1,0 +1,20 @@
+{
+  "protocol_commit": "0ce1d4884239ea35f75d37afc338550bf5dde52b",
+  "statements": {
+    "calibration": {
+      "evidence": "pooled slope 1.008 (required 0.9-1.1); pooled intercept -0.011 (required |.| <= 0.05)",
+      "holds": true,
+      "statement": "V2 is well calibrated"
+    },
+    "equivalence": {
+      "evidence": "pooled delta ROC-AUC (V2 - V2_LR) +0.0023, 95% CI [+0.0016, +0.0029] (margin \u00b10.01); per seed: seed 11: [+0.0012, +0.0042], seed 22: [+0.0004, +0.0031], seed 33: [+0.0010, +0.0038], seed 44: [+0.0008, +0.0034], seed 55: [+0.0010, +0.0039]",
+      "holds": "True",
+      "statement": "XGBoost and LR are equivalent"
+    },
+    "superiority": {
+      "evidence": "lower 95% bound of delta ROC-AUC (V2 - V1_spec) > 0 on 5 of 5 seeds (required >= 4); per-seed lower bounds: seed 11: +0.0448, seed 22: +0.0420, seed 33: +0.0411, seed 44: +0.0428, seed 55: +0.0413",
+      "holds": true,
+      "statement": "V2 discrimination is superior to the V1 specification"
+    }
+  }
+}
