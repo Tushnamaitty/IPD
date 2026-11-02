@@ -1,4 +1,0 @@
-comparison,n_models,min_pairwise_spearman,pairwise_spearman
-overall_vs_fold_models,4,0.937063,0.986014;0.937063;0.979021;0.972028;0.993007;0.965035
-overall_vs_residence_rural,2,1.0,not_applicable
-overall_vs_residence_urban,2,0.958042,not_applicable
