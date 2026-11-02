@@ -164,7 +164,17 @@ feature definitions as they are, including BMI and ANC items.
   hash, software versions, seeds and split manifest hashes.
 - Every CSV/JSON output carries the protocol commit hash.
 
-## 11. Disclosure
+## 11. Revision log
+
+- **r1** (`94a6506`, 2026-11-02): the original protocol.
+- **r2** (2026-11-02, before any A9 code had run on NFHS-5 data and before
+  any test scoring): `config.yaml` line `guard` quoted
+  (`pattern: "test_scored_{seed}.json"`), because the unquoted braces were
+  invalid YAML and the file could not be parsed. There is no change to any
+  analysis choice, seed, model, metric, threshold or statement. The protocol
+  commit recorded in outputs is the commit of this revision.
+
+## 12. Disclosure
 
 Unweighted primary analysis. No keys, rows or per-birth predictions are
 written or printed. Counts below 10 are suppressed (MIN_CELL = 10). Results

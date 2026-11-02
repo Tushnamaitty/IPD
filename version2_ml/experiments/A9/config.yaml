@@ -64,4 +64,4 @@ statements:
 weighted_sensitivity: {weight: v005, scale: 1000000, role: descriptive_only}
 calibration_bins: {n_bins: 10, strategy: quantile}
 disclosure: {min_cell: 10}
-guard: {dir: outputs/private, pattern: test_scored_{seed}.json}
+guard: {dir: outputs/private, pattern: "test_scored_{seed}.json"}
