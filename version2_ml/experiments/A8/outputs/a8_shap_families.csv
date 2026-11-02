@@ -1,0 +1,14 @@
+rank,family,mean_abs_shap_margin,share_of_total
+1,facility_type,0.598472,0.208073
+2,state_ut,0.56709,0.197162
+3,history_four_level,0.446049,0.155079
+4,facility_detail,0.427302,0.148561
+5,maternal_age_at_index_birth,0.197549,0.068682
+6,birth_order,0.192796,0.06703
+7,wealth_index,0.181032,0.06294
+8,education_years,0.136507,0.04746
+9,has_any_observed_earlier_institutional_birth,0.064185,0.022315
+10,twin_order,0.028576,0.009935
+11,residence,0.022239,0.007732
+12,religion,0.014469,0.00503
+13,history_quality_flag,0.0,0.0

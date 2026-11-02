@@ -1,0 +1,108 @@
+schema_version: '0.1'
+experiment_id: A8
+status: predeclared_before_real_run
+question: >-
+  On the frozen NFHS-5 C1 cohort and A7's evaluation contract, does adding
+  state context (A1 state indicator, A3 grouped OOF state x sector target
+  encoding, or both) to F1_detail_history add reliable predictive value?
+wave: NFHS-5
+expected_cohort:
+  n_births: 201311
+  n_mothers: 158429
+  n_events: 44742
+
+arms:
+  H0:
+    description: F1_detail_history (A7 reference)
+    added_categorical: []
+    added_numerical: []
+    manifest_tier: F2
+  H1:
+    description: H0 + state_ut categorical indicator (A1 verbatim v024 labels)
+    added_categorical: [state_ut]
+    added_numerical: []
+    manifest_tier: F3
+  H2:
+    description: H0 + A3 grouped OOF state x sector target encoding (te_state_sector)
+    added_categorical: []
+    added_numerical: [te_state_sector]
+    manifest_tier: F4
+  H3:
+    description: H0 + state_ut + te_state_sector
+    added_categorical: [state_ut]
+    added_numerical: [te_state_sector]
+    manifest_tier: F4
+
+models: [xgboost, logistic_regression]
+# Fixed recipe: A7-selected parameters, read from A7/outputs/a7_run_summary.json
+# and asserted equal to these values. No tuning in A8.
+model_params:
+  xgboost: {n_estimators: 200, max_depth: 4, learning_rate: 0.05, subsample: 0.8,
+            colsample_bytree: 0.8, eval_metric: logloss, tree_method: hist}
+  logistic_regression: {C: 1.0, solver: liblinear, max_iter: 1000, class_weight: balanced}
+  xgboost_scale_pos_weight: fit_pool_negatives_over_positives   # as run_a7._candidate_stage
+  estimator_seed: split_seed                                     # as run_a7 (main and robustness)
+
+split:
+  split_id_template: mother_grouped_70_15_15_seed{seed}
+  frozen_split_id: mother_grouped_70_15_15_seed42_provisional   # A7 split_id; part of FROZEN_SPLIT_HASH
+  group_col: caseid
+  target_col: m17
+  fractions: [0.7, 0.15, 0.15]
+  frozen_seed: 42            # asserted against FROZEN_SPLIT_HASH and A7 digests
+  seeds: [42, 7, 2026, 99]   # A7 robustness seeds; split generation = split_contracts.grouped_partition
+  evaluation_partition: validation
+  test_partition: never_indexed_never_scored
+
+calibration:
+  method: platt
+  carve: {subset_fraction: 0.2, seed: 4208, group_col: caseid}   # A7 carve of each seed's training pool
+
+target_encoding:
+  source: version2_ml/experiments/A3/A3_target_encoder.py (encode_partitions)
+  alpha: 5
+  n_min: 30                 # A3
+  inner_folds: 3            # A3 StratifiedGroupKFold, mother-grouped
+  inner_seed: 42            # A3
+  state_key: v024 code as string (A3 nfhs5_state)
+  sector_key: facility_type (A3 sector = public/private/other)
+  fit_rows: fit_pool        # OOF encodings on fit-pool rows only
+  full_table_rows: calibration_and_validation   # encoded with the 100% fit-pool table
+  encoded_column: te_state_sector
+
+thresholds:
+  f1_optimal: a7_calibration.threshold_f1_optimal on calibrated validation probabilities
+
+reproduction_gate:          # H0 XGBoost, seed 42, must match A7 or the run stops
+  roc_auc: {target: 0.8298, tolerance: 0.003}
+  average_precision: {target: 0.6113, tolerance: 0.005}
+
+decision_rule:              # PREDECLARED; written before any real-data run
+  model: xgboost
+  comparator: H0
+  adopt_arm_if: delta_roc_auc >= 0.005 AND delta_average_precision >= 0.010 on all 4 seeds
+  min_delta_roc_auc: 0.005
+  min_delta_average_precision: 0.010
+  seeds_required: all
+  multiple_pass: choose the passing arm with the fewest added features
+  tie_break: H1
+  none_pass: FINAL_TIER = F1_detail_history
+  added_feature_counts: {H1: 1, H2: 1, H3: 2}
+  tier_names: {H0: F1_detail_history, H1: F1_detail_history_state, H2: F1_detail_history_state_sector_te,
+               H3: F1_detail_history_state_plus_state_sector_te}
+
+support_screen:             # A1 D9 gate on seed-42 training rows
+  cells: state_ut x residence
+  min_training_rows: 200
+  min_class_rows: 30
+
+shap:
+  arm: selected            # FINAL_TIER arm, XGBoost, seed-42 model
+  sample_size: 5000
+  seed: 4209
+  helpers: a7_shap.shap_family_table
+
+disclosure:
+  min_cell: 10             # births and events; as A1/A4/A7
+  outputs: aggregate_only
+  weighting: unweighted primary analysis; no survey-weighted results in A8

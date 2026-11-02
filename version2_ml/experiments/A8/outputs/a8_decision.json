@@ -1,0 +1,89 @@
+{
+  "passed_arms": [
+    "H1",
+    "H2",
+    "H3"
+  ],
+  "per_seed_deltas": {
+    "H1": {
+      "2026": {
+        "delta_average_precision": 0.04744,
+        "delta_roc_auc": 0.021548,
+        "passes": true
+      },
+      "42": {
+        "delta_average_precision": 0.041106,
+        "delta_roc_auc": 0.018664,
+        "passes": true
+      },
+      "7": {
+        "delta_average_precision": 0.043962,
+        "delta_roc_auc": 0.0203,
+        "passes": true
+      },
+      "99": {
+        "delta_average_precision": 0.044768,
+        "delta_roc_auc": 0.019174,
+        "passes": true
+      }
+    },
+    "H2": {
+      "2026": {
+        "delta_average_precision": 0.0496,
+        "delta_roc_auc": 0.023334,
+        "passes": true
+      },
+      "42": {
+        "delta_average_precision": 0.043869,
+        "delta_roc_auc": 0.020003,
+        "passes": true
+      },
+      "7": {
+        "delta_average_precision": 0.046041,
+        "delta_roc_auc": 0.021297,
+        "passes": true
+      },
+      "99": {
+        "delta_average_precision": 0.045997,
+        "delta_roc_auc": 0.020004,
+        "passes": true
+      }
+    },
+    "H3": {
+      "2026": {
+        "delta_average_precision": 0.050675,
+        "delta_roc_auc": 0.024201,
+        "passes": true
+      },
+      "42": {
+        "delta_average_precision": 0.045255,
+        "delta_roc_auc": 0.020789,
+        "passes": true
+      },
+      "7": {
+        "delta_average_precision": 0.047493,
+        "delta_roc_auc": 0.022141,
+        "passes": true
+      },
+      "99": {
+        "delta_average_precision": 0.046723,
+        "delta_roc_auc": 0.020641,
+        "passes": true
+      }
+    }
+  },
+  "rule": "delta_roc_auc >= 0.005 AND delta_average_precision >= 0.010 on all 4 seeds",
+  "selected_arm": "H1",
+  "selected_tier": "F1_detail_history_state",
+  "thresholds": {
+    "min_delta_average_precision": 0.01,
+    "min_delta_roc_auc": 0.005,
+    "model": "xgboost",
+    "seeds": [
+      7,
+      42,
+      99,
+      2026
+    ]
+  }
+}

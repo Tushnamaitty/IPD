@@ -1,0 +1,221 @@
+{
+  "calibration_carve_seed": 4208,
+  "cohort": {
+    "n_births": 201311,
+    "n_events": 44742,
+    "n_mothers": 158429
+  },
+  "cohort_warnings": [],
+  "config_file": "config.yaml",
+  "config_hash": "c821a00e64fbd1c7f9dc5d8d0f0b21747038e82a83c247cc21c57d1feaaba60c",
+  "config_sha256": "0a7996af94df1cc487caa5b43b17c6c69eb804dd158e7c57e8fa03eae48da38c",
+  "created_utc": "2026-11-02T04:59:10+00:00",
+  "disclosure_scan": {
+    "files_checked": [
+      "a8_ablation.csv",
+      "a8_decision.json",
+      "a8_paired_deltas.csv",
+      "a8_shap_families.csv",
+      "a8_support_screen.csv"
+    ],
+    "status": "PASS"
+  },
+  "estimator_seed_rule": "split seed",
+  "experiment_id": "A8",
+  "feature_manifest_hashes": {
+    "H0": "0c6b4bfc2e5431a7a3862d9a658f5b9528bb58e211121fe2df044214c586261d",
+    "H1": "d89db11d8eb3d000ab79609e2b1e79d2affd1dd7dbcdf8aa29523311aaf233f4",
+    "H2": "7c59aea42ce602bb8df0647596298621da35d67a6d8dac988b6b9414a052f2a6",
+    "H3": "6a6887db9891e0458f67bef501e7c8ffa37cc18a3b4f75a3ce26c61dd4c3af02"
+  },
+  "files": [
+    {
+      "bytes": 25389,
+      "file": "a8_ablation.csv",
+      "sha256": "6b8191ed396fa8200f4dab9b79fd4a42391069c50db4ba3cbaa52e8899ec1258"
+    },
+    {
+      "bytes": 1986,
+      "file": "a8_decision.json",
+      "sha256": "5fc5d1a0a260c529166e6677f631da79662a56a8046b65c96172ffb600a20f83"
+    },
+    {
+      "bytes": 7849,
+      "file": "a8_methods_results.md",
+      "sha256": "bc5f86611aedd68400bf54f69d8aa4c19afdd091fe4117fb073bd4ba57a43b22"
+    },
+    {
+      "bytes": 2601,
+      "file": "a8_paired_deltas.csv",
+      "sha256": "1c887018498adb5fd7a4de1170dcfc1495be84360c9fea873e157f809dba4a74"
+    },
+    {
+      "bytes": 520,
+      "file": "a8_shap_families.csv",
+      "sha256": "eadb724e6b6b955bdcef82e156334f2be3df3705698103bf04cc4633bde4b098"
+    },
+    {
+      "bytes": 2765,
+      "file": "a8_support_screen.csv",
+      "sha256": "77a18e0908b834aa750d7a8bb57dff09d33bda146d6d58c359e10951c6659d66"
+    },
+    {
+      "bytes": 57287,
+      "file": "fig_a8_deltas.png",
+      "sha256": "6b6ba37805fb32683da780ac82fffb58223fb42670847477e2cb8a0bf836881d"
+    }
+  ],
+  "git": {
+    "base_version2_ml_development": "318f1602c891c26571a170f874aeb95e9a3d9b37",
+    "branch": "v2-final-eval",
+    "commit": "eff1c1bd90c5e53bf773444ccaeabf899b5bd295",
+    "tracked_files_dirty": false
+  },
+  "hash_rule": "SHA-256 over the file bytes as written; text files use LF line endings. MANIFEST.json itself is not listed.",
+  "input_sha256": "93267b17596929371dc3190d17af114271851f14d1f566678ffceda2db4cae6e",
+  "manifest_version": 1,
+  "membership_digests_seed42": {
+    "calibration_pool": "6e50f6f014a75ee0d7814a22e2de7cfc852767532b58c4288dc1ce3ba733f486",
+    "fit_pool": "1f30baed72982f92b9049f65abe56550eaceb576c3896e91980a860a77faae4f",
+    "train": "b96807778dbdfddc17d1446db1a9b918ba49a8eac9b09a9f710799d0cfeec37f",
+    "validation": "800e7130876165e2f2e72ba40555b742295baa411d03f04197ee4920234e8499"
+  },
+  "qa": [
+    {
+      "check": "synthetic_a8_tests",
+      "detail": "22 synthetic tests OK",
+      "status": "PASS"
+    },
+    {
+      "check": "input_sha256_matches_a7",
+      "detail": "93267b1759692937",
+      "status": "PASS"
+    },
+    {
+      "check": "cohort_n_births",
+      "detail": "201311 vs 201311",
+      "status": "PASS"
+    },
+    {
+      "check": "cohort_n_mothers",
+      "detail": "158429 vs 158429",
+      "status": "PASS"
+    },
+    {
+      "check": "cohort_n_events",
+      "detail": "44742 vs 44742",
+      "status": "PASS"
+    },
+    {
+      "check": "history_reproduction_6276",
+      "detail": "6276",
+      "status": "PASS"
+    },
+    {
+      "check": "seed42_split_hash_frozen",
+      "detail": "6ff45fcb76af00a6",
+      "status": "PASS"
+    },
+    {
+      "check": "seed42_train_digest_frozen",
+      "detail": "",
+      "status": "PASS"
+    },
+    {
+      "check": "seed42_validation_digest_frozen",
+      "detail": "",
+      "status": "PASS"
+    },
+    {
+      "check": "seed42_fit_pool_digest_a7",
+      "detail": "",
+      "status": "PASS"
+    },
+    {
+      "check": "seed42_calibration_digest_a7",
+      "detail": "",
+      "status": "PASS"
+    },
+    {
+      "check": "h0_xgboost_seed42_roc_auc_reproduces_a7",
+      "detail": "0.8298 vs 0.8298 \u00b1 0.003",
+      "status": "PASS"
+    },
+    {
+      "check": "h0_xgboost_seed42_average_precision_reproduces_a7",
+      "detail": "0.6113 vs 0.6113 \u00b1 0.005",
+      "status": "PASS"
+    },
+    {
+      "check": "runtime_validation_labels_mutated_encoder_identical",
+      "detail": "",
+      "status": "PASS"
+    },
+    {
+      "check": "runtime_validation_labels_mutated_features_identical",
+      "detail": "",
+      "status": "PASS"
+    },
+    {
+      "check": "runtime_validation_labels_mutated_base_predictions_identical",
+      "detail": "",
+      "status": "PASS"
+    },
+    {
+      "check": "runtime_validation_labels_mutated_calibrated_predictions_identical",
+      "detail": "",
+      "status": "PASS"
+    },
+    {
+      "check": "runtime_calibration_labels_mutated_encoder_identical",
+      "detail": "",
+      "status": "PASS"
+    },
+    {
+      "check": "runtime_calibration_labels_mutated_features_identical",
+      "detail": "",
+      "status": "PASS"
+    },
+    {
+      "check": "runtime_calibration_labels_mutated_base_predictions_identical",
+      "detail": "",
+      "status": "PASS"
+    }
+  ],
+  "seeds": [
+    42,
+    7,
+    2026,
+    99
+  ],
+  "shap_seed": 4209,
+  "software": {
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "pyreadstat": "1.3.7",
+      "scipy": "1.18.1",
+      "sklearn": "1.9.1",
+      "xgboost": "3.4.1",
+      "yaml": "6.0.3"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.7"
+  },
+  "software_versions_runtime": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "python": "3.13.7",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1"
+  },
+  "split_manifest_hashes": {
+    "2026": "c4e5b127f8acc72df4ba276ed4b34cd81c271a2af666314f49c962051963b27b",
+    "42": "6ff45fcb76af00a6de5a33a225c482b1c9b3153f35544d887d8e3b2c3467904b",
+    "7": "c1897acd0539183f3e8399602fa10f0415b6b9d36c2c6ae4cabc9f042f02f35d",
+    "99": "fe3e83a66c4e209674ebba93db3a1e3d88926745935f71dbdd07f3b0a6c2a112"
+  },
+  "te_inner_seed": 42,
+  "test_partition": "never indexed or scored"
+}
