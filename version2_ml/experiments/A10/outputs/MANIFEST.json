@@ -1,0 +1,136 @@
+{
+  "a9_protocol_commit": "0ce1d4884239ea35f75d37afc338550bf5dde52b",
+  "bootstrap": {
+    "interval": "percentile_2.5_97.5",
+    "replicates": 1000,
+    "seed": 2028,
+    "unit": "v021 within each seed's test partition"
+  },
+  "config_file": "config.yaml",
+  "config_hash": "b1c0fc5e714dc5e0bd72412a60ef4b4d1a30c8b5dd0d3d88e4c8d636685f1f0f",
+  "config_sha256": "dce9e56af1b78a37a9b74da7e28678de1752a0ef461eeb18beca04094d290d6c",
+  "created_utc": "2026-11-02T12:25:57+00:00",
+  "disclosure_scan": {
+    "files_checked": [
+      "a10_calibration_bins_by_sector.csv",
+      "a10_flags.csv",
+      "a10_gaps.csv",
+      "a10_subgroup_metrics.csv"
+    ],
+    "status": "PASS"
+  },
+  "experiment_id": "A10",
+  "files": [
+    {
+      "bytes": 3195,
+      "file": "a10_calibration_bins_by_sector.csv",
+      "sha256": "c8035838e25f0dc12bf84e85c3a9f11bcacfd7f26a91a7a28cf78f05d73544c7"
+    },
+    {
+      "bytes": 7578,
+      "file": "a10_flags.csv",
+      "sha256": "1a253529a954c1a2750285038a7a032e10da5f48cb12753982a5f8e5e6eeefd5"
+    },
+    {
+      "bytes": 1400,
+      "file": "a10_gaps.csv",
+      "sha256": "9c42a51e57fcae700ef4d69c620cc31348fb4a10685b48f7be686a24611b2531"
+    },
+    {
+      "bytes": 16048,
+      "file": "a10_methods_results.md",
+      "sha256": "750ec522e850a8607b9d9d1e238f7d3e530ee584562cefe25e8706dcc220b823"
+    },
+    {
+      "bytes": 48989,
+      "file": "a10_subgroup_metrics.csv",
+      "sha256": "1bb5a00736e66e52811400b8441592871d06e75906f5026c17d8eca561d52b36"
+    },
+    {
+      "bytes": 82906,
+      "file": "fig_a10_calibration_by_sector.png",
+      "sha256": "051f014511754a42157a75bb5c56f33612e44be65e068ab4cbf18eaaa33e1d34"
+    },
+    {
+      "bytes": 175205,
+      "file": "fig_a10_subgroup_forest.png",
+      "sha256": "6bd31528c0dd3bb23ac99e9f43c98c0dd12bf8f970164e9049dc2d91ad7bbe34"
+    }
+  ],
+  "git": {
+    "base_version2_ml_development": "318f1602c891c26571a170f874aeb95e9a3d9b37",
+    "branch": "v2-final-eval",
+    "commit": "f2a90c732b90e3942d0746e634739954af54e768",
+    "tracked_files_dirty": false
+  },
+  "hash_rule": "SHA-256 over the file bytes as written; text files use LF line endings. MANIFEST.json itself is not listed.",
+  "manifest_version": 1,
+  "prediction_source": "verified deterministic re-derivation of A9 V2 (see qa)",
+  "qa": [
+    {
+      "check": "synthetic_a10_tests",
+      "detail": "15 synthetic tests OK",
+      "status": "PASS"
+    },
+    {
+      "check": "a9_guards_completed_under_protocol",
+      "detail": "0ce1d48",
+      "status": "PASS"
+    },
+    {
+      "check": "input_sha256_matches_a7",
+      "detail": "93267b1759692937",
+      "status": "PASS"
+    },
+    {
+      "check": "cohort_and_history_frozen",
+      "detail": "201311/158429/44742; 6276",
+      "status": "PASS"
+    },
+    {
+      "check": "every_mother_in_exactly_one_psu",
+      "detail": "29575 PSUs",
+      "status": "PASS"
+    },
+    {
+      "check": "rederivation_matches_a9_exactly",
+      "detail": "55 metrics + thresholds + split/membership, 5 seeds",
+      "status": "PASS"
+    }
+  ],
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "software": {
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "pyreadstat": "1.3.7",
+      "scipy": "1.18.1",
+      "sklearn": "1.9.1",
+      "xgboost": "3.4.1",
+      "yaml": "6.0.3"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.7"
+  },
+  "software_versions_runtime": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "python": "3.13.7",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1"
+  },
+  "split_manifest_hashes": {
+    "11": "16fd32556aac4f941177c87f6d04cd779d9ef7d42b2799c5c0392b4b0497dcf8",
+    "22": "d76c239246951af9c06f8939ad421283ffdb89849b1392bdd7d07c024ecb94d4",
+    "33": "7556eb3d3ba31ea2d4051b59bd2a131662258b50a83745b9d4624d62ab2d9d2d",
+    "44": "c342f21cf007a52f6279b49a005732f8e2acac59ed85076f2c17944734fce0cd",
+    "55": "7c52601668b81383010f593896f2accc9a5d8e9fc5fecc4667a9bea8188b7c84"
+  }
+}

@@ -1,0 +1,66 @@
+schema_version: '0.1'
+experiment_id: A10
+status: predeclared_before_real_run
+question: Is V2 performance and calibration acceptable in every major subgroup?
+
+source:
+  model: V2                      # A9 XGBoost on FINAL_TIER, Platt-calibrated, F1-optimal threshold
+  a9_protocol_commit: 0ce1d4884239ea35f75d37afc338550bf5dde52b
+  a9_commit: f2a90c7
+  seeds: [11, 22, 33, 44, 55]
+  prediction_source: verified_deterministic_rederivation
+  # A9 stored no per-birth predictions or model state. V2 is refitted per seed exactly as
+  # A9 did and test is re-predicted; A10 proceeds only if all 11 V2 test metrics stored in
+  # each A9 guard (55 values) are reproduced bitwise. Otherwise it stops with nothing written.
+  verification: {metrics_per_seed: 11, comparison: exact_equality, thresholds: exact_equality}
+
+pooling:
+  rows: concatenation of the 5 seeds' test partitions (birth-test observations; a birth can
+        appear in more than one seed's test partition, so n_unique_births is also reported)
+  threshold: each row uses its own seed's V2 F1-optimal validation threshold
+  per_seed_range: min and max of each per-seed point estimate (groups that fail support in a
+                  seed are skipped for that seed)
+
+subgroups:
+  residence: {groups: [urban, rural], source: residence}
+  facility_sector: {groups: [public, private, other], source: facility_type,
+                    definition: "public m15 20-27, private 30-33, other 96 (make_core_features)"}
+  birth_order: {groups: [first_birth, second_or_later], source: birth_order, rule: "1 vs >= 2"}
+  wealth: {groups: ['1', '2', '3', '4', '5'], source: wealth_index, labels: [poorest, poorer, middle, richer, richest]}
+  maternal_age: {groups: ['<20', '20-34', '35+'], source: maternal_age_at_index_birth,
+                 rule: "age < 20; 20 <= age < 35; age >= 35 (years at delivery, (b3 - v011)/12)"}
+  previous_cs_history: {groups: [first_recorded_live_birth, observed_previous_institutional_cs,
+                                 higher_order_no_observed_previous_institutional_cs,
+                                 higher_order_earlier_institutional_history_unobserved, unknown_history],
+                        source: history_four_level,
+                        note: "four substantive levels plus unknown_history, listed so it is reported as UNDER_SUPPORTED"}
+  state: {groups: all_observed, source: "A1 map_states(v024)"}
+
+support_screen:             # applied to every subgroup on the pooled test rows
+  min_births: 200
+  min_per_class: 30
+
+metrics: [n, n_unique_births, events, prevalence, roc_auc, average_precision, brier_score,
+          calibration_intercept, calibration_slope, observed_rate, mean_predicted,
+          recall_at_threshold, precision_at_threshold]
+metric_sources:
+  roc_auc_ap_brier: exp_metrics.binary_metrics
+  calibration: a7_calibration.calibration_intercept_slope (joint logistic fit, as A7/A9)
+
+bootstrap:
+  unit: v021 within each seed's test partition
+  replicates: 1000
+  seed: 2028                # one numpy default_rng(2028); per replicate, seeds drawn in order 11..55
+  interval: percentile_2.5_97.5
+
+flags:                      # PREDECLARED; evaluated on pooled point estimates
+  LOW_DISCRIMINATION: roc_auc < 0.70
+  MISCALIBRATED: abs(calibration_intercept) > 0.10 or calibration_slope < 0.8 or calibration_slope > 1.2
+  UNDER_SUPPORTED: fails support_screen; reported as "not estimable", no metrics
+gap:
+  metric: roc_auc
+  definition: largest minus smallest pooled ROC-AUC among supported groups within a dimension
+  ci: percentile interval of the replicate-wise gap (same groups, same bootstrap draws)
+
+calibration_bins: {by: facility_sector, n_bins: 10, strategy: quantile}
+disclosure: {min_cell: 10}
